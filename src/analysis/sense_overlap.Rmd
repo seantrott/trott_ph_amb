@@ -1,0 +1,278 @@
+---
+title: "Sense overlap"
+author: "Sean Trott"
+date: "May 6, 2020"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+  pdf_document: default
+  word_document:
+    toc: yes
+---
+
+```{r include=FALSE}
+library(tidyverse)
+library(forcats)
+library(lme4)
+library(corrplot)
+library(ggridges)
+```
+
+
+# Introduction
+
+Klepousniotou et al (2008) and Brown (2008) both showed that the ease of transitioning between two senses of a polysemous word depends on their **degree of overlap**. That is, there is less inhibition (greater facilitation) between *marinated lamb* and *baby lamb* than between *control panel* and *advisory panel*. They measured priming *within* a sense category as a comparison, e.g., between *marinated lamb* and *tender lamb*. Klepousniotou et al (2008) also analyzed an interaction with sense **dominance**, but I will not be analyzing that here. 
+
+In the current analyses, I adapted most of their stimuli to sentences, e.g., "He liked the marinated lamb" vs. "He liked the baby lamb". I also created new stimuli using homonyms from Klepousniotou & Baum (2007). 
+
+I then ran each sentence through ELMo and obtained contextualized embeddings for the target word, e.g., *lamb*. Finally, I computed the `cosine distance` between the two embeddings. This allows us to make several comparisons:
+
+First, is `cosine distance` consistently larger for usages occurring *across* senses? That is, is $cos(lamb_{marinated}, lamb_{baby}) > cos(lamb_{marinated}, lamb_{tender})$? If so, it suggests that the contextualized embeddings distinguish between contexts of use in such a way as to correlate with sense boundaries.
+
+Second, and more importantly: for usages occurring *across* senses (e.g., *baby/marinated lamb*), does `cosine distance` vary as a function of `degree of overlap`? If so, it suggests that the existence of a sense boundary isn't the only thing that matters in state-space: the *distance* (degree of overlap) between two senses or *sense-clusters* is also important. This finding would corroborrate the behavioral finding that `degree of overlap` predicts the degree of facilitation or inhibition.
+
+Our data thus looks as follows: each observation represents a comparison (`cosine distance`) between two identical wordforms appearing in different contexts. Roughly 1/3 of these observations reflect **same sense** contexts; roughly 2/3 reflect **different sense** contexts. Furthermore, `condition` reflects the degree of overlap between the different sense-contexts.
+
+Random factors include:
+
+- Each `word`  
+- The `source` (confounded with `POS`, verb vs. noun)
+
+For both factors, we include by-factor random slopes for the effect of `same sense` (though *not* `condition`). 
+
+# Load data
+
+```{r}
+setwd("/Users/seantrott/Dropbox/UCSD/Research/Ambiguity/SSD/trott_polysemy_experiment")
+df_distances = read_csv("data/processed/stims_processed.csv")
+
+nrow(df_distances)
+
+table(df_distances$same)
+table(df_distances$same) / nrow(df_distances)
+
+```
+
+Additionally, the Brown (2008) stimuli have different condition labels:
+
+```{r}
+table(df_distances$condition)
+```
+
+For our purposes here, let's merge them. This is a very rough approximation, and we might need to do a more principled way of merging them later on. 
+
+```{r}
+df_distances$condition_merged = fct_recode(
+  df_distances$condition,
+  "high overlap" = "close",
+  "low overlap" = "distant"
+)
+```
+
+# Primary analyses
+
+## Is cosine distance larger for usages across senses?
+
+**TODO**: Take out random effect for "version"? Correlated with `same`.
+
+**TODO**: Adding random slope for `same` for `source` results in singular fit, though still pretty reasonable model.
+
+First, we ask whether the existence of a sense boundary explains significant variance in the `cosine distance` between two words.
+
+```{r}
+model_same = lmer(data = df_distances,
+                  distance ~ same +
+                    (1 + same | word) +
+                    (1 | source),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML=FALSE)
+
+model_null = lmer(data = df_distances,
+                  distance ~ 
+                    (1 + same | word) +
+                    (1 | source),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML=FALSE)
+
+summary(model_same)
+anova(model_same, model_null)
+```
+
+We find that it does. We can illustrate this visually as well:
+
+```{r}
+df_distances %>%
+  ggplot(aes(x = distance,
+             fill = same)) +
+  geom_density(alpha = .6) +
+  labs(title = "Cosine distance by same/different sense") +
+  theme_minimal()
+
+
+```
+
+
+## Does cosine distance vary as a function of degree of overlap?
+
+Above, we saw that the cosine distance between two usages varied as a function of whether those usages belonged to the same sense.
+
+But is there further variance to be explained as a function of the **degree of overlap** between two different senses?
+
+Below, we can see the distribution of `cosine distance` values as a function of whether two observations occurred across sense boundaries (`False/True`), and what the degree of overlap (`condition`) was between those boundaries.
+
+```{r}
+df_distances %>%
+  filter(same == FALSE) %>%
+  ggplot(aes(x = distance,
+             y = reorder(condition_merged, distance),
+             fill = condition_merged)) +
+   geom_density_ridges2(aes(height = ..density..), color=gray(0.25), alpha = 0.5, scale=0.85, size=0.75, stat="density") +
+  labs(title = "Cosine distance by same/different sense",
+       y = "condtiion") +
+  theme_ridges()
+
+```
+
+First, we demonstrate that `condition` explains variance above and beyond a null model.
+
+```{r}
+model_overlap = lmer(data = df_distances,
+                     distance ~ condition_merged +
+                    (1 + same | word) +
+                    (1 + same | source),
+                     control=lmerControl(optimizer="bobyqa"),
+                     REML=FALSE)
+
+model_null = lmer(data = df_distances,
+                  distance ~ 
+                    (1 + same | word) +
+                    (1 + same | source),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML=FALSE)
+
+summary(model_overlap)
+anova(model_overlap, model_null)
+
+```
+
+
+We also show that a model with both `condition` and `same` explains more variance than a model with only one of those factors.
+
+```{r}
+model_both = lmer(data = df_distances,
+                     distance ~ condition_merged +
+                       same +
+                    (1 + same | word) +
+                    # (1 + same | version) +
+                    (1 + same | source),
+                     control=lmerControl(optimizer="bobyqa"),
+                     REML=FALSE)
+
+anova(model_both, model_same)
+anova(model_both, model_overlap) 
+```
+
+There is also an interaction between `condition` and `same`.
+
+```{r}
+model_interaction = lmer(data = df_distances,
+                     distance ~ condition_merged * same +
+                    (1 + same | word) +
+                    # (1 + same | version) +
+                    (1 + same | source),
+                     control=lmerControl(optimizer="bobyqa"),
+                     REML=FALSE)
+
+
+anova(model_both, model_interaction)
+summary(model_interaction)
+```
+
+Looking at the coefficients, we can see:
+
+- A main effect of `same` (same-sense pairs are closer in vector-space than different-sense pairs).  
+- A main effect of `condition` (`moderate overlap` pairs are further than `high overlap`; `low overlap` are further than `moderate overlap`; and `homonymys` are further than `low overlap`).  
+- Interactions: For these levels of `condition`, word pairs are closer when they're used in the same sense (as you'd expect).
+
+
+We can also copare the model's predictions against the real values for cosine distance. 
+
+```{r}
+df_distances$predictions = predict(model_interaction)
+
+
+df_distances %>%
+  ggplot(aes(x = predictions,
+             y = distance,
+             color = same)) +
+  geom_point(alpha = .4) +
+  facet_grid(~condition_merged) +
+  theme_minimal()
+```
+
+
+
+# Exploratory analyses and visualizations
+
+First, let's look at the Brown (2008) data. According to this visualization, it *looks* like same-sense pairs are quite close across the board. The distance between different-sense pairs grows according to Brown's (2008) condition labels; the distance between different-sense pairs is perhaps a little greater for `distant` pairs than `homonyms`.
+
+```{r}
+df_distances %>%
+  filter(source == "Brown(2008)") %>%
+  ggplot(aes(x = reorder(condition, distance),
+             y = distance,
+             fill = same)) +
+  geom_boxplot() +
+  labs(x = "Condition",
+       y = "Cosine distance") +
+  theme_minimal()
+```
+
+
+Now let's look at Klepousniotou et al (2008) specifically. Pretty similar pattern here, although we see a stronger effect of `condition` on the **same sense** pairs (which is puzzling; see discussion below). 
+
+```{r}
+df_distances %>%
+  filter(source == "Klepousniotou et al (2008)") %>%
+  ggplot(aes(x = reorder(condition, distance),
+             y = distance,
+             fill = same)) +
+  geom_boxplot() +
+  labs(x = "Condition",
+       y = "Cosine distance") +
+  theme_minimal()
+```
+
+Now let's just look at them altogether:
+
+```{r}
+df_distances %>%
+  # filter(source == "Klepousniotou et al (2008)") %>%
+  ggplot(aes(x = reorder(condition, distance),
+             y = distance,
+             fill = same)) +
+  geom_boxplot() +
+  labs(x = "Condition",
+       y = "Cosine distance") +
+  theme_minimal()
+
+df_distances %>%
+  # filter(same == "False") %>%
+  ggplot(aes(x = distance,
+             y = reorder(condition, distance),
+             fill = same)) +
+   geom_density_ridges2(aes(height = ..density..), color=gray(0.25), alpha = 0.5, scale=0.85, size=0.75, stat="density") +
+  labs(title = "Cosine distance by same/different sense",
+       y = "condtiion") +
+  theme_ridges()
+```
+
+
+
+# Questions and limitations
+
+Overall, these findings are encouraging given that they are consistent (qualitatively) with the findings of Klepousniotou et al (2008) and Brown (2008).
+
+One odd finding, however, is that **degree of overlap** predicts `cosine distance` for words both *within* and *across* sense boundaries. I'm not sure why this would be. Theoretically, the distance between two usages in the *same* sense shouldn't vary as a function of how far apart that sense is from *other* senses of the word. But we see very similar patterns for **degree of overlap** for both levels of `same` (`False/True`). (Importantly, though, **same sense** is always closer in vector-space than **different sense**, regardless of degree of overlap.)
+
