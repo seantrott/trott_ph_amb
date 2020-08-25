@@ -8,7 +8,7 @@ import pandas as pd
 DATA_PATH = "data/stims/stimuli.csv"
 SAVE_PATH = "experiment/experiment_text.html"
 
-LABELS = ['very unrelated', 'very related']
+LABELS = ['totally unrelated', 'not very related', 'related', 'same meaning']
 PROMPT = "<p>How <b>related</b> are the uses of this word across these two sentences?<p>"
 
 
