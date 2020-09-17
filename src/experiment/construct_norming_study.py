@@ -40,7 +40,7 @@ of each version per word.
 
 """
 
-## TODO: Redo this so it's more elegantly composed (use itertools.permutations)
+## TODO: Add other features when relevant?
 
 for index, row in df_targets.iterrows():
 
@@ -52,11 +52,14 @@ for index, row in df_targets.iterrows():
 		version = '{v1}_{v2}'.format(v1=v1, v2=v2)
 		same = v1[0:2] == v2[0:2]
 
+		sentences = '{ex1}<p>{ex2}'.format(ex1=row[v1], ex2=row[v2]).replace(target_word, "<b>{t}</b>".format(t=target_word))
+
 		struct = {
 		'type': 'survey-likert',
-		'questions': [{'prompt': '{ex1}<p>{ex2}'.format(ex1=row[v1], ex2=row[v2]).replace(target_word, "<b>{t}</b>".format(t=target_word)),
+		'questions': [{'prompt': PROMPT,
+		'required': True,
 		'labels': LABELS}],
-		'preamble': PROMPT,
+		'preamble': sentences,
 		'data': {'word': row['Word'], 'same': same, 'version': version, 'item': index, 
 				 'source': row['Source'], 'Class': row['Class'], 
 				 'overlap': row['Original Condition']}
