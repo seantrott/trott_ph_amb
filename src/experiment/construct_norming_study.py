@@ -10,7 +10,7 @@ import pandas as pd
 DATA_PATH = "data/stims/stimuli.csv"
 SAVE_PATH = "experiment/experiment_text.html"
 
-LABELS = ['totally unrelated', 'not very related', 'related', 'same meaning']
+LABELS = ['totally unrelated', 'not very related', 'somewhat related', 'very related', 'same meaning']
 PROMPT = "<p>How <b>related</b> are the uses of this word across these two sentences?<p>"
 VERSIONS = ['M1_a', 'M1_b', 'M2_a', 'M2_b']
 
@@ -53,10 +53,10 @@ for index, row in df_targets.iterrows():
 		same = v1[0:2] == v2[0:2]
 
 		struct = {
-		'type': 'html-slider-response',
-		'stimulus': '{ex1}<p>{ex2}'.format(ex1=row[v1], ex2=row[v2]).replace(target_word, "<b>{t}</b>".format(t=target_word)),
-		'labels': LABELS,
-		'prompt': PROMPT,
+		'type': 'survey-likert',
+		'questions': [{'prompt': '{ex1}<p>{ex2}'.format(ex1=row[v1], ex2=row[v2]).replace(target_word, "<b>{t}</b>".format(t=target_word)),
+		'labels': LABELS}],
+		'preamble': PROMPT,
 		'data': {'word': row['Word'], 'same': same, 'version': version, 'item': index, 
 				 'source': row['Source'], 'Class': row['Class'], 
 				 'overlap': row['Original Condition']}
