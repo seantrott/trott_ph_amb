@@ -1,661 +1,763 @@
-,condition,distance,item,relatedness,same,source,version,word
-0,high overlap,0.2567812204360962,0,4.0,True,Klepousniotou et al (2008),M1,lamb
-1,high overlap,0.035314738750457764,0,4.0,True,Klepousniotou et al (2008),M2,lamb
-2,high overlap,0.2577521800994873,0,4.0,False,Klepousniotou et al (2008),M1a_M2a,lamb
-3,high overlap,0.2463611364364624,0,4.0,False,Klepousniotou et al (2008),M1a_M2b,lamb
-4,high overlap,0.05105996131896973,0,4.0,False,Klepousniotou et al (2008),M1b_M2a,lamb
-5,high overlap,0.04608863592147827,0,4.0,False,Klepousniotou et al (2008),M1b_M2b,lamb
-6,high overlap,0.04099494218826294,1,4.45,True,Klepousniotou et al (2008),M1,article
-7,high overlap,0.1002923846244812,1,4.45,True,Klepousniotou et al (2008),M2,article
-8,high overlap,0.08284491300582886,1,4.45,False,Klepousniotou et al (2008),M1a_M2a,article
-9,high overlap,0.057578086853027344,1,4.45,False,Klepousniotou et al (2008),M1a_M2b,article
-10,high overlap,0.051315486431121826,1,4.45,False,Klepousniotou et al (2008),M1b_M2a,article
-11,high overlap,0.047799646854400635,1,4.45,False,Klepousniotou et al (2008),M1b_M2b,article
-12,high overlap,0.06209319829940796,2,4.73,True,Klepousniotou et al (2008),M1,book
-13,high overlap,0.09596997499465942,2,4.73,True,Klepousniotou et al (2008),M2,book
-14,high overlap,0.08757603168487549,2,4.73,False,Klepousniotou et al (2008),M1a_M2a,book
-15,high overlap,0.06982302665710449,2,4.73,False,Klepousniotou et al (2008),M1a_M2b,book
-16,high overlap,0.08547425270080566,2,4.73,False,Klepousniotou et al (2008),M1b_M2a,book
-17,high overlap,0.11824542284011841,2,4.73,False,Klepousniotou et al (2008),M1b_M2b,book
-18,high overlap,0.057213008403778076,3,4.45,True,Klepousniotou et al (2008),M1,breakfast
-19,high overlap,0.034679532051086426,3,4.45,True,Klepousniotou et al (2008),M2,breakfast
-20,high overlap,0.018863558769226074,3,4.45,False,Klepousniotou et al (2008),M1a_M2a,breakfast
-21,high overlap,0.04852283000946045,3,4.45,False,Klepousniotou et al (2008),M1a_M2b,breakfast
-22,high overlap,0.05031991004943848,3,4.45,False,Klepousniotou et al (2008),M1b_M2a,breakfast
-23,high overlap,0.047012269496917725,3,4.45,False,Klepousniotou et al (2008),M1b_M2b,breakfast
-24,high overlap,0.02919483184814453,4,4.14,True,Klepousniotou et al (2008),M1,chicken
-25,high overlap,0.04897826910018921,4,4.14,True,Klepousniotou et al (2008),M2,chicken
-26,high overlap,0.07765507698059082,4,4.14,False,Klepousniotou et al (2008),M1a_M2a,chicken
-27,high overlap,0.0733102560043335,4,4.14,False,Klepousniotou et al (2008),M1a_M2b,chicken
-28,high overlap,0.09262466430664062,4,4.14,False,Klepousniotou et al (2008),M1b_M2a,chicken
-29,high overlap,0.08268368244171143,4,4.14,False,Klepousniotou et al (2008),M1b_M2b,chicken
-30,high overlap,0.049403369426727295,5,4.05,True,Klepousniotou et al (2008),M1,class
-31,high overlap,0.06329125165939331,5,4.05,True,Klepousniotou et al (2008),M2,class
-32,high overlap,0.05991518497467041,5,4.05,False,Klepousniotou et al (2008),M1a_M2a,class
-33,high overlap,0.06071561574935913,5,4.05,False,Klepousniotou et al (2008),M1a_M2b,class
-34,high overlap,0.04448026418685913,5,4.05,False,Klepousniotou et al (2008),M1b_M2a,class
-35,high overlap,0.08575022220611572,5,4.05,False,Klepousniotou et al (2008),M1b_M2b,class
-36,high overlap,0.09884482622146606,6,3.77,True,Klepousniotou et al (2008),M1,cloud
-37,high overlap,0.030632317066192627,6,3.77,True,Klepousniotou et al (2008),M2,cloud
-38,high overlap,0.04252350330352783,6,3.77,False,Klepousniotou et al (2008),M1a_M2a,cloud
-39,high overlap,0.04262596368789673,6,3.77,False,Klepousniotou et al (2008),M1a_M2b,cloud
-40,high overlap,0.11104428768157959,6,3.77,False,Klepousniotou et al (2008),M1b_M2a,cloud
-41,high overlap,0.11445039510726929,6,3.77,False,Klepousniotou et al (2008),M1b_M2b,cloud
-42,high overlap,0.04018270969390869,7,3.86,True,Klepousniotou et al (2008),M1,contribution
-43,high overlap,0.06602704524993896,7,3.86,True,Klepousniotou et al (2008),M2,contribution
-44,high overlap,0.1049986481666565,7,3.86,False,Klepousniotou et al (2008),M1a_M2a,contribution
-45,high overlap,0.10444015264511108,7,3.86,False,Klepousniotou et al (2008),M1a_M2b,contribution
-46,high overlap,0.11029672622680664,7,3.86,False,Klepousniotou et al (2008),M1b_M2a,contribution
-47,high overlap,0.09919756650924683,7,3.86,False,Klepousniotou et al (2008),M1b_M2b,contribution
-48,high overlap,0.0400080680847168,8,4.05,True,Klepousniotou et al (2008),M1,design
-49,high overlap,0.09316027164459229,8,4.05,True,Klepousniotou et al (2008),M2,design
-50,high overlap,0.09703081846237183,8,4.05,False,Klepousniotou et al (2008),M1a_M2a,design
-51,high overlap,0.06227612495422363,8,4.05,False,Klepousniotou et al (2008),M1a_M2b,design
-52,high overlap,0.09006428718566895,8,4.05,False,Klepousniotou et al (2008),M1b_M2a,design
-53,high overlap,0.048370361328125,8,4.05,False,Klepousniotou et al (2008),M1b_M2b,design
-54,high overlap,0.03456676006317139,9,4.32,True,Klepousniotou et al (2008),M1,dinner
-55,high overlap,0.05468606948852539,9,4.32,True,Klepousniotou et al (2008),M2,dinner
-56,high overlap,0.06940335035324097,9,4.32,False,Klepousniotou et al (2008),M1a_M2a,dinner
-57,high overlap,0.03988569974899292,9,4.32,False,Klepousniotou et al (2008),M1a_M2b,dinner
-58,high overlap,0.05719226598739624,9,4.32,False,Klepousniotou et al (2008),M1b_M2a,dinner
-59,high overlap,0.041802406311035156,9,4.32,False,Klepousniotou et al (2008),M1b_M2b,dinner
-60,high overlap,0.06936359405517578,10,3.77,True,Klepousniotou et al (2008),M1,dream
-61,high overlap,0.057224810123443604,10,3.77,True,Klepousniotou et al (2008),M2,dream
-62,high overlap,0.06615418195724487,10,3.77,False,Klepousniotou et al (2008),M1a_M2a,dream
-63,high overlap,0.08181542158126831,10,3.77,False,Klepousniotou et al (2008),M1a_M2b,dream
-64,high overlap,0.09008181095123291,10,3.77,False,Klepousniotou et al (2008),M1b_M2a,dream
-65,high overlap,0.07389461994171143,10,3.77,False,Klepousniotou et al (2008),M1b_M2b,dream
-66,high overlap,0.02868419885635376,11,3.82,True,Klepousniotou et al (2008),M1,dress
-67,high overlap,0.03269827365875244,11,3.82,True,Klepousniotou et al (2008),M2,dress
-68,high overlap,0.05994898080825806,11,3.82,False,Klepousniotou et al (2008),M1a_M2a,dress
-69,high overlap,0.04589831829071045,11,3.82,False,Klepousniotou et al (2008),M1a_M2b,dress
-70,high overlap,0.0457308292388916,11,3.82,False,Klepousniotou et al (2008),M1b_M2a,dress
-71,high overlap,0.03910428285598755,11,3.82,False,Klepousniotou et al (2008),M1b_M2b,dress
-72,high overlap,0.045353591442108154,12,3.91,True,Klepousniotou et al (2008),M1,examination
-73,high overlap,0.02046370506286621,12,3.91,True,Klepousniotou et al (2008),M2,examination
-74,high overlap,0.052281081676483154,12,3.91,False,Klepousniotou et al (2008),M1a_M2a,examination
-75,high overlap,0.05649399757385254,12,3.91,False,Klepousniotou et al (2008),M1a_M2b,examination
-76,high overlap,0.07007241249084473,12,3.91,False,Klepousniotou et al (2008),M1b_M2a,examination
-77,high overlap,0.08198487758636475,12,3.91,False,Klepousniotou et al (2008),M1b_M2b,examination
-78,high overlap,0.04606902599334717,13,4.27,True,Klepousniotou et al (2008),M1,guard
-79,high overlap,0.07792896032333374,13,4.27,True,Klepousniotou et al (2008),M2,guard
-80,high overlap,0.09465408325195312,13,4.27,False,Klepousniotou et al (2008),M1a_M2a,guard
-81,high overlap,0.08624303340911865,13,4.27,False,Klepousniotou et al (2008),M1a_M2b,guard
-82,high overlap,0.08912038803100586,13,4.27,False,Klepousniotou et al (2008),M1b_M2a,guard
-83,high overlap,0.07945173978805542,13,4.27,False,Klepousniotou et al (2008),M1b_M2b,guard
-84,high overlap,0.0533977746963501,14,3.73,True,Klepousniotou et al (2008),M1,home
-85,high overlap,0.05215156078338623,14,3.73,True,Klepousniotou et al (2008),M2,home
-86,high overlap,0.111178457736969,14,3.73,False,Klepousniotou et al (2008),M1a_M2a,home
-87,high overlap,0.11196601390838623,14,3.73,False,Klepousniotou et al (2008),M1a_M2b,home
-88,high overlap,0.09004741907119751,14,3.73,False,Klepousniotou et al (2008),M1b_M2a,home
-89,high overlap,0.09455031156539917,14,3.73,False,Klepousniotou et al (2008),M1b_M2b,home
-90,high overlap,0.032469093799591064,15,4.27,True,Klepousniotou et al (2008),M1,lunch
-91,high overlap,0.05568134784698486,15,4.27,True,Klepousniotou et al (2008),M2,lunch
-92,high overlap,0.053685665130615234,15,4.27,False,Klepousniotou et al (2008),M1a_M2a,lunch
-93,high overlap,0.04499185085296631,15,4.27,False,Klepousniotou et al (2008),M1a_M2b,lunch
-94,high overlap,0.03476226329803467,15,4.27,False,Klepousniotou et al (2008),M1b_M2a,lunch
-95,high overlap,0.03308385610580444,15,4.27,False,Klepousniotou et al (2008),M1b_M2b,lunch
-96,high overlap,0.05845087766647339,16,4.55,True,Klepousniotou et al (2008),M1,magazine
-97,high overlap,0.07318121194839478,16,4.55,True,Klepousniotou et al (2008),M2,magazine
-98,high overlap,0.07007783651351929,16,4.55,False,Klepousniotou et al (2008),M1a_M2a,magazine
-99,high overlap,0.07627671957015991,16,4.55,False,Klepousniotou et al (2008),M1a_M2b,magazine
-100,high overlap,0.07953131198883057,16,4.55,False,Klepousniotou et al (2008),M1b_M2a,magazine
-101,high overlap,0.08130621910095215,16,4.55,False,Klepousniotou et al (2008),M1b_M2b,magazine
-102,high overlap,0.04866284132003784,17,3.59,True,Klepousniotou et al (2008),M1,medicine
-103,high overlap,0.046661317348480225,17,3.59,True,Klepousniotou et al (2008),M2,medicine
-104,high overlap,0.07729429006576538,17,3.59,False,Klepousniotou et al (2008),M1a_M2a,medicine
-105,high overlap,0.07906204462051392,17,3.59,False,Klepousniotou et al (2008),M1a_M2b,medicine
-106,high overlap,0.07164543867111206,17,3.59,False,Klepousniotou et al (2008),M1b_M2a,medicine
-107,high overlap,0.06940722465515137,17,3.59,False,Klepousniotou et al (2008),M1b_M2b,medicine
-108,high overlap,0.056716978549957275,18,4.18,True,Klepousniotou et al (2008),M1,message
-109,high overlap,0.03351801633834839,18,4.18,True,Klepousniotou et al (2008),M2,message
-110,high overlap,0.13016599416732788,18,4.18,False,Klepousniotou et al (2008),M1a_M2a,message
-111,high overlap,0.16290920972824097,18,4.18,False,Klepousniotou et al (2008),M1a_M2b,message
-112,high overlap,0.13015592098236084,18,4.18,False,Klepousniotou et al (2008),M1b_M2a,message
-113,high overlap,0.15402597188949585,18,4.18,False,Klepousniotou et al (2008),M1b_M2b,message
-114,high overlap,0.04344373941421509,19,4.5,True,Klepousniotou et al (2008),M1,newspaper
-115,high overlap,0.032200396060943604,19,4.5,True,Klepousniotou et al (2008),M2,newspaper
-116,high overlap,0.08688372373580933,19,4.5,False,Klepousniotou et al (2008),M1a_M2a,newspaper
-117,high overlap,0.08433008193969727,19,4.5,False,Klepousniotou et al (2008),M1a_M2b,newspaper
-118,high overlap,0.08274275064468384,19,4.5,False,Klepousniotou et al (2008),M1b_M2a,newspaper
-119,high overlap,0.0856519341468811,19,4.5,False,Klepousniotou et al (2008),M1b_M2b,newspaper
-120,high overlap,0.06618016958236694,20,4.59,True,Klepousniotou et al (2008),M1,novel
-121,high overlap,0.096011221408844,20,4.59,True,Klepousniotou et al (2008),M2,novel
-122,high overlap,0.07375895977020264,20,4.59,False,Klepousniotou et al (2008),M1a_M2a,novel
-123,high overlap,0.03801804780960083,20,4.59,False,Klepousniotou et al (2008),M1a_M2b,novel
-124,high overlap,0.09661948680877686,20,4.59,False,Klepousniotou et al (2008),M1b_M2a,novel
-125,high overlap,0.09273272752761841,20,4.59,False,Klepousniotou et al (2008),M1b_M2b,novel
-126,high overlap,0.08600807189941406,21,3.64,True,Klepousniotou et al (2008),M1,oil
-127,high overlap,0.04469585418701172,21,3.64,True,Klepousniotou et al (2008),M2,oil
-128,high overlap,0.11559337377548218,21,3.64,False,Klepousniotou et al (2008),M1a_M2a,oil
-129,high overlap,0.09009331464767456,21,3.64,False,Klepousniotou et al (2008),M1a_M2b,oil
-130,high overlap,0.10345697402954102,21,3.64,False,Klepousniotou et al (2008),M1b_M2a,oil
-131,high overlap,0.08966058492660522,21,3.64,False,Klepousniotou et al (2008),M1b_M2b,oil
-132,moderate overlap,0.041258037090301514,22,2.86,True,Klepousniotou et al (2008),M1,act
-133,moderate overlap,0.04400557279586792,22,2.86,True,Klepousniotou et al (2008),M2,act
-134,moderate overlap,0.0528295636177063,22,2.86,False,Klepousniotou et al (2008),M1a_M2a,act
-135,moderate overlap,0.04604899883270264,22,2.86,False,Klepousniotou et al (2008),M1a_M2b,act
-136,moderate overlap,0.06301218271255493,22,2.86,False,Klepousniotou et al (2008),M1b_M2a,act
-137,moderate overlap,0.057967305183410645,22,2.86,False,Klepousniotou et al (2008),M1b_M2b,act
-138,moderate overlap,0.050385236740112305,23,3.0,True,Klepousniotou et al (2008),M1,atmosphere
-139,moderate overlap,0.08579164743423462,23,3.0,True,Klepousniotou et al (2008),M2,atmosphere
-140,moderate overlap,0.12902146577835083,23,3.0,False,Klepousniotou et al (2008),M1a_M2a,atmosphere
-141,moderate overlap,0.0679435133934021,23,3.0,False,Klepousniotou et al (2008),M1a_M2b,atmosphere
-142,moderate overlap,0.11441731452941895,23,3.0,False,Klepousniotou et al (2008),M1b_M2a,atmosphere
-143,moderate overlap,0.06496715545654297,23,3.0,False,Klepousniotou et al (2008),M1b_M2b,atmosphere
-144,moderate overlap,0.06355100870132446,24,3.09,True,Klepousniotou et al (2008),M1,barrier
-145,moderate overlap,0.05565577745437622,24,3.09,True,Klepousniotou et al (2008),M2,barrier
-146,moderate overlap,0.0919194221496582,24,3.09,False,Klepousniotou et al (2008),M1a_M2a,barrier
-147,moderate overlap,0.07618063688278198,24,3.09,False,Klepousniotou et al (2008),M1a_M2b,barrier
-148,moderate overlap,0.0793311595916748,24,3.09,False,Klepousniotou et al (2008),M1b_M2a,barrier
-149,moderate overlap,0.06046605110168457,24,3.09,False,Klepousniotou et al (2008),M1b_M2b,barrier
-150,moderate overlap,0.06319475173950195,25,2.64,True,Klepousniotou et al (2008),M1,beam
-151,moderate overlap,0.09424316883087158,25,2.64,True,Klepousniotou et al (2008),M2,beam
-152,moderate overlap,0.05120784044265747,25,2.64,False,Klepousniotou et al (2008),M1a_M2a,beam
-153,moderate overlap,0.10277348756790161,25,2.64,False,Klepousniotou et al (2008),M1a_M2b,beam
-154,moderate overlap,0.06931793689727783,25,2.64,False,Klepousniotou et al (2008),M1b_M2a,beam
-155,moderate overlap,0.11507248878479004,25,2.64,False,Klepousniotou et al (2008),M1b_M2b,beam
-156,moderate overlap,0.11582410335540771,26,3.27,True,Klepousniotou et al (2008),M1,blood
-157,moderate overlap,0.09028995037078857,26,3.27,True,Klepousniotou et al (2008),M2,blood
-158,moderate overlap,0.10661673545837402,26,3.27,False,Klepousniotou et al (2008),M1a_M2a,blood
-159,moderate overlap,0.14948773384094238,26,3.27,False,Klepousniotou et al (2008),M1a_M2b,blood
-160,moderate overlap,0.059014737606048584,26,3.27,False,Klepousniotou et al (2008),M1b_M2a,blood
-161,moderate overlap,0.08669155836105347,26,3.27,False,Klepousniotou et al (2008),M1b_M2b,blood
-162,moderate overlap,0.08333021402359009,27,3.14,True,Klepousniotou et al (2008),M1,business
-163,moderate overlap,0.06247979402542114,27,3.14,True,Klepousniotou et al (2008),M2,business
-164,moderate overlap,0.08415824174880981,27,3.14,False,Klepousniotou et al (2008),M1a_M2a,business
-165,moderate overlap,0.10201162099838257,27,3.14,False,Klepousniotou et al (2008),M1a_M2b,business
-166,moderate overlap,0.09030860662460327,27,3.14,False,Klepousniotou et al (2008),M1b_M2a,business
-167,moderate overlap,0.13101732730865479,27,3.14,False,Klepousniotou et al (2008),M1b_M2b,business
-168,moderate overlap,0.16453957557678223,28,3.18,True,Klepousniotou et al (2008),M1,case
-169,moderate overlap,0.0662580132484436,28,3.18,True,Klepousniotou et al (2008),M2,case
-170,moderate overlap,0.24440807104110718,28,3.18,False,Klepousniotou et al (2008),M1a_M2a,case
-171,moderate overlap,0.2349100112915039,28,3.18,False,Klepousniotou et al (2008),M1a_M2b,case
-172,moderate overlap,0.0873035192489624,28,3.18,False,Klepousniotou et al (2008),M1b_M2a,case
-173,moderate overlap,0.07874536514282227,28,3.18,False,Klepousniotou et al (2008),M1b_M2b,case
-174,moderate overlap,0.08158057928085327,29,3.09,True,Klepousniotou et al (2008),M1,cause
-175,moderate overlap,0.07622480392456055,29,3.09,True,Klepousniotou et al (2008),M2,cause
-176,moderate overlap,0.10498708486557007,29,3.09,False,Klepousniotou et al (2008),M1a_M2a,cause
-177,moderate overlap,0.12277072668075562,29,3.09,False,Klepousniotou et al (2008),M1a_M2b,cause
-178,moderate overlap,0.09205800294876099,29,3.09,False,Klepousniotou et al (2008),M1b_M2a,cause
-179,moderate overlap,0.09569656848907471,29,3.09,False,Klepousniotou et al (2008),M1b_M2b,cause
-180,moderate overlap,0.04916119575500488,30,2.59,True,Klepousniotou et al (2008),M1,cone
-181,moderate overlap,0.08922386169433594,30,2.59,True,Klepousniotou et al (2008),M2,cone
-182,moderate overlap,0.05878669023513794,30,2.59,False,Klepousniotou et al (2008),M1a_M2a,cone
-183,moderate overlap,0.09137868881225586,30,2.59,False,Klepousniotou et al (2008),M1a_M2b,cone
-184,moderate overlap,0.058698952198028564,30,2.59,False,Klepousniotou et al (2008),M1b_M2a,cone
-185,moderate overlap,0.08317244052886963,30,2.59,False,Klepousniotou et al (2008),M1b_M2b,cone
-186,moderate overlap,0.08064448833465576,31,2.73,True,Klepousniotou et al (2008),M1,country
-187,moderate overlap,0.1218612790107727,31,2.73,True,Klepousniotou et al (2008),M2,country
-188,moderate overlap,0.12942653894424438,31,2.73,False,Klepousniotou et al (2008),M1a_M2a,country
-189,moderate overlap,0.10203003883361816,31,2.73,False,Klepousniotou et al (2008),M1a_M2b,country
-190,moderate overlap,0.1539948582649231,31,2.73,False,Klepousniotou et al (2008),M1b_M2a,country
-191,moderate overlap,0.07602345943450928,31,2.73,False,Klepousniotou et al (2008),M1b_M2b,country
-192,moderate overlap,0.03381866216659546,32,3.18,True,Klepousniotou et al (2008),M1,cover
-193,moderate overlap,0.09461873769760132,32,3.18,True,Klepousniotou et al (2008),M2,cover
-194,moderate overlap,0.09860503673553467,32,3.18,False,Klepousniotou et al (2008),M1a_M2a,cover
-195,moderate overlap,0.09006929397583008,32,3.18,False,Klepousniotou et al (2008),M1a_M2b,cover
-196,moderate overlap,0.10267037153244019,32,3.18,False,Klepousniotou et al (2008),M1b_M2a,cover
-197,moderate overlap,0.08796471357345581,32,3.18,False,Klepousniotou et al (2008),M1b_M2b,cover
-198,moderate overlap,0.059236347675323486,33,2.86,True,Klepousniotou et al (2008),M1,film
-199,moderate overlap,0.07932555675506592,33,2.86,True,Klepousniotou et al (2008),M2,film
-200,moderate overlap,0.10516726970672607,33,2.86,False,Klepousniotou et al (2008),M1a_M2a,film
-201,moderate overlap,0.043702542781829834,33,2.86,False,Klepousniotou et al (2008),M1a_M2b,film
-202,moderate overlap,0.11444592475891113,33,2.86,False,Klepousniotou et al (2008),M1b_M2a,film
-203,moderate overlap,0.0680004358291626,33,2.86,False,Klepousniotou et al (2008),M1b_M2b,film
-204,moderate overlap,0.09676343202590942,34,3.27,True,Klepousniotou et al (2008),M1,ground
-205,moderate overlap,0.03901779651641846,34,3.27,True,Klepousniotou et al (2008),M2,ground
-206,moderate overlap,0.1220543384552002,34,3.27,False,Klepousniotou et al (2008),M1a_M2a,ground
-207,moderate overlap,0.12034106254577637,34,3.27,False,Klepousniotou et al (2008),M1a_M2b,ground
-208,moderate overlap,0.11824679374694824,34,3.27,False,Klepousniotou et al (2008),M1b_M2a,ground
-209,moderate overlap,0.09990280866622925,34,3.27,False,Klepousniotou et al (2008),M1b_M2b,ground
-210,moderate overlap,0.06479227542877197,35,2.82,True,Klepousniotou et al (2008),M1,guide
-211,moderate overlap,0.02885603904724121,35,2.82,True,Klepousniotou et al (2008),M2,guide
-212,moderate overlap,0.07169574499130249,35,2.82,False,Klepousniotou et al (2008),M1a_M2a,guide
-213,moderate overlap,0.07801425457000732,35,2.82,False,Klepousniotou et al (2008),M1a_M2b,guide
-214,moderate overlap,0.07385742664337158,35,2.82,False,Klepousniotou et al (2008),M1b_M2a,guide
-215,moderate overlap,0.07603782415390015,35,2.82,False,Klepousniotou et al (2008),M1b_M2b,guide
-216,moderate overlap,0.11732810735702515,36,2.73,True,Klepousniotou et al (2008),M1,intelligence
-217,moderate overlap,0.12202823162078857,36,2.73,True,Klepousniotou et al (2008),M2,intelligence
-218,moderate overlap,0.15533989667892456,36,2.73,False,Klepousniotou et al (2008),M1a_M2a,intelligence
-219,moderate overlap,0.0926746129989624,36,2.73,False,Klepousniotou et al (2008),M1a_M2b,intelligence
-220,moderate overlap,0.14231359958648682,36,2.73,False,Klepousniotou et al (2008),M1b_M2a,intelligence
-221,moderate overlap,0.10956108570098877,36,2.73,False,Klepousniotou et al (2008),M1b_M2b,intelligence
-222,moderate overlap,0.052433669567108154,37,3.0,True,Klepousniotou et al (2008),M1,market
-223,moderate overlap,0.08277744054794312,37,3.0,True,Klepousniotou et al (2008),M2,market
-224,moderate overlap,0.1265169382095337,37,3.0,False,Klepousniotou et al (2008),M1a_M2a,market
-225,moderate overlap,0.1324579119682312,37,3.0,False,Klepousniotou et al (2008),M1a_M2b,market
-226,moderate overlap,0.11907649040222168,37,3.0,False,Klepousniotou et al (2008),M1b_M2a,market
-227,moderate overlap,0.12385642528533936,37,3.0,False,Klepousniotou et al (2008),M1b_M2b,market
-228,moderate overlap,0.05199778079986572,38,3.09,True,Klepousniotou et al (2008),M1,orange
-229,moderate overlap,0.056175053119659424,38,3.09,True,Klepousniotou et al (2008),M2,orange
-230,moderate overlap,0.06535083055496216,38,3.09,False,Klepousniotou et al (2008),M1a_M2a,orange
-231,moderate overlap,0.052754342555999756,38,3.09,False,Klepousniotou et al (2008),M1a_M2b,orange
-232,moderate overlap,0.08524072170257568,38,3.09,False,Klepousniotou et al (2008),M1b_M2a,orange
-233,moderate overlap,0.09071332216262817,38,3.09,False,Klepousniotou et al (2008),M1b_M2b,orange
-234,moderate overlap,0.06974995136260986,39,3.05,True,Klepousniotou et al (2008),M1,position
-235,moderate overlap,0.07100152969360352,39,3.05,True,Klepousniotou et al (2008),M2,position
-236,moderate overlap,0.10650384426116943,39,3.05,False,Klepousniotou et al (2008),M1a_M2a,position
-237,moderate overlap,0.11911803483963013,39,3.05,False,Klepousniotou et al (2008),M1a_M2b,position
-238,moderate overlap,0.09928560256958008,39,3.05,False,Klepousniotou et al (2008),M1b_M2a,position
-239,moderate overlap,0.09004658460617065,39,3.05,False,Klepousniotou et al (2008),M1b_M2b,position
-240,moderate overlap,0.09079033136367798,40,2.77,True,Klepousniotou et al (2008),M1,power
-241,moderate overlap,0.07414501905441284,40,2.77,True,Klepousniotou et al (2008),M2,power
-242,moderate overlap,0.15249419212341309,40,2.77,False,Klepousniotou et al (2008),M1a_M2a,power
-243,moderate overlap,0.13097387552261353,40,2.77,False,Klepousniotou et al (2008),M1a_M2b,power
-244,moderate overlap,0.1761336326599121,40,2.77,False,Klepousniotou et al (2008),M1b_M2a,power
-245,moderate overlap,0.14185160398483276,40,2.77,False,Klepousniotou et al (2008),M1b_M2b,power
-246,moderate overlap,0.08382213115692139,41,2.91,True,Klepousniotou et al (2008),M1,scene
-247,moderate overlap,0.05689150094985962,41,2.91,True,Klepousniotou et al (2008),M2,scene
-248,moderate overlap,0.0763900876045227,41,2.91,False,Klepousniotou et al (2008),M1a_M2a,scene
-249,moderate overlap,0.05811107158660889,41,2.91,False,Klepousniotou et al (2008),M1a_M2b,scene
-250,moderate overlap,0.05722540616989136,41,2.91,False,Klepousniotou et al (2008),M1b_M2a,scene
-251,moderate overlap,0.050260066986083984,41,2.91,False,Klepousniotou et al (2008),M1b_M2b,scene
-252,moderate overlap,0.0416606068611145,42,3.27,True,Klepousniotou et al (2008),M1,space
-253,moderate overlap,0.071056067943573,42,3.27,True,Klepousniotou et al (2008),M2,space
-254,moderate overlap,0.1479131579399109,42,3.27,False,Klepousniotou et al (2008),M1a_M2a,space
-255,moderate overlap,0.10229533910751343,42,3.27,False,Klepousniotou et al (2008),M1a_M2b,space
-256,moderate overlap,0.13893026113510132,42,3.27,False,Klepousniotou et al (2008),M1b_M2a,space
-257,moderate overlap,0.11456078290939331,42,3.27,False,Klepousniotou et al (2008),M1b_M2b,space
-258,moderate overlap,0.12418562173843384,43,3.86,True,Klepousniotou et al (2008),M1,term
-259,moderate overlap,0.07061725854873657,43,3.86,True,Klepousniotou et al (2008),M2,term
-260,moderate overlap,0.15928876399993896,43,3.86,False,Klepousniotou et al (2008),M1a_M2a,term
-261,moderate overlap,0.18424594402313232,43,3.86,False,Klepousniotou et al (2008),M1a_M2b,term
-262,moderate overlap,0.2052673101425171,43,3.86,False,Klepousniotou et al (2008),M1b_M2a,term
-263,moderate overlap,0.22069287300109863,43,3.86,False,Klepousniotou et al (2008),M1b_M2b,term
-264,moderate overlap,0.01946324110031128,44,2.91,True,Klepousniotou et al (2008),M1,title
-265,moderate overlap,0.06384336948394775,44,2.91,True,Klepousniotou et al (2008),M2,title
-266,moderate overlap,0.055174827575683594,44,2.91,False,Klepousniotou et al (2008),M1a_M2a,title
-267,moderate overlap,0.1128583550453186,44,2.91,False,Klepousniotou et al (2008),M1a_M2b,title
-268,moderate overlap,0.06750327348709106,44,2.91,False,Klepousniotou et al (2008),M1b_M2a,title
-269,moderate overlap,0.11889326572418213,44,2.91,False,Klepousniotou et al (2008),M1b_M2b,title
-270,low overlap,0.04400056600570679,45,1.14,True,Klepousniotou et al (2008),M1,admission
-271,low overlap,0.05923944711685181,45,1.14,True,Klepousniotou et al (2008),M2,admission
-272,low overlap,0.1403365135192871,45,1.14,False,Klepousniotou et al (2008),M1a_M2a,admission
-273,low overlap,0.14985769987106323,45,1.14,False,Klepousniotou et al (2008),M1a_M2b,admission
-274,low overlap,0.10358542203903198,45,1.14,False,Klepousniotou et al (2008),M1b_M2a,admission
-275,low overlap,0.13687634468078613,45,1.14,False,Klepousniotou et al (2008),M1b_M2b,admission
-276,low overlap,0.13843518495559692,46,1.36,True,Klepousniotou et al (2008),M1,appeal
-277,low overlap,0.06035113334655762,46,1.36,True,Klepousniotou et al (2008),M2,appeal
-278,low overlap,0.13892126083374023,46,1.36,False,Klepousniotou et al (2008),M1a_M2a,appeal
-279,low overlap,0.17744314670562744,46,1.36,False,Klepousniotou et al (2008),M1a_M2b,appeal
-280,low overlap,0.15221655368804932,46,1.36,False,Klepousniotou et al (2008),M1b_M2a,appeal
-281,low overlap,0.19966524839401245,46,1.36,False,Klepousniotou et al (2008),M1b_M2b,appeal
-282,low overlap,0.07785195112228394,47,1.68,True,Klepousniotou et al (2008),M1,block
-283,low overlap,0.11647164821624756,47,1.68,True,Klepousniotou et al (2008),M2,block
-284,low overlap,0.12627196311950684,47,1.68,False,Klepousniotou et al (2008),M1a_M2a,block
-285,low overlap,0.08930909633636475,47,1.68,False,Klepousniotou et al (2008),M1a_M2b,block
-286,low overlap,0.17111515998840332,47,1.68,False,Klepousniotou et al (2008),M1b_M2a,block
-287,low overlap,0.13553714752197266,47,1.68,False,Klepousniotou et al (2008),M1b_M2b,block
-288,low overlap,0.07493817806243896,48,1.05,True,Klepousniotou et al (2008),M1,board
-289,low overlap,0.06726163625717163,48,1.05,True,Klepousniotou et al (2008),M2,board
-290,low overlap,0.12283521890640259,48,1.05,False,Klepousniotou et al (2008),M1a_M2a,board
-291,low overlap,0.12588590383529663,48,1.05,False,Klepousniotou et al (2008),M1a_M2b,board
-292,low overlap,0.10346931219100952,48,1.05,False,Klepousniotou et al (2008),M1b_M2a,board
-293,low overlap,0.11995965242385864,48,1.05,False,Klepousniotou et al (2008),M1b_M2b,board
-294,low overlap,0.1264210343360901,49,1.59,True,Klepousniotou et al (2008),M1,body
-295,low overlap,0.08126479387283325,49,1.59,True,Klepousniotou et al (2008),M2,body
-296,low overlap,0.2006043791770935,49,1.59,False,Klepousniotou et al (2008),M1a_M2a,body
-297,low overlap,0.18040919303894043,49,1.59,False,Klepousniotou et al (2008),M1a_M2b,body
-298,low overlap,0.20428466796875,49,1.59,False,Klepousniotou et al (2008),M1b_M2a,body
-299,low overlap,0.1812930703163147,49,1.59,False,Klepousniotou et al (2008),M1b_M2b,body
-300,low overlap,0.057584285736083984,50,1.77,True,Klepousniotou et al (2008),M1,charm
-301,low overlap,0.07946157455444336,50,1.77,True,Klepousniotou et al (2008),M2,charm
-302,low overlap,0.11042922735214233,50,1.77,False,Klepousniotou et al (2008),M1a_M2a,charm
-303,low overlap,0.03687739372253418,50,1.77,False,Klepousniotou et al (2008),M1a_M2b,charm
-304,low overlap,0.15365368127822876,50,1.77,False,Klepousniotou et al (2008),M1b_M2a,charm
-305,low overlap,0.09844279289245605,50,1.77,False,Klepousniotou et al (2008),M1b_M2b,charm
-306,low overlap,0.03853142261505127,51,1.77,True,Klepousniotou et al (2008),M1,cold
-307,low overlap,0.09295511245727539,51,1.77,True,Klepousniotou et al (2008),M2,cold
-308,low overlap,0.13148874044418335,51,1.77,False,Klepousniotou et al (2008),M1a_M2a,cold
-309,low overlap,0.1390235424041748,51,1.77,False,Klepousniotou et al (2008),M1a_M2b,cold
-310,low overlap,0.16848337650299072,51,1.77,False,Klepousniotou et al (2008),M1b_M2a,cold
-311,low overlap,0.17028462886810303,51,1.77,False,Klepousniotou et al (2008),M1b_M2b,cold
-312,low overlap,0.03300786018371582,52,1.5,True,Klepousniotou et al (2008),M1,column
-313,low overlap,0.0754098892211914,52,1.5,True,Klepousniotou et al (2008),M2,column
-314,low overlap,0.09110766649246216,52,1.5,False,Klepousniotou et al (2008),M1a_M2a,column
-315,low overlap,0.04157215356826782,52,1.5,False,Klepousniotou et al (2008),M1a_M2b,column
-316,low overlap,0.07792139053344727,52,1.5,False,Klepousniotou et al (2008),M1b_M2a,column
-317,low overlap,0.04948049783706665,52,1.5,False,Klepousniotou et al (2008),M1b_M2b,column
-318,low overlap,0.10235029458999634,53,1.77,True,Klepousniotou et al (2008),M1,company
-319,low overlap,0.12437480688095093,53,1.77,True,Klepousniotou et al (2008),M2,company
-320,low overlap,0.14615577459335327,53,1.77,False,Klepousniotou et al (2008),M1a_M2a,company
-321,low overlap,0.0980445146560669,53,1.77,False,Klepousniotou et al (2008),M1a_M2b,company
-322,low overlap,0.21241700649261475,53,1.77,False,Klepousniotou et al (2008),M1b_M2a,company
-323,low overlap,0.14646464586257935,53,1.77,False,Klepousniotou et al (2008),M1b_M2b,company
-324,low overlap,0.05325770378112793,54,1.32,True,Klepousniotou et al (2008),M1,course
-325,low overlap,0.09520423412322998,54,1.32,True,Klepousniotou et al (2008),M2,course
-326,low overlap,0.08063173294067383,54,1.32,False,Klepousniotou et al (2008),M1a_M2a,course
-327,low overlap,0.09923017024993896,54,1.32,False,Klepousniotou et al (2008),M1a_M2b,course
-328,low overlap,0.0565723180770874,54,1.32,False,Klepousniotou et al (2008),M1b_M2a,course
-329,low overlap,0.06827765703201294,54,1.32,False,Klepousniotou et al (2008),M1b_M2b,course
-330,low overlap,0.08009487390518188,55,1.86,True,Klepousniotou et al (2008),M1,date
-331,low overlap,0.07625806331634521,55,1.86,True,Klepousniotou et al (2008),M2,date
-332,low overlap,0.09513938426971436,55,1.86,False,Klepousniotou et al (2008),M1a_M2a,date
-333,low overlap,0.10026854276657104,55,1.86,False,Klepousniotou et al (2008),M1a_M2b,date
-334,low overlap,0.08299946784973145,55,1.86,False,Klepousniotou et al (2008),M1b_M2a,date
-335,low overlap,0.06687009334564209,55,1.86,False,Klepousniotou et al (2008),M1b_M2b,date
-336,low overlap,0.004419505596160889,56,1.14,True,Klepousniotou et al (2008),M1,degrees
-337,low overlap,0.038409531116485596,56,1.14,True,Klepousniotou et al (2008),M2,degrees
-338,low overlap,0.16973406076431274,56,1.14,False,Klepousniotou et al (2008),M1a_M2a,degrees
-339,low overlap,0.17630857229232788,56,1.14,False,Klepousniotou et al (2008),M1a_M2b,degrees
-340,low overlap,0.18257194757461548,56,1.14,False,Klepousniotou et al (2008),M1b_M2a,degrees
-341,low overlap,0.19013482332229614,56,1.14,False,Klepousniotou et al (2008),M1b_M2b,degrees
-342,low overlap,0.05771714448928833,57,1.45,True,Klepousniotou et al (2008),M1,foundation
-343,low overlap,0.07109808921813965,57,1.45,True,Klepousniotou et al (2008),M2,foundation
-344,low overlap,0.14448142051696777,57,1.45,False,Klepousniotou et al (2008),M1a_M2a,foundation
-345,low overlap,0.12041991949081421,57,1.45,False,Klepousniotou et al (2008),M1a_M2b,foundation
-346,low overlap,0.10032665729522705,57,1.45,False,Klepousniotou et al (2008),M1b_M2a,foundation
-347,low overlap,0.08213692903518677,57,1.45,False,Klepousniotou et al (2008),M1b_M2b,foundation
-348,low overlap,0.033650338649749756,58,1.55,True,Klepousniotou et al (2008),M1,function
-349,low overlap,0.06780225038528442,58,1.55,True,Klepousniotou et al (2008),M2,function
-350,low overlap,0.07324087619781494,58,1.55,False,Klepousniotou et al (2008),M1a_M2a,function
-351,low overlap,0.07027661800384521,58,1.55,False,Klepousniotou et al (2008),M1a_M2b,function
-352,low overlap,0.06893652677536011,58,1.55,False,Klepousniotou et al (2008),M1b_M2a,function
-353,low overlap,0.044317424297332764,58,1.55,False,Klepousniotou et al (2008),M1b_M2b,function
-354,low overlap,0.038915932178497314,59,1.68,True,Klepousniotou et al (2008),M1,issue
-355,low overlap,0.07709980010986328,59,1.68,True,Klepousniotou et al (2008),M2,issue
-356,low overlap,0.10203498601913452,59,1.68,False,Klepousniotou et al (2008),M1a_M2a,issue
-357,low overlap,0.07412457466125488,59,1.68,False,Klepousniotou et al (2008),M1a_M2b,issue
-358,low overlap,0.09081429243087769,59,1.68,False,Klepousniotou et al (2008),M1b_M2a,issue
-359,low overlap,0.08221215009689331,59,1.68,False,Klepousniotou et al (2008),M1b_M2b,issue
-360,low overlap,0.06791269779205322,60,1.55,True,Klepousniotou et al (2008),M1,key
-361,low overlap,0.07006633281707764,60,1.55,True,Klepousniotou et al (2008),M2,key
-362,low overlap,0.0698319673538208,60,1.55,False,Klepousniotou et al (2008),M1a_M2a,key
-363,low overlap,0.04888808727264404,60,1.55,False,Klepousniotou et al (2008),M1a_M2b,key
-364,low overlap,0.11586028337478638,60,1.55,False,Klepousniotou et al (2008),M1b_M2a,key
-365,low overlap,0.07195025682449341,60,1.55,False,Klepousniotou et al (2008),M1b_M2b,key
-366,low overlap,0.0347173810005188,61,1.91,True,Klepousniotou et al (2008),M1,movement
-367,low overlap,0.06756329536437988,61,1.91,True,Klepousniotou et al (2008),M2,movement
-368,low overlap,0.1269056797027588,61,1.91,False,Klepousniotou et al (2008),M1a_M2a,movement
-369,low overlap,0.10085183382034302,61,1.91,False,Klepousniotou et al (2008),M1a_M2b,movement
-370,low overlap,0.15903782844543457,61,1.91,False,Klepousniotou et al (2008),M1b_M2a,movement
-371,low overlap,0.11230814456939697,61,1.91,False,Klepousniotou et al (2008),M1b_M2b,movement
-372,low overlap,0.06616628170013428,62,1.77,True,Klepousniotou et al (2008),M1,panel
-373,low overlap,0.11008995771408081,62,1.77,True,Klepousniotou et al (2008),M2,panel
-374,low overlap,0.10561901330947876,62,1.77,False,Klepousniotou et al (2008),M1a_M2a,panel
-375,low overlap,0.09673112630844116,62,1.77,False,Klepousniotou et al (2008),M1a_M2b,panel
-376,low overlap,0.11714518070220947,62,1.77,False,Klepousniotou et al (2008),M1b_M2a,panel
-377,low overlap,0.09610903263092041,62,1.77,False,Klepousniotou et al (2008),M1b_M2b,panel
-378,low overlap,0.07473772764205933,63,1.18,True,Klepousniotou et al (2008),M1,passage
-379,low overlap,0.039256155490875244,63,1.18,True,Klepousniotou et al (2008),M2,passage
-380,low overlap,0.07645159959793091,63,1.18,False,Klepousniotou et al (2008),M1a_M2a,passage
-381,low overlap,0.0976209044456482,63,1.18,False,Klepousniotou et al (2008),M1a_M2b,passage
-382,low overlap,0.09093248844146729,63,1.18,False,Klepousniotou et al (2008),M1b_M2a,passage
-383,low overlap,0.07492762804031372,63,1.18,False,Klepousniotou et al (2008),M1b_M2b,passage
-384,low overlap,0.04636603593826294,64,1.09,True,Klepousniotou et al (2008),M1,patient
-385,low overlap,0.05573773384094238,64,1.09,True,Klepousniotou et al (2008),M2,patient
-386,low overlap,0.14283090829849243,64,1.09,False,Klepousniotou et al (2008),M1a_M2a,patient
-387,low overlap,0.12044417858123779,64,1.09,False,Klepousniotou et al (2008),M1a_M2b,patient
-388,low overlap,0.1632508635520935,64,1.09,False,Klepousniotou et al (2008),M1b_M2a,patient
-389,low overlap,0.1376107931137085,64,1.09,False,Klepousniotou et al (2008),M1b_M2b,patient
-390,low overlap,0.08785068988800049,65,2.05,True,Klepousniotou et al (2008),M1,tape
-391,low overlap,0.03975397348403931,65,2.05,True,Klepousniotou et al (2008),M2,tape
-392,low overlap,0.06674307584762573,65,2.05,False,Klepousniotou et al (2008),M1a_M2a,tape
-393,low overlap,0.05047088861465454,65,2.05,False,Klepousniotou et al (2008),M1a_M2b,tape
-394,low overlap,0.13240385055541992,65,2.05,False,Klepousniotou et al (2008),M1b_M2a,tape
-395,low overlap,0.09251844882965088,65,2.05,False,Klepousniotou et al (2008),M1b_M2b,tape
-396,low overlap,0.03336942195892334,66,1.91,True,Klepousniotou et al (2008),M1,tracks
-397,low overlap,0.022853374481201172,66,1.91,True,Klepousniotou et al (2008),M2,tracks
-398,low overlap,0.07904219627380371,66,1.91,False,Klepousniotou et al (2008),M1a_M2a,tracks
-399,low overlap,0.05520516633987427,66,1.91,False,Klepousniotou et al (2008),M1a_M2b,tracks
-400,low overlap,0.06469839811325073,66,1.91,False,Klepousniotou et al (2008),M1b_M2a,tracks
-401,low overlap,0.04428207874298096,66,1.91,False,Klepousniotou et al (2008),M1b_M2b,tracks
-402,homonym,0.030905067920684814,67,,True,New (words from K+B (2002)),M1,bat
-403,homonym,0.019462168216705322,67,,True,New (words from K+B (2002)),M2,bat
-404,homonym,0.0375291109085083,67,,False,New (words from K+B (2002)),M1a_M2a,bat
-405,homonym,0.03710639476776123,67,,False,New (words from K+B (2002)),M1a_M2b,bat
-406,homonym,0.04990875720977783,67,,False,New (words from K+B (2002)),M1b_M2a,bat
-407,homonym,0.04331105947494507,67,,False,New (words from K+B (2002)),M1b_M2b,bat
-408,homonym,0.06595015525817871,68,,True,New (words from K+B (2002)),M1,cape
-409,homonym,0.054834604263305664,68,,True,New (words from K+B (2002)),M2,cape
-410,homonym,0.0806649923324585,68,,False,New (words from K+B (2002)),M1a_M2a,cape
-411,homonym,0.07372242212295532,68,,False,New (words from K+B (2002)),M1a_M2b,cape
-412,homonym,0.07195031642913818,68,,False,New (words from K+B (2002)),M1b_M2a,cape
-413,homonym,0.08206486701965332,68,,False,New (words from K+B (2002)),M1b_M2b,cape
-414,homonym,0.06053131818771362,69,,True,New (words from K+B (2002)),M1,cell
-415,homonym,0.006826221942901611,69,,True,New (words from K+B (2002)),M2,cell
-416,homonym,0.185011088848114,69,,False,New (words from K+B (2002)),M1a_M2a,cell
-417,homonym,0.18216931819915771,69,,False,New (words from K+B (2002)),M1a_M2b,cell
-418,homonym,0.14537972211837769,69,,False,New (words from K+B (2002)),M1b_M2a,cell
-419,homonym,0.15063714981079102,69,,False,New (words from K+B (2002)),M1b_M2b,cell
-420,homonym,0.07284289598464966,70,,True,New (words from K+B (2002)),M1,mold
-421,homonym,0.08436906337738037,70,,True,New (words from K+B (2002)),M2,mold
-422,homonym,0.12598586082458496,70,,False,New (words from K+B (2002)),M1a_M2a,mold
-423,homonym,0.09702271223068237,70,,False,New (words from K+B (2002)),M1a_M2b,mold
-424,homonym,0.12654560804367065,70,,False,New (words from K+B (2002)),M1b_M2a,mold
-425,homonym,0.11068993806838989,70,,False,New (words from K+B (2002)),M1b_M2b,mold
-426,homonym,0.035601913928985596,71,,True,New (words from K+B (2002)),M1,match
-427,homonym,0.04571247100830078,71,,True,New (words from K+B (2002)),M2,match
-428,homonym,0.0608445405960083,71,,False,New (words from K+B (2002)),M1a_M2a,match
-429,homonym,0.07927680015563965,71,,False,New (words from K+B (2002)),M1a_M2b,match
-430,homonym,0.06796616315841675,71,,False,New (words from K+B (2002)),M1b_M2a,match
-431,homonym,0.08064484596252441,71,,False,New (words from K+B (2002)),M1b_M2b,match
-432,homonym,0.08051252365112305,72,,True,New (words from K+B (2002)),M1,pupil
-433,homonym,0.1590135097503662,72,,True,New (words from K+B (2002)),M2,pupil
-434,homonym,0.1641772985458374,72,,False,New (words from K+B (2002)),M1a_M2a,pupil
-435,homonym,0.06044280529022217,72,,False,New (words from K+B (2002)),M1a_M2b,pupil
-436,homonym,0.15804994106292725,72,,False,New (words from K+B (2002)),M1b_M2a,pupil
-437,homonym,0.0826227068901062,72,,False,New (words from K+B (2002)),M1b_M2b,pupil
-438,homonym,0.09490251541137695,73,,True,New (words from K+B (2002)),M1,seal
-439,homonym,0.0818987488746643,73,,True,New (words from K+B (2002)),M2,seal
-440,homonym,0.08680111169815063,73,,False,New (words from K+B (2002)),M1a_M2a,seal
-441,homonym,0.09180241823196411,73,,False,New (words from K+B (2002)),M1a_M2b,seal
-442,homonym,0.1107710599899292,73,,False,New (words from K+B (2002)),M1b_M2a,seal
-443,homonym,0.06130170822143555,73,,False,New (words from K+B (2002)),M1b_M2b,seal
-444,homonym,0.13398408889770508,74,,True,New (words from K+B (2002)),M1,tick
-445,homonym,0.04012709856033325,74,,True,New (words from K+B (2002)),M2,tick
-446,homonym,0.18252360820770264,74,,False,New (words from K+B (2002)),M1a_M2a,tick
-447,homonym,0.18247652053833008,74,,False,New (words from K+B (2002)),M1a_M2b,tick
-448,homonym,0.11891049146652222,74,,False,New (words from K+B (2002)),M1b_M2a,tick
-449,homonym,0.1469409465789795,74,,False,New (words from K+B (2002)),M1b_M2b,tick
-450,homonym,0.005885958671569824,75,,True,New (words from K+B (2002)),M1,yards
-451,homonym,0.06497323513031006,75,,True,New (words from K+B (2002)),M2,yards
-452,homonym,0.11889225244522095,75,,False,New (words from K+B (2002)),M1a_M2a,yards
-453,homonym,0.1600654125213623,75,,False,New (words from K+B (2002)),M1a_M2b,yards
-454,homonym,0.10715287923812866,75,,False,New (words from K+B (2002)),M1b_M2a,yards
-455,homonym,0.14421367645263672,75,,False,New (words from K+B (2002)),M1b_M2b,yards
-456,homonym,0.05081242322921753,76,,True,New (words from K+B (2002)),M1,drill
-457,homonym,0.09037411212921143,76,,True,New (words from K+B (2002)),M2,drill
-458,homonym,0.12239980697631836,76,,False,New (words from K+B (2002)),M1a_M2a,drill
-459,homonym,0.16723096370697021,76,,False,New (words from K+B (2002)),M1a_M2b,drill
-460,homonym,0.1306031346321106,76,,False,New (words from K+B (2002)),M1b_M2a,drill
-461,homonym,0.1838679313659668,76,,False,New (words from K+B (2002)),M1b_M2b,drill
-462,homonym,0.05449801683425903,77,,True,New (words from K+B (2002)),M1,file
-463,homonym,0.06652545928955078,77,,True,New (words from K+B (2002)),M2,file
-464,homonym,0.07858985662460327,77,,False,New (words from K+B (2002)),M1a_M2a,file
-465,homonym,0.09993106126785278,77,,False,New (words from K+B (2002)),M1a_M2b,file
-466,homonym,0.0982317328453064,77,,False,New (words from K+B (2002)),M1b_M2a,file
-467,homonym,0.10552048683166504,77,,False,New (words from K+B (2002)),M1b_M2b,file
-468,homonym,0.05133640766143799,78,,True,New (words from K+B (2002)),M1,count
-469,homonym,0.07260805368423462,78,,True,New (words from K+B (2002)),M2,count
-470,homonym,0.09571617841720581,78,,False,New (words from K+B (2002)),M1a_M2a,count
-471,homonym,0.08022600412368774,78,,False,New (words from K+B (2002)),M1a_M2b,count
-472,homonym,0.13850098848342896,78,,False,New (words from K+B (2002)),M1b_M2a,count
-473,homonym,0.13136345148086548,78,,False,New (words from K+B (2002)),M1b_M2b,count
-474,homonym,0.08115553855895996,79,,True,New (words from K+B (2002)),M1,port
-475,homonym,0.034668803215026855,79,,True,New (words from K+B (2002)),M2,port
-476,homonym,0.07660257816314697,79,,False,New (words from K+B (2002)),M1a_M2a,port
-477,homonym,0.06112957000732422,79,,False,New (words from K+B (2002)),M1a_M2b,port
-478,homonym,0.08317142724990845,79,,False,New (words from K+B (2002)),M1b_M2a,port
-479,homonym,0.07057052850723267,79,,False,New (words from K+B (2002)),M1b_M2b,port
-480,homonym,0.08065682649612427,80,,True,New (words from K+B (2002)),M1,fan
-481,homonym,0.06101745367050171,80,,True,New (words from K+B (2002)),M2,fan
-482,homonym,0.1775442361831665,80,,False,New (words from K+B (2002)),M1a_M2a,fan
-483,homonym,0.1952483057975769,80,,False,New (words from K+B (2002)),M1a_M2b,fan
-484,homonym,0.17633503675460815,80,,False,New (words from K+B (2002)),M1b_M2a,fan
-485,homonym,0.21667850017547607,80,,False,New (words from K+B (2002)),M1b_M2b,fan
-486,homonym,0.08060914278030396,81,,True,New (words from K+B (2002)),M1,sage
-487,homonym,0.045464396476745605,81,,True,New (words from K+B (2002)),M2,sage
-488,homonym,0.11544430255889893,81,,False,New (words from K+B (2002)),M1a_M2a,sage
-489,homonym,0.09410738945007324,81,,False,New (words from K+B (2002)),M1a_M2b,sage
-490,homonym,0.07233887910842896,81,,False,New (words from K+B (2002)),M1b_M2a,sage
-491,homonym,0.08392840623855591,81,,False,New (words from K+B (2002)),M1b_M2b,sage
-492,homonym,0.04984736442565918,82,,True,New (words from K+B (2002)),M1,racket
-493,homonym,0.09827804565429688,82,,True,New (words from K+B (2002)),M2,racket
-494,homonym,0.0961495041847229,82,,False,New (words from K+B (2002)),M1a_M2a,racket
-495,homonym,0.1019599437713623,82,,False,New (words from K+B (2002)),M1a_M2b,racket
-496,homonym,0.09687727689743042,82,,False,New (words from K+B (2002)),M1b_M2a,racket
-497,homonym,0.07015883922576904,82,,False,New (words from K+B (2002)),M1b_M2b,racket
-498,homonym,0.0678565502166748,83,,True,Brown(2008),M1,toasted
-499,homonym,0.09511268138885498,83,,True,Brown(2008),M2,toasted
-500,homonym,0.1299247145652771,83,,False,Brown(2008),M1a_M2a,toasted
-501,homonym,0.1830611228942871,83,,False,Brown(2008),M1a_M2b,toasted
-502,homonym,0.13354742527008057,83,,False,Brown(2008),M1b_M2a,toasted
-503,homonym,0.16706883907318115,83,,False,Brown(2008),M1b_M2b,toasted
-504,homonym,0.039752066135406494,84,,True,Brown(2008),M1,penned
-505,homonym,0.07841187715530396,84,,True,Brown(2008),M2,penned
-506,homonym,0.13847315311431885,84,,False,Brown(2008),M1a_M2a,penned
-507,homonym,0.09479641914367676,84,,False,Brown(2008),M1a_M2b,penned
-508,homonym,0.1845947504043579,84,,False,Brown(2008),M1b_M2a,penned
-509,homonym,0.13962429761886597,84,,False,Brown(2008),M1b_M2b,penned
-510,homonym,0.030338048934936523,85,,True,Brown(2008),M1,banked
-511,homonym,0.015141844749450684,85,,True,Brown(2008),M2,banked
-512,homonym,0.13027483224868774,85,,False,Brown(2008),M1a_M2a,banked
-513,homonym,0.13346362113952637,85,,False,Brown(2008),M1a_M2b,banked
-514,homonym,0.14469069242477417,85,,False,Brown(2008),M1b_M2a,banked
-515,homonym,0.14472925662994385,85,,False,Brown(2008),M1b_M2b,banked
-516,homonym,0.030861198902130127,86,,True,Brown(2008),M1,poached
-517,homonym,0.03806662559509277,86,,True,Brown(2008),M2,poached
-518,homonym,0.14483219385147095,86,,False,Brown(2008),M1a_M2a,poached
-519,homonym,0.1440190076828003,86,,False,Brown(2008),M1a_M2b,poached
-520,homonym,0.1039610505104065,86,,False,Brown(2008),M1b_M2a,poached
-521,homonym,0.11918306350708008,86,,False,Brown(2008),M1b_M2b,poached
-522,homonym,0.029540657997131348,87,,True,Brown(2008),M1,staked
-523,homonym,0.07527071237564087,87,,True,Brown(2008),M2,staked
-524,homonym,0.12903541326522827,87,,False,Brown(2008),M1a_M2a,staked
-525,homonym,0.11752021312713623,87,,False,Brown(2008),M1a_M2b,staked
-526,homonym,0.11592066287994385,87,,False,Brown(2008),M1b_M2a,staked
-527,homonym,0.09862363338470459,87,,False,Brown(2008),M1b_M2b,staked
-528,homonym,0.0650014877319336,88,,True,Brown(2008),M1,picked
-529,homonym,0.04557514190673828,88,,True,Brown(2008),M2,picked
-530,homonym,0.11368560791015625,88,,False,Brown(2008),M1a_M2a,picked
-531,homonym,0.09395980834960938,88,,False,Brown(2008),M1a_M2b,picked
-532,homonym,0.11371010541915894,88,,False,Brown(2008),M1b_M2a,picked
-533,homonym,0.11989879608154297,88,,False,Brown(2008),M1b_M2b,picked
-534,homonym,0.032470524311065674,89,,True,Brown(2008),M1,stalled
-535,homonym,0.05750691890716553,89,,True,Brown(2008),M2,stalled
-536,homonym,0.08032077550888062,89,,False,Brown(2008),M1a_M2a,stalled
-537,homonym,0.08690381050109863,89,,False,Brown(2008),M1a_M2b,stalled
-538,homonym,0.10050278902053833,89,,False,Brown(2008),M1b_M2a,stalled
-539,homonym,0.11267262697219849,89,,False,Brown(2008),M1b_M2b,stalled
-540,distant,0.1459447145462036,90,,True,Brown(2008),M1,fixed
-541,distant,0.10265094041824341,90,,True,Brown(2008),M2,fixed
-542,distant,0.16345220804214478,90,,False,Brown(2008),M1a_M2a,fixed
-543,distant,0.1898716688156128,90,,False,Brown(2008),M1a_M2b,fixed
-544,distant,0.1557403802871704,90,,False,Brown(2008),M1b_M2a,fixed
-545,distant,0.17267751693725586,90,,False,Brown(2008),M1b_M2b,fixed
-546,distant,0.13802790641784668,91,,True,Brown(2008),M1,left
-547,distant,0.04173403978347778,91,,True,Brown(2008),M2,left
-548,distant,0.3230676054954529,91,,False,Brown(2008),M1a_M2a,left
-549,distant,0.3355662226676941,91,,False,Brown(2008),M1a_M2b,left
-550,distant,0.278842568397522,91,,False,Brown(2008),M1b_M2a,left
-551,distant,0.28974390029907227,91,,False,Brown(2008),M1b_M2b,left
-552,distant,0.048729538917541504,92,,True,Brown(2008),M1,stayed
-553,distant,0.06510621309280396,92,,True,Brown(2008),M2,stayed
-554,distant,0.17800700664520264,92,,False,Brown(2008),M1a_M2a,stayed
-555,distant,0.15089261531829834,92,,False,Brown(2008),M1a_M2b,stayed
-556,distant,0.15956509113311768,92,,False,Brown(2008),M1b_M2a,stayed
-557,distant,0.13185405731201172,92,,False,Brown(2008),M1b_M2b,stayed
-558,distant,0.10681682825088501,93,,True,Brown(2008),M1,crossed
-559,distant,0.06708651781082153,93,,True,Brown(2008),M2,crossed
-560,distant,0.1021885871887207,93,,False,Brown(2008),M1a_M2a,crossed
-561,distant,0.09778821468353271,93,,False,Brown(2008),M1a_M2b,crossed
-562,distant,0.14049965143203735,93,,False,Brown(2008),M1b_M2a,crossed
-563,distant,0.10891234874725342,93,,False,Brown(2008),M1b_M2b,crossed
-564,distant,0.14539384841918945,94,,True,Brown(2008),M1,ran
-565,distant,0.0859416127204895,94,,True,Brown(2008),M2,ran
-566,distant,0.17089581489562988,94,,False,Brown(2008),M1a_M2a,ran
-567,distant,0.18846315145492554,94,,False,Brown(2008),M1a_M2b,ran
-568,distant,0.24041748046875,94,,False,Brown(2008),M1b_M2a,ran
-569,distant,0.21369868516921997,94,,False,Brown(2008),M1b_M2b,ran
-570,distant,0.08906674385070801,95,,True,Brown(2008),M1,spilled
-571,distant,0.09094876050949097,95,,True,Brown(2008),M2,spilled
-572,distant,0.12802517414093018,95,,False,Brown(2008),M1a_M2a,spilled
-573,distant,0.09765046834945679,95,,False,Brown(2008),M1a_M2b,spilled
-574,distant,0.1621057391166687,95,,False,Brown(2008),M1b_M2a,spilled
-575,distant,0.1336885690689087,95,,False,Brown(2008),M1b_M2b,spilled
-576,distant,0.05811929702758789,96,,True,Brown(2008),M1,cast
-577,distant,0.054125964641571045,96,,True,Brown(2008),M2,cast
-578,distant,0.13765066862106323,96,,False,Brown(2008),M1a_M2a,cast
-579,distant,0.14172834157943726,96,,False,Brown(2008),M1a_M2b,cast
-580,distant,0.1463349461555481,96,,False,Brown(2008),M1b_M2a,cast
-581,distant,0.1486034393310547,96,,False,Brown(2008),M1b_M2b,cast
-582,distant,0.08236891031265259,97,,True,Brown(2008),M1,pushed
-583,distant,0.05197709798812866,97,,True,Brown(2008),M2,pushed
-584,distant,0.21752339601516724,97,,False,Brown(2008),M1a_M2a,pushed
-585,distant,0.22429883480072021,97,,False,Brown(2008),M1a_M2b,pushed
-586,distant,0.2440258264541626,97,,False,Brown(2008),M1b_M2a,pushed
-587,distant,0.2513998746871948,97,,False,Brown(2008),M1b_M2b,pushed
-588,distant,0.07438617944717407,98,,True,Brown(2008),M1,checked
-589,distant,0.0502663254737854,98,,True,Brown(2008),M2,checked
-590,distant,0.07075619697570801,98,,False,Brown(2008),M1a_M2a,checked
-591,distant,0.10892999172210693,98,,False,Brown(2008),M1a_M2b,checked
-592,distant,0.055697739124298096,98,,False,Brown(2008),M1b_M2a,checked
-593,distant,0.08653849363327026,98,,False,Brown(2008),M1b_M2b,checked
-594,distant,0.1356765627861023,99,,True,Brown(2008),M1,drained
-595,distant,0.08182549476623535,99,,True,Brown(2008),M2,drained
-596,distant,0.1701837182044983,99,,False,Brown(2008),M1a_M2a,drained
-597,distant,0.18299251794815063,99,,False,Brown(2008),M1a_M2b,drained
-598,distant,0.15250647068023682,99,,False,Brown(2008),M1b_M2a,drained
-599,distant,0.14189618825912476,99,,False,Brown(2008),M1b_M2b,drained
-600,close,0.04259383678436279,100,,True,Brown(2008),M1,drew
-601,close,0.06477361917495728,100,,True,Brown(2008),M2,drew
-602,close,0.05587804317474365,100,,False,Brown(2008),M1a_M2a,drew
-603,close,0.04313725233078003,100,,False,Brown(2008),M1a_M2b,drew
-604,close,0.08796882629394531,100,,False,Brown(2008),M1b_M2a,drew
-605,close,0.08143818378448486,100,,False,Brown(2008),M1b_M2b,drew
-606,close,0.06765800714492798,101,,True,Brown(2008),M1,hailed
-607,close,0.056646645069122314,101,,True,Brown(2008),M2,hailed
-608,close,0.09745830297470093,101,,False,Brown(2008),M1a_M2a,hailed
-609,close,0.09500908851623535,101,,False,Brown(2008),M1a_M2b,hailed
-610,close,0.12960833311080933,101,,False,Brown(2008),M1b_M2a,hailed
-611,close,0.13773590326309204,101,,False,Brown(2008),M1b_M2b,hailed
-612,close,0.13882583379745483,102,,True,Brown(2008),M1,posted
-613,close,0.054578542709350586,102,,True,Brown(2008),M2,posted
-614,close,0.16013526916503906,102,,False,Brown(2008),M1a_M2a,posted
-615,close,0.1644052267074585,102,,False,Brown(2008),M1a_M2b,posted
-616,close,0.10462039709091187,102,,False,Brown(2008),M1b_M2a,posted
-617,close,0.11120390892028809,102,,False,Brown(2008),M1b_M2b,posted
-618,close,0.0965527892112732,103,,True,Brown(2008),M1,broke
-619,close,0.03598523139953613,103,,True,Brown(2008),M2,broke
-620,close,0.11543679237365723,103,,False,Brown(2008),M1a_M2a,broke
-621,close,0.10145515203475952,103,,False,Brown(2008),M1a_M2b,broke
-622,close,0.17444461584091187,103,,False,Brown(2008),M1b_M2a,broke
-623,close,0.15865999460220337,103,,False,Brown(2008),M1b_M2b,broke
-624,close,0.05568802356719971,104,,True,Brown(2008),M1,served
-625,close,0.05729937553405762,104,,True,Brown(2008),M2,served
-626,close,0.18379414081573486,104,,False,Brown(2008),M1a_M2a,served
-627,close,0.17013037204742432,104,,False,Brown(2008),M1a_M2b,served
-628,close,0.2158464789390564,104,,False,Brown(2008),M1b_M2a,served
-629,close,0.20539450645446777,104,,False,Brown(2008),M1b_M2b,served
-630,close,0.09548884630203247,105,,True,Brown(2008),M1,checked
-631,close,0.06412369012832642,105,,True,Brown(2008),M2,checked
-632,close,0.11070579290390015,105,,False,Brown(2008),M1a_M2a,checked
-633,close,0.1379377245903015,105,,False,Brown(2008),M1a_M2b,checked
-634,close,0.12513744831085205,105,,False,Brown(2008),M1b_M2a,checked
-635,close,0.1374424695968628,105,,False,Brown(2008),M1b_M2b,checked
-636,close,0.0195767879486084,106,,True,Brown(2008),M1,called
-637,close,0.021967291831970215,106,,True,Brown(2008),M2,called
-638,close,0.07047891616821289,106,,False,Brown(2008),M1a_M2a,called
-639,close,0.0687640905380249,106,,False,Brown(2008),M1a_M2b,called
-640,close,0.09354335069656372,106,,False,Brown(2008),M1b_M2a,called
-641,close,0.08922427892684937,106,,False,Brown(2008),M1b_M2b,called
-642,close,0.06485170125961304,107,,True,Brown(2008),M1,sang
-643,close,0.07842648029327393,107,,True,Brown(2008),M2,sang
-644,close,0.07146531343460083,107,,False,Brown(2008),M1a_M2a,sang
-645,close,0.13052421808242798,107,,False,Brown(2008),M1a_M2b,sang
-646,close,0.08194541931152344,107,,False,Brown(2008),M1b_M2a,sang
-647,close,0.13969886302947998,107,,False,Brown(2008),M1b_M2b,sang
-648,close,0.10839337110519409,108,,True,Brown(2008),M1,cleared
-649,close,0.0707196593284607,108,,True,Brown(2008),M2,cleared
-650,close,0.09571957588195801,108,,False,Brown(2008),M1a_M2a,cleared
-651,close,0.10722684860229492,108,,False,Brown(2008),M1a_M2b,cleared
-652,close,0.10413432121276855,108,,False,Brown(2008),M1b_M2a,cleared
-653,close,0.12483572959899902,108,,False,Brown(2008),M1b_M2b,cleared
-654,close,0.03148072957992554,109,,True,Brown(2008),M1,loaded
-655,close,0.046956777572631836,109,,True,Brown(2008),M2,loaded
-656,close,0.06703495979309082,109,,False,Brown(2008),M1a_M2a,loaded
-657,close,0.07064777612686157,109,,False,Brown(2008),M1a_M2b,loaded
-658,close,0.08367782831192017,109,,False,Brown(2008),M1b_M2a,loaded
-659,close,0.0780867338180542,109,,False,Brown(2008),M1b_M2b,loaded
+,ambiguity_type,distance_bert,distance_elmo,overlap,pos,same,source,string,version,word
+0,Polysemy,0.04154467582702637,0.2367132306098938,high overlap,N,True,Klepousniotou et al (2008),lamb,M1_a_M1_b,lamb
+1,Polysemy,0.09130531549453735,0.05261939764022827,high overlap,N,False,Klepousniotou et al (2008),lamb,M1_a_M2_a,lamb
+2,Polysemy,0.11011439561843872,0.06151258945465088,high overlap,N,False,Klepousniotou et al (2008),lamb,M1_a_M2_b,lamb
+3,Polysemy,0.08867979049682617,0.055079519748687744,high overlap,N,False,Klepousniotou et al (2008),lamb,M1_b_M2_a,lamb
+4,Polysemy,0.10762959718704224,0.059822142124176025,high overlap,N,False,Klepousniotou et al (2008),lamb,M1_b_M2_b,lamb
+5,Polysemy,0.032332777976989746,0.022594988346099854,high overlap,N,True,Klepousniotou et al (2008),lamb,M2_a_M2_b,lamb
+6,Polysemy,0.38245248794555664,0.03371626138687134,high overlap,N,True,Klepousniotou et al (2008),article,M1_a_M1_b,article
+7,Polysemy,0.10555511713027954,0.06914114952087402,high overlap,N,False,Klepousniotou et al (2008),article,M1_a_M2_a,article
+8,Polysemy,0.13041704893112183,0.04860895872116089,high overlap,N,False,Klepousniotou et al (2008),article,M1_a_M2_b,article
+9,Polysemy,0.3692566752433777,0.04826617240905762,high overlap,N,False,Klepousniotou et al (2008),article,M1_b_M2_a,article
+10,Polysemy,0.4215732216835022,0.03926950693130493,high overlap,N,False,Klepousniotou et al (2008),article,M1_b_M2_b,article
+11,Polysemy,0.10469955205917358,0.09630781412124634,high overlap,N,True,Klepousniotou et al (2008),article,M2_a_M2_b,article
+12,Polysemy,0.4988139867782593,0.042471885681152344,high overlap,N,True,Klepousniotou et al (2008),book,M1_a_M1_b,book
+13,Polysemy,0.5702998042106628,0.0852808952331543,high overlap,N,False,Klepousniotou et al (2008),book,M1_a_M2_a,book
+14,Polysemy,0.26902133226394653,0.07185906171798706,high overlap,N,False,Klepousniotou et al (2008),book,M1_a_M2_b,book
+15,Polysemy,0.2169693112373352,0.09188640117645264,high overlap,N,False,Klepousniotou et al (2008),book,M1_b_M2_a,book
+16,Polysemy,0.6158682107925415,0.10340476036071777,high overlap,N,False,Klepousniotou et al (2008),book,M1_b_M2_b,book
+17,Polysemy,0.5162579119205475,0.09543901681900024,high overlap,N,True,Klepousniotou et al (2008),book,M2_a_M2_b,book
+18,Polysemy,0.09272867441177368,0.054569900035858154,high overlap,N,True,Klepousniotou et al (2008),breakfast,M1_a_M1_b,breakfast
+19,Polysemy,0.06723272800445557,0.018480896949768066,high overlap,N,False,Klepousniotou et al (2008),breakfast,M1_a_M2_a,breakfast
+20,Polysemy,0.12142115831375122,0.04682290554046631,high overlap,N,False,Klepousniotou et al (2008),breakfast,M1_a_M2_b,breakfast
+21,Polysemy,0.09598124027252197,0.04744786024093628,high overlap,N,False,Klepousniotou et al (2008),breakfast,M1_b_M2_a,breakfast
+22,Polysemy,0.055151522159576416,0.04643046855926514,high overlap,N,False,Klepousniotou et al (2008),breakfast,M1_b_M2_b,breakfast
+23,Polysemy,0.09034460783004761,0.033056795597076416,high overlap,N,True,Klepousniotou et al (2008),breakfast,M2_a_M2_b,breakfast
+24,Polysemy,0.0946241021156311,0.029333055019378662,high overlap,N,True,Klepousniotou et al (2008),chicken,M1_a_M1_b,chicken
+25,Polysemy,0.07960128784179688,0.0773194432258606,high overlap,N,False,Klepousniotou et al (2008),chicken,M1_a_M2_a,chicken
+26,Polysemy,0.15739822387695312,0.0744243860244751,high overlap,N,False,Klepousniotou et al (2008),chicken,M1_a_M2_b,chicken
+27,Polysemy,0.1508007049560547,0.09316575527191162,high overlap,N,False,Klepousniotou et al (2008),chicken,M1_b_M2_a,chicken
+28,Polysemy,0.20258361101150513,0.07436072826385498,high overlap,N,False,Klepousniotou et al (2008),chicken,M1_b_M2_b,chicken
+29,Polysemy,0.13973551988601685,0.060236334800720215,high overlap,N,True,Klepousniotou et al (2008),chicken,M2_a_M2_b,chicken
+30,Polysemy,0.06145507097244263,0.09543997049331665,high overlap,N,True,Klepousniotou et al (2008),class,M1_a_M1_b,class
+31,Polysemy,0.09205275774002075,0.0994681715965271,high overlap,N,False,Klepousniotou et al (2008),class,M1_a_M2_a,class
+32,Polysemy,0.07894694805145264,0.07260674238204956,high overlap,N,False,Klepousniotou et al (2008),class,M1_a_M2_b,class
+33,Polysemy,0.14804410934448242,0.044290781021118164,high overlap,N,False,Klepousniotou et al (2008),class,M1_b_M2_a,class
+34,Polysemy,0.13308411836624146,0.08517211675643921,high overlap,N,False,Klepousniotou et al (2008),class,M1_b_M2_b,class
+35,Polysemy,0.053896427154541016,0.06321001052856445,high overlap,N,True,Klepousniotou et al (2008),class,M2_a_M2_b,class
+36,Polysemy,0.09608209133148193,0.09876525402069092,high overlap,N,True,Klepousniotou et al (2008),cloud,M1_a_M1_b,cloud
+37,Polysemy,0.08582180738449097,0.04245489835739136,high overlap,N,False,Klepousniotou et al (2008),cloud,M1_a_M2_a,cloud
+38,Polysemy,0.09679889678955078,0.04262763261795044,high overlap,N,False,Klepousniotou et al (2008),cloud,M1_a_M2_b,cloud
+39,Polysemy,0.10595929622650146,0.11079204082489014,high overlap,N,False,Klepousniotou et al (2008),cloud,M1_b_M2_a,cloud
+40,Polysemy,0.15078604221343994,0.11443990468978882,high overlap,N,False,Klepousniotou et al (2008),cloud,M1_b_M2_b,cloud
+41,Polysemy,0.09216082096099854,0.030448615550994873,high overlap,N,True,Klepousniotou et al (2008),cloud,M2_a_M2_b,cloud
+42,Polysemy,0.10684758424758911,0.0400005578994751,high overlap,N,True,Klepousniotou et al (2008),contribution,M1_a_M1_b,contribution
+43,Polysemy,0.30630040168762207,0.104591965675354,high overlap,N,False,Klepousniotou et al (2008),contribution,M1_a_M2_a,contribution
+44,Polysemy,0.5385007858276367,0.06754803657531738,high overlap,N,False,Klepousniotou et al (2008),contribution,M1_a_M2_b,contribution
+45,Polysemy,0.31155407428741455,0.11012262105941772,high overlap,N,False,Klepousniotou et al (2008),contribution,M1_b_M2_a,contribution
+46,Polysemy,0.5391724109649658,0.04740631580352783,high overlap,N,False,Klepousniotou et al (2008),contribution,M1_b_M2_b,contribution
+47,Polysemy,0.5013157427310944,0.059293270111083984,high overlap,N,True,Klepousniotou et al (2008),contribution,M2_a_M2_b,contribution
+48,Polysemy,0.15165448188781738,0.03999704122543335,high overlap,N,True,Klepousniotou et al (2008),design,M1_a_M1_b,design
+49,Polysemy,0.2219792604446411,0.09720396995544434,high overlap,N,False,Klepousniotou et al (2008),design,M1_a_M2_a,design
+50,Polysemy,0.1854807734489441,0.062093138694763184,high overlap,N,False,Klepousniotou et al (2008),design,M1_a_M2_b,design
+51,Polysemy,0.2165418267250061,0.09024059772491455,high overlap,N,False,Klepousniotou et al (2008),design,M1_b_M2_a,design
+52,Polysemy,0.16611164808273315,0.04831308126449585,high overlap,N,False,Klepousniotou et al (2008),design,M1_b_M2_b,design
+53,Polysemy,0.14442694187164307,0.09320652484893799,high overlap,N,True,Klepousniotou et al (2008),design,M2_a_M2_b,design
+54,Polysemy,0.09504109621047974,0.034637510776519775,high overlap,N,True,Klepousniotou et al (2008),dinner,M1_a_M1_b,dinner
+55,Polysemy,0.12238568067550659,0.06936866044998169,high overlap,N,False,Klepousniotou et al (2008),dinner,M1_a_M2_a,dinner
+56,Polysemy,0.08950656652450562,0.03985488414764404,high overlap,N,False,Klepousniotou et al (2008),dinner,M1_a_M2_b,dinner
+57,Polysemy,0.07536804676055908,0.057321906089782715,high overlap,N,False,Klepousniotou et al (2008),dinner,M1_b_M2_a,dinner
+58,Polysemy,0.12870866060256958,0.04184752702713013,high overlap,N,False,Klepousniotou et al (2008),dinner,M1_b_M2_b,dinner
+59,Polysemy,0.06375491619110107,0.05477118492126465,high overlap,N,True,Klepousniotou et al (2008),dinner,M2_a_M2_b,dinner
+60,Polysemy,0.11092936992645264,0.06938493251800537,high overlap,N,True,Klepousniotou et al (2008),dream,M1_a_M1_b,dream
+61,Polysemy,0.10328900814056396,0.0660809874534607,high overlap,N,False,Klepousniotou et al (2008),dream,M1_a_M2_a,dream
+62,Polysemy,0.3994929790496826,0.08150982856750488,high overlap,N,False,Klepousniotou et al (2008),dream,M1_a_M2_b,dream
+63,Polysemy,0.21761667728424072,0.09005624055862427,high overlap,N,False,Klepousniotou et al (2008),dream,M1_b_M2_a,dream
+64,Polysemy,0.47020310163497925,0.07409286499023438,high overlap,N,False,Klepousniotou et al (2008),dream,M1_b_M2_b,dream
+65,Polysemy,0.3547890782356262,0.057070255279541016,high overlap,N,True,Klepousniotou et al (2008),dream,M2_a_M2_b,dream
+66,Polysemy,0.06824570894241333,0.029020071029663086,high overlap,N,True,Klepousniotou et al (2008),dress,M1_a_M1_b,dress
+67,Polysemy,0.12599939107894897,0.06011676788330078,high overlap,N,False,Klepousniotou et al (2008),dress,M1_a_M2_a,dress
+68,Polysemy,0.10317236185073853,0.04584789276123047,high overlap,N,False,Klepousniotou et al (2008),dress,M1_a_M2_b,dress
+69,Polysemy,0.10343652963638306,0.04563140869140625,high overlap,N,False,Klepousniotou et al (2008),dress,M1_b_M2_a,dress
+70,Polysemy,0.061182498931884766,0.039044201374053955,high overlap,N,False,Klepousniotou et al (2008),dress,M1_b_M2_b,dress
+71,Polysemy,0.08584827184677124,0.03261256217956543,high overlap,N,True,Klepousniotou et al (2008),dress,M2_a_M2_b,dress
+72,Polysemy,0.610408216714859,0.07932645082473755,high overlap,N,True,Klepousniotou et al (2008),examination,M1_a_M1_b,examination
+73,Polysemy,0.6024446785449982,0.08150559663772583,high overlap,N,False,Klepousniotou et al (2008),examination,M1_a_M2_a,examination
+74,Polysemy,0.5786647796630859,0.046325504779815674,high overlap,N,False,Klepousniotou et al (2008),examination,M1_a_M2_b,examination
+75,Polysemy,0.3546147346496582,0.15794891119003296,high overlap,N,False,Klepousniotou et al (2008),examination,M1_b_M2_a,examination
+76,Polysemy,0.23961299657821655,0.06977558135986328,high overlap,N,False,Klepousniotou et al (2008),examination,M1_b_M2_b,examination
+77,Polysemy,0.13705110549926758,0.0903245210647583,high overlap,N,True,Klepousniotou et al (2008),examination,M2_a_M2_b,examination
+78,Unsure,0.11989879608154297,0.04600566625595093,high overlap,N,True,Klepousniotou et al (2008),guard,M1_a_M1_b,guard
+79,Unsure,0.3135864734649658,0.09436756372451782,high overlap,N,False,Klepousniotou et al (2008),guard,M1_a_M2_a,guard
+80,Unsure,0.29101312160491943,0.08625131845474243,high overlap,N,False,Klepousniotou et al (2008),guard,M1_a_M2_b,guard
+81,Unsure,0.3235092759132385,0.08913558721542358,high overlap,N,False,Klepousniotou et al (2008),guard,M1_b_M2_a,guard
+82,Unsure,0.2895039916038513,0.07963961362838745,high overlap,N,False,Klepousniotou et al (2008),guard,M1_b_M2_b,guard
+83,Unsure,0.16523414850234985,0.07791393995285034,high overlap,N,True,Klepousniotou et al (2008),guard,M2_a_M2_b,guard
+84,Polysemy,0.09755146503448486,0.053415894508361816,high overlap,N,True,Klepousniotou et al (2008),home,M1_a_M1_b,home
+85,Polysemy,0.32141709327697754,0.11113607883453369,high overlap,N,False,Klepousniotou et al (2008),home,M1_a_M2_a,home
+86,Polysemy,0.29455089569091797,0.11193650960922241,high overlap,N,False,Klepousniotou et al (2008),home,M1_a_M2_b,home
+87,Polysemy,0.324015736579895,0.08975875377655029,high overlap,N,False,Klepousniotou et al (2008),home,M1_b_M2_a,home
+88,Polysemy,0.32826870679855347,0.09411501884460449,high overlap,N,False,Klepousniotou et al (2008),home,M1_b_M2_b,home
+89,Polysemy,0.19091904163360596,0.05200624465942383,high overlap,N,True,Klepousniotou et al (2008),home,M2_a_M2_b,home
+90,Polysemy,0.12789791822433472,0.03246808052062988,high overlap,N,True,Klepousniotou et al (2008),lunch,M1_a_M1_b,lunch
+91,Polysemy,0.0730743408203125,0.05375140905380249,high overlap,N,False,Klepousniotou et al (2008),lunch,M1_a_M2_a,lunch
+92,Polysemy,0.4683953523635864,0.045113563537597656,high overlap,N,False,Klepousniotou et al (2008),lunch,M1_a_M2_b,lunch
+93,Polysemy,0.13222217559814453,0.03485912084579468,high overlap,N,False,Klepousniotou et al (2008),lunch,M1_b_M2_a,lunch
+94,Polysemy,0.4708075523376465,0.033151984214782715,high overlap,N,False,Klepousniotou et al (2008),lunch,M1_b_M2_b,lunch
+95,Polysemy,0.4631763696670532,0.05576026439666748,high overlap,N,True,Klepousniotou et al (2008),lunch,M2_a_M2_b,lunch
+96,Unsure,0.833962932229042,0.0584714412689209,high overlap,N,True,Klepousniotou et al (2008),magazine,M1_a_M1_b,magazine
+97,Unsure,0.8173455446958542,0.06982201337814331,high overlap,N,False,Klepousniotou et al (2008),magazine,M1_a_M2_a,magazine
+98,Unsure,0.8554240167140961,0.07605034112930298,high overlap,N,False,Klepousniotou et al (2008),magazine,M1_a_M2_b,magazine
+99,Unsure,0.09122735261917114,0.07936805486679077,high overlap,N,False,Klepousniotou et al (2008),magazine,M1_b_M2_a,magazine
+100,Unsure,0.11968690156936646,0.08118116855621338,high overlap,N,False,Klepousniotou et al (2008),magazine,M1_b_M2_b,magazine
+101,Unsure,0.12260109186172485,0.07340127229690552,high overlap,N,True,Klepousniotou et al (2008),magazine,M2_a_M2_b,magazine
+102,Polysemy,0.20085614919662476,0.04863893985748291,high overlap,N,True,Klepousniotou et al (2008),medicine,M1_a_M1_b,medicine
+103,Polysemy,0.25308871269226074,0.07714396715164185,high overlap,N,False,Klepousniotou et al (2008),medicine,M1_a_M2_a,medicine
+104,Polysemy,0.302926242351532,0.07877284288406372,high overlap,N,False,Klepousniotou et al (2008),medicine,M1_a_M2_b,medicine
+105,Polysemy,0.27274036407470703,0.07156449556350708,high overlap,N,False,Klepousniotou et al (2008),medicine,M1_b_M2_a,medicine
+106,Polysemy,0.3057066798210144,0.06905323266983032,high overlap,N,False,Klepousniotou et al (2008),medicine,M1_b_M2_b,medicine
+107,Polysemy,0.26897305250167847,0.0466647744178772,high overlap,N,True,Klepousniotou et al (2008),medicine,M2_a_M2_b,medicine
+108,Polysemy,0.10842180252075195,0.05665028095245361,high overlap,N,True,Klepousniotou et al (2008),message,M1_a_M1_b,message
+109,Polysemy,0.16379910707473755,0.13017791509628296,high overlap,N,False,Klepousniotou et al (2008),message,M1_a_M2_a,message
+110,Polysemy,0.34203559160232544,0.163038969039917,high overlap,N,False,Klepousniotou et al (2008),message,M1_a_M2_b,message
+111,Polysemy,0.12003934383392334,0.13008666038513184,high overlap,N,False,Klepousniotou et al (2008),message,M1_b_M2_a,message
+112,Polysemy,0.2616051435470581,0.15389221906661987,high overlap,N,False,Klepousniotou et al (2008),message,M1_b_M2_b,message
+113,Polysemy,0.18251079320907593,0.03352254629135132,high overlap,N,True,Klepousniotou et al (2008),message,M2_a_M2_b,message
+114,Polysemy,0.08201366662979126,0.043462157249450684,high overlap,N,True,Klepousniotou et al (2008),newspaper,M1_a_M1_b,newspaper
+115,Polysemy,0.2550576329231262,0.08670419454574585,high overlap,N,False,Klepousniotou et al (2008),newspaper,M1_a_M2_a,newspaper
+116,Polysemy,0.2738373875617981,0.08386397361755371,high overlap,N,False,Klepousniotou et al (2008),newspaper,M1_a_M2_b,newspaper
+117,Polysemy,0.2512580156326294,0.08286291360855103,high overlap,N,False,Klepousniotou et al (2008),newspaper,M1_b_M2_a,newspaper
+118,Polysemy,0.3031103014945984,0.0853722095489502,high overlap,N,False,Klepousniotou et al (2008),newspaper,M1_b_M2_b,newspaper
+119,Polysemy,0.10532432794570923,0.031964778900146484,high overlap,N,True,Klepousniotou et al (2008),newspaper,M2_a_M2_b,newspaper
+120,Unsure,0.5017043054103851,0.0660862922668457,high overlap,N,True,Klepousniotou et al (2008),novel,M1_a_M1_b,novel
+121,Unsure,0.5944176614284515,0.07372313737869263,high overlap,N,False,Klepousniotou et al (2008),novel,M1_a_M2_a,novel
+122,Unsure,0.48078250885009766,0.037942469120025635,high overlap,N,False,Klepousniotou et al (2008),novel,M1_a_M2_b,novel
+123,Unsure,0.18798363208770752,0.09663575887680054,high overlap,N,False,Klepousniotou et al (2008),novel,M1_b_M2_a,novel
+124,Unsure,0.14608585834503174,0.0925980806350708,high overlap,N,False,Klepousniotou et al (2008),novel,M1_b_M2_b,novel
+125,Unsure,0.14257937669754028,0.09592705965042114,high overlap,N,True,Klepousniotou et al (2008),novel,M2_a_M2_b,novel
+126,Unsure,0.1271451711654663,0.0859760046005249,high overlap,N,True,Klepousniotou et al (2008),oil,M1_a_M1_b,oil
+127,Unsure,0.2397221326828003,0.11538660526275635,high overlap,N,False,Klepousniotou et al (2008),oil,M1_a_M2_a,oil
+128,Unsure,0.23644059896469116,0.09009766578674316,high overlap,N,False,Klepousniotou et al (2008),oil,M1_a_M2_b,oil
+129,Unsure,0.25399982929229736,0.10381317138671875,high overlap,N,False,Klepousniotou et al (2008),oil,M1_b_M2_a,oil
+130,Unsure,0.18523269891738892,0.0898560881614685,high overlap,N,False,Klepousniotou et al (2008),oil,M1_b_M2_b,oil
+131,Unsure,0.24327021837234497,0.044749677181243896,high overlap,N,True,Klepousniotou et al (2008),oil,M2_a_M2_b,oil
+132,Polysemy,0.16798996925354004,0.04110008478164673,moderate overlap,N,True,Klepousniotou et al (2008),act,M1_a_M1_b,act
+133,Polysemy,0.2029259204864502,0.05280584096908569,moderate overlap,N,False,Klepousniotou et al (2008),act,M1_a_M2_a,act
+134,Polysemy,0.21561551094055176,0.04593151807785034,moderate overlap,N,False,Klepousniotou et al (2008),act,M1_a_M2_b,act
+135,Polysemy,0.2781903147697449,0.06292104721069336,moderate overlap,N,False,Klepousniotou et al (2008),act,M1_b_M2_a,act
+136,Polysemy,0.2252715826034546,0.05768322944641113,moderate overlap,N,False,Klepousniotou et al (2008),act,M1_b_M2_b,act
+137,Polysemy,0.19586938619613647,0.04405999183654785,moderate overlap,N,True,Klepousniotou et al (2008),act,M2_a_M2_b,act
+138,Polysemy,0.12975817918777466,0.03726440668106079,moderate overlap,N,True,Klepousniotou et al (2008),atmosphere,M1_a_M1_b,atmosphere
+139,Polysemy,0.35273683071136475,0.10275810956954956,moderate overlap,N,False,Klepousniotou et al (2008),atmosphere,M1_a_M2_a,atmosphere
+140,Polysemy,0.25629663467407227,0.06820636987686157,moderate overlap,N,False,Klepousniotou et al (2008),atmosphere,M1_a_M2_b,atmosphere
+141,Polysemy,0.25242263078689575,0.09296464920043945,moderate overlap,N,False,Klepousniotou et al (2008),atmosphere,M1_b_M2_a,atmosphere
+142,Polysemy,0.12693637609481812,0.05234229564666748,moderate overlap,N,False,Klepousniotou et al (2008),atmosphere,M1_b_M2_b,atmosphere
+143,Polysemy,0.1995883584022522,0.037872314453125,moderate overlap,N,True,Klepousniotou et al (2008),atmosphere,M2_a_M2_b,atmosphere
+144,Polysemy,0.11560302972793579,0.06382298469543457,moderate overlap,N,True,Klepousniotou et al (2008),barrier,M1_a_M1_b,barrier
+145,Polysemy,0.2700822949409485,0.09208691120147705,moderate overlap,N,False,Klepousniotou et al (2008),barrier,M1_a_M2_a,barrier
+146,Polysemy,0.22422701120376587,0.07631421089172363,moderate overlap,N,False,Klepousniotou et al (2008),barrier,M1_a_M2_b,barrier
+147,Polysemy,0.2471557855606079,0.07921624183654785,moderate overlap,N,False,Klepousniotou et al (2008),barrier,M1_b_M2_a,barrier
+148,Polysemy,0.1974220871925354,0.06051051616668701,moderate overlap,N,False,Klepousniotou et al (2008),barrier,M1_b_M2_b,barrier
+149,Polysemy,0.13604551553726196,0.05608576536178589,moderate overlap,N,True,Klepousniotou et al (2008),barrier,M2_a_M2_b,barrier
+150,Polysemy,0.14106673002243042,0.06306028366088867,moderate overlap,N,True,Klepousniotou et al (2008),beam,M1_a_M1_b,beam
+151,Polysemy,0.31272000074386597,0.05115288496017456,moderate overlap,N,False,Klepousniotou et al (2008),beam,M1_a_M2_a,beam
+152,Polysemy,0.3348153233528137,0.10286164283752441,moderate overlap,N,False,Klepousniotou et al (2008),beam,M1_a_M2_b,beam
+153,Polysemy,0.2374032735824585,0.07360851764678955,moderate overlap,N,False,Klepousniotou et al (2008),beam,M1_b_M2_a,beam
+154,Polysemy,0.32318687438964844,0.1264515519142151,moderate overlap,N,False,Klepousniotou et al (2008),beam,M1_b_M2_b,beam
+155,Polysemy,0.25965267419815063,0.09441715478897095,moderate overlap,N,True,Klepousniotou et al (2008),beam,M2_a_M2_b,beam
+156,Polysemy,0.2382832169532776,0.11597460508346558,moderate overlap,N,True,Klepousniotou et al (2008),blood,M1_a_M1_b,blood
+157,Polysemy,0.3125620484352112,0.10631555318832397,moderate overlap,N,False,Klepousniotou et al (2008),blood,M1_a_M2_a,blood
+158,Polysemy,0.4070981740951538,0.14889276027679443,moderate overlap,N,False,Klepousniotou et al (2008),blood,M1_a_M2_b,blood
+159,Polysemy,0.20770341157913208,0.059400200843811035,moderate overlap,N,False,Klepousniotou et al (2008),blood,M1_b_M2_a,blood
+160,Polysemy,0.343109667301178,0.08659732341766357,moderate overlap,N,False,Klepousniotou et al (2008),blood,M1_b_M2_b,blood
+161,Polysemy,0.15645098686218262,0.09043115377426147,moderate overlap,N,True,Klepousniotou et al (2008),blood,M2_a_M2_b,blood
+162,Polysemy,0.2099742293357849,0.08337271213531494,moderate overlap,N,True,Klepousniotou et al (2008),business,M1_a_M1_b,business
+163,Polysemy,0.21683728694915771,0.08411455154418945,moderate overlap,N,False,Klepousniotou et al (2008),business,M1_a_M2_a,business
+164,Polysemy,0.23414212465286255,0.10203444957733154,moderate overlap,N,False,Klepousniotou et al (2008),business,M1_a_M2_b,business
+165,Polysemy,0.3450016379356384,0.09035205841064453,moderate overlap,N,False,Klepousniotou et al (2008),business,M1_b_M2_a,business
+166,Polysemy,0.3671760559082031,0.13087546825408936,moderate overlap,N,False,Klepousniotou et al (2008),business,M1_b_M2_b,business
+167,Polysemy,0.1499004364013672,0.06230008602142334,moderate overlap,N,True,Klepousniotou et al (2008),business,M2_a_M2_b,business
+168,Homonymy,0.20921963453292847,0.05421328544616699,moderate overlap,N,True,Klepousniotou et al (2008),case,M1_a_M1_b,case
+169,Homonymy,0.4572121500968933,0.06979382038116455,moderate overlap,N,False,Klepousniotou et al (2008),case,M1_a_M2_a,case
+170,Homonymy,0.4697309136390686,0.09389001131057739,moderate overlap,N,False,Klepousniotou et al (2008),case,M1_a_M2_b,case
+171,Homonymy,0.49239856004714966,0.09212857484817505,moderate overlap,N,False,Klepousniotou et al (2008),case,M1_b_M2_a,case
+172,Homonymy,0.4713320732116699,0.0912676453590393,moderate overlap,N,False,Klepousniotou et al (2008),case,M1_b_M2_b,case
+173,Homonymy,0.13857829570770264,0.06588923931121826,moderate overlap,N,True,Klepousniotou et al (2008),case,M2_a_M2_b,case
+174,Polysemy,0.15566861629486084,0.08158236742019653,moderate overlap,N,True,Klepousniotou et al (2008),cause,M1_a_M1_b,cause
+175,Polysemy,0.3633385896682739,0.15138548612594604,moderate overlap,N,False,Klepousniotou et al (2008),cause,M1_a_M2_a,cause
+176,Polysemy,0.4086315631866455,0.12222641706466675,moderate overlap,N,False,Klepousniotou et al (2008),cause,M1_a_M2_b,cause
+177,Polysemy,0.33915889263153076,0.11589807271957397,moderate overlap,N,False,Klepousniotou et al (2008),cause,M1_b_M2_a,cause
+178,Polysemy,0.40175217390060425,0.09559476375579834,moderate overlap,N,False,Klepousniotou et al (2008),cause,M1_b_M2_b,cause
+179,Polysemy,0.07125967741012573,0.037079811096191406,moderate overlap,N,True,Klepousniotou et al (2008),cause,M2_a_M2_b,cause
+180,Unsure,0.15075939893722534,0.04007554054260254,moderate overlap,N,True,Klepousniotou et al (2008),cone,M1_a_M1_b,cone
+181,Unsure,0.17819905281066895,0.0509151816368103,moderate overlap,N,False,Klepousniotou et al (2008),cone,M1_a_M2_a,cone
+182,Unsure,0.320831298828125,0.069333016872406,moderate overlap,N,False,Klepousniotou et al (2008),cone,M1_a_M2_b,cone
+183,Unsure,0.16224294900894165,0.041742801666259766,moderate overlap,N,False,Klepousniotou et al (2008),cone,M1_b_M2_a,cone
+184,Unsure,0.2520526647567749,0.0657244324684143,moderate overlap,N,False,Klepousniotou et al (2008),cone,M1_b_M2_b,cone
+185,Unsure,0.22839516401290894,0.06775349378585815,moderate overlap,N,True,Klepousniotou et al (2008),cone,M2_a_M2_b,cone
+186,Polysemy,0.16328489780426025,0.08066368103027344,moderate overlap,N,True,Klepousniotou et al (2008),country,M1_a_M1_b,country
+187,Polysemy,0.4605395197868347,0.10825240612030029,moderate overlap,N,False,Klepousniotou et al (2008),country,M1_a_M2_a,country
+188,Polysemy,0.2900541424751282,0.10227847099304199,moderate overlap,N,False,Klepousniotou et al (2008),country,M1_a_M2_b,country
+189,Polysemy,0.40955114364624023,0.11179137229919434,moderate overlap,N,False,Klepousniotou et al (2008),country,M1_b_M2_a,country
+190,Polysemy,0.2085554599761963,0.07626807689666748,moderate overlap,N,False,Klepousniotou et al (2008),country,M1_b_M2_b,country
+191,Polysemy,0.3420572876930237,0.10608398914337158,moderate overlap,N,True,Klepousniotou et al (2008),country,M2_a_M2_b,country
+192,Unsure,0.18879979848861694,0.0337451696395874,moderate overlap,N,True,Klepousniotou et al (2008),cover,M1_a_M1_b,cover
+193,Unsure,0.31709712743759155,0.09840726852416992,moderate overlap,N,False,Klepousniotou et al (2008),cover,M1_a_M2_a,cover
+194,Unsure,0.32064759731292725,0.08984923362731934,moderate overlap,N,False,Klepousniotou et al (2008),cover,M1_a_M2_b,cover
+195,Unsure,0.26413971185684204,0.10253071784973145,moderate overlap,N,False,Klepousniotou et al (2008),cover,M1_b_M2_a,cover
+196,Unsure,0.19731497764587402,0.0879063606262207,moderate overlap,N,False,Klepousniotou et al (2008),cover,M1_b_M2_b,cover
+197,Unsure,0.14710283279418945,0.09452152252197266,moderate overlap,N,True,Klepousniotou et al (2008),cover,M2_a_M2_b,cover
+198,Polysemy,0.14811599254608154,0.05917680263519287,moderate overlap,N,True,Klepousniotou et al (2008),film,M1_a_M1_b,film
+199,Polysemy,0.49471813440322876,0.06169670820236206,moderate overlap,N,False,Klepousniotou et al (2008),film,M1_a_M2_a,film
+200,Polysemy,0.4861007332801819,0.12375450134277344,moderate overlap,N,False,Klepousniotou et al (2008),film,M1_a_M2_b,film
+201,Polysemy,0.44012290239334106,0.04565834999084473,moderate overlap,N,False,Klepousniotou et al (2008),film,M1_b_M2_a,film
+202,Polysemy,0.447441041469574,0.12836092710494995,moderate overlap,N,False,Klepousniotou et al (2008),film,M1_b_M2_b,film
+203,Polysemy,0.06588751077651978,0.10260891914367676,moderate overlap,N,True,Klepousniotou et al (2008),film,M2_a_M2_b,film
+204,Polysemy,0.27552735805511475,0.10304367542266846,moderate overlap,N,True,Klepousniotou et al (2008),ground,M1_a_M1_b,ground
+205,Polysemy,0.3826373219490051,0.07588380575180054,moderate overlap,N,False,Klepousniotou et al (2008),ground,M1_a_M2_a,ground
+206,Polysemy,0.3720375895500183,0.07670527696609497,moderate overlap,N,False,Klepousniotou et al (2008),ground,M1_a_M2_b,ground
+207,Polysemy,0.3391872048377991,0.08529913425445557,moderate overlap,N,False,Klepousniotou et al (2008),ground,M1_b_M2_a,ground
+208,Polysemy,0.41953760385513306,0.10364681482315063,moderate overlap,N,False,Klepousniotou et al (2008),ground,M1_b_M2_b,ground
+209,Polysemy,0.2225911021232605,0.02715897560119629,moderate overlap,N,True,Klepousniotou et al (2008),ground,M2_a_M2_b,ground
+210,Unsure,0.240401029586792,0.06513094902038574,moderate overlap,N,True,Klepousniotou et al (2008),guide,M1_a_M1_b,guide
+211,Unsure,0.16528713703155518,0.07140469551086426,moderate overlap,N,False,Klepousniotou et al (2008),guide,M1_a_M2_a,guide
+212,Unsure,0.2154855728149414,0.07760173082351685,moderate overlap,N,False,Klepousniotou et al (2008),guide,M1_a_M2_b,guide
+213,Unsure,0.27543455362319946,0.07400065660476685,moderate overlap,N,False,Klepousniotou et al (2008),guide,M1_b_M2_a,guide
+214,Unsure,0.3136834502220154,0.07638674974441528,moderate overlap,N,False,Klepousniotou et al (2008),guide,M1_b_M2_b,guide
+215,Unsure,0.08763092756271362,0.029143095016479492,moderate overlap,N,True,Klepousniotou et al (2008),guide,M2_a_M2_b,guide
+216,Polysemy,0.052037835121154785,0.04946744441986084,moderate overlap,N,True,Klepousniotou et al (2008),intelligence,M1_a_M1_b,intelligence
+217,Polysemy,0.36427557468414307,0.1551993489265442,moderate overlap,N,False,Klepousniotou et al (2008),intelligence,M1_a_M2_a,intelligence
+218,Polysemy,0.33479660749435425,0.09246325492858887,moderate overlap,N,False,Klepousniotou et al (2008),intelligence,M1_a_M2_b,intelligence
+219,Polysemy,0.3565279245376587,0.2152409553527832,moderate overlap,N,False,Klepousniotou et al (2008),intelligence,M1_b_M2_a,intelligence
+220,Polysemy,0.3430839776992798,0.15410298109054565,moderate overlap,N,False,Klepousniotou et al (2008),intelligence,M1_b_M2_b,intelligence
+221,Polysemy,0.07502478361129761,0.12195372581481934,moderate overlap,N,True,Klepousniotou et al (2008),intelligence,M2_a_M2_b,intelligence
+222,Polysemy,0.0978555679321289,0.0525435209274292,moderate overlap,N,True,Klepousniotou et al (2008),market,M1_a_M1_b,market
+223,Polysemy,0.2063920497894287,0.1263819932937622,moderate overlap,N,False,Klepousniotou et al (2008),market,M1_a_M2_a,market
+224,Polysemy,0.31036585569381714,0.1323869228363037,moderate overlap,N,False,Klepousniotou et al (2008),market,M1_a_M2_b,market
+225,Polysemy,0.17900657653808594,0.11919236183166504,moderate overlap,N,False,Klepousniotou et al (2008),market,M1_b_M2_a,market
+226,Polysemy,0.27894294261932373,0.12404787540435791,moderate overlap,N,False,Klepousniotou et al (2008),market,M1_b_M2_b,market
+227,Polysemy,0.23054742813110352,0.08297806978225708,moderate overlap,N,True,Klepousniotou et al (2008),market,M2_a_M2_b,market
+228,Polysemy,0.08383995294570923,0.051941514015197754,moderate overlap,N,True,Klepousniotou et al (2008),orange,M1_a_M1_b,orange
+229,Polysemy,0.3072114586830139,0.06527376174926758,moderate overlap,N,False,Klepousniotou et al (2008),orange,M1_a_M2_a,orange
+230,Polysemy,0.2739112377166748,0.05266064405441284,moderate overlap,N,False,Klepousniotou et al (2008),orange,M1_a_M2_b,orange
+231,Polysemy,0.23661953210830688,0.0852925181388855,moderate overlap,N,False,Klepousniotou et al (2008),orange,M1_b_M2_a,orange
+232,Polysemy,0.22677302360534668,0.09066975116729736,moderate overlap,N,False,Klepousniotou et al (2008),orange,M1_b_M2_b,orange
+233,Polysemy,0.12255650758743286,0.05621522665023804,moderate overlap,N,True,Klepousniotou et al (2008),orange,M2_a_M2_b,orange
+234,Polysemy,0.09464883804321289,0.045653581619262695,moderate overlap,N,True,Klepousniotou et al (2008),position,M1_a_M1_b,position
+235,Polysemy,0.47241300344467163,0.11640924215316772,moderate overlap,N,False,Klepousniotou et al (2008),position,M1_a_M2_a,position
+236,Polysemy,0.460071861743927,0.11903584003448486,moderate overlap,N,False,Klepousniotou et al (2008),position,M1_a_M2_b,position
+237,Polysemy,0.42125457525253296,0.09959447383880615,moderate overlap,N,False,Klepousniotou et al (2008),position,M1_b_M2_a,position
+238,Polysemy,0.4400387406349182,0.08991169929504395,moderate overlap,N,False,Klepousniotou et al (2008),position,M1_b_M2_b,position
+239,Polysemy,0.44596773386001587,0.07132720947265625,moderate overlap,N,True,Klepousniotou et al (2008),position,M2_a_M2_b,position
+240,Polysemy,0.12705010175704956,0.09051656723022461,moderate overlap,N,True,Klepousniotou et al (2008),power,M1_a_M1_b,power
+241,Polysemy,0.5832508504390717,0.15226763486862183,moderate overlap,N,False,Klepousniotou et al (2008),power,M1_a_M2_a,power
+242,Polysemy,0.5712792873382568,0.13032317161560059,moderate overlap,N,False,Klepousniotou et al (2008),power,M1_a_M2_b,power
+243,Polysemy,0.5215655565261841,0.1764478087425232,moderate overlap,N,False,Klepousniotou et al (2008),power,M1_b_M2_a,power
+244,Polysemy,0.5470223426818848,0.14163094758987427,moderate overlap,N,False,Klepousniotou et al (2008),power,M1_b_M2_b,power
+245,Polysemy,0.2111925482749939,0.07419103384017944,moderate overlap,N,True,Klepousniotou et al (2008),power,M2_a_M2_b,power
+246,Polysemy,0.564268559217453,0.08394557237625122,moderate overlap,N,True,Klepousniotou et al (2008),scene,M1_a_M1_b,scene
+247,Polysemy,0.3149992823600769,0.07595336437225342,moderate overlap,N,False,Klepousniotou et al (2008),scene,M1_a_M2_a,scene
+248,Polysemy,0.2189825177192688,0.05803728103637695,moderate overlap,N,False,Klepousniotou et al (2008),scene,M1_a_M2_b,scene
+249,Polysemy,0.5463621020317078,0.057302772998809814,moderate overlap,N,False,Klepousniotou et al (2008),scene,M1_b_M2_a,scene
+250,Polysemy,0.5691176950931549,0.050118207931518555,moderate overlap,N,False,Klepousniotou et al (2008),scene,M1_b_M2_b,scene
+251,Polysemy,0.21104007959365845,0.05698925256729126,moderate overlap,N,True,Klepousniotou et al (2008),scene,M2_a_M2_b,scene
+252,Polysemy,0.10057646036148071,0.04165071249008179,moderate overlap,N,True,Klepousniotou et al (2008),space,M1_a_M1_b,space
+253,Polysemy,0.38808274269104004,0.1066439151763916,moderate overlap,N,False,Klepousniotou et al (2008),space,M1_a_M2_a,space
+254,Polysemy,0.43528538942337036,0.1015620231628418,moderate overlap,N,False,Klepousniotou et al (2008),space,M1_a_M2_b,space
+255,Polysemy,0.3789982795715332,0.10882925987243652,moderate overlap,N,False,Klepousniotou et al (2008),space,M1_b_M2_a,space
+256,Polysemy,0.42646324634552,0.11409598588943481,moderate overlap,N,False,Klepousniotou et al (2008),space,M1_b_M2_b,space
+257,Polysemy,0.07031792402267456,0.05651724338531494,moderate overlap,N,True,Klepousniotou et al (2008),space,M2_a_M2_b,space
+258,Polysemy,0.1280372142791748,0.08336895704269409,moderate overlap,N,True,Klepousniotou et al (2008),term,M1_a_M1_b,term
+259,Polysemy,0.4269225597381592,0.159046471118927,moderate overlap,N,False,Klepousniotou et al (2008),term,M1_a_M2_a,term
+260,Polysemy,0.44393789768218994,0.1836053729057312,moderate overlap,N,False,Klepousniotou et al (2008),term,M1_a_M2_b,term
+261,Polysemy,0.3928305506706238,0.1389164924621582,moderate overlap,N,False,Klepousniotou et al (2008),term,M1_b_M2_a,term
+262,Polysemy,0.39792728424072266,0.1765730381011963,moderate overlap,N,False,Klepousniotou et al (2008),term,M1_b_M2_b,term
+263,Polysemy,0.058774352073669434,0.07065725326538086,moderate overlap,N,True,Klepousniotou et al (2008),term,M2_a_M2_b,term
+264,Polysemy,0.1297401785850525,0.01944708824157715,moderate overlap,N,True,Klepousniotou et al (2008),title,M1_a_M1_b,title
+265,Polysemy,0.23968356847763062,0.05492568016052246,moderate overlap,N,False,Klepousniotou et al (2008),title,M1_a_M2_a,title
+266,Polysemy,0.3413640856742859,0.11274033784866333,moderate overlap,N,False,Klepousniotou et al (2008),title,M1_a_M2_b,title
+267,Polysemy,0.3257904052734375,0.06759482622146606,moderate overlap,N,False,Klepousniotou et al (2008),title,M1_b_M2_a,title
+268,Polysemy,0.3919702172279358,0.11917847394943237,moderate overlap,N,False,Klepousniotou et al (2008),title,M1_b_M2_b,title
+269,Polysemy,0.09340053796768188,0.06394451856613159,moderate overlap,N,True,Klepousniotou et al (2008),title,M2_a_M2_b,title
+270,Polysemy,0.12432509660720825,0.04399830102920532,low overlap,N,True,Klepousniotou et al (2008),admission,M1_a_M1_b,admission
+271,Polysemy,0.42251843214035034,0.1403096318244934,low overlap,N,False,Klepousniotou et al (2008),admission,M1_a_M2_a,admission
+272,Polysemy,0.4219486713409424,0.149652898311615,low overlap,N,False,Klepousniotou et al (2008),admission,M1_a_M2_b,admission
+273,Polysemy,0.44328850507736206,0.10368293523788452,low overlap,N,False,Klepousniotou et al (2008),admission,M1_b_M2_a,admission
+274,Polysemy,0.45137500762939453,0.13599663972854614,low overlap,N,False,Klepousniotou et al (2008),admission,M1_b_M2_b,admission
+275,Polysemy,0.07162457704544067,0.05916684865951538,low overlap,N,True,Klepousniotou et al (2008),admission,M2_a_M2_b,admission
+276,Polysemy,0.2765499949455261,0.13886886835098267,low overlap,N,True,Klepousniotou et al (2008),appeal,M1_a_M1_b,appeal
+277,Polysemy,0.5665459632873535,0.13851600885391235,low overlap,N,False,Klepousniotou et al (2008),appeal,M1_a_M2_a,appeal
+278,Polysemy,0.5948482751846313,0.1765972375869751,low overlap,N,False,Klepousniotou et al (2008),appeal,M1_a_M2_b,appeal
+279,Polysemy,0.4302446246147156,0.1529308557510376,low overlap,N,False,Klepousniotou et al (2008),appeal,M1_b_M2_a,appeal
+280,Polysemy,0.4713691473007202,0.1999104619026184,low overlap,N,False,Klepousniotou et al (2008),appeal,M1_b_M2_b,appeal
+281,Polysemy,0.09890139102935791,0.06065845489501953,low overlap,N,True,Klepousniotou et al (2008),appeal,M2_a_M2_b,appeal
+282,Polysemy,0.1497417688369751,0.07773250341415405,low overlap,N,True,Klepousniotou et al (2008),block,M1_a_M1_b,block
+283,Polysemy,0.344962477684021,0.126228928565979,low overlap,N,False,Klepousniotou et al (2008),block,M1_a_M2_a,block
+284,Polysemy,0.7499231398105621,0.08927023410797119,low overlap,N,False,Klepousniotou et al (2008),block,M1_a_M2_b,block
+285,Polysemy,0.4245447516441345,0.17136883735656738,low overlap,N,False,Klepousniotou et al (2008),block,M1_b_M2_a,block
+286,Polysemy,0.747714102268219,0.13573765754699707,low overlap,N,False,Klepousniotou et al (2008),block,M1_b_M2_b,block
+287,Polysemy,0.6813987493515015,0.11661189794540405,low overlap,N,True,Klepousniotou et al (2008),block,M2_a_M2_b,block
+288,Polysemy,0.18104279041290283,0.07493126392364502,low overlap,N,True,Klepousniotou et al (2008),board,M1_a_M1_b,board
+289,Polysemy,0.37600547075271606,0.12280988693237305,low overlap,N,False,Klepousniotou et al (2008),board,M1_a_M2_a,board
+290,Polysemy,0.3068663477897644,0.1262454390525818,low overlap,N,False,Klepousniotou et al (2008),board,M1_a_M2_b,board
+291,Polysemy,0.42013436555862427,0.10416412353515625,low overlap,N,False,Klepousniotou et al (2008),board,M1_b_M2_a,board
+292,Polysemy,0.3223819136619568,0.12045574188232422,low overlap,N,False,Klepousniotou et al (2008),board,M1_b_M2_b,board
+293,Polysemy,0.2363961935043335,0.06714361906051636,low overlap,N,True,Klepousniotou et al (2008),board,M2_a_M2_b,board
+294,Polysemy,0.21124136447906494,0.1262567639350891,low overlap,N,True,Klepousniotou et al (2008),body,M1_a_M1_b,body
+295,Polysemy,0.44524258375167847,0.19958114624023438,low overlap,N,False,Klepousniotou et al (2008),body,M1_a_M2_a,body
+296,Polysemy,0.42089176177978516,0.17938601970672607,low overlap,N,False,Klepousniotou et al (2008),body,M1_a_M2_b,body
+297,Polysemy,0.4083106517791748,0.20362025499343872,low overlap,N,False,Klepousniotou et al (2008),body,M1_b_M2_a,body
+298,Polysemy,0.3736642003059387,0.18065869808197021,low overlap,N,False,Klepousniotou et al (2008),body,M1_b_M2_b,body
+299,Polysemy,0.2009924054145813,0.08106952905654907,low overlap,N,True,Klepousniotou et al (2008),body,M2_a_M2_b,body
+300,Polysemy,0.06295061111450195,0.0573694109916687,low overlap,N,True,Klepousniotou et al (2008),charm,M1_a_M1_b,charm
+301,Polysemy,0.24099665880203247,0.11050164699554443,low overlap,N,False,Klepousniotou et al (2008),charm,M1_a_M2_a,charm
+302,Polysemy,0.6617654263973236,0.03661084175109863,low overlap,N,False,Klepousniotou et al (2008),charm,M1_a_M2_b,charm
+303,Polysemy,0.2448250651359558,0.154649555683136,low overlap,N,False,Klepousniotou et al (2008),charm,M1_b_M2_a,charm
+304,Polysemy,0.6724138855934143,0.09892457723617554,low overlap,N,False,Klepousniotou et al (2008),charm,M1_b_M2_b,charm
+305,Polysemy,0.6166521608829498,0.07942897081375122,low overlap,N,True,Klepousniotou et al (2008),charm,M2_a_M2_b,charm
+306,Polysemy,0.04117769002914429,0.03866612911224365,low overlap,N,True,Klepousniotou et al (2008),cold,M1_a_M1_b,cold
+307,Polysemy,0.2597000002861023,0.13158661127090454,low overlap,N,False,Klepousniotou et al (2008),cold,M1_a_M2_a,cold
+308,Polysemy,0.3150295615196228,0.13909518718719482,low overlap,N,False,Klepousniotou et al (2008),cold,M1_a_M2_b,cold
+309,Polysemy,0.2813147306442261,0.16817200183868408,low overlap,N,False,Klepousniotou et al (2008),cold,M1_b_M2_a,cold
+310,Polysemy,0.2960042357444763,0.17009204626083374,low overlap,N,False,Klepousniotou et al (2008),cold,M1_b_M2_b,cold
+311,Polysemy,0.17559599876403809,0.09279334545135498,low overlap,N,True,Klepousniotou et al (2008),cold,M2_a_M2_b,cold
+312,Polysemy,0.10569274425506592,0.03300994634628296,low overlap,N,True,Klepousniotou et al (2008),column,M1_a_M1_b,column
+313,Polysemy,0.45314377546310425,0.09084063768386841,low overlap,N,False,Klepousniotou et al (2008),column,M1_a_M2_a,column
+314,Polysemy,0.46791768074035645,0.12030082941055298,low overlap,N,False,Klepousniotou et al (2008),column,M1_a_M2_b,column
+315,Polysemy,0.4274439811706543,0.07854461669921875,low overlap,N,False,Klepousniotou et al (2008),column,M1_b_M2_a,column
+316,Polysemy,0.4440617561340332,0.10904073715209961,low overlap,N,False,Klepousniotou et al (2008),column,M1_b_M2_b,column
+317,Polysemy,0.10149377584457397,0.033630549907684326,low overlap,N,True,Klepousniotou et al (2008),column,M2_a_M2_b,column
+318,Polysemy,0.169793963432312,0.10234785079956055,low overlap,N,True,Klepousniotou et al (2008),company,M1_a_M1_b,company
+319,Polysemy,0.4888308644294739,0.14588260650634766,low overlap,N,False,Klepousniotou et al (2008),company,M1_a_M2_a,company
+320,Polysemy,0.48150426149368286,0.14120787382125854,low overlap,N,False,Klepousniotou et al (2008),company,M1_a_M2_b,company
+321,Polysemy,0.4681937098503113,0.21274244785308838,low overlap,N,False,Klepousniotou et al (2008),company,M1_b_M2_a,company
+322,Polysemy,0.4616895914077759,0.20529311895370483,low overlap,N,False,Klepousniotou et al (2008),company,M1_b_M2_b,company
+323,Polysemy,0.05755972862243652,0.049681246280670166,low overlap,N,True,Klepousniotou et al (2008),company,M2_a_M2_b,company
+324,Polysemy,0.5953192114830017,0.053492724895477295,low overlap,N,True,Klepousniotou et al (2008),course,M1_a_M1_b,course
+325,Polysemy,0.352136492729187,0.06465959548950195,low overlap,N,False,Klepousniotou et al (2008),course,M1_a_M2_a,course
+326,Polysemy,0.4766198992729187,0.09908652305603027,low overlap,N,False,Klepousniotou et al (2008),course,M1_a_M2_b,course
+327,Polysemy,0.6541329026222229,0.06170046329498291,low overlap,N,False,Klepousniotou et al (2008),course,M1_b_M2_a,course
+328,Polysemy,0.6673620045185089,0.06808751821517944,low overlap,N,False,Klepousniotou et al (2008),course,M1_b_M2_b,course
+329,Polysemy,0.28404366970062256,0.08540201187133789,low overlap,N,True,Klepousniotou et al (2008),course,M2_a_M2_b,course
+330,Polysemy,0.2332260012626648,0.07991683483123779,low overlap,N,True,Klepousniotou et al (2008),date,M1_a_M1_b,date
+331,Polysemy,0.35037583112716675,0.09520405530929565,low overlap,N,False,Klepousniotou et al (2008),date,M1_a_M2_a,date
+332,Polysemy,0.5269066095352173,0.10036301612854004,low overlap,N,False,Klepousniotou et al (2008),date,M1_a_M2_b,date
+333,Polysemy,0.4029572606086731,0.08302861452102661,low overlap,N,False,Klepousniotou et al (2008),date,M1_b_M2_a,date
+334,Polysemy,0.5385514497756958,0.0669218897819519,low overlap,N,False,Klepousniotou et al (2008),date,M1_b_M2_b,date
+335,Polysemy,0.4216282367706299,0.07629334926605225,low overlap,N,True,Klepousniotou et al (2008),date,M2_a_M2_b,date
+336,Polysemy,0.012964308261871338,0.0044138431549072266,low overlap,N,True,Klepousniotou et al (2008),degrees,M1_a_M1_b,degree
+337,Polysemy,0.5300857126712799,0.16927194595336914,low overlap,N,False,Klepousniotou et al (2008),degrees,M1_a_M2_a,degree
+338,Polysemy,0.5486910939216614,0.17545300722122192,low overlap,N,False,Klepousniotou et al (2008),degrees,M1_a_M2_b,degree
+339,Polysemy,0.5277113616466522,0.18201380968093872,low overlap,N,False,Klepousniotou et al (2008),degrees,M1_b_M2_a,degree
+340,Polysemy,0.5414280593395233,0.1895419955253601,low overlap,N,False,Klepousniotou et al (2008),degrees,M1_b_M2_b,degree
+341,Polysemy,0.10794210433959961,0.03803783655166626,low overlap,N,True,Klepousniotou et al (2008),degrees,M2_a_M2_b,degree
+342,Polysemy,0.13188982009887695,0.05768740177154541,low overlap,N,True,Klepousniotou et al (2008),foundation,M1_a_M1_b,foundation
+343,Polysemy,0.4053027629852295,0.15153956413269043,low overlap,N,False,Klepousniotou et al (2008),foundation,M1_a_M2_a,foundation
+344,Polysemy,0.38710999488830566,0.11911636590957642,low overlap,N,False,Klepousniotou et al (2008),foundation,M1_a_M2_b,foundation
+345,Polysemy,0.37853991985321045,0.11546933650970459,low overlap,N,False,Klepousniotou et al (2008),foundation,M1_b_M2_a,foundation
+346,Polysemy,0.3699505925178528,0.0816313624382019,low overlap,N,False,Klepousniotou et al (2008),foundation,M1_b_M2_b,foundation
+347,Polysemy,0.06825250387191772,0.04852187633514404,low overlap,N,True,Klepousniotou et al (2008),foundation,M2_a_M2_b,foundation
+348,Polysemy,0.16488516330718994,0.04175013303756714,low overlap,N,True,Klepousniotou et al (2008),function,M1_a_M1_b,function
+349,Polysemy,0.30575746297836304,0.08231556415557861,low overlap,N,False,Klepousniotou et al (2008),function,M1_a_M2_a,function
+350,Polysemy,0.2704220414161682,0.0821143388748169,low overlap,N,False,Klepousniotou et al (2008),function,M1_a_M2_b,function
+351,Polysemy,0.4777488708496094,0.09358847141265869,low overlap,N,False,Klepousniotou et al (2008),function,M1_b_M2_a,function
+352,Polysemy,0.4635161757469177,0.0936165452003479,low overlap,N,False,Klepousniotou et al (2008),function,M1_b_M2_b,function
+353,Polysemy,0.08493608236312866,0.05172240734100342,low overlap,N,True,Klepousniotou et al (2008),function,M2_a_M2_b,function
+354,Polysemy,0.12740075588226318,0.03904908895492554,low overlap,N,True,Klepousniotou et al (2008),issue,M1_a_M1_b,issue
+355,Polysemy,0.5923424959182739,0.10863244533538818,low overlap,N,False,Klepousniotou et al (2008),issue,M1_a_M2_a,issue
+356,Polysemy,0.4425760507583618,0.07397472858428955,low overlap,N,False,Klepousniotou et al (2008),issue,M1_a_M2_b,issue
+357,Polysemy,0.5094383358955383,0.10062545537948608,low overlap,N,False,Klepousniotou et al (2008),issue,M1_b_M2_a,issue
+358,Polysemy,0.42918646335601807,0.08209675550460815,low overlap,N,False,Klepousniotou et al (2008),issue,M1_b_M2_b,issue
+359,Polysemy,0.2631682753562927,0.08229190111160278,low overlap,N,True,Klepousniotou et al (2008),issue,M2_a_M2_b,issue
+360,Polysemy,0.05956333875656128,0.06784951686859131,low overlap,N,True,Klepousniotou et al (2008),key,M1_a_M1_b,key
+361,Polysemy,0.08456850051879883,0.06971073150634766,low overlap,N,False,Klepousniotou et al (2008),key,M1_a_M2_a,key
+362,Polysemy,0.13886314630508423,0.048931658267974854,low overlap,N,False,Klepousniotou et al (2008),key,M1_a_M2_b,key
+363,Polysemy,0.10065239667892456,0.11624854803085327,low overlap,N,False,Klepousniotou et al (2008),key,M1_b_M2_a,key
+364,Polysemy,0.18594467639923096,0.0723000168800354,low overlap,N,False,Klepousniotou et al (2008),key,M1_b_M2_b,key
+365,Polysemy,0.11515945196151733,0.07008951902389526,low overlap,N,True,Klepousniotou et al (2008),key,M2_a_M2_b,key
+366,Polysemy,0.10874068737030029,0.03473520278930664,low overlap,N,True,Klepousniotou et al (2008),movement,M1_a_M1_b,movement
+367,Polysemy,0.41843539476394653,0.1268070936203003,low overlap,N,False,Klepousniotou et al (2008),movement,M1_a_M2_a,movement
+368,Polysemy,0.6194026470184326,0.10026484727859497,low overlap,N,False,Klepousniotou et al (2008),movement,M1_a_M2_b,movement
+369,Polysemy,0.41979920864105225,0.1592797040939331,low overlap,N,False,Klepousniotou et al (2008),movement,M1_b_M2_a,movement
+370,Polysemy,0.664320558309555,0.11200571060180664,low overlap,N,False,Klepousniotou et al (2008),movement,M1_b_M2_b,movement
+371,Polysemy,0.5185577273368835,0.06766486167907715,low overlap,N,True,Klepousniotou et al (2008),movement,M2_a_M2_b,movement
+372,Polysemy,0.0776529312133789,0.06615424156188965,low overlap,N,True,Klepousniotou et al (2008),panel,M1_a_M1_b,panel
+373,Polysemy,0.3371625542640686,0.10556989908218384,low overlap,N,False,Klepousniotou et al (2008),panel,M1_a_M2_a,panel
+374,Polysemy,0.23014485836029053,0.09663045406341553,low overlap,N,False,Klepousniotou et al (2008),panel,M1_a_M2_b,panel
+375,Polysemy,0.37227797508239746,0.11701411008834839,low overlap,N,False,Klepousniotou et al (2008),panel,M1_b_M2_a,panel
+376,Polysemy,0.20578092336654663,0.09601140022277832,low overlap,N,False,Klepousniotou et al (2008),panel,M1_b_M2_b,panel
+377,Polysemy,0.30765998363494873,0.10987508296966553,low overlap,N,True,Klepousniotou et al (2008),panel,M2_a_M2_b,panel
+378,Polysemy,0.09627556800842285,0.07470971345901489,low overlap,N,True,Klepousniotou et al (2008),passage,M1_a_M1_b,passage
+379,Polysemy,0.35155826807022095,0.07680124044418335,low overlap,N,False,Klepousniotou et al (2008),passage,M1_a_M2_a,passage
+380,Polysemy,0.4171329736709595,0.09774166345596313,low overlap,N,False,Klepousniotou et al (2008),passage,M1_a_M2_b,passage
+381,Polysemy,0.41839826107025146,0.09092158079147339,low overlap,N,False,Klepousniotou et al (2008),passage,M1_b_M2_a,passage
+382,Polysemy,0.4570598602294922,0.07458782196044922,low overlap,N,False,Klepousniotou et al (2008),passage,M1_b_M2_b,passage
+383,Polysemy,0.19185686111450195,0.039234697818756104,low overlap,N,True,Klepousniotou et al (2008),passage,M2_a_M2_b,passage
+384,Polysemy,0.5051583647727966,0.08822280168533325,low overlap,N,True,Klepousniotou et al (2008),tape,M1_a_M1_b,tape
+385,Polysemy,0.198552668094635,0.06682777404785156,low overlap,N,False,Klepousniotou et al (2008),tape,M1_a_M2_a,tape
+386,Polysemy,0.17361879348754883,0.05038332939147949,low overlap,N,False,Klepousniotou et al (2008),tape,M1_a_M2_b,tape
+387,Polysemy,0.48545628786087036,0.13250404596328735,low overlap,N,False,Klepousniotou et al (2008),tape,M1_b_M2_a,tape
+388,Polysemy,0.5106998383998871,0.09274953603744507,low overlap,N,False,Klepousniotou et al (2008),tape,M1_b_M2_b,tape
+389,Polysemy,0.06347119808197021,0.03965479135513306,low overlap,N,True,Klepousniotou et al (2008),tape,M2_a_M2_b,tape
+390,Polysemy,0.05913358926773071,0.011585056781768799,low overlap,N,True,Klepousniotou et al (2008),tracks,M1_a_M1_b,track
+391,Polysemy,0.21104639768600464,0.0543828010559082,low overlap,N,False,Klepousniotou et al (2008),tracks,M1_a_M2_a,track
+392,Polysemy,0.28639596700668335,0.037346839904785156,low overlap,N,False,Klepousniotou et al (2008),tracks,M1_a_M2_b,track
+393,Polysemy,0.14831268787384033,0.04714691638946533,low overlap,N,False,Klepousniotou et al (2008),tracks,M1_b_M2_a,track
+394,Polysemy,0.21282237768173218,0.03402632474899292,low overlap,N,False,Klepousniotou et al (2008),tracks,M1_b_M2_b,track
+395,Polysemy,0.09153127670288086,0.022711575031280518,low overlap,N,True,Klepousniotou et al (2008),tracks,M2_a_M2_b,track
+396,Homonymy,0.11742687225341797,0.03093254566192627,homonym,N,True,New (words from K+B (2007)),bat,M1_a_M1_b,bat
+397,Homonymy,0.14121299982070923,0.03746980428695679,homonym,N,False,New (words from K+B (2007)),bat,M1_a_M2_a,bat
+398,Homonymy,0.1267518401145935,0.03700864315032959,homonym,N,False,New (words from K+B (2007)),bat,M1_a_M2_b,bat
+399,Homonymy,0.19904518127441406,0.04989868402481079,homonym,N,False,New (words from K+B (2007)),bat,M1_b_M2_a,bat
+400,Homonymy,0.1900961995124817,0.043249309062957764,homonym,N,False,New (words from K+B (2007)),bat,M1_b_M2_b,bat
+401,Homonymy,0.048884034156799316,0.019455552101135254,homonym,N,True,New (words from K+B (2007)),bat,M2_a_M2_b,bat
+402,Homonymy,0.08166366815567017,0.06592047214508057,homonym,N,True,New (words from K+B (2007)),cape,M1_a_M1_b,cape
+403,Homonymy,0.281921923160553,0.08051031827926636,homonym,N,False,New (words from K+B (2007)),cape,M1_a_M2_a,cape
+404,Homonymy,0.3808949589729309,0.07342231273651123,homonym,N,False,New (words from K+B (2007)),cape,M1_a_M2_b,cape
+405,Homonymy,0.2725687623023987,0.0720517635345459,homonym,N,False,New (words from K+B (2007)),cape,M1_b_M2_a,cape
+406,Homonymy,0.3646720051765442,0.08200639486312866,homonym,N,False,New (words from K+B (2007)),cape,M1_b_M2_b,cape
+407,Homonymy,0.09269934892654419,0.05475354194641113,homonym,N,True,New (words from K+B (2007)),cape,M2_a_M2_b,cape
+408,Polysemy,0.155539870262146,0.06055992841720581,homonym,N,True,New (words from K+B (2007)),cell,M1_a_M1_b,cell
+409,Polysemy,0.4704211950302124,0.1836259961128235,homonym,N,False,New (words from K+B (2007)),cell,M1_a_M2_a,cell
+410,Polysemy,0.46783602237701416,0.18063807487487793,homonym,N,False,New (words from K+B (2007)),cell,M1_a_M2_b,cell
+411,Polysemy,0.45668476819992065,0.14506548643112183,homonym,N,False,New (words from K+B (2007)),cell,M1_b_M2_a,cell
+412,Polysemy,0.4409223198890686,0.1500522494316101,homonym,N,False,New (words from K+B (2007)),cell,M1_b_M2_b,cell
+413,Polysemy,0.07369661331176758,0.006712198257446289,homonym,N,True,New (words from K+B (2007)),cell,M2_a_M2_b,cell
+414,Homonymy,0.18115681409835815,0.07255494594573975,homonym,N,True,New (words from K+B (2007)),mold,M1_a_M1_b,mold
+415,Homonymy,0.37387943267822266,0.10933846235275269,homonym,N,False,New (words from K+B (2007)),mold,M1_a_M2_a,mold
+416,Homonymy,0.29953211545944214,0.09638369083404541,homonym,N,False,New (words from K+B (2007)),mold,M1_a_M2_b,mold
+417,Homonymy,0.30210936069488525,0.11259806156158447,homonym,N,False,New (words from K+B (2007)),mold,M1_b_M2_a,mold
+418,Homonymy,0.24109101295471191,0.11049598455429077,homonym,N,False,New (words from K+B (2007)),mold,M1_b_M2_b,mold
+419,Homonymy,0.12057864665985107,0.045725107192993164,homonym,N,True,New (words from K+B (2007)),mold,M2_a_M2_b,mold
+420,Homonymy,0.09174299240112305,0.03558772802352905,homonym,N,True,New (words from K+B (2007)),match,M1_a_M1_b,match
+421,Homonymy,0.46217286586761475,0.06054335832595825,homonym,N,False,New (words from K+B (2007)),match,M1_a_M2_a,match
+422,Homonymy,0.46939510107040405,0.07887119054794312,homonym,N,False,New (words from K+B (2007)),match,M1_a_M2_b,match
+423,Homonymy,0.46863049268722534,0.06765878200531006,homonym,N,False,New (words from K+B (2007)),match,M1_b_M2_a,match
+424,Homonymy,0.500597208738327,0.08028453588485718,homonym,N,False,New (words from K+B (2007)),match,M1_b_M2_b,match
+425,Homonymy,0.15625476837158203,0.04568445682525635,homonym,N,True,New (words from K+B (2007)),match,M2_a_M2_b,match
+426,Homonymy,0.11678779125213623,0.0805661678314209,homonym,N,True,New (words from K+B (2007)),pupil,M1_a_M1_b,pupil
+427,Homonymy,0.3244713544845581,0.16458386182785034,homonym,N,False,New (words from K+B (2007)),pupil,M1_a_M2_a,pupil
+428,Homonymy,0.1151432991027832,0.12356513738632202,homonym,N,False,New (words from K+B (2007)),pupil,M1_a_M2_b,pupil
+429,Homonymy,0.3431870937347412,0.15859973430633545,homonym,N,False,New (words from K+B (2007)),pupil,M1_b_M2_a,pupil
+430,Homonymy,0.11799341440200806,0.1160508394241333,homonym,N,False,New (words from K+B (2007)),pupil,M1_b_M2_b,pupil
+431,Homonymy,0.33258897066116333,0.15882444381713867,homonym,N,True,New (words from K+B (2007)),pupil,M2_a_M2_b,pupil
+432,Homonymy,0.26236492395401,0.09495407342910767,homonym,N,True,New (words from K+B (2007)),seal,M1_a_M1_b,seal
+433,Homonymy,0.12174147367477417,0.08681505918502808,homonym,N,False,New (words from K+B (2007)),seal,M1_a_M2_a,seal
+434,Homonymy,0.3664023280143738,0.09179216623306274,homonym,N,False,New (words from K+B (2007)),seal,M1_a_M2_b,seal
+435,Homonymy,0.2181699275970459,0.11057120561599731,homonym,N,False,New (words from K+B (2007)),seal,M1_b_M2_a,seal
+436,Homonymy,0.19297432899475098,0.06107407808303833,homonym,N,False,New (words from K+B (2007)),seal,M1_b_M2_b,seal
+437,Homonymy,0.28032487630844116,0.08184367418289185,homonym,N,True,New (words from K+B (2007)),seal,M2_a_M2_b,seal
+438,Homonymy,0.22733080387115479,0.13376140594482422,homonym,N,True,New (words from K+B (2007)),tick,M1_a_M1_b,tick
+439,Homonymy,0.4015101194381714,0.18216150999069214,homonym,N,False,New (words from K+B (2007)),tick,M1_a_M2_a,tick
+440,Homonymy,0.4199996590614319,0.18249672651290894,homonym,N,False,New (words from K+B (2007)),tick,M1_a_M2_b,tick
+441,Homonymy,0.36753374338150024,0.11863255500793457,homonym,N,False,New (words from K+B (2007)),tick,M1_b_M2_a,tick
+442,Homonymy,0.40064823627471924,0.14696407318115234,homonym,N,False,New (words from K+B (2007)),tick,M1_b_M2_b,tick
+443,Homonymy,0.06480884552001953,0.040090084075927734,homonym,N,True,New (words from K+B (2007)),tick,M2_a_M2_b,tick
+444,Homonymy,0.009858191013336182,0.005891203880310059,homonym,N,True,New (words from K+B (2007)),yards,M1_a_M1_b,yard
+445,Homonymy,0.31551098823547363,0.1187865138053894,homonym,N,False,New (words from K+B (2007)),yards,M1_a_M2_a,yard
+446,Homonymy,0.39185047149658203,0.1601765751838684,homonym,N,False,New (words from K+B (2007)),yards,M1_a_M2_b,yard
+447,Homonymy,0.31112778186798096,0.107002854347229,homonym,N,False,New (words from K+B (2007)),yards,M1_b_M2_a,yard
+448,Homonymy,0.3877294063568115,0.1443406343460083,homonym,N,False,New (words from K+B (2007)),yards,M1_b_M2_b,yard
+449,Homonymy,0.1626429557800293,0.06473499536514282,homonym,N,True,New (words from K+B (2007)),yards,M2_a_M2_b,yard
+450,Polysemy,0.12812048196792603,0.050743162631988525,homonym,N,True,New (words from K+B (2007)),drill,M1_a_M1_b,drill
+451,Polysemy,0.16852432489395142,0.12295621633529663,homonym,N,False,New (words from K+B (2007)),drill,M1_a_M2_a,drill
+452,Polysemy,0.621650904417038,0.1674785017967224,homonym,N,False,New (words from K+B (2007)),drill,M1_a_M2_b,drill
+453,Polysemy,0.20860505104064941,0.13049381971359253,homonym,N,False,New (words from K+B (2007)),drill,M1_b_M2_a,drill
+454,Polysemy,0.59348464012146,0.18324518203735352,homonym,N,False,New (words from K+B (2007)),drill,M1_b_M2_b,drill
+455,Polysemy,0.5597549080848694,0.08985036611557007,homonym,N,True,New (words from K+B (2007)),drill,M2_a_M2_b,drill
+456,Homonymy,0.11870032548904419,0.05439871549606323,homonym,N,True,New (words from K+B (2007)),file,M1_a_M1_b,file
+457,Homonymy,0.27878451347351074,0.07844400405883789,homonym,N,False,New (words from K+B (2007)),file,M1_a_M2_a,file
+458,Homonymy,0.31746190786361694,0.09962791204452515,homonym,N,False,New (words from K+B (2007)),file,M1_a_M2_b,file
+459,Homonymy,0.31877416372299194,0.09787166118621826,homonym,N,False,New (words from K+B (2007)),file,M1_b_M2_a,file
+460,Homonymy,0.30138856172561646,0.10522150993347168,homonym,N,False,New (words from K+B (2007)),file,M1_b_M2_b,file
+461,Homonymy,0.12625426054000854,0.06615424156188965,homonym,N,True,New (words from K+B (2007)),file,M2_a_M2_b,file
+462,Homonymy,0.19771301746368408,0.05149495601654053,homonym,N,True,New (words from K+B (2007)),count,M1_a_M1_b,count
+463,Homonymy,0.4479084014892578,0.09591561555862427,homonym,N,False,New (words from K+B (2007)),count,M1_a_M2_a,count
+464,Homonymy,0.3828243613243103,0.08046150207519531,homonym,N,False,New (words from K+B (2007)),count,M1_a_M2_b,count
+465,Homonymy,0.34777384996414185,0.13833951950073242,homonym,N,False,New (words from K+B (2007)),count,M1_b_M2_a,count
+466,Homonymy,0.2843700051307678,0.13070064783096313,homonym,N,False,New (words from K+B (2007)),count,M1_b_M2_b,count
+467,Homonymy,0.15510135889053345,0.0721578598022461,homonym,N,True,New (words from K+B (2007)),count,M2_a_M2_b,count
+468,Homonymy,0.16022175550460815,0.0811159610748291,homonym,N,True,New (words from K+B (2007)),port,M1_a_M1_b,port
+469,Homonymy,0.2250651717185974,0.07636183500289917,homonym,N,False,New (words from K+B (2007)),port,M1_a_M2_a,port
+470,Homonymy,0.2308782935142517,0.06077665090560913,homonym,N,False,New (words from K+B (2007)),port,M1_a_M2_b,port
+471,Homonymy,0.20807063579559326,0.08324611186981201,homonym,N,False,New (words from K+B (2007)),port,M1_b_M2_a,port
+472,Homonymy,0.21450340747833252,0.07053154706954956,homonym,N,False,New (words from K+B (2007)),port,M1_b_M2_b,port
+473,Homonymy,0.06746315956115723,0.0345495343208313,homonym,N,True,New (words from K+B (2007)),port,M2_a_M2_b,port
+474,Homonymy,0.07649266719818115,0.08066636323928833,homonym,N,True,New (words from K+B (2007)),fan,M1_a_M1_b,fan
+475,Homonymy,0.4028468132019043,0.17725157737731934,homonym,N,False,New (words from K+B (2007)),fan,M1_a_M2_a,fan
+476,Homonymy,0.426824152469635,0.19445526599884033,homonym,N,False,New (words from K+B (2007)),fan,M1_a_M2_b,fan
+477,Homonymy,0.47528141736984253,0.17619889974594116,homonym,N,False,New (words from K+B (2007)),fan,M1_b_M2_a,fan
+478,Homonymy,0.4985434412956238,0.21645724773406982,homonym,N,False,New (words from K+B (2007)),fan,M1_b_M2_b,fan
+479,Homonymy,0.10602647066116333,0.06093412637710571,homonym,N,True,New (words from K+B (2007)),fan,M2_a_M2_b,fan
+480,Homonymy,0.12315142154693604,0.08075034618377686,homonym,N,True,New (words from K+B (2007)),sage,M1_a_M1_b,sage
+481,Homonymy,0.3296509385108948,0.1151551604270935,homonym,N,False,New (words from K+B (2007)),sage,M1_a_M2_a,sage
+482,Homonymy,0.33682113885879517,0.09383887052536011,homonym,N,False,New (words from K+B (2007)),sage,M1_a_M2_b,sage
+483,Homonymy,0.3762017488479614,0.07212865352630615,homonym,N,False,New (words from K+B (2007)),sage,M1_b_M2_a,sage
+484,Homonymy,0.394118070602417,0.08332973718643188,homonym,N,False,New (words from K+B (2007)),sage,M1_b_M2_b,sage
+485,Homonymy,0.04114717245101929,0.045371830463409424,homonym,N,True,New (words from K+B (2007)),sage,M2_a_M2_b,sage
+486,Homonymy,0.16136986017227173,0.049787044525146484,homonym,N,True,New (words from K+B (2007)),racket,M1_a_M1_b,racket
+487,Homonymy,0.2862880825996399,0.0884808897972107,homonym,N,False,New (words from K+B (2007)),racket,M1_a_M2_a,racket
+488,Homonymy,0.29893386363983154,0.10213518142700195,homonym,N,False,New (words from K+B (2007)),racket,M1_a_M2_b,racket
+489,Homonymy,0.2621392607688904,0.06275361776351929,homonym,N,False,New (words from K+B (2007)),racket,M1_b_M2_a,racket
+490,Homonymy,0.29596424102783203,0.07047504186630249,homonym,N,False,New (words from K+B (2007)),racket,M1_b_M2_b,racket
+491,Homonymy,0.04439443349838257,0.016634106636047363,homonym,N,True,New (words from K+B (2007)),racket,M2_a_M2_b,racket
+492,Homonymy,0.09533125162124634,0.06779253482818604,homonym,V,True,Brown(2008),toasted,M1_a_M1_b,toast
+493,Homonymy,0.22229498624801636,0.13010454177856445,homonym,V,False,Brown(2008),toasted,M1_a_M2_a,toast
+494,Homonymy,0.24185240268707275,0.18238717317581177,homonym,V,False,Brown(2008),toasted,M1_a_M2_b,toast
+495,Homonymy,0.140097975730896,0.13288819789886475,homonym,V,False,Brown(2008),toasted,M1_b_M2_a,toast
+496,Homonymy,0.18000024557113647,0.16503626108169556,homonym,V,False,Brown(2008),toasted,M1_b_M2_b,toast
+497,Homonymy,0.10721683502197266,0.09547770023345947,homonym,V,True,Brown(2008),toasted,M2_a_M2_b,toast
+498,Homonymy,0.07879775762557983,0.03989022970199585,homonym,V,True,Brown(2008),penned,M1_a_M1_b,pen
+499,Homonymy,0.4647795557975769,0.1387997269630432,homonym,V,False,Brown(2008),penned,M1_a_M2_a,pen
+500,Homonymy,0.32228219509124756,0.09442806243896484,homonym,V,False,Brown(2008),penned,M1_a_M2_b,pen
+501,Homonymy,0.48061835765838623,0.18515384197235107,homonym,V,False,Brown(2008),penned,M1_b_M2_a,pen
+502,Homonymy,0.35441112518310547,0.14042240381240845,homonym,V,False,Brown(2008),penned,M1_b_M2_b,pen
+503,Homonymy,0.4477308392524719,0.07877397537231445,homonym,V,True,Brown(2008),penned,M2_a_M2_b,pen
+504,Homonymy,0.05269157886505127,0.030866503715515137,homonym,V,True,Brown(2008),banked,M1_a_M1_b,bank
+505,Homonymy,0.3239244222640991,0.13287979364395142,homonym,V,False,Brown(2008),banked,M1_a_M2_a,bank
+506,Homonymy,0.27355480194091797,0.13630366325378418,homonym,V,False,Brown(2008),banked,M1_a_M2_b,bank
+507,Homonymy,0.3509707450866699,0.1462830901145935,homonym,V,False,Brown(2008),banked,M1_b_M2_a,bank
+508,Homonymy,0.29891055822372437,0.14644789695739746,homonym,V,False,Brown(2008),banked,M1_b_M2_b,bank
+509,Homonymy,0.07129788398742676,0.01507037878036499,homonym,V,True,Brown(2008),banked,M2_a_M2_b,bank
+510,Homonymy,0.07574117183685303,0.030859827995300293,homonym,V,True,Brown(2008),poached,M1_a_M1_b,poach
+511,Homonymy,0.17714309692382812,0.14608007669448853,homonym,V,False,Brown(2008),poached,M1_a_M2_a,poach
+512,Homonymy,0.2031039595603943,0.14639592170715332,homonym,V,False,Brown(2008),poached,M1_a_M2_b,poach
+513,Homonymy,0.1950710415840149,0.10395503044128418,homonym,V,False,Brown(2008),poached,M1_b_M2_a,poach
+514,Homonymy,0.27370303869247437,0.11964505910873413,homonym,V,False,Brown(2008),poached,M1_b_M2_b,poach
+515,Homonymy,0.09446865320205688,0.037650465965270996,homonym,V,True,Brown(2008),poached,M2_a_M2_b,poach
+516,Polysemy,0.13209795951843262,0.02587217092514038,homonym,V,True,Brown(2008),clogged,M1_a_M1_b,clog
+517,Polysemy,0.17320555448532104,0.0967705249786377,homonym,V,False,Brown(2008),clogged,M1_a_M2_a,clog
+518,Polysemy,0.23587942123413086,0.08124160766601562,homonym,V,False,Brown(2008),clogged,M1_a_M2_b,clog
+519,Polysemy,0.2073575258255005,0.126630961894989,homonym,V,False,Brown(2008),clogged,M1_b_M2_a,clog
+520,Polysemy,0.24084711074829102,0.11136066913604736,homonym,V,False,Brown(2008),clogged,M1_b_M2_b,clog
+521,Polysemy,0.13866925239562988,0.040646910667419434,homonym,V,True,Brown(2008),clogged,M2_a_M2_b,clog
+522,Polysemy,0.050181686878204346,0.030534744262695312,homonym,V,True,Brown(2008),staked,M1_a_M1_b,stake
+523,Polysemy,0.2398088574409485,0.12962478399276733,homonym,V,False,Brown(2008),staked,M1_a_M2_a,stake
+524,Polysemy,0.3029260039329529,0.11743402481079102,homonym,V,False,Brown(2008),staked,M1_a_M2_b,stake
+525,Polysemy,0.2053888440132141,0.11574429273605347,homonym,V,False,Brown(2008),staked,M1_b_M2_a,stake
+526,Polysemy,0.2875438928604126,0.09807568788528442,homonym,V,False,Brown(2008),staked,M1_b_M2_b,stake
+527,Polysemy,0.191575288772583,0.07531261444091797,homonym,V,True,Brown(2008),staked,M2_a_M2_b,stake
+528,Polysemy,0.2216261625289917,0.06493240594863892,homonym,V,True,Brown(2008),picked,M1_a_M1_b,pick
+529,Polysemy,0.32020479440689087,0.11354541778564453,homonym,V,False,Brown(2008),picked,M1_a_M2_a,pick
+530,Polysemy,0.20542359352111816,0.09314185380935669,homonym,V,False,Brown(2008),picked,M1_a_M2_b,pick
+531,Polysemy,0.2781056761741638,0.11366778612136841,homonym,V,False,Brown(2008),picked,M1_b_M2_a,pick
+532,Polysemy,0.32799994945526123,0.11889153718948364,homonym,V,False,Brown(2008),picked,M1_b_M2_b,pick
+533,Polysemy,0.242567241191864,0.04573929309844971,homonym,V,True,Brown(2008),picked,M2_a_M2_b,pick
+534,Polysemy,0.06842881441116333,0.0324130654335022,homonym,V,True,Brown(2008),stalled,M1_a_M1_b,stall
+535,Polysemy,0.1604819893836975,0.07980871200561523,homonym,V,False,Brown(2008),stalled,M1_a_M2_a,stall
+536,Polysemy,0.23123806715011597,0.08735179901123047,homonym,V,False,Brown(2008),stalled,M1_a_M2_b,stall
+537,Polysemy,0.13881945610046387,0.10032665729522705,homonym,V,False,Brown(2008),stalled,M1_b_M2_a,stall
+538,Polysemy,0.18355053663253784,0.1120869517326355,homonym,V,False,Brown(2008),stalled,M1_b_M2_b,stall
+539,Polysemy,0.17804032564163208,0.05715763568878174,homonym,V,True,Brown(2008),stalled,M2_a_M2_b,stall
+540,Polysemy,0.15393614768981934,0.14564090967178345,distant,V,True,Brown(2008),fixed,M1_a_M1_b,fix
+541,Polysemy,0.24312061071395874,0.16229701042175293,distant,V,False,Brown(2008),fixed,M1_a_M2_a,fix
+542,Polysemy,0.2937949299812317,0.1884138584136963,distant,V,False,Brown(2008),fixed,M1_a_M2_b,fix
+543,Polysemy,0.34556788206100464,0.15506356954574585,distant,V,False,Brown(2008),fixed,M1_b_M2_a,fix
+544,Polysemy,0.3545398712158203,0.17137396335601807,distant,V,False,Brown(2008),fixed,M1_b_M2_b,fix
+545,Polysemy,0.1714392900466919,0.10219919681549072,distant,V,True,Brown(2008),fixed,M2_a_M2_b,fix
+546,Polysemy,0.18787842988967896,0.1379528045654297,distant,V,True,Brown(2008),left,M1_a_M1_b,leave
+547,Polysemy,0.6038128733634949,0.32140713930130005,distant,V,False,Brown(2008),left,M1_a_M2_a,leave
+548,Polysemy,0.5331836044788361,0.33296895027160645,distant,V,False,Brown(2008),left,M1_a_M2_b,leave
+549,Polysemy,0.6212942898273468,0.2783660292625427,distant,V,False,Brown(2008),left,M1_b_M2_a,leave
+550,Polysemy,0.5476974844932556,0.28946924209594727,distant,V,False,Brown(2008),left,M1_b_M2_b,leave
+551,Polysemy,0.20359301567077637,0.04116392135620117,distant,V,True,Brown(2008),left,M2_a_M2_b,leave
+552,Polysemy,0.08032524585723877,0.048552870750427246,distant,V,True,Brown(2008),stayed,M1_a_M1_b,stay
+553,Polysemy,0.3017536997795105,0.17682915925979614,distant,V,False,Brown(2008),stayed,M1_a_M2_a,stay
+554,Polysemy,0.343555748462677,0.1502792239189148,distant,V,False,Brown(2008),stayed,M1_a_M2_b,stay
+555,Polysemy,0.2840946912765503,0.1600688099861145,distant,V,False,Brown(2008),stayed,M1_b_M2_a,stay
+556,Polysemy,0.33883851766586304,0.13213026523590088,distant,V,False,Brown(2008),stayed,M1_b_M2_b,stay
+557,Polysemy,0.11859899759292603,0.06580942869186401,distant,V,True,Brown(2008),stayed,M2_a_M2_b,stay
+558,Polysemy,0.42323487997055054,0.10715073347091675,distant,V,True,Brown(2008),crossed,M1_a_M1_b,cross
+559,Polysemy,0.32818955183029175,0.10199868679046631,distant,V,False,Brown(2008),crossed,M1_a_M2_a,cross
+560,Polysemy,0.4722582697868347,0.09822362661361694,distant,V,False,Brown(2008),crossed,M1_a_M2_b,cross
+561,Polysemy,0.5040999054908752,0.13993680477142334,distant,V,False,Brown(2008),crossed,M1_b_M2_a,cross
+562,Polysemy,0.5613771975040436,0.10846871137619019,distant,V,False,Brown(2008),crossed,M1_b_M2_b,cross
+563,Polysemy,0.15675902366638184,0.06696832180023193,distant,V,True,Brown(2008),crossed,M2_a_M2_b,cross
+564,Polysemy,0.16651833057403564,0.14509332180023193,distant,V,True,Brown(2008),ran,M1_a_M1_b,run
+565,Polysemy,0.19116097688674927,0.17065483331680298,distant,V,False,Brown(2008),ran,M1_a_M2_a,run
+566,Polysemy,0.21423012018203735,0.18750733137130737,distant,V,False,Brown(2008),ran,M1_a_M2_b,run
+567,Polysemy,0.29390084743499756,0.2404835820198059,distant,V,False,Brown(2008),ran,M1_b_M2_a,run
+568,Polysemy,0.3061160445213318,0.21374273300170898,distant,V,False,Brown(2008),ran,M1_b_M2_b,run
+569,Polysemy,0.05878639221191406,0.08600097894668579,distant,V,True,Brown(2008),ran,M2_a_M2_b,run
+570,Polysemy,0.16578751802444458,0.08907723426818848,distant,V,True,Brown(2008),spilled,M1_a_M1_b,spill
+571,Polysemy,0.32845205068588257,0.12770545482635498,distant,V,False,Brown(2008),spilled,M1_a_M2_a,spill
+572,Polysemy,0.3677690625190735,0.09836971759796143,distant,V,False,Brown(2008),spilled,M1_a_M2_b,spill
+573,Polysemy,0.32275182008743286,0.1624811291694641,distant,V,False,Brown(2008),spilled,M1_b_M2_a,spill
+574,Polysemy,0.39546525478363037,0.1351979374885559,distant,V,False,Brown(2008),spilled,M1_b_M2_b,spill
+575,Polysemy,0.10026466846466064,0.09081375598907471,distant,V,True,Brown(2008),spilled,M2_a_M2_b,spill
+576,Polysemy,0.15237396955490112,0.05816519260406494,distant,V,True,Brown(2008),cast,M1_a_M1_b,cast
+577,Polysemy,0.22267252206802368,0.13726991415023804,distant,V,False,Brown(2008),cast,M1_a_M2_a,cast
+578,Polysemy,0.1948772668838501,0.14131879806518555,distant,V,False,Brown(2008),cast,M1_a_M2_b,cast
+579,Polysemy,0.26247960329055786,0.14614319801330566,distant,V,False,Brown(2008),cast,M1_b_M2_a,cast
+580,Polysemy,0.26874417066574097,0.14810937643051147,distant,V,False,Brown(2008),cast,M1_b_M2_b,cast
+581,Polysemy,0.16610437631607056,0.05445510149002075,distant,V,True,Brown(2008),cast,M2_a_M2_b,cast
+582,Polysemy,0.13712894916534424,0.08235311508178711,distant,V,True,Brown(2008),pushed,M1_a_M1_b,push
+583,Polysemy,0.47224581241607666,0.21807509660720825,distant,V,False,Brown(2008),pushed,M1_a_M2_a,push
+584,Polysemy,0.46763044595718384,0.2259557843208313,distant,V,False,Brown(2008),pushed,M1_a_M2_b,push
+585,Polysemy,0.45110297203063965,0.24454444646835327,distant,V,False,Brown(2008),pushed,M1_b_M2_a,push
+586,Polysemy,0.47524136304855347,0.2519632577896118,distant,V,False,Brown(2008),pushed,M1_b_M2_b,push
+587,Polysemy,0.09474200010299683,0.05236726999282837,distant,V,True,Brown(2008),pushed,M2_a_M2_b,push
+588,Polysemy,0.19151043891906738,0.17092132568359375,distant,V,True,Brown(2008),called,M1_a_M1_b,call
+589,Polysemy,0.2671293616294861,0.12120300531387329,distant,V,False,Brown(2008),called,M1_a_M2_a,call
+590,Polysemy,0.37917953729629517,0.13008815050125122,distant,V,False,Brown(2008),called,M1_a_M2_b,call
+591,Polysemy,0.34115463495254517,0.26310575008392334,distant,V,False,Brown(2008),called,M1_b_M2_a,call
+592,Polysemy,0.464733362197876,0.304118275642395,distant,V,False,Brown(2008),called,M1_b_M2_b,call
+593,Polysemy,0.14804142713546753,0.06815361976623535,distant,V,True,Brown(2008),called,M2_a_M2_b,call
+594,Polysemy,0.1630043387413025,0.13580960035324097,distant,V,True,Brown(2008),drained,M1_a_M1_b,drain
+595,Polysemy,0.27902334928512573,0.17132586240768433,distant,V,False,Brown(2008),drained,M1_a_M2_a,drain
+596,Polysemy,0.3235851526260376,0.18150246143341064,distant,V,False,Brown(2008),drained,M1_a_M2_b,drain
+597,Polysemy,0.36032634973526,0.1517217755317688,distant,V,False,Brown(2008),drained,M1_b_M2_a,drain
+598,Polysemy,0.29404646158218384,0.14051401615142822,distant,V,False,Brown(2008),drained,M1_b_M2_b,drain
+599,Polysemy,0.17424523830413818,0.08139699697494507,distant,V,True,Brown(2008),drained,M2_a_M2_b,drain
+600,Polysemy,0.13907349109649658,0.050877273082733154,close,V,True,Brown(2008),drew,M1_a_M1_b,draw
+601,Polysemy,0.3482513427734375,0.07818406820297241,close,V,False,Brown(2008),drew,M1_a_M2_a,draw
+602,Polysemy,0.31797313690185547,0.1086394190788269,close,V,False,Brown(2008),drew,M1_a_M2_b,draw
+603,Polysemy,0.2958596348762512,0.06931805610656738,close,V,False,Brown(2008),drew,M1_b_M2_a,draw
+604,Polysemy,0.2672533392906189,0.11925143003463745,close,V,False,Brown(2008),drew,M1_b_M2_b,draw
+605,Polysemy,0.25876444578170776,0.06461900472640991,close,V,True,Brown(2008),drew,M2_a_M2_b,draw
+606,Polysemy,0.028505384922027588,0.029841125011444092,close,V,True,Brown(2008),hailed,M1_a_M1_b,hail
+607,Polysemy,0.28127729892730713,0.0972633957862854,close,V,False,Brown(2008),hailed,M1_a_M2_a,hail
+608,Polysemy,0.29408329725265503,0.09230411052703857,close,V,False,Brown(2008),hailed,M1_a_M2_b,hail
+609,Polysemy,0.2770960330963135,0.09508311748504639,close,V,False,Brown(2008),hailed,M1_b_M2_a,hail
+610,Polysemy,0.29422837495803833,0.09645354747772217,close,V,False,Brown(2008),hailed,M1_b_M2_b,hail
+611,Polysemy,0.11702775955200195,0.04843854904174805,close,V,True,Brown(2008),hailed,M2_a_M2_b,hail
+612,Polysemy,0.306388258934021,0.139396071434021,close,V,True,Brown(2008),posted,M1_a_M1_b,post
+613,Polysemy,0.31415653228759766,0.16301941871643066,close,V,False,Brown(2008),posted,M1_a_M2_a,post
+614,Polysemy,0.3541903495788574,0.164295494556427,close,V,False,Brown(2008),posted,M1_a_M2_b,post
+615,Polysemy,0.223493754863739,0.1041635274887085,close,V,False,Brown(2008),posted,M1_b_M2_a,post
+616,Polysemy,0.22527378797531128,0.10932236909866333,close,V,False,Brown(2008),posted,M1_b_M2_b,post
+617,Polysemy,0.13998746871948242,0.056908607482910156,close,V,True,Brown(2008),posted,M2_a_M2_b,post
+618,Polysemy,0.1327490210533142,0.09647542238235474,close,V,True,Brown(2008),broke,M1_a_M1_b,break
+619,Polysemy,0.3570505976676941,0.1271234154701233,close,V,False,Brown(2008),broke,M1_a_M2_a,break
+620,Polysemy,0.4054490923881531,0.11563193798065186,close,V,False,Brown(2008),broke,M1_a_M2_b,break
+621,Polysemy,0.427916944026947,0.19157761335372925,close,V,False,Brown(2008),broke,M1_b_M2_a,break
+622,Polysemy,0.4771001935005188,0.1552947759628296,close,V,False,Brown(2008),broke,M1_b_M2_b,break
+623,Polysemy,0.3374210596084595,0.08242100477218628,close,V,True,Brown(2008),broke,M2_a_M2_b,break
+624,Polysemy,0.14031893014907837,0.05565601587295532,close,V,True,Brown(2008),served,M1_a_M1_b,serve
+625,Polysemy,0.37861770391464233,0.18376284837722778,close,V,False,Brown(2008),served,M1_a_M2_a,serve
+626,Polysemy,0.5490643084049225,0.16911333799362183,close,V,False,Brown(2008),served,M1_a_M2_b,serve
+627,Polysemy,0.40339821577072144,0.21568816900253296,close,V,False,Brown(2008),served,M1_b_M2_a,serve
+628,Polysemy,0.5311541557312012,0.20495623350143433,close,V,False,Brown(2008),served,M1_b_M2_b,serve
+629,Polysemy,0.3422067165374756,0.056961655616760254,close,V,True,Brown(2008),served,M2_a_M2_b,serve
+630,Polysemy,0.11729371547698975,0.0957329273223877,close,V,True,Brown(2008),checked,M1_a_M1_b,check
+631,Polysemy,0.1960679292678833,0.11168861389160156,close,V,False,Brown(2008),checked,M1_a_M2_a,check
+632,Polysemy,0.24142920970916748,0.13753002882003784,close,V,False,Brown(2008),checked,M1_a_M2_b,check
+633,Polysemy,0.18282920122146606,0.1252020001411438,close,V,False,Brown(2008),checked,M1_b_M2_a,check
+634,Polysemy,0.26726919412612915,0.13739925622940063,close,V,False,Brown(2008),checked,M1_b_M2_b,check
+635,Polysemy,0.12497305870056152,0.06404608488082886,close,V,True,Brown(2008),checked,M2_a_M2_b,check
+636,Polysemy,0.014174103736877441,0.019585251808166504,close,V,True,Brown(2008),called,M1_a_M1_b,call
+637,Polysemy,0.25077658891677856,0.069369375705719,close,V,False,Brown(2008),called,M1_a_M2_a,call
+638,Polysemy,0.29147452116012573,0.06806826591491699,close,V,False,Brown(2008),called,M1_a_M2_b,call
+639,Polysemy,0.2628178000450134,0.09464991092681885,close,V,False,Brown(2008),called,M1_b_M2_a,call
+640,Polysemy,0.296514093875885,0.08990132808685303,close,V,False,Brown(2008),called,M1_b_M2_b,call
+641,Polysemy,0.1042625904083252,0.022152066230773926,close,V,True,Brown(2008),called,M2_a_M2_b,call
+642,Polysemy,0.20582395792007446,0.06477159261703491,close,V,True,Brown(2008),sang,M1_a_M1_b,sing
+643,Polysemy,0.23325705528259277,0.07093185186386108,close,V,False,Brown(2008),sang,M1_a_M2_a,sing
+644,Polysemy,0.28329014778137207,0.12958377599716187,close,V,False,Brown(2008),sang,M1_a_M2_b,sing
+645,Polysemy,0.23268675804138184,0.08172261714935303,close,V,False,Brown(2008),sang,M1_b_M2_a,sing
+646,Polysemy,0.17196160554885864,0.1392238736152649,close,V,False,Brown(2008),sang,M1_b_M2_b,sing
+647,Polysemy,0.18512237071990967,0.07834726572036743,close,V,True,Brown(2008),sang,M2_a_M2_b,sing
+648,Polysemy,0.13147693872451782,0.10875290632247925,close,V,True,Brown(2008),cleared,M1_a_M1_b,clear
+649,Polysemy,0.2823149561882019,0.09390872716903687,close,V,False,Brown(2008),cleared,M1_a_M2_a,clear
+650,Polysemy,0.3739539384841919,0.10629987716674805,close,V,False,Brown(2008),cleared,M1_a_M2_b,clear
+651,Polysemy,0.19376587867736816,0.11823499202728271,close,V,False,Brown(2008),cleared,M1_b_M2_a,clear
+652,Polysemy,0.3170570135116577,0.1251022219657898,close,V,False,Brown(2008),cleared,M1_b_M2_b,clear
+653,Polysemy,0.10177284479141235,0.045526325702667236,close,V,True,Brown(2008),cleared,M2_a_M2_b,clear
+654,Polysemy,0.046735942363739014,0.031241238117218018,close,V,True,Brown(2008),loaded,M1_a_M1_b,load
+655,Polysemy,0.250927209854126,0.06706225872039795,close,V,False,Brown(2008),loaded,M1_a_M2_a,load
+656,Polysemy,0.22170084714889526,0.06912755966186523,close,V,False,Brown(2008),loaded,M1_a_M2_b,load
+657,Polysemy,0.20568323135375977,0.0835726261138916,close,V,False,Brown(2008),loaded,M1_b_M2_a,load
+658,Polysemy,0.17863190174102783,0.08411407470703125,close,V,False,Brown(2008),loaded,M1_b_M2_b,load
+659,Polysemy,0.03564298152923584,0.013177454471588135,close,V,True,Brown(2008),loaded,M2_a_M2_b,load
+660,Homonymy,0.21459585428237915,0.1261310577392578,homonym,N,True,New stimuli,band,M1_a_M1_b,band
+661,Homonymy,0.4495247006416321,0.0736386775970459,homonym,N,False,New stimuli,band,M1_a_M2_a,band
+662,Homonymy,0.45585358142852783,0.07628172636032104,homonym,N,False,New stimuli,band,M1_a_M2_b,band
+663,Homonymy,0.4114581346511841,0.1163414716720581,homonym,N,False,New stimuli,band,M1_b_M2_a,band
+664,Homonymy,0.40910667181015015,0.12951123714447021,homonym,N,False,New stimuli,band,M1_b_M2_b,band
+665,Homonymy,0.09126311540603638,0.03440558910369873,homonym,N,True,New stimuli,band,M2_a_M2_b,band
+666,Homonymy,0.07167452573776245,0.03599900007247925,homonym,N,True,New stimuli,clip,M1_a_M1_b,clip
+667,Homonymy,0.35190731287002563,0.06446462869644165,homonym,N,False,New stimuli,clip,M1_a_M2_a,clip
+668,Homonymy,0.33322298526763916,0.09798681735992432,homonym,N,False,New stimuli,clip,M1_a_M2_b,clip
+669,Homonymy,0.40623462200164795,0.07637321949005127,homonym,N,False,New stimuli,clip,M1_b_M2_a,clip
+670,Homonymy,0.38048481941223145,0.10166788101196289,homonym,N,False,New stimuli,clip,M1_b_M2_b,clip
+671,Homonymy,0.2087705135345459,0.06785827875137329,homonym,N,True,New stimuli,clip,M2_a_M2_b,clip
+672,Homonymy,0.10647028684616089,0.013601243495941162,homonym,N,True,New stimuli,jam,M1_a_M1_b,jam
+673,Homonymy,0.4428572654724121,0.10881316661834717,homonym,N,False,New stimuli,jam,M1_a_M2_a,jam
+674,Homonymy,0.1147049069404602,0.07225370407104492,homonym,N,False,New stimuli,jam,M1_a_M2_b,jam
+675,Homonymy,0.45075511932373047,0.09955745935440063,homonym,N,False,New stimuli,jam,M1_b_M2_a,jam
+676,Homonymy,0.1549849510192871,0.054440438747406006,homonym,N,False,New stimuli,jam,M1_b_M2_b,jam
+677,Homonymy,0.3958997130393982,0.07062143087387085,homonym,N,True,New stimuli,jam,M2_a_M2_b,jam
+678,Homonymy,0.11002999544143677,0.04373544454574585,homonym,N,True,New (words from K+B (2007)),scale,M1_a_M1_b,scale
+679,Homonymy,0.1779569387435913,0.09707790613174438,homonym,N,False,New (words from K+B (2007)),scale,M1_a_M2_a,scale
+680,Homonymy,0.38500910997390747,0.1340702772140503,homonym,N,False,New (words from K+B (2007)),scale,M1_a_M2_b,scale
+681,Homonymy,0.27836596965789795,0.09064358472824097,homonym,N,False,New (words from K+B (2007)),scale,M1_b_M2_a,scale
+682,Homonymy,0.4361479878425598,0.13389849662780762,homonym,N,False,New (words from K+B (2007)),scale,M1_b_M2_b,scale
+683,Homonymy,0.3347356915473938,0.11753290891647339,homonym,N,True,New (words from K+B (2007)),scale,M2_a_M2_b,scale
+684,Homonymy,0.08562666177749634,0.04012876749038696,homonym,N,True,New stimuli,palm,M1_a_M1_b,palm
+685,Homonymy,0.2710092067718506,0.09629404544830322,homonym,N,False,New stimuli,palm,M1_a_M2_a,palm
+686,Homonymy,0.269844651222229,0.08198046684265137,homonym,N,False,New stimuli,palm,M1_a_M2_b,palm
+687,Homonymy,0.3392660617828369,0.12095868587493896,homonym,N,False,New stimuli,palm,M1_b_M2_a,palm
+688,Homonymy,0.3238474130630493,0.08992165327072144,homonym,N,False,New stimuli,palm,M1_b_M2_b,palm
+689,Homonymy,0.12596553564071655,0.10217940807342529,homonym,N,True,New stimuli,palm,M2_a_M2_b,palm
+690,Homonymy,0.514390617609024,0.06637221574783325,homonym,N,True,New (words from K+B (2007)),pitcher,M1_a_M1_b,pitcher
+691,Homonymy,0.44858962297439575,0.05818730592727661,homonym,N,False,New (words from K+B (2007)),pitcher,M1_a_M2_a,pitcher
+692,Homonymy,0.35248464345932007,0.07965713739395142,homonym,N,False,New (words from K+B (2007)),pitcher,M1_a_M2_b,pitcher
+693,Homonymy,0.5604448914527893,0.0707705020904541,homonym,N,False,New (words from K+B (2007)),pitcher,M1_b_M2_a,pitcher
+694,Homonymy,0.5537680685520172,0.08389878273010254,homonym,N,False,New (words from K+B (2007)),pitcher,M1_b_M2_b,pitcher
+695,Homonymy,0.05472290515899658,0.02872943878173828,homonym,N,True,New (words from K+B (2007)),pitcher,M2_a_M2_b,pitcher
+696,Homonymy,0.21412748098373413,0.08562076091766357,homonym,N,True,New (words from K+B (2007)),race,M1_a_M1_b,race
+697,Homonymy,0.4564604163169861,0.0742226243019104,homonym,N,False,New (words from K+B (2007)),race,M1_a_M2_a,race
+698,Homonymy,0.4738144278526306,0.08340859413146973,homonym,N,False,New (words from K+B (2007)),race,M1_a_M2_b,race
+699,Homonymy,0.45173925161361694,0.09340006113052368,homonym,N,False,New (words from K+B (2007)),race,M1_b_M2_a,race
+700,Homonymy,0.490989089012146,0.09980732202529907,homonym,N,False,New (words from K+B (2007)),race,M1_b_M2_b,race
+701,Homonymy,0.15861308574676514,0.022306323051452637,homonym,N,True,New (words from K+B (2007)),race,M2_a_M2_b,race
+702,Homonymy,0.20472288131713867,0.09681004285812378,homonym,N,True,New (words from K+B (2007)),toll,M1_a_M1_b,toll
+703,Homonymy,0.2876027822494507,0.0642138123512268,homonym,N,False,New (words from K+B (2007)),toll,M1_a_M2_a,toll
+704,Homonymy,0.37644118070602417,0.1067240834236145,homonym,N,False,New (words from K+B (2007)),toll,M1_a_M2_b,toll
+705,Homonymy,0.30984485149383545,0.09288603067398071,homonym,N,False,New (words from K+B (2007)),toll,M1_b_M2_a,toll
+706,Homonymy,0.3477674126625061,0.07722395658493042,homonym,N,False,New (words from K+B (2007)),toll,M1_b_M2_b,toll
+707,Homonymy,0.21620649099349976,0.06998604536056519,homonym,N,True,New (words from K+B (2007)),toll,M2_a_M2_b,toll
+708,Homonymy,0.08466219902038574,0.09645348787307739,homonym,N,True,New (words from K+B (2007)),mole,M1_a_M1_b,mole
+709,Homonymy,0.12198597192764282,0.08948284387588501,homonym,N,False,New (words from K+B (2007)),mole,M1_a_M2_a,mole
+710,Homonymy,0.16255635023117065,0.09133803844451904,homonym,N,False,New (words from K+B (2007)),mole,M1_a_M2_b,mole
+711,Homonymy,0.13632243871688843,0.08755379915237427,homonym,N,False,New (words from K+B (2007)),mole,M1_b_M2_a,mole
+712,Homonymy,0.13352781534194946,0.0737341046333313,homonym,N,False,New (words from K+B (2007)),mole,M1_b_M2_b,mole
+713,Homonymy,0.17192351818084717,0.07407557964324951,homonym,N,True,New (words from K+B (2007)),mole,M2_a_M2_b,mole
+714,Homonymy,0.18822896480560303,0.10763931274414062,homonym,N,True,New (words from K+B (2007)),perch,M1_a_M1_b,perch
+715,Homonymy,0.16161751747131348,0.04750192165374756,homonym,N,False,New (words from K+B (2007)),perch,M1_a_M2_a,perch
+716,Homonymy,0.09393751621246338,0.04810255765914917,homonym,N,False,New (words from K+B (2007)),perch,M1_a_M2_b,perch
+717,Homonymy,0.316257119178772,0.11929726600646973,homonym,N,False,New (words from K+B (2007)),perch,M1_b_M2_a,perch
+718,Homonymy,0.14991313219070435,0.09542226791381836,homonym,N,False,New (words from K+B (2007)),perch,M1_b_M2_b,perch
+719,Homonymy,0.173814058303833,0.0349658727645874,homonym,N,True,New (words from K+B (2007)),perch,M2_a_M2_b,perch
+720,Homonymy,0.24743878841400146,0.06065976619720459,homonym,N,True,Klepousniotou (2002),punch,M1_a_M1_b,punch
+721,Homonymy,0.382423460483551,0.17318058013916016,homonym,N,False,Klepousniotou (2002),punch,M1_a_M2_a,punch
+722,Homonymy,0.4083988666534424,0.1995912790298462,homonym,N,False,Klepousniotou (2002),punch,M1_a_M2_b,punch
+723,Homonymy,0.4399171471595764,0.1733487844467163,homonym,N,False,Klepousniotou (2002),punch,M1_b_M2_a,punch
+724,Homonymy,0.45015227794647217,0.18638640642166138,homonym,N,False,Klepousniotou (2002),punch,M1_b_M2_b,punch
+725,Homonymy,0.06093132495880127,0.04228675365447998,homonym,N,True,Klepousniotou (2002),punch,M2_a_M2_b,punch
+726,Homonymy,0.07004952430725098,0.033624470233917236,homonym,V,True,Klepousniotou (2002),tapped,M1_a_M1_b,tap
+727,Homonymy,0.20399826765060425,0.09781444072723389,homonym,V,False,Klepousniotou (2002),tapped,M1_a_M2_a,tap
+728,Homonymy,0.2146286964416504,0.16554862260818481,homonym,V,False,Klepousniotou (2002),tapped,M1_a_M2_b,tap
+729,Homonymy,0.13459515571594238,0.0761340856552124,homonym,V,False,Klepousniotou (2002),tapped,M1_b_M2_a,tap
+730,Homonymy,0.15184026956558228,0.1249990463256836,homonym,V,False,Klepousniotou (2002),tapped,M1_b_M2_b,tap
+731,Homonymy,0.0971631407737732,0.12411677837371826,homonym,V,True,Klepousniotou (2002),tapped,M2_a_M2_b,tap
+732,Homonymy,0.18035966157913208,0.0786823034286499,homonym,V,True,Klepousniotou (2002),lapped,M1_a_M1_b,lap
+733,Homonymy,0.33131200075149536,0.11910367012023926,homonym,V,False,Klepousniotou (2002),lapped,M1_a_M2_a,lap
+734,Homonymy,0.41211193799972534,0.14016622304916382,homonym,V,False,Klepousniotou (2002),lapped,M1_a_M2_b,lap
+735,Homonymy,0.17950373888015747,0.07583588361740112,homonym,V,False,Klepousniotou (2002),lapped,M1_b_M2_a,lap
+736,Homonymy,0.2955448627471924,0.10192406177520752,homonym,V,False,Klepousniotou (2002),lapped,M1_b_M2_b,lap
+737,Homonymy,0.10822528600692749,0.041844189167022705,homonym,V,True,Klepousniotou (2002),lapped,M2_a_M2_b,lap
+738,Homonymy,0.1460828185081482,0.08027076721191406,homonym,N,True,Klepousniotou (2002),page,M1_a_M1_b,page
+739,Homonymy,0.2404521107673645,0.09606748819351196,homonym,N,False,Klepousniotou (2002),page,M1_a_M2_a,page
+740,Homonymy,0.5208417177200317,0.07638061046600342,homonym,N,False,Klepousniotou (2002),page,M1_a_M2_b,page
+741,Homonymy,0.23960912227630615,0.10375934839248657,homonym,N,False,Klepousniotou (2002),page,M1_b_M2_a,page
+742,Homonymy,0.545011430978775,0.07750922441482544,homonym,N,False,Klepousniotou (2002),page,M1_b_M2_b,page
+743,Homonymy,0.47213566303253174,0.038682758808135986,homonym,N,True,Klepousniotou (2002),page,M2_a_M2_b,page
+744,Homonymy,0.26065051555633545,0.029982149600982666,homonym,N,True,New stimuli,tip,M1_a_M1_b,tip
+745,Homonymy,0.3878527283668518,0.07937747240066528,homonym,N,False,New stimuli,tip,M1_a_M2_a,tip
+746,Homonymy,0.3044801950454712,0.0914505124092102,homonym,N,False,New stimuli,tip,M1_a_M2_b,tip
+747,Homonymy,0.2934988737106323,0.07755851745605469,homonym,N,False,New stimuli,tip,M1_b_M2_a,tip
+748,Homonymy,0.24323970079421997,0.09184330701828003,homonym,N,False,New stimuli,tip,M1_b_M2_b,tip
+749,Homonymy,0.14492887258529663,0.04379838705062866,homonym,N,True,New stimuli,tip,M2_a_M2_b,tip
+750,Homonymy,0.14099520444869995,0.0843692421913147,homonym,V,True,New stimuli,bailed,M1_a_M1_b,bail
+751,Homonymy,0.29422974586486816,0.0795179009437561,homonym,V,False,New stimuli,bailed,M1_a_M2_a,bail
+752,Homonymy,0.28732210397720337,0.09962993860244751,homonym,V,False,New stimuli,bailed,M1_a_M2_b,bail
+753,Homonymy,0.44318491220474243,0.11097371578216553,homonym,V,False,New stimuli,bailed,M1_b_M2_a,bail
+754,Homonymy,0.42926692962646484,0.120064377784729,homonym,V,False,New stimuli,bailed,M1_b_M2_b,bail
+755,Homonymy,0.12640339136123657,0.06527471542358398,homonym,V,True,New stimuli,bailed,M2_a_M2_b,bail
+756,Homonymy,0.06535661220550537,0.05285787582397461,homonym,N,True,New stimuli,rock,M1_a_M1_b,rock
+757,Homonymy,0.33692318201065063,0.17894452810287476,homonym,N,False,New stimuli,rock,M1_a_M2_a,rock
+758,Homonymy,0.3394313454627991,0.1880130171775818,homonym,N,False,New stimuli,rock,M1_a_M2_b,rock
+759,Homonymy,0.37851178646087646,0.1683427095413208,homonym,N,False,New stimuli,rock,M1_b_M2_a,rock
+760,Homonymy,0.3870357871055603,0.1772899627685547,homonym,N,False,New stimuli,rock,M1_b_M2_b,rock
+761,Homonymy,0.033624351024627686,0.01060938835144043,homonym,N,True,New stimuli,rock,M2_a_M2_b,rock

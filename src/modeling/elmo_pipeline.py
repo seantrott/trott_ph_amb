@@ -33,7 +33,14 @@ elmo = ElmoEmbedder(
 )
 
 
+# Load BERT
+from bert_embedding import BertEmbedding
+bert = BertEmbedding()
+
+
 ## Process sentences
+
+## TODO: Make cleaner, like norming study?
 
 distances = []
 with tqdm(total=len(df_filtered)) as progress_bar:
@@ -41,22 +48,30 @@ with tqdm(total=len(df_filtered)) as progress_bar:
 
         # Extract condition, target word info, and mean relatedness
         condition = row['Original Condition']
+        homonymy_label = row['Different_entries_MW']
         target_word = row['String']
         relatedness = row['K_relatedness']
         source = row['Source']
+        pos = row['Class']
         
         # Extract and split sentences
         m1_a, m1_b = row['M1_a'].lower().replace(".", "").split(), row['M1_b'].lower().replace(".", "").split()
         m2_a, m2_b = row['M2_a'].lower().replace(".", "").split(), row['M2_b'].lower().replace(".", "").split()
 
         target_embeddings = {}
+        bert_embeddings = {}
         for label, sentence in [('m1_a', m1_a), 
                                 ('m1_b', m1_b), 
                                 ('m2_a', m2_a),
                                 ('m2_b', m2_b)]:
             target_index = sentence.index(target_word)
+
+            # ELMo
             target_embedding = elmo.embed_sentence(sentence)[2][target_index]
             target_embeddings[label] = target_embedding
+
+            # BERT
+            bert_embedding = bert
         
         distances.append({
             'same': True,
@@ -66,6 +81,8 @@ with tqdm(total=len(df_filtered)) as progress_bar:
             'relatedness': relatedness,
             'version': 'M1',
             'source': source,
+            'pos': pos,
+            'homonymy_label': homonymy_label,
             'distance': cosine(target_embeddings['m1_a'], target_embeddings['m1_b'])
         })
         distances.append({
@@ -76,6 +93,8 @@ with tqdm(total=len(df_filtered)) as progress_bar:
             'item': index,
             'version': 'M2',
             'source': source,
+            'pos': pos,
+            'homonymy_label': homonymy_label,
             'distance': cosine(target_embeddings['m2_a'], target_embeddings['m2_b'])
         })
         distances.append({
@@ -86,6 +105,8 @@ with tqdm(total=len(df_filtered)) as progress_bar:
             'item': index,
             'version': 'M1a_M2a',
             'source': source,
+            'pos': pos,
+            'homonymy_label': homonymy_label,
             'distance': cosine(target_embeddings['m1_a'], target_embeddings['m2_a'])
         })
         distances.append({
@@ -96,6 +117,8 @@ with tqdm(total=len(df_filtered)) as progress_bar:
             'item': index,
             'version': 'M1a_M2b',
             'source': source,
+            'pos': pos,
+            'homonymy_label': homonymy_label,
             'distance': cosine(target_embeddings['m1_a'], target_embeddings['m2_b'])
         })
         distances.append({
@@ -105,7 +128,9 @@ with tqdm(total=len(df_filtered)) as progress_bar:
             'relatedness': relatedness,
             'item': index,
             'source': source,
+            'pos': pos,
             'version': 'M1b_M2a',
+            'homonymy_label': homonymy_label,
             'distance': cosine(target_embeddings['m1_b'], target_embeddings['m2_a'])
         })
         distances.append({
@@ -115,7 +140,9 @@ with tqdm(total=len(df_filtered)) as progress_bar:
             'relatedness': relatedness,
             'item': index,
             'source': source,
+            'pos': pos,
             'version': 'M1b_M2b',
+            'homonymy_label': homonymy_label,
             'distance': cosine(target_embeddings['m1_b'], target_embeddings['m2_b'])
         })
         progress_bar.update(1)
