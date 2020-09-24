@@ -1,140 +1,128 @@
-Source,String,Word,Class,Original Condition,M1_a,M1_b,M2_a,M2_b,Different_entries_MW,Comments,Different_frame,K_relatedness,Sentence_frame
-Klepousniotou et al (2008),lamb,lamb,N,high overlap,They liked the marinated lamb.,They liked the grilled lamb.,They liked the cute lamb.,They liked the friendly lamb.,Polysemy,,No,4,They liked
-Klepousniotou et al (2008),article,article,N,high overlap,He read the history article.,He read the well-written article.,He read the popular article.,He read the submitted article.,Polysemy,,No,4.45,He read
-Klepousniotou et al (2008),book,book,N,high overlap,He had a best-selling book.,He had a popular book.,He had a heavy book.,He had a leather-bound book.,Polysemy,,No,4.73,He had
-Klepousniotou et al (2008),breakfast,breakfast,N,high overlap,They ate a pancake breakfast.,They ate a nutritious breakfast.,They ate a family breakfast.,They ate a lonely breakfast.,Polysemy,"M2_b kind odd b/c of singular ""they""",No,4.45,They ate
-Klepousniotou et al (2008),chicken,chicken,N,high overlap,They liked the juicy chicken.,They liked the roasted chicken.,They liked the clucking chicken.,They liked the pet chicken.,Polysemy,,No,4.14,They liked
-Klepousniotou et al (2008),class,class,N,high overlap,It was a perceptive class.,It was a misbehaving class.,It was a boring class.,It was a stimulating class.,Polysemy,,No,4.05,It was
-Klepousniotou et al (2008),cloud,cloud,N,high overlap,She saw a puffy cloud.,She saw a storm cloud.,She saw a mysterious cloud.,She saw a suspicious cloud.,Polysemy,,,3.77,She saw
-Klepousniotou et al (2008),concern,concern,N,high overlap,,,,,,Skipping b/c POS in original are too different.,,4.05,
-Klepousniotou et al (2008),contribution,contribution,N,high overlap,He made a charitable contribution.,He made a voluntary contribution.,He made a scholarly contribution.,He made a well-written contribution.,Polysemy,,No,3.86,He made
-Klepousniotou et al (2008),design,design,N,high overlap,They liked the floral design.,They liked the geometric design.,They liked the product design.,They liked the architectural design.,Polysemy,,No,4.05,They liked
-Klepousniotou et al (2008),dinner,dinner,N,high overlap,They liked the turkey dinner.,They liked the light dinner.,They liked the formal dinner.,They liked the anniversary dinner.,Polysemy,,No,4.32,They liked
-Klepousniotou et al (2008),dollar,dollar,N,high overlap,,,,,,Skipping b/c POS in original are too different.,,4.27,
-Klepousniotou et al (2008),dream,dream,N,high overlap,He had a recurring dream.,He had a bad dream.,He had a childhood dream.,He had a career dream.,Polysemy,,No,3.77,He had
-Klepousniotou et al (2008),dress,dress,N,high overlap,She wore a wrinkled dress.,She wore a long dress.,She wore a business dress.,She wore an evening dress.,Polysemy,?,Yes,3.82,She wore
-Klepousniotou et al (2008),examination,examination,N,high overlap,It was a multiple-choice examination.,It was a difficult examination.,It was a prostate examination.,It was a physical examination.,Polysemy,,No,3.91,it was
-Klepousniotou et al (2008),guard,guard,N,high overlap,They liked the watch guard.,They liked the security guard.,They liked the coast guard.,They liked the national guard.,Unsure,M2 maybe idiomatic / MWE?,No,4.27,They liked
-Klepousniotou et al (2008),home,home,N,high overlap,It was a summer home.,It was a childhood home.,It was a funeral home.,It was a nursing home.,Polysemy,,No,3.73,It was
-Klepousniotou et al (2008),lunch,lunch,N,high overlap,They liked the hot lunch.,They liked the sandwich lunch.,They liked the afternoon lunch.,They liked the women's lunch.,Polysemy,,No,4.27,They liked
-Klepousniotou et al (2008),magazine,magazine,N,high overlap,She had a women's magazine.,She had a sports magazine.,She had a glossy magazine.,She had an old magazine.,Unsure,"Unclear in MW whether distinct, though clear distinction",No,4.55,She had
-Klepousniotou et al (2008),medicine,medicine,N,high overlap,It is cough medicine.,It is prescription medicine.,It is orthopedic medicine.,It is veterinary medicine.,Polysemy,,No,3.59,It is
-Klepousniotou et al (2008),message,message,N,high overlap,There is a phone message.,There is a computer message.,There is an urgent message.,There is a clear message.,Polysemy,,No,4.18,There is
-Klepousniotou et al (2008),newspaper,newspaper,N,high overlap,It is a national newspaper.,It is a daily newspaper.,It is a faded newspaper.,It is a shredded newspaper.,Polysemy,,No,4.5,It is
-Klepousniotou et al (2008),novel,novel,N,high overlap,It is a best-selling novel.,It is a popular novel.,It is a thick novel.,It is a paperback novel.,Unsure,"Unclear in MW whether distinct, though clear distinction",No,4.59,It is
-Klepousniotou et al (2008),oil,oil,N,high overlap,It is canola oil.,It is cooking oil.,It is crude oil.,It is engine oil.,Unsure,"Unclear in MW whether distinct, though clear distinction",No,3.64,It is
-Klepousniotou et al (2008),act,act,N,moderate overlap,It was a desperate act.,It was a humane act.,It was a disappearing act.,It was a comedic act.,Polysemy,,No,2.86,It was
-Klepousniotou et al (2008),atmosphere,atmosphere,N,moderate overlap,It was a tense atmosphere.,It was a hostile atmosphere.,It was a gaseous atmosphere.,It was a polluted atmosphere.,Polysemy,,No,3,It was
-Klepousniotou et al (2008),barrier,barrier,N,moderate overlap,There was a police barrier.,There was a concrete barrier.,There was a language barrier.,There was a religious barrier.,Polysemy,,No,3.09,There was
-Klepousniotou et al (2008),beam,beam,N,moderate overlap,He saw the laser beam.,He saw the bright beam.,He saw the wood beam.,He saw the balance beam.,Polysemy,,No,2.64,He saw
-Klepousniotou et al (2008),blood,blood,N,moderate overlap,He has coagulated blood.,He has thin blood.,He has blue blood.,He has royal blood.,Polysemy,,No,3.27,He has
-Klepousniotou et al (2008),business,business,N,moderate overlap,It was a profitable business.,It was an imports business.,It was a dirty business.,It was a funny business.,Polysemy,M2 doesn't seem different sense?,Yes,3.14,It was
-Klepousniotou et al (2008),case,case,N,moderate overlap,It was a beer case.,It was a display case.,It was a divorce case.,It was a criminal case.,Homonymy,Changed M1 sense to be possible homonym,No,3.18,It was
-Klepousniotou et al (2008),cause,cause,N,moderate overlap,It was a worthy cause.,It was a political cause.,It was the main cause.,It was a primary cause.,Polysemy,,Yes,3.09,It was
-Klepousniotou et al (2008),clasp,clasp,N,moderate overlap,,,,,,Different POS,,2.91,
-Klepousniotou et al (2008),cone,cone,N,moderate overlap,It was a waffle cone.,It was a sugar cone.,It was an orange cone.,It was a traffic cone.,Unsure,,Yes,2.59,She had
-Klepousniotou et al (2008),country,country,N,moderate overlap,He is in a foreign country.,He is in a democratic country.,He is in the open country.,He is in a rugged country.,Polysemy,,Yes,2.73,He is
-Klepousniotou et al (2008),cover,cover,N,moderate overlap,It was a pot cover.,It was a jar cover.,It was a cozy cover.,It was a satin cover.,Unsure,,No,3.18,It was
-Klepousniotou et al (2008),film,film,N,moderate overlap,It was an action film.,It was a censored film.,It was a transparent film.,It was a plastic film.,Polysemy,Changed M2,Yes,2.86,It was
-Klepousniotou et al (2008),ground,ground,N,moderate overlap,He was on firm ground.,He was on frozen ground.,He was on the camp ground.,He was on the parade ground.,Polysemy,Different constructions.,Yes,3.27,It was
-Klepousniotou et al (2008),guide,guide,N,moderate overlap,He had an assembly guide.,He had a TV guide.,He had a talkative guide.,He had a friendly guide.,Unsure,,Yes,2.82,He had
-Klepousniotou et al (2008),intelligence,intelligence,N,moderate overlap,They had natural intelligence.,They had innate intelligence.,They had classified intelligence.,They had military intelligence.,Polysemy,,No,2.73,They had
-Klepousniotou et al (2008),market,market,N,moderate overlap,He liked the flea market.,He liked the fish market.,He liked the housing market.,He liked the stock market.,Polysemy,,No,3,He liked
-Klepousniotou et al (2008),orange,orange,N,moderate overlap,It was a juicy orange.,It was a ripe orange.,It was a bright orange.,It was a reddish orange.,Polysemy,,No,3.09,It was
-Klepousniotou et al (2008),position,position,N,moderate overlap,He was in a distinguished position.,He was in a prominent position.,He was in a fetal position.,He was in a lotus position.,Polysemy,,No,3.05,He was
-Klepousniotou et al (2008),power,power,N,moderate overlap,It is a foreign power.,It is an economic power.,It is hydroelectric power.,It is steam power.,Polysemy,M2 different construction.,Yes,2.77,It is
-Klepousniotou et al (2008),scene,scene,N,moderate overlap,It was a touching scene.,It was a well-acted scene.,It was a nature scene.,It was a panoramic scene.,Polysemy,,No,2.91,It was
-Klepousniotou et al (2008),space,space,N,moderate overlap,It was in an open space.,It was in a large space.,It was in deep space.,It was in outer space.,Polysemy,M2 different construction.,Yes,3.27,It was
-Klepousniotou et al (2008),term,term,N,moderate overlap,It was winter term.,It was fall term.,It was short term.,It was long term.,Polysemy,,No,3.86,It was
-Klepousniotou et al (2008),title,title,N,moderate overlap,She liked the essay title.,She liked the poem title.,She liked the academic title.,She liked the professional title.,Polysemy,,No,2.91,She liked
-Klepousniotou et al (2008),admission,admission,N,low overlap,He made the movie admission.,He made the concert admission.,He made the guilty admission.,He made the false admission.,Polysemy,,No,1.14,He made
-Klepousniotou et al (2008),appeal,appeal,N,low overlap,He had sex appeal.,He had universal appeal.,He had a legal appeal.,He had a pending appeal.,Polysemy,M2 different construction.,Yes,1.36,He had
-Klepousniotou et al (2008),arms,arm,N,low overlap,,,,,,Different POS,,1.23,
-Klepousniotou et al (2008),block,block,N,low overlap,She had a toy block.,She had a wooden block.,She had a mental block.,She had a writer's block.,Polysemy,,No,1.68,She had
-Klepousniotou et al (2008),board,board,N,low overlap,It was the ironing board.,It was the wooden board.,It was the executive board.,It was the school board.,Polysemy,,No,1.05,It was
-Klepousniotou et al (2008),body,body,N,low overlap,It had a skinny body.,It had an injured body.,It had an administrative body.,It had a political body.,Polysemy,,No,1.59,It had
-Klepousniotou et al (2008),charm,charm,N,low overlap,She had a devilish charm.,She had a natural charm.,She had a gold charm.,She had a good-luck charm.,Polysemy,,No,1.77,She had
-Klepousniotou et al (2008),cold,cold,N,low overlap,It was icy cold.,It was freezing cold.,It was a chest cold.,It was a common cold.,Polysemy,Different constructions.,Yes,1.77,it was
-Klepousniotou et al (2008),column,column,N,low overlap,It was a gossip column.,It was a sports column.,It was a concrete column.,It was a marble column.,Polysemy,,No,1.5,It was
-Klepousniotou et al (2008),company,company,N,low overlap,He liked the investment company.,He liked the pharmaceutical company.,He liked the pleasant company.,He liked the polite company.,Polysemy,,No,1.77,He liked
-Klepousniotou et al (2008),course,course,N,low overlap,It was an introductory course.,It was a pass-fail course.,It was a charted course.,It was a collision course.,Polysemy,,No,1.32,It was
-Klepousniotou et al (2008),dart,dart,N,low overlap,,,,,,"""suddenly dart"" vs. ""metal dart"", too different",,1.86,
-Klepousniotou et al (2008),date,date,N,low overlap,It was a dinner date.,It was a blind date.,It was an expiration date.,It was a historical date.,Polysemy,,Yes,1.86,It was
-Klepousniotou et al (2008),degrees,degree,N,low overlap,It was about forty degrees.,It was about fifty degrees.,It was about associate degrees.,It was about college degrees.,Polysemy,M2 kind of strange.,No,1.14,It was
-Klepousniotou et al (2008),foundation,foundation,N,low overlap,It was a charitable foundation.,It was an educational foundation.,It was a wooden foundation.,It was a concrete foundation.,Polysemy,,Yes,1.45,It was
-Klepousniotou et al (2008),function,function,N,low overlap,It was a mathematical function.,It was a linear function.,It was a social function.,It was a business function.,Polysemy,Changed M1 sense quite radically.,No,1.55,It had
-Klepousniotou et al (2008),issue,issue,N,low overlap,It is a sensitive issue.,It is a political issue.,It is a weekly issue.,It is a special issue.,Polysemy,Maybe problematic?,No,1.68,It is
-Klepousniotou et al (2008),key,key,N,low overlap,It was a duplicate key.,It was a master key.,It was a delete key.,It was a backspace key.,Polysemy,,No,1.55,It was
-Klepousniotou et al (2008),movement,movement,N,low overlap,He liked the rhythmic movement.,He liked the graceful movement.,He liked the feminist movement.,He liked the civil-rights movement.,Polysemy,,No,1.91,He liked
-Klepousniotou et al (2008),panel,panel,N,low overlap,It was a control panel.,It was an instrument panel.,It was an advisory panel.,It was a consumer panel.,Polysemy,,No,1.77,It was
-Klepousniotou et al (2008),passage,passage,N,low overlap,It was a secret passage.,It was a narrow passage.,It was a literary passage.,It was a biblical passage.,Polysemy,,No,1.18,It was
-Klepousniotou et al (2008),patient,patient,N,low overlap,He was infinitely patient.,,He was a cancer patient.,He was a private patient.,,"Remove this one, different POS",Yes,1.09,He was
-Klepousniotou et al (2008),tape,tape,N,low overlap,He used the scotch tape.,He used the double-sided tape.,He used the interview tape.,He used the video tape.,Polysemy,,Yes,2.05,He used
-Klepousniotou et al (2008),tracks,track,N,low overlap,She saw the train tracks.,She saw the trolley tracks.,She saw the moose tracks.,She saw the snowshoe tracks.,Polysemy,,No,1.91,She saw
-New (words from K+B (2007)),bat,bat,N,homonym,He saw a furry bat.,He saw a fruit bat.,He saw a wooden bat.,He saw a metal bat.,Homonymy,,No,,He saw
-New (words from K+B (2007)),cape,cape,N,homonym,It was a red cape.,It was a flowing cape.,It was a rocky cape.,It was an island cape.,Homonymy,,Yes,,It was
-New (words from K+B (2007)),cell,cell,N,homonym,It is a skin cell.,It is a brain cell.,It is a prison cell.,It is a jail cell.,Polysemy,,No,,It is
-New (words from K+B (2007)),mold,mold,N,homonym,It is a fungal mold.,It is a harmful mold.,It is a rubber mold.,It is a clay mold.,Homonymy,,No,,It is
-New (words from K+B (2007)),match,match,N,homonym,It was a lit match.,It was a burning match.,It was a soccer match.,It was a tennis match.,Homonymy,,No,,It was
-New (words from K+B (2007)),pupil,pupil,N,homonym,She had a brilliant pupil.,She had an interested pupil.,She had a dilated pupil.,She had a contracted pupil.,Homonymy,,No,,She had
-New (words from K+B (2007)),seal,seal,N,homonym,It was a gold seal.,It was a certified seal.,It was a circus seal.,It was a trained seal.,Homonymy,,No,,It was
-New (words from K+B (2007)),tick,tick,N,homonym,It was a clock tick.,It was an audible tick.,It was a parasitic tick.,It was a diseased tick.,Homonymy,,Yes,,It was
-New (words from K+B (2007)),yards,yard,N,homonym,It was five yards.,It was ten yards.,They were big yards.,They were cluttered yards.,Homonymy,Different construcitons,Yes,,They were
-New (words from K+B (2007)),drill,drill,N,homonym,It is a grueling drill.,It is a challenging drill.,It is an electric drill.,It is a battery-powered drill.,Polysemy,,Yes,,It is
-New (words from K+B (2007)),file,file,N,homonym,She had a text file.,She had a data file.,She had a nail file.,She had a steel file.,Homonymy,"Not sure that ""steel"" is incompatible with M1?",No,,She had
-New (words from K+B (2007)),count,count,N,homonym,That is the noble count.,That is the vengeful count.,That is the final count.,That is the correct count.,Homonymy,,No,,That is
-New (words from K+B (2007)),port,port,N,homonym,It was a windy port.,It was a seaside port.,It was a delicious port.,It was a sweet port.,Homonymy,,No,,It was
-New (words from K+B (2007)),fan,fan,N,homonym,They had an electric fan.,They had a ceiling fan.,They had a zealous fan.,They had an enthusiastic fan.,Homonymy,,No,,They had
-New (words from K+B (2007)),sage,sage,N,homonym,He saw the wise sage.,He saw the renowned sage.,He saw the fragrant sage.,He saw the bushy sage.,Homonymy,,No,,He saw
-New (words from K+B (2007)),racket,racket,N,homonym,That was a loud racket.,That was an annoying racket.,That was a badminton racket.,That was a tennis racket.,Homonymy,,Yes,,That was
-Brown(2008),toasted,toast,V,homonym,They toasted the bread.,They toasted the strudel.,They toasted the host.,They toasted the bride.,Homonymy,,No,,They
-Brown(2008),penned,pen,V,homonym,She penned her animals.,She penned her livestock.,She penned her memoirs.,She penned her thoughts.,Homonymy,,No,,She
-Brown(2008),banked,bank,V,homonym,He banked the plane.,He banked the helicopter.,He banked the money.,He banked the cash.,Homonymy,,No,,They
-Brown(2008),poached,poach,V,homonym,She poached the deer.,She poached the bear.,She poached the eggs.,She poached the vegetables.,Homonymy,,No,,She
-Brown(2008),clogged,clog,V,homonym,The dancer clogged.,The choreographer clogged.,The pipe clogged.,The sink clogged.,Polysemy,Under same verb entry in MW,,,
-Brown(2008),shorted,short,V,homonym,They shorted the circuit.,,They shorted the waitress.,They shorted the cashier.,,They shorted the wiring.,,,They
-Brown(2008),staked,stake,V,homonym,He staked his goat.,He staked his rabbit.,He staked his name.,He staked his claim.,Polysemy,,No,,He
-Brown(2008),picked,pick,V,homonym,He picked his coffee.,He picked his dinner.,He picked his tail.,He picked his armpit.,Polysemy,,No,,He
-Brown(2008),posted,post,V,homonym,They posted the letter.,,They posted the guard.,They posted the player.,,,,,They
-Brown(2008),hailed,hail,V,homonym,It hailed today.,,They hailed the king.,They hailed the god.,,A little different.,,,They
-Brown(2008),stalled,stall,V,homonym,They stalled the truck.,They stalled the bus.,They stalled the horse.,They stalled the pig.,Polysemy,Seems a little weird too.,No,,They
-Brown(2008),fixed,fix,V,distant,They fixed the radio.,They fixed the dishwasher.,They fixed the date.,They fixed the price.,Polysemy,,No,,They
-Brown(2008),left,leave,V,distant,He left the team.,He left the party.,He left her shocked.,He left her swooning.,Polysemy,diifferent cxns,No,,He
-Brown(2008),stayed,stay,V,distant,They stayed wet.,They stayed cold.,They stayed in town.,They stayed overnight.,Polysemy,,No,,They
-Brown(2008),crossed,cross,V,distant,He crossed a road.,He crossed the room.,He crossed an enemy.,He crossed a friend.,Polysemy,diifferent cxns,Yes,,He
-Brown(2008),ran,run,V,distant,She ran the track.,She ran the race.,She ran the shop.,She ran the company.,Polysemy,,No,,She
-Brown(2008),spilled,spill,V,distant,He spilled the drink.,He spilled the flour.,He spilled the news.,He spilled the secret.,Polysemy,,No,,He
-Brown(2008),cast,cast,V,distant,She cast a shadow.,She cast a glow.,She cast a spear.,She cast a stone.,Polysemy,,No,,She
-Brown(2008),pushed,push,V,distant,He pushed cocaine.,He pushed drugs.,He pushed the bed.,He pushed the desk.,Polysemy,,Yes,,He
-Brown(2008),checked,check,V,distant,She checked the time.,,She checked the box.,She checked the fridge.,,Remove this one,No,,She
-Brown(2008),called,call,V,distant,They called the landlord.,They called the police.,They called the loan.,They called the debt.,Polysemy,"""Called the loan"" feels weird (maybe remove that)",,,They
-Brown(2008),drained,drain,V,distant,They drained the account.,They drained the budget.,They drained the pool.,They drained the swamp.,Polysemy,,No,,They
-Brown(2008),drew,draw,V,close,They drew a gun.,They drew a sword.,They drew a tree.,They drew a picture.,Polysemy,Changed from Brown (2008),No,,They
-Brown(2008),hailed,hail,V,close,They hailed a cab.,They hailed a taxi.,They hailed a friend.,They hailed a guest.,Polysemy,"""Hailed"" repeats from above.",Yes,,They
-Brown(2008),stalled,stall,V,close,They stalled the car.,,They stalled the plane.,They stalled the train.,,"""Stalled"" repeats from above.",,,They
-Brown(2008),posted,post,V,close,She posted the score.,She posted the information.,She posted a warning.,She posted an alert.,Polysemy,"""Posted"" repeats from above.",No,,She
-Brown(2008),broke,break,V,close,He broke the glass.,He broke the dish.,He broke the law.,He broke the promise.,Polysemy,Changed from Brown (2008),No,,He
-Brown(2008),served,serve,V,close,She served a pie.,She served a lasagna.,She served a summons.,She served a warrant.,Polysemy,,No,,She
-Brown(2008),checked,check,V,close,He checked the engine.,He checked the oven.,He checked the alibi.,He checked the facts.,Polysemy,"Same sense, different sub-sense",No,,He
-Brown(2008),called,call,V,close,She called him John.,She called him Sam.,She called him dumb.,She called him crazy.,Polysemy,"Same sense, different sub-sense",No,,She
-Brown(2008),sang,sing,V,close,The girl sang.,The choir sang.,The bird sang.,The cricket sang.,Polysemy,,No,,The 
-Brown(2008),cleared,clear,V,close,He cleared the desk.,He cleared the shelf.,He cleared the path.,He cleared the road.,Polysemy,,No,,He
-Brown(2008),loaded,load,V,close,She loaded the gun.,She loaded the rifle.,She loaded the truck.,She loaded the van.,Polysemy,,No,,She
-New stimuli,band,band,N,homonym,It was a gold band.,It was a narrow band.,It was a jazz band.,It was a country band.,Homonymy,,No,,
-New stimuli,clip,clip,N,homonym,It was a film clip.,It was a video clip.,It was a hair clip.,It was a metal clip.,Homonymy,,No,,
-New stimuli,jam,jam,N,homonym,It was a blackberry jam.,It was a peach jam.,It was a traffic jam.,It was a paper jam.,Homonymy,,No,,
-New (words from K+B (2007)),scale,scale,N,homonym,It was a fish scale.,It was a lizard scale.,It was a music scale.,It was a major scale.,Homonymy,,No,,
-New stimuli,palm,palm,N,homonym,It was a calloused palm.,It was a wrinkled palm.,It was a tropical palm.,It was a tree palm.,Homonymy,,No,,
-New (words from K+B (2007)),pitcher,pitcher,N,homonym,He saw the fast pitcher.,He saw the right-handed pitcher.,He saw the glass pitcher.,He saw the plastic pitcher.,Homonymy,,No,,
-New (words from K+B (2007)),race,race,N,homonym,It was a human race.,It was a privileged race.,It was a bicycle race.,It was a car race.,Homonymy,,No,,
-New (words from K+B (2007)),toll,toll,N,homonym,It was a costly toll.,It was a road toll.,It was a loud toll.,It was a bell toll.,Homonymy,,No,,
-New (words from K+B (2007)),mole,mole,N,homonym,She saw the cancerous mole.,She saw the raised mole.,She saw the cute mole.,She saw the fast mole.,Homonymy,,No,,
-New (words from K+B (2007)),perch,perch,N,homonym,It was a tasty perch.,It was a freshwater perch.,It was a lofty perch.,It was a prominent perch.,Homonymy,,No,,
-Klepousniotou (2002),punch,punch,N,homonym,He had the alcoholic punch.,He had the fruit punch.,He had the strongest punch.,He had the quickest punch.,Homonymy,,No,,
-Klepousniotou (2002),tapped,tap,V,homonym,He tapped the wine.,He tapped the beer.,He tapped the stick.,He tapped the drums.,Homonymy,,No,,
-Klepousniotou (2002),lock,lock,N,homonym,,,,,,,No,,
-Klepousniotou (2002),lapped,lap,V,homonym,She lapped the milk.,She lapped the water.,She lapped the runners.,She lapped the competitors.,Homonymy,,No,,
-Klepousniotou (2002),page,page,N,homonym,He saw the young page.,He saw the loyal page.,He saw the blank page.,He saw the well-written page.,Homonymy,,No,,
-New stimuli,tip,tip,N,homonym,It was a generous tip.,It was a stingy tip.,It was a pencil tip.,It was a finger tip.,Homonymy,,No,,
-New stimuli,bailed,bail,V,homonym,He bailed out the prisoner.,He bailed out the defendant.,He bailed out the water.,He bailed out the liquid.,Homonymy,,No,,
-New stimuli,rock,rock,N,homonym,He liked electronic rock.,He liked alternative rock.,He liked the limestone rock.,He liked the granite rock.,Homonymy,,Yes,,
+Source,String,Word,Class,Original Condition,M1_a,M1_b,M2_a,M2_b,Flag,Different_entries_MW,Different_entries_OED,Different_etymology_OED,Comments,Different_frame,K_relatedness,Sentence_frame,Disambiguating_Cxn
+Klepousniotou et al (2008),lamb,lamb,N,high overlap,They liked the marinated lamb.,They liked the grilled lamb.,They liked the cute lamb.,They liked the friendly lamb.,,Polysemy,Polysemy,No,,No,4,They liked,Attributive
+Klepousniotou et al (2008),article,article,N,high overlap,He read the history article.,He read the well-written article.,He read the popular article.,He read the submitted article.,Flag,Unsure,Unsure,No,,No,4.45,He read,Attributive
+Klepousniotou et al (2008),book,book,N,high overlap,He had a best-selling book.,He had a popular book.,He had a heavy book.,He had a leather-bound book.,,Polysemy,Polysemy,No,,No,4.73,He had,Attributive
+Klepousniotou et al (2008),breakfast,breakfast,N,high overlap,They ate a pancake breakfast.,They ate a nutritious breakfast.,They ate a family breakfast.,They ate a lonely breakfast.,,Polysemy,Unsure,No,"M2_b kind odd b/c of singular ""they""",No,4.45,They ate,Attributive
+Klepousniotou et al (2008),chicken,chicken,N,high overlap,They liked the juicy chicken.,They liked the roasted chicken.,They liked the clucking chicken.,They liked the pet chicken.,,Polysemy,Polysemy,No,,No,4.14,They liked,Attributive
+Klepousniotou et al (2008),class,class,N,high overlap,It was a perceptive class.,It was a misbehaving class.,It was a boring class.,It was a stimulating class.,,Polysemy,Polysemy,No,,No,4.05,It was,Attributive
+Klepousniotou et al (2008),cloud,cloud,N,high overlap,She saw a puffy cloud.,She saw a storm cloud.,She saw a mysterious cloud.,She saw a suspicious cloud.,Flag,Unsure,Unsure,,,,3.77,She saw,Attributive
+Klepousniotou et al (2008),contribution,contribution,N,high overlap,He made a charitable contribution.,He made a voluntary contribution.,He made a scholarly contribution.,He made a well-written contribution.,,Polysemy,Polysemy,No,,No,3.86,He made,Attributive
+Klepousniotou et al (2008),design,design,N,high overlap,They liked the floral design.,They liked the geometric design.,They liked the product design.,They liked the architectural design.,,Polysemy,Polysemy,No,,No,4.05,They liked,Attributive
+Klepousniotou et al (2008),dinner,dinner,N,high overlap,They liked the turkey dinner.,They liked the light dinner.,They liked the formal dinner.,They liked the anniversary dinner.,,Polysemy,Unsure,No,,No,4.32,They liked,Attributive
+Klepousniotou et al (2008),dream,dream,N,high overlap,He had a recurring dream.,He had a bad dream.,He had a childhood dream.,He had a career dream.,,Polysemy,Polysemy,No,,No,3.77,He had,Attributive
+Klepousniotou et al (2008),dress,dress,N,high overlap,She wore a wrinkled dress.,She wore a long dress.,She wore a business dress.,She wore an evening dress.,Flag,Polysemy,Polysemy,,?,Yes,3.82,She wore,Attributive
+Klepousniotou et al (2008),examination,examination,N,high overlap,It was a multiple-choice examination.,It was a difficult examination.,It was a prostate examination.,It was a physical examination.,,Polysemy,Polysemy,,,No,3.91,it was,Attributive
+Klepousniotou et al (2008),guard,guard,N,high overlap,They liked the night guard.,They liked the security guard.,They liked the coast guard.,They liked the national guard.,,Unsure,Polysemy,,M2 maybe idiomatic / MWE?,No,4.27,They liked,Attributive
+Klepousniotou et al (2008),home,home,N,high overlap,It was a summer home.,It was a childhood home.,It was a funeral home.,It was a nursing home.,,Polysemy,Polysemy,,,No,3.73,It was,Attributive
+Klepousniotou et al (2008),lunch,lunch,N,high overlap,They liked the hot lunch.,They liked the sandwich lunch.,They liked the afternoon lunch.,They liked the women's lunch.,,Polysemy,Unsure,,,No,4.27,They liked,Attributive
+Klepousniotou et al (2008),magazine,magazine,N,high overlap,She had a women's magazine.,She had a sports magazine.,She had a glossy magazine.,She had an old magazine.,,Unsure,Unsure,,"Unclear in MW and OED whether distinct, though clear distinction",No,4.55,She had,Attributive
+Klepousniotou et al (2008),medicine,medicine,N,high overlap,It was cough medicine.,It was prescription medicine.,It was orthopedic medicine.,It was veterinary medicine.,,Polysemy,Polysemy,,,No,3.59,It is,Attributive
+Klepousniotou et al (2008),message,message,N,high overlap,There was a phone message.,There was a computer message.,There was an urgent message.,There was a clear message.,,Polysemy,Polysemy,,,No,4.18,There is,Attributive
+Klepousniotou et al (2008),newspaper,newspaper,N,high overlap,It was a national newspaper.,It was a daily newspaper.,It was a faded newspaper.,It was a shredded newspaper.,,Polysemy,Polysemy,,,No,4.5,It is,Attributive
+Klepousniotou et al (2008),novel,novel,N,high overlap,It was a best-selling novel.,It was a popular novel.,It was a thick novel.,It was a paperback novel.,,Unsure,Unsure,,"Unclear in MW whether distinct, though clear distinction",No,4.59,It is,Attributive
+Klepousniotou et al (2008),oil,oil,N,high overlap,It was canola oil.,It was cooking oil.,It was crude oil.,It was engine oil.,,Unsure,Unsure,,"Unclear in MW whether distinct, though clear distinction",No,3.64,It is,Attributive
+Klepousniotou et al (2008),act,act,N,moderate overlap,It was a desperate act.,It was a humane act.,It was a magic act.,It was a comedic act.,,Polysemy,Polysemy,,,No,2.86,It was,Attributive
+Klepousniotou et al (2008),atmosphere,atmosphere,N,moderate overlap,It was a tense atmosphere.,It was a hostile atmosphere.,It was a gaseous atmosphere.,It was a polluted atmosphere.,,Polysemy,Polysemy,,,No,3,It was,Attributive
+Klepousniotou et al (2008),barrier,barrier,N,moderate overlap,There was a police barrier.,There was a concrete barrier.,There was a language barrier.,There was a religious barrier.,,Polysemy,Polysemy,,,No,3.09,There was,Attributive
+Klepousniotou et al (2008),beam,beam,N,moderate overlap,He saw the laser beam.,He saw the bright beam.,He saw the wood beam.,He saw the balance beam.,,Polysemy,Polysemy,,,No,2.64,He saw,Attributive
+Klepousniotou et al (2008),blood,blood,N,moderate overlap,He has coagulated blood.,He has thin blood.,He has noble blood.,He has royal blood.,,Polysemy,Polysemy,,,No,3.27,He has,Attributive
+Klepousniotou et al (2008),business,business,N,moderate overlap,It was a profitable business.,It was an imports business.,It was a dirty business.,It was a funny business.,Flag,Polysemy,Polysemy,,M2 doesn't seem different sense?,Yes,3.14,It was,Attributive
+Klepousniotou et al (2008),case,case,N,moderate overlap,It was a beer case.,It was a display case.,It was a divorce case.,It was a criminal case.,,Homonymy,Homonymy,,Changed M1 sense to be possible homonym,No,3.18,It was,Attributive
+Klepousniotou et al (2008),cause,cause,N,moderate overlap,It was a worthy cause.,It was a political cause.,It was a main cause.,It was a primary cause.,,Polysemy,Polysemy,,,No,3.09,It was,Attributive
+Klepousniotou et al (2008),cone,cone,N,moderate overlap,It was a waffle cone.,It was a sugar cone.,It was an orange cone.,It was a traffic cone.,,Unsure,Polysemy,,,Yes,2.59,She had,Attributive
+Klepousniotou et al (2008),country,country,N,moderate overlap,The country was foreign.,The country was democratic.,The country was rugged.,The country was relaxing.,Flag,Polysemy,Polysemy,,,Yes,2.73,He is,Predicative
+Klepousniotou et al (2008),cover,cover,N,moderate overlap,The pot had a cover.,The jar had a cover.,The couch had a cover.,The mattress had a cover.,Flag,Polysemy,Polysemy,,,No,3.18,It was,Predicative
+Klepousniotou et al (2008),film,film,N,moderate overlap,It was an action film.,It was a censored film.,It was a transparent film.,It was a plastic film.,,Polysemy,Polysemy,,Changed M2,Yes,2.86,It was,Attributive
+Klepousniotou et al (2008),ground,ground,N,moderate overlap,He was on the firm ground.,He was on the frozen ground.,He was on the camp ground.,He was on the parade ground.,,Polysemy,Polysemy,,,No,3.27,It was,Attributive
+Klepousniotou et al (2008),guide,guide,N,moderate overlap,He had an assembly guide.,He had a TV guide.,He had a talkative guide.,He had a friendly guide.,,Unsure,Polysemy,,,Yes,2.82,He had,Attributive
+Klepousniotou et al (2008),intelligence,intelligence,N,moderate overlap,They had natural intelligence.,They had innate intelligence.,They had classified intelligence.,They had military intelligence.,,Polysemy,Polysemy,,,No,2.73,They had,Attributive
+Klepousniotou et al (2008),market,market,N,moderate overlap,He liked the flea market.,He liked the fish market.,He liked the housing market.,He liked the stock market.,,Polysemy,Polysemy,,,No,3,He liked,Attributive
+Klepousniotou et al (2008),orange,orange,N,moderate overlap,It was a juicy orange.,It was a ripe orange.,It was a bright orange.,It was a reddish orange.,,Polysemy,Polysemy,,,No,3.09,It was,Attributive
+Klepousniotou et al (2008),position,position,N,moderate overlap,He was in a distinguished position.,He was in a prominent position.,He was in a fetal position.,He was in a yoga position.,,Polysemy,Polysemy,,,No,3.05,He was,Attributive
+Klepousniotou et al (2008),power,power,N,moderate overlap,It was a foreign power.,It was an economic power.,It was hydroelectric power.,It was steam power.,Flag,Polysemy,Polysemy,,M2 different construction.,Yes,2.77,It is,Attributive
+Klepousniotou et al (2008),scene,scene,N,moderate overlap,It was a touching scene.,It was a well-acted scene.,It was a nature scene.,It was a panoramic scene.,,Polysemy,Polysemy,,,No,2.91,It was,Attributive
+Klepousniotou et al (2008),space,space,N,moderate overlap,It was in an open space.,It was in a large space.,It was in deep space.,It was in outer space.,Flag,Polysemy,Polysemy,,M2 different construction.,Yes,3.27,It was,Attributive
+Klepousniotou et al (2008),term,term,N,moderate overlap,It was a winter term.,It was a fall term.,It was a legal term.,It was a technical term.,,Polysemy,Polysemy,,Changed M2,No,3.86,It was,Attributive
+Klepousniotou et al (2008),title,title,N,moderate overlap,She liked the essay title.,She liked the poem title.,She liked the academic title.,She liked the professional title.,,Polysemy,Polysemy,,,No,2.91,She liked,Attributive
+Klepousniotou et al (2008),admission,admission,N,low overlap,It was a movie admission.,It was a festival admission.,It was a guilty admission.,It was a false admission.,Flag,Polysemy,Polysemy,,,No,1.14,It was,Attributive
+Klepousniotou et al (2008),appeal,appeal,N,low overlap,He had a universal appeal.,He had an undefinable appeal.,He had a legal appeal.,He had a pending appeal.,,Polysemy,Polysemy,,M2 different construction.,Yes,1.36,He had,Attributive
+Klepousniotou et al (2008),block,block,N,low overlap,She had a toy block.,She had a wooden block.,She had a mental block.,She had a writer's block.,,Polysemy,Polysemy,,,No,1.68,She had,Attributive
+Klepousniotou et al (2008),board,board,N,low overlap,It was the ironing board.,It was the wooden board.,It was the executive board.,It was the school board.,,Polysemy,Polysemy,,,No,1.05,It was,Attributive
+Klepousniotou et al (2008),body,body,N,low overlap,It was a skinny body.,It was an injured body.,It was an administrative body.,It was a political body.,Flag,Polysemy,Polysemy,,,No,1.59,It had,Attributive
+Klepousniotou et al (2008),charm,charm,N,low overlap,She had a devilish charm.,She had a natural charm.,She had a gold charm.,She had a good-luck charm.,,Polysemy,Polysemy,,,No,1.77,She had,Attributive
+Klepousniotou et al (2008),cold,cold,N,low overlap,It was an icy cold.,It was a freezing cold.,It was a chest cold.,It was a common cold.,,Polysemy,Polysemy,,Different constructions.,Yes,1.77,it was,Attributive
+Klepousniotou et al (2008),column,column,N,low overlap,It was a gossip column.,It was a sports column.,It was a concrete column.,It was a marble column.,,Polysemy,Polysemy,,,No,1.5,It was,Attributive
+Klepousniotou et al (2008),company,company,N,low overlap,He liked the investment company.,He liked the pharmaceutical company.,He liked the pleasant company.,He liked the polite company.,,Polysemy,Polysemy,,,No,1.77,He liked,Attributive
+Klepousniotou et al (2008),course,course,N,low overlap,It was an introductory course.,It was a pass-fail course.,It was a charted course.,It was a collision course.,,Polysemy,Polysemy,,,No,1.32,It was,Attributive
+Klepousniotou et al (2008),date,date,N,low overlap,It was a dinner date.,It was a blind date.,It was an expiration date.,It was a historical date.,,Polysemy,Polysemy,,,Yes,1.86,It was,Attributive
+Klepousniotou et al (2008),degrees,degree,N,low overlap,It was about forty degrees.,It was about fifty degrees.,It was about associate degrees.,It was about college degrees.,,Polysemy,Polysemy,,M2 kind of strange.,No,1.14,It was,Attributive
+Klepousniotou et al (2008),foundation,foundation,N,low overlap,It was a charitable foundation.,It was an educational foundation.,It was a wooden foundation.,It was a concrete foundation.,,Polysemy,Polysemy,,,Yes,1.45,It was,Attributive
+Klepousniotou et al (2008),function,function,N,low overlap,It was a mathematical function.,It was a linear function.,It was a social function.,It was a business function.,,Polysemy,Polysemy,,Changed M1 sense quite radically.,No,1.55,It had,Attributive
+Klepousniotou et al (2008),issue,issue,N,low overlap,It was a sensitive issue.,It was a political issue.,It was a weekly issue.,It was a special issue.,,Polysemy,Unsure,,Maybe problematic?,No,1.68,It is,Attributive
+Klepousniotou et al (2008),key,key,N,low overlap,It was a duplicate key.,It was a master key.,It was a delete key.,It was a backspace key.,,Polysemy,Polysemy,,,No,1.55,It was,Attributive
+Klepousniotou et al (2008),movement,movement,N,low overlap,He liked the rhythmic movement.,He liked the graceful movement.,He liked the feminist movement.,He liked the civil-rights movement.,,Polysemy,Polysemy,,,No,1.91,He liked,Attributive
+Klepousniotou et al (2008),panel,panel,N,low overlap,It was a control panel.,It was an instrument panel.,It was an advisory panel.,It was a consumer panel.,,Polysemy,Polysemy,,,No,1.77,It was,Attributive
+Klepousniotou et al (2008),passage,passage,N,low overlap,It was a secret passage.,It was a narrow passage.,It was a literary passage.,It was a biblical passage.,,Polysemy,Polysemy,,,No,1.18,It was,Attributive
+Klepousniotou et al (2008),tape,tape,N,low overlap,He used the scotch tape.,He used the double-sided tape.,He used the interview tape.,He used the video tape.,,Polysemy,Polysemy,,,Yes,2.05,He used,Attributive
+Klepousniotou et al (2008),tracks,track,N,low overlap,She saw the train tracks.,She saw the trolley tracks.,She saw the moose tracks.,She saw the snowshoe tracks.,,Polysemy,Polysemy,,,No,1.91,She saw,Attributive
+New (words from K+B (2007)),bat,bat,N,homonym,He saw a furry bat.,He saw a fruit bat.,He saw a wooden bat.,He saw a baseball bat.,,Homonymy,Homonymy,,,No,,He saw,Attributive
+New (words from K+B (2007)),cape,cape,N,homonym,It was a red cape.,It was a flowing cape.,It was a rocky cape.,It was an island cape.,,Homonymy,Homonymy,,,Yes,,It was,Attributive
+New (words from K+B (2007)),cell,cell,N,homonym,It was a skin cell.,It was a brain cell.,It was a prison cell.,It was a jail cell.,,Polysemy,Polysemy,No,,No,,It is,Attributive
+New (words from K+B (2007)),mold,mold,N,homonym,It was a fungal mold.,It was a harmful mold.,It was a rubber mold.,It was a clay mold.,,Homonymy,Homonymy,Yes,,No,,It is,Attributive
+New (words from K+B (2007)),match,match,N,homonym,It was a lit match.,It was a burning match.,It was a soccer match.,It was a tennis match.,,Homonymy,Homonymy,Yes,,No,,It was,Attributive
+New (words from K+B (2007)),pupil,pupil,N,homonym,She had a brilliant pupil.,She had an interested pupil.,She had a dilated pupil.,She had a cloudy pupil.,,Homonymy,Homonymy,No,"Both from ""pupa"" --> pupilla",No,,She had,Attributive
+New (words from K+B (2007)),seal,seal,N,homonym,It was a gold seal.,It was a certified seal.,It was a circus seal.,It was a trained seal.,,Homonymy,Homonymy,Yes,,No,,It was,Attributive
+New (words from K+B (2007)),tick,tick,N,homonym,It was a clock tick.,It was an audible tick.,It was a parasitic tick.,It was a diseased tick.,,Homonymy,Homonymy,Yes,,Yes,,It was,Attributive
+New (words from K+B (2007)),yards,yard,N,homonym,It was five yards.,It was ten yards.,They were big yards.,They were cluttered yards.,,Homonymy,Homonymy,Yes,Different construcitons,Yes,,They were,Attributive
+New (words from K+B (2007)),drill,drill,N,homonym,It was a grueling drill.,It was a challenging drill.,It was an electric drill.,It was a battery-powered drill.,,Polysemy,Homonymy,No,,Yes,,It is,Attributive
+New (words from K+B (2007)),file,file,N,homonym,She had a text file.,She had a data file.,She had a nail file.,She had a steel file.,,Homonymy,Homonymy,Yes,"Not sure that ""steel"" was incompatible with M1?",No,,She had,Attributive
+New (words from K+B (2007)),count,count,N,homonym,That was the noble count.,That was the vengeful count.,That was the final count.,That was the correct count.,,Homonymy,Homonymy,Yes,,No,,That is,Attributive
+New (words from K+B (2007)),port,port,N,homonym,It was a windy port.,It was a seaside port.,It was a delicious port.,It was a sweet port.,,Homonymy,Homonymy,,,No,,It was,Attributive
+New (words from K+B (2007)),fan,fan,N,homonym,They had an electric fan.,They had a ceiling fan.,They had a zealous fan.,They had an enthusiastic fan.,,Homonymy,Homonymy,,,No,,They had,Attributive
+New (words from K+B (2007)),sage,sage,N,homonym,He saw the wise sage.,He saw the renowned sage.,He saw the fragrant sage.,He saw the bushy sage.,,Homonymy,Homonymy,,,No,,He saw,Attributive
+New (words from K+B (2007)),racket,racket,N,homonym,That was a loud racket.,That was an annoying racket.,That was a badminton racket.,That was a tennis racket.,,Homonymy,Homonymy,,,Yes,,That was,Attributive
+Brown(2008),toasted,toast,V,homonym,They toasted the bread.,They toasted the strudel.,They toasted the host.,They toasted the bride.,,Homonymy,Homonymy,,,No,,They,Transitive_DO
+Brown(2008),penned,pen,V,homonym,She penned her animals.,She penned her livestock.,She penned her memoirs.,She penned her thoughts.,,Homonymy,Homonymy,,,No,,She,Transitive_DO
+Brown(2008),banked,bank,V,homonym,He banked the plane.,He banked the helicopter.,He banked the money.,He banked the cash.,,Homonymy,Homonymy,,,No,,They,Transitive_DO
+Brown(2008),poached,poach,V,homonym,She poached the deer.,She poached the bear.,She poached the eggs.,She poached the vegetables.,,Homonymy,Homonymy,,,No,,She,Transitive_DO
+Brown(2008),clogged,clog,V,homonym,The dancer clogged.,The choreographer clogged.,The pipe clogged.,The sink clogged.,,Polysemy,Polysemy,,Under same verb entry in MW,,,,Intransitive_Subject
+Brown(2008),staked,stake,V,homonym,He staked his horse.,He staked his tent.,He staked his name.,He staked his claim.,,Polysemy,Polysemy,,,No,,He,Transitive_DO
+Brown(2008),picked,pick,V,homonym,He picked his coffee.,He picked his dinner.,He picked his scab.,He picked his nose.,,Polysemy,Polysemy,,,No,,He,Transitive_DO
+Brown(2008),stalled,stall,V,homonym,They stalled the truck.,They stalled the bus.,They stalled the horse.,They stalled the pig.,,Polysemy,Polysemy,,Seems a little weird too.,No,,They,Transitive_DO
+Brown(2008),fixed,fix,V,distant,They fixed the radio.,They fixed the dishwasher.,They fixed the date.,They fixed the price.,,Polysemy,Polysemy,,,No,,They,Transitive_DO
+Brown(2008),left,leave,V,distant,He left the team.,He left the party.,He left her shocked.,He left her swooning.,Flag,Polysemy,Polysemy,,diifferent cxns,No,,He,Transitive_DO
+Brown(2008),stayed,stay,V,distant,They stayed wet.,They stayed cold.,They stayed nearby.,They stayed overnight.,,Polysemy,Polysemy,,,No,,They,Transitive_DO
+Brown(2008),crossed,cross,V,distant,He crossed a road.,He crossed a room.,He crossed an enemy.,He crossed a friend.,,Polysemy,Polysemy,,,No,,He,Transitive_DO
+Brown(2008),ran,run,V,distant,She ran the marathon.,She ran the race.,She ran the shop.,She ran the company.,,Polysemy,Polysemy,,,No,,She,Transitive_DO
+Brown(2008),spilled,spill,V,distant,He spilled the drink.,He spilled the flour.,He spilled the news.,He spilled the secret.,,Polysemy,Polysemy,,,No,,He,Transitive_DO
+Brown(2008),cast,cast,V,distant,She cast a shadow.,She cast a glow.,She cast a spear.,She cast a stone.,,Polysemy,Polysemy,,,No,,She,Transitive_DO
+Brown(2008),pushed,push,V,distant,He pushed the cocaine.,He pushed the drugs.,He pushed the bed.,He pushed the desk.,,Polysemy,Polysemy,,,No,,He,Transitive_DO
+Brown(2008),called,call,V,distant,They called the landlord.,They called the police.,They called the loan.,They called the debt.,,Polysemy,Polysemy,,"""Called the loan"" feels weird (maybe remove that)",,,They,Transitive_DO
+Brown(2008),drained,drain,V,distant,They drained the account.,They drained the budget.,They drained the pool.,They drained the pond.,,Polysemy,Polysemy,,,No,,They,Transitive_DO
+Brown(2008),drew,draw,V,close,He drew a gun.,He drew a sword.,He drew a tree.,They drew a picture.,,Polysemy,Polysemy,,Changed from Brown (2008),No,,They,Transitive_DO
+Brown(2008),hailed,hail,V,close,They hailed a cab.,They hailed a taxi.,They hailed a friend.,They hailed a guest.,,Polysemy,Polysemy,,"""Hailed"" repeats from above.",Yes,,They,Transitive_DO
+Brown(2008),broke,break,V,close,He broke the glass.,He broke the dish.,He broke the law.,He broke the promise.,,Polysemy,Polysemy,,Changed from Brown (2008),No,,He,Transitive_DO
+Brown(2008),served,serve,V,close,She served a pie.,She served a lasagna.,She served a summons.,She served a warrant.,,Polysemy,Polysemy,,,No,,She,Transitive_DO
+Brown(2008),checked,check,V,close,He checked the engine.,He checked the oven.,He checked the alibi.,He checked the facts.,,Polysemy,Polysemy,,"Same sense, different sub-sense",No,,He,Transitive_DO
+Brown(2008),called,call,V,close,She called him John.,She called him Sam.,She called him dumb.,She called him crazy.,Flag,Polysemy,Unsure,,"Same sense, different sub-sense",No,,She,Transitive_DO
+Brown(2008),sang,sing,V,close,The girl sang.,The choir sang.,The bird sang.,The cricket sang.,,Polysemy,Polysemy,,,No,,The ,Intransitive_Subject
+Brown(2008),cleared,clear,V,close,He cleared the desk.,He cleared the shelf.,He cleared the path.,He cleared the road.,,Polysemy,Unsure,,,No,,He,Transitive_DO
+Brown(2008),loaded,load,V,close,She loaded the gun.,She loaded the rifle.,She loaded the truck.,She loaded the van.,,Polysemy,Unsure,,,No,,She,Transitive_DO
+New stimuli,band,band,N,homonym,It was a gold band.,It was a rubber band.,It was a jazz band.,It was a country band.,,Homonymy,Homonymy,,,No,,,
+New stimuli,clip,clip,N,homonym,It was a film clip.,It was a video clip.,It was a hair clip.,It was a metal clip.,,Homonymy,Homonymy,,,No,,,
+New stimuli,jam,jam,N,homonym,It was a blackberry jam.,It was a peach jam.,It was a traffic jam.,It was a paper jam.,,Homonymy,Homonymy,,,No,,,
+New (words from K+B (2007)),scale,scale,N,homonym,It was a fish scale.,It was a lizard scale.,It was a music scale.,It was a major scale.,,Homonymy,Homonymy,,,No,,,
+New stimuli,palm,palm,N,homonym,It was a calloused palm.,It was a wrinkled palm.,It was a tropical palm.,It was a tree palm.,,Homonymy,Homonymy,,,No,,,
+New (words from K+B (2007)),pitcher,pitcher,N,homonym,He saw the fast pitcher.,He saw the right-handed pitcher.,He saw the glass pitcher.,He saw the plastic pitcher.,,Homonymy,Homonymy,,,No,,,
+New (words from K+B (2007)),toll,toll,N,homonym,It was a costly toll.,It was a road toll.,It was a loud toll.,It was a bell toll.,,Homonymy,Homonymy,,,No,,,
+New (words from K+B (2007)),mole,mole,N,homonym,She saw the cancerous mole.,She saw the raised mole.,She saw the cute mole.,She saw the fast mole.,,Homonymy,Homonymy,,,No,,,
+New (words from K+B (2007)),perch,perch,N,homonym,It was a tasty perch.,It was a freshwater perch.,It was a lofty perch.,It was a secure perch.,,Homonymy,Homonymy,,,No,,,
+Klepousniotou (2002),punch,punch,N,homonym,He had the alcoholic punch.,He had the fruit punch.,He had the strongest punch.,He had the quickest punch.,,Homonymy,Homonymy,,,No,,,
+Klepousniotou (2002),tapped,tap,V,homonym,He tapped the keg.,He tapped the beer.,He tapped the stick.,He tapped the drums.,,Homonymy,Homonymy,,,No,,,
+Klepousniotou (2002),locks,lock,N,homonym,She had curly locks.,She had brown locks.,She had window locks.,She had door locks.,,Homonymy,Homonymy,,,No,,,
+Klepousniotou (2002),lapped,lap,V,homonym,She lapped the milk.,She lapped the water.,She lapped the runners.,She lapped the competitors.,,Homonymy,Homonymy,,,No,,,
+Klepousniotou (2002),page,page,N,homonym,He saw the young page.,He saw the loyal page.,He saw the blank page.,He saw the ripped page.,,Homonymy,Homonymy,,,No,,,
+New stimuli,tip,tip,N,homonym,It was a generous tip.,It was a stingy tip.,It was a pencil tip.,It was a finger tip.,,Homonymy,Homonymy,,,No,,,
+New stimuli,bailed,bail,V,homonym,He bailed out the prisoner.,He bailed out the defendant.,He bailed out the water.,He bailed out the liquid.,,Homonymy,Homonymy,,,No,,,
+New stimuli,rock,rock,N,homonym,He liked electronic rock.,He liked alternative rock.,He liked limestone rock.,He liked granite rock.,,Homonymy,Homonymy,,,Yes,,,
+New stimuli,post,post,N,homonym,It was a wooden post.,It was a fence post.,It was a teaching post.,It was a challenging post.,,Homonymy,Homonymy,,,,,,

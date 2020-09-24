@@ -17,10 +17,18 @@ VERSIONS = ['M1_a', 'M1_b', 'M2_a', 'M2_b']
 
 ### Read in stims
 df_stims = pd.read_csv(DATA_PATH)
+print("{N} Items in file.".format(N=len(df_stims)))
 ### Filter to critical
 df_targets = df_stims[~df_stims['M1_b'].isna()]
 df_targets = df_targets.reset_index()
+print("{N} Items after removing ones without M1b.".format(N=len(df_targets)))
+### Remove ones with flags
+df_targets = df_targets[df_targets['Flag']!="Flag"]
+df_targets = df_targets.reset_index()
+print("{N} Items after removing ones with flags.".format(N=len(df_targets)))
 
+
+### Set up output
 doc = ''
 
 
