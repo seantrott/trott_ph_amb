@@ -80,6 +80,21 @@ var intro = {
 }
 
 
+/// Bot checks
+
+var bot_check = {
+  type: 'survey-multi-choice',
+  questions: [
+    {prompt: "How many ears do people typically have?", name: 'Ears',
+     options: [1, 2, 3, 4], 
+     required:true}, 
+    {prompt: "Which of the following is not a place to swim?", name: 'Swim', 
+    options: ['Ocean', 'Chair', 'River', 'Pool'], 
+    required: true}
+  ],
+};
+
+
 
 /// Main trials
 
@@ -34877,6 +34892,7 @@ timeline = jsPsych.randomization.shuffle(timeline)
 
 timeline.unshift(intro)
 timeline.unshift(consent_trial)
+timeline.unshift(bot_trial)
 
 
 
