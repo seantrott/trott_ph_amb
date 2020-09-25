@@ -108,21 +108,21 @@ Brown(2008),called,call,V,close,She called him John.,She called him Sam.,She cal
 Brown(2008),sang,sing,V,close,The girl sang.,The choir sang.,The bird sang.,The cricket sang.,,Polysemy,Polysemy,,,No,,The ,Intransitive_Subject
 Brown(2008),cleared,clear,V,close,He cleared the desk.,He cleared the shelf.,He cleared the path.,He cleared the road.,,Polysemy,Unsure,,,No,,He,Transitive_DO
 Brown(2008),loaded,load,V,close,She loaded the gun.,She loaded the rifle.,She loaded the truck.,She loaded the van.,,Polysemy,Unsure,,,No,,She,Transitive_DO
-New stimuli,band,band,N,homonym,It was a gold band.,It was a rubber band.,It was a jazz band.,It was a country band.,,Homonymy,Homonymy,,,No,,,
-New stimuli,clip,clip,N,homonym,It was a film clip.,It was a video clip.,It was a hair clip.,It was a metal clip.,,Homonymy,Homonymy,,,No,,,
-New stimuli,jam,jam,N,homonym,It was a blackberry jam.,It was a peach jam.,It was a traffic jam.,It was a paper jam.,,Homonymy,Homonymy,,,No,,,
-New (words from K+B (2007)),scale,scale,N,homonym,It was a fish scale.,It was a lizard scale.,It was a music scale.,It was a major scale.,,Homonymy,Homonymy,,,No,,,
-New stimuli,palm,palm,N,homonym,It was a calloused palm.,It was a wrinkled palm.,It was a tropical palm.,It was a tree palm.,,Homonymy,Homonymy,,,No,,,
-New (words from K+B (2007)),pitcher,pitcher,N,homonym,He saw the fast pitcher.,He saw the right-handed pitcher.,He saw the glass pitcher.,He saw the plastic pitcher.,,Homonymy,Homonymy,,,No,,,
-New (words from K+B (2007)),toll,toll,N,homonym,It was a costly toll.,It was a road toll.,It was a loud toll.,It was a bell toll.,,Homonymy,Homonymy,,,No,,,
-New (words from K+B (2007)),mole,mole,N,homonym,She saw the cancerous mole.,She saw the raised mole.,She saw the cute mole.,She saw the fast mole.,,Homonymy,Homonymy,,,No,,,
-New (words from K+B (2007)),perch,perch,N,homonym,It was a tasty perch.,It was a freshwater perch.,It was a lofty perch.,It was a secure perch.,,Homonymy,Homonymy,,,No,,,
-Klepousniotou (2002),punch,punch,N,homonym,He had the alcoholic punch.,He had the fruit punch.,He had the strongest punch.,He had the quickest punch.,,Homonymy,Homonymy,,,No,,,
-Klepousniotou (2002),tapped,tap,V,homonym,He tapped the keg.,He tapped the beer.,He tapped the stick.,He tapped the drums.,,Homonymy,Homonymy,,,No,,,
-Klepousniotou (2002),locks,lock,N,homonym,She had curly locks.,She had brown locks.,She had window locks.,She had door locks.,,Homonymy,Homonymy,,,No,,,
-Klepousniotou (2002),lapped,lap,V,homonym,She lapped the milk.,She lapped the water.,She lapped the runners.,She lapped the competitors.,,Homonymy,Homonymy,,,No,,,
-Klepousniotou (2002),page,page,N,homonym,He saw the young page.,He saw the loyal page.,He saw the blank page.,He saw the ripped page.,,Homonymy,Homonymy,,,No,,,
-New stimuli,tip,tip,N,homonym,It was a generous tip.,It was a stingy tip.,It was a pencil tip.,It was a finger tip.,,Homonymy,Homonymy,,,No,,,
-New stimuli,bailed,bail,V,homonym,He bailed out the prisoner.,He bailed out the defendant.,He bailed out the water.,He bailed out the liquid.,,Homonymy,Homonymy,,,No,,,
-New stimuli,rock,rock,N,homonym,He liked electronic rock.,He liked alternative rock.,He liked limestone rock.,He liked granite rock.,,Homonymy,Homonymy,,,Yes,,,
-New stimuli,post,post,N,homonym,It was a wooden post.,It was a fence post.,It was a teaching post.,It was a challenging post.,,Homonymy,Homonymy,,,,,,
+New stimuli,band,band,N,homonym,It was a gold band.,It was a rubber band.,It was a jazz band.,It was a country band.,,Homonymy,Homonymy,,,No,,,Attributive
+New stimuli,clip,clip,N,homonym,It was a film clip.,It was a video clip.,It was a hair clip.,It was a metal clip.,,Homonymy,Homonymy,,,No,,,Attributive
+New stimuli,jam,jam,N,homonym,It was a blackberry jam.,It was a peach jam.,It was a traffic jam.,It was a paper jam.,,Homonymy,Homonymy,,,No,,,Attributive
+New (words from K+B (2007)),scale,scale,N,homonym,It was a fish scale.,It was a lizard scale.,It was a music scale.,It was a major scale.,,Homonymy,Homonymy,,,No,,,Attributive
+New stimuli,palm,palm,N,homonym,It was a calloused palm.,It was a wrinkled palm.,It was a tropical palm.,It was a tree palm.,,Homonymy,Homonymy,,,No,,,Attributive
+New (words from K+B (2007)),pitcher,pitcher,N,homonym,He saw the fast pitcher.,He saw the right-handed pitcher.,He saw the glass pitcher.,He saw the plastic pitcher.,,Homonymy,Homonymy,,,No,,,Attributive
+New (words from K+B (2007)),toll,toll,N,homonym,It was a costly toll.,It was a road toll.,It was a loud toll.,It was a bell toll.,,Homonymy,Homonymy,,,No,,,Attributive
+New (words from K+B (2007)),mole,mole,N,homonym,She saw the cancerous mole.,She saw the raised mole.,She saw the cute mole.,She saw the fast mole.,,Homonymy,Homonymy,,,No,,,Attributive
+New (words from K+B (2007)),perch,perch,N,homonym,It was a tasty perch.,It was a freshwater perch.,It was a lofty perch.,It was a secure perch.,,Homonymy,Homonymy,,,No,,,Attributive
+Klepousniotou (2002),punch,punch,N,homonym,He had the alcoholic punch.,He had the fruit punch.,He had the strongest punch.,He had the quickest punch.,,Homonymy,Homonymy,,,No,,,Attributive
+Klepousniotou (2002),tapped,tap,V,homonym,He tapped the keg.,He tapped the beer.,He tapped the stick.,He tapped the drums.,,Homonymy,Homonymy,,,No,,,Attributive
+Klepousniotou (2002),locks,lock,N,homonym,She had curly locks.,She had brown locks.,She had window locks.,She had door locks.,,Homonymy,Homonymy,,,No,,,Attributive
+Klepousniotou (2002),lapped,lap,V,homonym,She lapped the milk.,She lapped the water.,She lapped the runners.,She lapped the competitors.,,Homonymy,Homonymy,,,No,,,Attributive
+Klepousniotou (2002),page,page,N,homonym,He saw the young page.,He saw the loyal page.,He saw the blank page.,He saw the ripped page.,,Homonymy,Homonymy,,,No,,,Attributive
+New stimuli,tip,tip,N,homonym,It was a generous tip.,It was a stingy tip.,It was a pencil tip.,It was a finger tip.,,Homonymy,Homonymy,,,No,,,Attributive
+New stimuli,bailed,bail,V,homonym,He bailed out the prisoner.,He bailed out the defendant.,He bailed out the water.,He bailed out the liquid.,,Homonymy,Homonymy,,,No,,,Attributive
+New stimuli,rock,rock,N,homonym,He liked electronic rock.,He liked alternative rock.,He liked limestone rock.,He liked granite rock.,,Homonymy,Homonymy,,,Yes,,,Attributive
+New stimuli,post,post,N,homonym,It was a wooden post.,It was a fence post.,It was a teaching post.,It was a challenging post.,,Homonymy,Homonymy,,,No,,,Attributive
