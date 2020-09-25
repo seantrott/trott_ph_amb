@@ -8,7 +8,7 @@ import pandas as pd
 
 ### PATHS
 DATA_PATH = "data/stims/stimuli.csv"
-SAVE_PATH = "experiment/experiment_text.html"
+SAVE_PATH = "experiment/norming_text.html"
 
 LABELS = ['totally unrelated', 'not very related', 'somewhat related', 'very related', 'same meaning']
 PROMPT = "<p>How <b>related</b> are the uses of this word across these two sentences?<p>"
@@ -70,6 +70,11 @@ for index, row in df_targets.iterrows():
 		'preamble': sentences,
 		'data': {'word': row['Word'], 'same': same, 'version': version, 'item': index, 
 				 'source': row['Source'], 'Class': row['Class'], 
+				 'string': row['String'],
+				 'disambiguating_cxn': row['Disambiguating_Cxn'],
+				 'ambiguity_type_oed': row['Different_entries_OED'],
+				 'different_frame': row['Different_frame'],
+				 'ambiguity_type_mw': row['Different_entries_MW'],
 				 'overlap': row['Original Condition']}
 		}
 
