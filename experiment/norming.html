@@ -43358,14 +43358,16 @@ var demographics_survey_1 = {
     questions: [
       {prompt: "What is your gender?", name: 'Gender', options: ['Male','Female','Other'], required:true},
       {prompt: "Are you a native speaker of English?", name: 'Native', options: ['Yes','No'], required: true}
-    ]
+    ],
+    data: {type: "demographic1"}
   };
 
   var demographics_survey_2 = {
     type: 'survey-text',
     questions: [
       {prompt: "How old are you?"},
-    ]
+    ],
+    data: {type: "demographic2"}
   };
 
 // Set up timeline
