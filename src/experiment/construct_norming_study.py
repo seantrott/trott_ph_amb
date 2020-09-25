@@ -68,7 +68,7 @@ for index, row in df_targets.iterrows():
 		'required': True,
 		'labels': LABELS}],
 		'preamble': sentences,
-		'data': {'word': row['Word'], 'same': same, 'version': version, 'item': index, 
+		'data': {'word': row['Word'], 'same': same, 'version_with_order': version, 'item': index, 
 				 'source': row['Source'], 'Class': row['Class'], 
 				 'string': row['String'],
 				 'disambiguating_cxn': row['Disambiguating_Cxn'],
