@@ -62,6 +62,7 @@ for index, row in df_targets.iterrows():
 
 		sentences = '{ex1}<p>{ex2}'.format(ex1=row[v1], ex2=row[v2]).replace(target_word, "<b>{t}</b>".format(t=target_word))
 
+		print(row['Ambiguity_Type'])
 		struct = {
 		'type': 'survey-likert',
 		'questions': [{'prompt': PROMPT,
@@ -73,6 +74,7 @@ for index, row in df_targets.iterrows():
 				 'string': row['String'],
 				 'disambiguating_cxn': row['Disambiguating_Cxn'],
 				 'ambiguity_type_oed': row['Different_entries_OED'],
+				 'ambiguity_type': row['Ambiguity_Type'],
 				 'different_frame': row['Different_frame'],
 				 'ambiguity_type_mw': row['Different_entries_MW'],
 				 'overlap': row['Original Condition']}
