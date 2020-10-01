@@ -44733,6 +44733,76 @@ all_trials = [
 ]
 
 
+
+///// Catch trials
+
+var catch_trial_1 = {
+        "type": "survey-likert",
+        "questions": [
+            {
+                "prompt": "<p>How <b>related</b> are the uses of this word across these two sentences?<p>",
+                "required": true,
+                "labels": [
+                    "totally unrelated",
+                    "not very related",
+                    "somewhat related",
+                    "very related",
+                    "same meaning"
+                ]
+            }
+        ],
+        "preamble": "It was a blue <b>house</b>. It was a blue <b>house</b>.",
+        "data": {
+            "word": "house",
+            "same": true,
+            "version_with_order": "catch",
+            "item": 200,
+            "source": "Klepousniotou et al (2008)",
+            "Class": "N",
+            "string": "house",
+            "disambiguating_cxn": "Attributive",
+            "ambiguity_type_oed": "catch",
+            "ambiguity_type": "Polysemy",
+            "different_frame": "No",
+            "ambiguity_type_mw": "Polysemy",
+            "overlap": "catch"
+        }
+    }
+
+var catch_trial_2 = {
+        "type": "survey-likert",
+        "questions": [
+            {
+                "prompt": "<p>How <b>related</b> are the uses of this word across these two sentences?<p>",
+                "required": true,
+                "labels": [
+                    "totally unrelated",
+                    "not very related",
+                    "somewhat related",
+                    "very related",
+                    "same meaning"
+                ]
+            }
+        ],
+        "preamble": "It was a red <b>rose</b>. He <b>rose</b> to the occasion.",
+        "data": {
+            "word": "rose",
+            "same": false,
+            "version_with_order": "catch",
+            "item": 200,
+            "source": "Klepousniotou et al (2008)",
+            "Class": "N",
+            "string": "rose",
+            "disambiguating_cxn": "Attributive",
+            "ambiguity_type_oed": "catch",
+            "ambiguity_type": "Polysemy",
+            "different_frame": "No",
+            "ambiguity_type_mw": "Polysemy",
+            "overlap": "catch"
+        }
+    }
+
+
 ////// Debrief
 var demographics_survey_1 = {
     type: 'survey-multi-choice',
@@ -44752,6 +44822,8 @@ var demographics_survey_1 = {
     data: {type: "demographic2"}
   };
 
+
+
 // Set up timeline
 var timeline = []
 
@@ -44764,6 +44836,9 @@ for (var i = 0; i < all_trials.length; i++) {
     // console.log(random_trial.data['version'])
     timeline.push(random_trial)
 }
+
+timeline.push(catch_trial_1)
+timeline.push(catch_trial_2)
 
 timeline = jsPsych.randomization.shuffle(timeline)
 
@@ -44778,6 +44853,7 @@ timeline.unshift(consent_trial)
 // Add debrief
 timeline.push(demographics_survey_1)
 timeline.push(demographics_survey_2)
+
 
 
 
