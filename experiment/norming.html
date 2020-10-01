@@ -74,7 +74,7 @@ var intro = {
   pages: ['Welcome to the experiment! Press \"Next\" to continue.',
           'Some words can have different meanings depending on the context. For example, the word "bark" might be interpreted differently in the following sentences: <p>That <b>bark</b> was very loud.<p>That <b>bark</b> was very thick.',
           'In this experiment, you will read <b>pairs</b> of sentences, each containing the same word (e.g., \"bark\"). The word will sometimes have the very <b>same</b> meaning in both sentences. Sometimes, it will be totally unrelated. And sometimes it will be somewhere in between.',
-          'Press NEXT when ready to begin!'],
+          'You will read about 115 pairs of sentences overall. <p>Press NEXT when ready to begin!'],
   data: {'trial_category': 'welcome'},
   show_clickable_nav: true
   
@@ -44738,7 +44738,8 @@ var demographics_survey_1 = {
     type: 'survey-multi-choice',
     questions: [
       {prompt: "What is your gender?", name: 'Gender', options: ['Male','Female','Non-binary', 'Prefer not to answer'], required:true},
-      {prompt: "Are you a native speaker of English?", name: 'Native', options: ['Yes','No', 'Prefer not to answer'], required: true}
+      {prompt: "Are you a native speaker of English?", name: 'Native', options: ['Yes','No', 'Prefer not to answer'], required: true},
+      {prompt: "Did you complete this experiment on a mobile device?", name: 'Mobile', options: ['Yes','No', 'Prefer not to answer'], required: true},
     ],
     data: {type: "demographic1"}
   };
@@ -44762,7 +44763,6 @@ for (var i = 0; i < all_trials.length; i++) {
     console.log(random_trial['stimulus'])
     // console.log(random_trial.data['version'])
     timeline.push(random_trial)
-    
 }
 
 timeline = jsPsych.randomization.shuffle(timeline)
@@ -44792,11 +44792,6 @@ jsPsych.init({
     $(".jspsych-display-element").html("<div style='margin:2em;'> \
     <p>The results have been recorded! \
     Data was recorded under the participant ID: <b>" + subject_id + "</b> \
-    </p>\
-    <br>\
-    <h3>Your survey code is the following, <u>please copy/paste exactly</u> to receive your compensation: <u>" + subject_id + "</u></h3>\
-    <p>\
-      If you have any questions or comments, please mention both your Amazon Mechanical Turk ID <u>and</u> the survey code/participant ID above.\
     </p>\
     <div>");
   },
