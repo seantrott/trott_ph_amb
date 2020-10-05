@@ -44818,7 +44818,8 @@ var demographics_survey_1 = {
   var demographics_survey_2 = {
     type: 'survey-text',
     questions: [
-      {prompt: "How old are you?"},
+      {prompt: "How old are you?"}
+      // {prompt: "What is your name? (This will only be used to award you SONA credit.)"}, 
     ],
     data: {type: "demographic2"}
   };
@@ -44855,9 +44856,6 @@ timeline.unshift(consent_trial)
 timeline.push(demographics_survey_1)
 timeline.push(demographics_survey_2)
 
-
-
-
 jsPsych.init({
   timeline: timeline,
   show_progress_bar: true,
@@ -44869,6 +44867,8 @@ jsPsych.init({
     $(".jspsych-display-element").html("<div style='margin:2em;'> \
     <p>The results have been recorded! \
     Data was recorded under the participant ID: <b>" + subject_id + "</b> \
+    <p>Please fill out this short Google Form to make sure you are awarded credit for your participation: <a href=https://forms.gle/Axw6SRetdBJgksCT6>https://forms.gle/Axw6SRetdBJgksCT6</a> <p> \
+    Note that this study was <b>BB02</b>. \
     </p><p>If you have any questions, please contact Sean Trott at sttrott@ucsd.edu.\
     <div>");
   },
