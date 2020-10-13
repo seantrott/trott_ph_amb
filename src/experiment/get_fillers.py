@@ -15,9 +15,14 @@ def remove_word(word):
 
 ## Read in critical stims
 df_stims = pd.read_csv("data/stims/stimuli.csv")
+print("{N} Items.".format(N=len(df_stims)))
+## Remove "Unsure" items
+df_stims = df_stims[df_stims['Ambiguity_Type']!="Unsure"]
+print("{N} Items after removing Unsure types.".format(N=len(df_stims)))
+
 
 ## Read in CELEX
-df_celex = pd.read_csv("data/celex_all.csv", sep="\\")
+df_celex = pd.read_csv("data/lexical/celex_all.csv", sep="\\")
 df_celex = df_celex.dropna()
 # Filter to remove words with hyphens, etc.
 df_celex['remove'] = df_celex['Word'].apply(lambda x: remove_word(x))
@@ -28,9 +33,22 @@ df_celex = df_celex[df_celex['word_length']>1]
 # Rremove proper nouns
 df_celex['proper_noun'] = df_celex['Word'].apply(lambda x: (any(l.isupper() for l in x)))
 df_celex = df_celex[df_celex['proper_noun']==False]
+df_celex = df_celex.drop_duplicates(subset='Word')
+print(len(df_celex))
+df_celex = df_celex[['Word', 'SylCnt', 'CompCnt']]
+
+
+### TODO: Deal with missing CELEX word ("mold")
+
+## Read in SUBTLEX
+df_subtlex = pd.read_csv("data/lexical/subtlex.csv")
+print(len(df_subtlex))
 
 ## Merge files
-df_merged = pd.merge(df_stims, df_celex, on = ["Word", "Class"])
+df_merged = pd.merge(df_stims, df_celex, on = ["Word"])
+print(len(df_merged))
+df_merged = pd.merge(df_merged, df_subtlex, on = ["Word"])
+print(len(df_merged))
 
 ## Any absent?
 df_absent = df_stims[~df_stims['Word'].isin(df_merged['Word'])]
