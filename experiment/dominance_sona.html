@@ -21856,7 +21856,7 @@ jsPsych.init({
   show_progress_bar: true,
   // display_element: 'jspsych-experiment',
   on_finish: function() {
-    var filename = "polysemy_norming_pilot_" + subject_id + ".csv";
+    var filename = "polysemy_dominance_pilot_" + subject_id + ".csv";
     saveData(filename, jsPsych.data.get().csv());
     console.log(jsPsych.data.get().csv())
     $(".jspsych-display-element").html("<div style='margin:2em;'> \
