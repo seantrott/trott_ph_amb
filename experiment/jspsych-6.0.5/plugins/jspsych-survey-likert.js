@@ -53,7 +53,6 @@ jsPsych.plugins['survey-likert'] = (function() {
 
   plugin.trial = function(display_element, trial) {
 
-
     var html = "";
     // inject CSS for trial
     html += '<style id="jspsych-survey-likert-css">';
@@ -103,6 +102,9 @@ jsPsych.plugins['survey-likert'] = (function() {
       var endTime = (new Date()).getTime();
       var response_time = endTime - startTime;
 
+      // TODO: ST
+      var og_questions = {}
+
       // create object to hold responses
       var question_data = {};
       var matches = display_element.querySelectorAll('#jspsych-survey-likert-form .jspsych-survey-likert-opts');
@@ -117,12 +119,21 @@ jsPsych.plugins['survey-likert'] = (function() {
         var obje = {};
         obje[id] = response;
         Object.assign(question_data, obje);
+
+        // NOTE (ST): Added this
+        var obj2 = {}
+        var og_q = trial.questions[index].prompt
+        console.log(og_q)
+        obj2[id] = og_q
+        Object.assign(og_questions, obj2);
+        //og_questions.push(obj2)
       }
 
       // save data
       var trial_data = {
         "rt": response_time,
-        "responses": JSON.stringify(question_data)
+        "responses": JSON.stringify(question_data),
+        "questions": JSON.stringify(og_questions)
       };
 
       display_element.innerHTML = '';
