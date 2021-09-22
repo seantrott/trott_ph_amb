@@ -123,7 +123,6 @@ jsPsych.plugins['survey-likert'] = (function() {
         // NOTE (ST): Added this
         var obj2 = {}
         var og_q = trial.questions[index].prompt
-        console.log(og_q)
         obj2[id] = og_q
         Object.assign(og_questions, obj2);
         //og_questions.push(obj2)
