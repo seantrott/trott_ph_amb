@@ -13206,8 +13206,8 @@ timeline = jsPsych.randomization.sampleWithoutReplacement(timeline, sampleSize=5
 
 
 // TODO: Add bot checks back
-// timeline.unshift(bot_check)
-// timeline.unshift(consent_trial)
+timeline.unshift(bot_check)
+timeline.unshift(consent_trial)
 
 // Add intro, bot check, and consent trial
 if (group_assignment == "perception") {
