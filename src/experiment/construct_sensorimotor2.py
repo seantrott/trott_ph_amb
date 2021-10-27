@@ -20,6 +20,7 @@ with high-N items.)
 import json
 
 import pandas as pd 
+from collections import Counter
 
 
 # ITEM_PATH
@@ -28,8 +29,8 @@ OG_PATH = "data/stims/stimuli.csv"
 SAVE_PATH = "experiment/sensorimotor2_text.html"
 
 # CUTOFFS
-CUTOFF_P = 17
-CUTOFF_A = 20
+CUTOFF_P = 14
+CUTOFF_A = 18
 
 # Read in file
 df_items = pd.read_csv(ITEM_PATH)
@@ -38,9 +39,52 @@ df_og['word'] = df_og['Word']
 df_merged = pd.merge(df_items, df_og)
 
 # Create perceptual vs. action frames
+
+print("\n Now compiling perception words")
 df_perceptual = df_merged[(df_merged['count_perceptual']>CUTOFF_P)|(df_merged['count_perceptual']<10)]
-print(len(df_perceptual))
+### Remove high-N words that also appear in low-N 
+low_N_perceptual = df_perceptual[df_perceptual['count_perceptual']<10]['word'].values
+high_N_perceptual = df_perceptual[df_perceptual['count_perceptual']>CUTOFF_P]['word'].values
+print("{X} low-N words.".format(X=len(low_N_perceptual)))
+print("{X} high-N words before filtering.".format(X=len(high_N_perceptual)))
+df_perceptual = df_perceptual[(df_perceptual['count_perceptual']<10)|(~df_perceptual['word'].isin(low_N_perceptual))]
+low_N_perceptual = df_perceptual[df_perceptual['count_perceptual']<10]['word'].values
+high_N_perceptual = df_perceptual[df_perceptual['count_perceptual']>CUTOFF_P]['word'].values
+print("{X} low-N words.".format(X=len(low_N_perceptual)))
+print("{X} high-N words after filtering.".format(X=len(high_N_perceptual)))
+
+## Remove duplicate high-N words
+counts = Counter(high_N_perceptual)
+high_N_keep = [w for w in counts.keys() if counts[w] == 1]
+df_perceptual = df_perceptual[(df_perceptual['count_perceptual']<10)|(df_perceptual['word'].isin(high_N_keep))]
+low_N_perceptual = df_perceptual[df_perceptual['count_perceptual']<10]['word'].values
+high_N_perceptual = df_perceptual[df_perceptual['count_perceptual']>CUTOFF_P]['word'].values
+print("{X} low-N words.".format(X=len(low_N_perceptual)))
+print("{X} high-N words after filtering repeats.".format(X=len(high_N_perceptual)))
+
+print("\n Now compiling action words")
+### Remove high-N words that also appear in low-N 
 df_action = df_merged[(df_merged['count_action']>CUTOFF_A)|(df_merged['count_action']<12)]
+low_N_action = df_action[df_action['count_action']<12]['word'].values
+high_N_action = df_action[df_action['count_action']>CUTOFF_A]['word'].values
+print("{X} low-N words.".format(X=len(low_N_action)))
+print("{X} high-N words before filtering.".format(X=len(high_N_action)))
+df_action = df_action[(df_action['count_action']<12)|(~df_action['word'].isin(low_N_action))]
+df_action = df_action[(df_action['count_action']<12)|(~df_action['word'].isin(low_N_action))]
+low_N_action = df_action[df_action['count_action']<12]['word'].values
+high_N_action = df_action[df_action['count_action']>CUTOFF_A]['word'].values
+print("{X} low-N words.".format(X=len(low_N_action)))
+print("{X} high-N words after filtering.".format(X=len(high_N_action)))
+
+## Remove duplicate high-N words
+counts = Counter(high_N_action)
+high_N_keep = [w for w in counts.keys() if counts[w] == 1]
+df_action = df_action[(df_action['count_action']<12)|(df_action['word'].isin(high_N_keep))]
+low_N_action = df_action[df_action['count_action']<12]['word'].values
+high_N_action = df_action[df_action['count_action']>CUTOFF_P]['word'].values
+print("{X} low-N words.".format(X=len(low_N_action)))
+print("{X} high-N words after filtering repeats.".format(X=len(high_N_action)))
+
 print(len(df_action))
 
 ### Set up output
@@ -92,7 +136,7 @@ for index, row in df_action.iterrows():
 	sentence = row['sentence']
 
 	trial_sentence = sentence.replace(target_word, "<b>{t}</b>".format(t=target_word))
-	trial_sentence += "<p>To what extent do you experience the bolded word:"
+	trial_sentence += "<p>To what extent do you experience the bolded word by performing an action with the:<p><img src='action_norms.png' width = 300 height = 150>"
 
 	struct = {
 	'type': 'survey-likert',
