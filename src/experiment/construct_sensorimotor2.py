@@ -112,9 +112,11 @@ for index, row in df_perceptual.iterrows():
 	}
 
 	if row['count_perceptual'] > CUTOFF_P:
+		struct['data']['N'] = 'high_N'
 		high_N_p.append(struct)
 
 	elif row['count_perceptual'] < 10:
+		struct['data']['N'] = 'low_N'
 		low_N_p.append(struct)
 
 
@@ -148,9 +150,11 @@ for index, row in df_action.iterrows():
 	}
 
 	if row['count_action'] > CUTOFF_A:
+		struct['data']['N'] = 'high_N'
 		high_N_a.append(struct)
 
 	elif row['count_action'] < 12:
+		struct['data']['N'] = 'low_N'
 		low_N_a.append(struct)
 
 print(len(low_N_a))
