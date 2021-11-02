@@ -22,7 +22,7 @@
 var subject_id = jsPsych.randomization.randomID(10);
 var survey_code = subject_id;
 
-var group_assignment = jsPsych.randomization.sampleWithReplacement(['perception', 'action'],1)[0];
+var group_assignment = jsPsych.randomization.sampleWithReplacement(['perception'],1)[0];
 
 jsPsych.data.addProperties({
   subject: subject_id,
