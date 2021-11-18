@@ -79,7 +79,6 @@ The pre-registered analyses can be found here:
 There are also *knit* `.html` files from both of these `.Rmd` files with the same filepath.
 
 
-
 # References
 
 Brown, S. W. (2008). Polysemy in the mental lexicon. Colorado Research in Linguistics, 21.
