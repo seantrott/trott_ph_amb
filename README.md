@@ -49,12 +49,34 @@ We ultimately excluded the three `Unsure` items from the final set of critical s
 
 After running the norming study, we identified a set of **filler** words, from which we would generate nonsense (and some sensible) filler sentences for the primary rexperiment. Each of the 112 critical items were matched for Length (number of syllables), part of speech (as used in the critical sentence, e.g., Verb vs. Noun), and frequency (based on the SUBTLEX frequency data).
 
-**TODO**: Match on other characteristics? 
-
-
 # Primary experiment
 
+The primary experiments were registered on OSF ([Experiment 1](https://osf.io/gj48a/), [Experiment 2](https://osf.io/4ej6t)).
 
+Participants performed a **primed sensibility judgment** task. The dependent variables were `log(RT)` and `Accuracy` (i.e., whether their response to the target trial was correct or incorrect).
+
+## Data
+
+The processed data for the primary experiments, *before removing outliers*, can be found here:
+
+- Experiment 1: `data/processed/polysemy_s1_main.csv`  
+- Experiment 2: `data/processed/polysemyu_s2_main.csv`
+
+These files are necessary for running the pre-registered analysis scripts (see below).
+
+Additionally, we have saved another version of the data files, *after removing outliers* and merging with the norming data:
+
+- Experiment 1: `data/processed/polysemy_s1_final.csv`  
+- Experiment 2: `data/processed/polysemyu_s2_final.csv`
+
+## Analysis scripts
+
+The pre-registered analyses can be found here:
+
+- Experiment 1: `src/analysis/exp1_prereg.Rmd`  
+- Experiment 2: `data/processed/exp2_prereg.Rmd`
+
+There are also *knit* `.html` files from both of these `.Rmd` files with the same filepath.
 
 
 
