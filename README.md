@@ -41,7 +41,7 @@ We found that `Same Sense` usages of a word were closer (as measured by `cosine 
 
 # Norming study
 
-These 115 words (corresponding to 460 sentences, 690 sentence pairs, and 1380 unique sentence *orderings*) were used in a norming study ([Trott & Bergen, 2021](https://arxiv.org/abs/2105.13266):
+These 115 words (corresponding to 460 sentences, 690 sentence pairs, and 1380 unique sentence *orderings*) were used in a norming study ([Trott & Bergen, 2021)](https://arxiv.org/abs/2105.13266):
 
 > Trott, S., & Bergen, B. (2021). RAW-C: Relatedness of Ambiguous Words--in Context (A New Lexical Resource for English). Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th Joint International Conference on Natural Language Processing.
 
