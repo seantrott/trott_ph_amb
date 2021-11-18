@@ -4,6 +4,16 @@ Code for modeling and comparing contextualized word embeddings, generating jsPsy
 
 The documentation below describes the various data files and processing steps involved.
 
+# Citing 
+
+If you'd like to use the stimuli or relatedness norms, please cite [Trott & Bergen (2021)](https://arxiv.org/abs/2105.13266):
+
+> Trott, S., & Bergen, B. (2021). RAW-C: Relatedness of Ambiguous Words--in Context (A New Lexical Resource for English). Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th Joint International Conference on Natural Language Processing.
+
+If you'd like to reference the theoretical paper, please cite Trott & Bergen (Under Review):
+
+> Trott, S., & Bergen, B. (Under Review). Word meaning is both categorical and continuous.
+
 # Raw stimuli
 
 The raw stimuli (`data/stims/stimuli.csv`) currently constitute a set of 115 ambiguous words (i.e., items). Each word has two senses, and two *sentences* for each sense. Some of these stimuli were adapted from previous studies (Brown, 2008; Klepousniotou et al, 2008; Klepousniotou, 2002; Klepousniotou & Baum, 2007), and the rest were identified from homonym lists online.
@@ -31,7 +41,9 @@ We found that `Same Sense` usages of a word were closer (as measured by `cosine 
 
 # Norming study
 
-These 115 words (corresponding to 460 sentences, 690 sentence pairs, and 1380 unique sentence *orderings*) were used in a norming study. 
+These 115 words (corresponding to 460 sentences, 690 sentence pairs, and 1380 unique sentence *orderings*) were used in a norming study ([Trott & Bergen, 2021](https://arxiv.org/abs/2105.13266):
+
+> Trott, S., & Bergen, B. (2021). RAW-C: Relatedness of Ambiguous Words--in Context (A New Lexical Resource for English). Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th Joint International Conference on Natural Language Processing.
 
 The code to generate the items for the norming study automatically (using `data/stims/stimuli.csv`) can be found in `src/experiment/construct_norming_study.py`). This compiles a set of JsPsych trials (De Leeuw, 2015) that can in turn be copy/pasted into the appropriate .html file (in this case: `experiment/np_sona.html`).
 
