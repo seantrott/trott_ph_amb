@@ -1,0 +1,1381 @@
+,string,word,passage,p,version
+0,lamb,lamb,They liked the marinated lamb. They liked the grilled [MASK] .,0.0017920847749337554,M1_a_M1_b
+1,lamb,lamb,They liked the marinated lamb. They liked the cute [MASK] .,0.00010831168765434998,M1_a_M2_a
+2,lamb,lamb,They liked the marinated lamb. They liked the friendly [MASK] .,0.0001818014279706404,M1_a_M2_b
+3,lamb,lamb,They liked the grilled lamb. They liked the marinated [MASK] .,0.0009137503802776337,M1_b_M1_a
+4,lamb,lamb,They liked the grilled lamb. They liked the cute [MASK] .,1.8913737221737406e-05,M1_b_M2_a
+5,lamb,lamb,They liked the grilled lamb. They liked the friendly [MASK] .,3.415485844016075e-05,M1_b_M2_b
+6,lamb,lamb,They liked the cute lamb. They liked the marinated [MASK] .,0.003295236267149448,M2_a_M1_a
+7,lamb,lamb,They liked the cute lamb. They liked the grilled [MASK] .,0.00014048056618776178,M2_a_M1_b
+8,lamb,lamb,They liked the cute lamb. They liked the friendly [MASK] .,0.00016069968114607042,M2_a_M2_b
+9,lamb,lamb,They liked the friendly lamb. They liked the marinated [MASK] .,0.007701574824750425,M2_b_M1_a
+10,lamb,lamb,They liked the friendly lamb. They liked the grilled [MASK] .,0.001404582522809505,M2_b_M1_b
+11,lamb,lamb,They liked the friendly lamb. They liked the cute [MASK] .,0.000326109438901767,M2_b_M2_a
+12,book,book,He had a best-selling book. He had a popular [MASK] .,0.5258706212043762,M1_a_M1_b
+13,book,book,He had a best-selling book. He had a heavy [MASK] .,0.0018454851815477011,M1_a_M2_a
+14,book,book,He had a best-selling book. He had a leather-bound [MASK] .,0.401126503944397,M1_a_M2_b
+15,book,book,He had a popular book. He had a best-selling [MASK] .,0.8556270599365234,M1_b_M1_a
+16,book,book,He had a popular book. He had a heavy [MASK] .,0.016856729984283444,M1_b_M2_a
+17,book,book,He had a popular book. He had a leather-bound [MASK] .,0.2598074674606323,M1_b_M2_b
+18,book,book,He had a heavy book. He had a best-selling [MASK] .,0.5644142031669617,M2_a_M1_a
+19,book,book,He had a heavy book. He had a popular [MASK] .,0.26205044984817505,M2_a_M1_b
+20,book,book,He had a heavy book. He had a leather-bound [MASK] .,0.4374171197414398,M2_a_M2_b
+21,book,book,He had a leather-bound book. He had a best-selling [MASK] .,0.5463637709617615,M2_b_M1_a
+22,book,book,He had a leather-bound book. He had a popular [MASK] .,0.01707753166556359,M2_b_M1_b
+23,book,book,He had a leather-bound book. He had a heavy [MASK] .,0.001001132884994149,M2_b_M2_a
+24,breakfast,breakfast,They ate a pancake breakfast. They ate a nutritious [MASK] .,0.0229173805564642,M1_a_M1_b
+25,breakfast,breakfast,They ate a pancake breakfast. They ate a family [MASK] .,0.03242198005318641,M1_a_M2_a
+26,breakfast,breakfast,They ate a pancake breakfast. They ate a lonely [MASK] .,0.017118375748395927,M1_a_M2_b
+27,breakfast,breakfast,They ate a nutritious breakfast. They ate a pancake [MASK] .,0.005332658533006907,M1_b_M1_a
+28,breakfast,breakfast,They ate a nutritious breakfast. They ate a family [MASK] .,0.01875604130327702,M1_b_M2_a
+29,breakfast,breakfast,They ate a nutritious breakfast. They ate a lonely [MASK] .,0.02801944687962532,M1_b_M2_b
+30,breakfast,breakfast,They ate a family breakfast. They ate a pancake [MASK] .,0.0008567519253119828,M2_a_M1_a
+31,breakfast,breakfast,They ate a family breakfast. They ate a nutritious [MASK] .,0.0002588089264463635,M2_a_M1_b
+32,breakfast,breakfast,They ate a family breakfast. They ate a lonely [MASK] .,0.02170507423579693,M2_a_M2_b
+33,breakfast,breakfast,They ate a lonely breakfast. They ate a pancake [MASK] .,0.0006848650518804789,M2_b_M1_a
+34,breakfast,breakfast,They ate a lonely breakfast. They ate a nutritious [MASK] .,0.0026285361964255576,M2_b_M1_b
+35,breakfast,breakfast,They ate a lonely breakfast. They ate a family [MASK] .,0.1225528195500374,M2_b_M2_a
+36,chicken,chicken,They liked the juicy chicken. They liked the roasted [MASK] .,0.015012146905064578,M1_a_M1_b
+37,chicken,chicken,They liked the juicy chicken. They liked the clucking [MASK] .,0.011377272196114063,M1_a_M2_a
+38,chicken,chicken,They liked the juicy chicken. They liked the pet [MASK] .,0.003920803777873515,M1_a_M2_b
+39,chicken,chicken,They liked the roasted chicken. They liked the juicy [MASK] .,0.005801843013614414,M1_b_M1_a
+40,chicken,chicken,They liked the roasted chicken. They liked the clucking [MASK] .,0.0041162115521728975,M1_b_M2_a
+41,chicken,chicken,They liked the roasted chicken. They liked the pet [MASK] .,0.0020108944736421117,M1_b_M2_b
+42,chicken,chicken,They liked the clucking chicken. They liked the juicy [MASK] .,0.10219844430685045,M2_a_M1_a
+43,chicken,chicken,They liked the clucking chicken. They liked the roasted [MASK] .,0.021718153730034828,M2_a_M1_b
+44,chicken,chicken,They liked the clucking chicken. They liked the pet [MASK] .,0.0036692265421152106,M2_a_M2_b
+45,chicken,chicken,They liked the pet chicken. They liked the juicy [MASK] .,0.023115683346986767,M2_b_M1_a
+46,chicken,chicken,They liked the pet chicken. They liked the roasted [MASK] .,0.009667970240116118,M2_b_M1_b
+47,chicken,chicken,They liked the pet chicken. They liked the clucking [MASK] .,0.10701070725917816,M2_b_M2_a
+48,class,class,It was a perceptive class. It was a misbehaving [MASK] .,0.08518345654010773,M1_a_M1_b
+49,class,class,It was a perceptive class. It was a boring [MASK] .,0.014372773468494414,M1_a_M2_a
+50,class,class,It was a perceptive class. It was a stimulating [MASK] .,0.04799482226371766,M1_a_M2_b
+51,class,class,It was a misbehaving class. It was a perceptive [MASK] .,0.08143235743045807,M1_b_M1_a
+52,class,class,It was a misbehaving class. It was a boring [MASK] .,0.01465124823153019,M1_b_M2_a
+53,class,class,It was a misbehaving class. It was a stimulating [MASK] .,0.07993242144584656,M1_b_M2_b
+54,class,class,It was a boring class. It was a perceptive [MASK] .,0.08957412838935853,M2_a_M1_a
+55,class,class,It was a boring class. It was a misbehaving [MASK] .,0.052347186952829354,M2_a_M1_b
+56,class,class,It was a boring class. It was a stimulating [MASK] .,0.09445053339004518,M2_a_M2_b
+57,class,class,It was a stimulating class. It was a perceptive [MASK] .,0.15790240466594696,M2_b_M1_a
+58,class,class,It was a stimulating class. It was a misbehaving [MASK] .,0.2797558009624481,M2_b_M1_b
+59,class,class,It was a stimulating class. It was a boring [MASK] .,0.041234731674194336,M2_b_M2_a
+60,contribution,contribution,He made a charitable contribution. He made a voluntary [MASK] .,0.006651086732745172,M1_a_M1_b
+61,contribution,contribution,He made a charitable contribution. He made a scholarly [MASK] .,0.10372579842805864,M1_a_M2_a
+62,contribution,contribution,He made a charitable contribution. He made a well-written [MASK] .,0.001573442947119474,M1_a_M2_b
+63,contribution,contribution,He made a voluntary contribution. He made a charitable [MASK] .,0.030659651383757595,M1_b_M1_a
+64,contribution,contribution,He made a voluntary contribution. He made a scholarly [MASK] .,0.0010610255412757397,M1_b_M2_a
+65,contribution,contribution,He made a voluntary contribution. He made a well-written [MASK] .,0.0020768239628523597,M1_b_M2_b
+66,contribution,contribution,He made a scholarly contribution. He made a charitable [MASK] .,0.04233126342296601,M2_a_M1_a
+67,contribution,contribution,He made a scholarly contribution. He made a voluntary [MASK] .,0.007944163866341112,M2_a_M1_b
+68,contribution,contribution,He made a scholarly contribution. He made a well-written [MASK] .,0.007670819759368898,M2_a_M2_b
+69,contribution,contribution,He made a well-written contribution. He made a charitable [MASK] .,0.0027250137645751234,M2_b_M1_a
+70,contribution,contribution,He made a well-written contribution. He made a voluntary [MASK] .,0.0016797772841528062,M2_b_M1_b
+71,contribution,contribution,He made a well-written contribution. He made a scholarly [MASK] .,0.0012545007048174743,M2_b_M2_a
+72,design,design,They liked the floral design. They liked the geometric [MASK] .,0.06904570758342743,M1_a_M1_b
+73,design,design,They liked the floral design. They liked the product [MASK] .,0.03254977986216545,M1_a_M2_a
+74,design,design,They liked the floral design. They liked the architectural [MASK] .,0.08376939594745637,M1_a_M2_b
+75,design,design,They liked the geometric design. They liked the floral [MASK] .,0.05530891194939614,M1_b_M1_a
+76,design,design,They liked the geometric design. They liked the product [MASK] .,0.1594656407833099,M1_b_M2_a
+77,design,design,They liked the geometric design. They liked the architectural [MASK] .,0.059733018279075616,M1_b_M2_b
+78,design,design,They liked the product design. They liked the floral [MASK] .,0.04882531985640525,M2_a_M1_a
+79,design,design,They liked the product design. They liked the geometric [MASK] .,0.30035027861595154,M2_a_M1_b
+80,design,design,They liked the product design. They liked the architectural [MASK] .,0.5841639041900635,M2_a_M2_b
+81,design,design,They liked the architectural design. They liked the floral [MASK] .,0.08435904234647752,M2_b_M1_a
+82,design,design,They liked the architectural design. They liked the geometric [MASK] .,0.1543845534324646,M2_b_M1_b
+83,design,design,They liked the architectural design. They liked the product [MASK] .,0.16138519346714023,M2_b_M2_a
+84,dinner,dinner,They liked the turkey dinner. They liked the light [MASK] .,0.00016946518735494457,M1_a_M1_b
+85,dinner,dinner,They liked the turkey dinner. They liked the formal [MASK] .,0.016391439363360405,M1_a_M2_a
+86,dinner,dinner,They liked the turkey dinner. They liked the anniversary [MASK] .,0.013706125319004064,M1_a_M2_b
+87,dinner,dinner,They liked the light dinner. They liked the turkey [MASK] .,0.00815731938928366,M1_b_M1_a
+88,dinner,dinner,They liked the light dinner. They liked the formal [MASK] .,0.04156561940908431,M1_b_M2_a
+89,dinner,dinner,They liked the light dinner. They liked the anniversary [MASK] .,0.0004078291240148248,M1_b_M2_b
+90,dinner,dinner,They liked the formal dinner. They liked the turkey [MASK] .,0.07543951272964476,M2_a_M1_a
+91,dinner,dinner,They liked the formal dinner. They liked the light [MASK] .,0.0031414087861776356,M2_a_M1_b
+92,dinner,dinner,They liked the formal dinner. They liked the anniversary [MASK] .,0.13699324429035187,M2_a_M2_b
+93,dinner,dinner,They liked the anniversary dinner. They liked the turkey [MASK] .,0.07590914517641066,M2_b_M1_a
+94,dinner,dinner,They liked the anniversary dinner. They liked the light [MASK] .,0.0005835249321535228,M2_b_M1_b
+95,dinner,dinner,They liked the anniversary dinner. They liked the formal [MASK] .,0.556668221950531,M2_b_M2_a
+96,dream,dream,He had a recurring dream. He had a bad [MASK] .,0.010075495578348637,M1_a_M1_b
+97,dream,dream,He had a recurring dream. He had a childhood [MASK] .,0.016061365604400638,M1_a_M2_a
+98,dream,dream,He had a recurring dream. He had a career [MASK] .,0.0006212351145222782,M1_a_M2_b
+99,dream,dream,He had a bad dream. He had a recurring [MASK] .,0.01737080328166485,M1_b_M1_a
+100,dream,dream,He had a bad dream. He had a childhood [MASK] .,0.0054559586569666845,M1_b_M2_a
+101,dream,dream,He had a bad dream. He had a career [MASK] .,0.0002339211350772529,M1_b_M2_b
+102,dream,dream,He had a childhood dream. He had a recurring [MASK] .,0.004288781899958847,M2_a_M1_a
+103,dream,dream,He had a childhood dream. He had a bad [MASK] .,0.009101143106818197,M2_a_M1_b
+104,dream,dream,He had a childhood dream. He had a career [MASK] .,0.0008286262745969,M2_a_M2_b
+105,dream,dream,He had a career dream. He had a recurring [MASK] .,0.021398743614554402,M2_b_M1_a
+106,dream,dream,He had a career dream. He had a bad [MASK] .,0.00605563446879387,M2_b_M1_b
+107,dream,dream,He had a career dream. He had a childhood [MASK] .,0.04170796647667884,M2_b_M2_a
+108,examination,examination,It was a multiple-choice examination. It was a difficult [MASK] .,0.0004227206518407911,M1_a_M1_b
+109,examination,examination,It was a multiple-choice examination. It was a prostate [MASK] .,0.1634576916694641,M1_a_M2_a
+110,examination,examination,It was a multiple-choice examination. It was a physical [MASK] .,0.029583653435111042,M1_a_M2_b
+111,examination,examination,It was a difficult examination. It was a multiple-choice [MASK] .,0.7939493656158447,M1_b_M1_a
+112,examination,examination,It was a difficult examination. It was a prostate [MASK] .,0.0618165358901024,M1_b_M2_a
+113,examination,examination,It was a difficult examination. It was a physical [MASK] .,0.03240326046943664,M1_b_M2_b
+114,examination,examination,It was a prostate examination. It was a multiple-choice [MASK] .,0.10322446376085283,M2_a_M1_a
+115,examination,examination,It was a prostate examination. It was a difficult [MASK] .,0.00023397870245389646,M2_a_M1_b
+116,examination,examination,It was a prostate examination. It was a physical [MASK] .,0.01148198451846838,M2_a_M2_b
+117,examination,examination,It was a physical examination. It was a multiple-choice [MASK] .,0.2496863007545471,M2_b_M1_a
+118,examination,examination,It was a physical examination. It was a difficult [MASK] .,0.00035913154715672125,M2_b_M1_b
+119,examination,examination,It was a physical examination. It was a prostate [MASK] .,0.7513784170150757,M2_b_M2_a
+120,guard,guard,They liked the night guard. They liked the security [MASK] .,0.03221933916211128,M1_a_M1_b
+121,guard,guard,They liked the night guard. They liked the coast [MASK] .,0.15965701639652252,M1_a_M2_a
+122,guard,guard,They liked the night guard. They liked the national [MASK] .,0.5281723141670227,M1_a_M2_b
+123,guard,guard,They liked the security guard. They liked the night [MASK] .,0.004048544447869063,M1_b_M1_a
+124,guard,guard,They liked the security guard. They liked the coast [MASK] .,0.07211649417877196,M1_b_M2_a
+125,guard,guard,They liked the security guard. They liked the national [MASK] .,0.6882631182670593,M1_b_M2_b
+126,guard,guard,They liked the coast guard. They liked the night [MASK] .,0.003746196161955596,M2_a_M1_a
+127,guard,guard,They liked the coast guard. They liked the security [MASK] .,0.08097802847623824,M2_a_M1_b
+128,guard,guard,They liked the coast guard. They liked the national [MASK] .,0.9742688536643982,M2_a_M2_b
+129,guard,guard,They liked the national guard. They liked the night [MASK] .,0.002235509222373366,M2_b_M1_a
+130,guard,guard,They liked the national guard. They liked the security [MASK] .,0.09020131081342697,M2_b_M1_b
+131,guard,guard,They liked the national guard. They liked the coast [MASK] .,0.9299734830856323,M2_b_M2_a
+132,home,home,It was a summer home. It was a childhood [MASK] .,0.05844313651323319,M1_a_M1_b
+133,home,home,It was a summer home. It was a funeral [MASK] .,0.17635378241539001,M1_a_M2_a
+134,home,home,It was a summer home. It was a nursing [MASK] .,0.06490807980298996,M1_a_M2_b
+135,home,home,It was a childhood home. It was a summer [MASK] .,0.023525958880782124,M1_b_M1_a
+136,home,home,It was a childhood home. It was a funeral [MASK] .,0.23585817217826846,M1_b_M2_a
+137,home,home,It was a childhood home. It was a nursing [MASK] .,0.1575920134782791,M1_b_M2_b
+138,home,home,It was a funeral home. It was a summer [MASK] .,0.004181878175586464,M2_a_M1_a
+139,home,home,It was a funeral home. It was a childhood [MASK] .,0.01894672214984894,M2_a_M1_b
+140,home,home,It was a funeral home. It was a nursing [MASK] .,0.03375878930091858,M2_a_M2_b
+141,home,home,It was a nursing home. It was a summer [MASK] .,0.003164898604154586,M2_b_M1_a
+142,home,home,It was a nursing home. It was a childhood [MASK] .,0.10174980759620667,M2_b_M1_b
+143,home,home,It was a nursing home. It was a funeral [MASK] .,0.04383011534810066,M2_b_M2_a
+144,lunch,lunch,They liked the hot lunch. They liked the sandwich [MASK] .,0.0009753658086992796,M1_a_M1_b
+145,lunch,lunch,They liked the hot lunch. They liked the afternoon [MASK] .,0.004251101985573769,M1_a_M2_a
+146,lunch,lunch,They liked the hot lunch. They liked the women's [MASK] .,0.00010235989611828692,M1_a_M2_b
+147,lunch,lunch,They liked the sandwich lunch. They liked the hot [MASK] .,0.06530489772558212,M1_b_M1_a
+148,lunch,lunch,They liked the sandwich lunch. They liked the afternoon [MASK] .,0.18374782800674438,M1_b_M2_a
+149,lunch,lunch,They liked the sandwich lunch. They liked the women's [MASK] .,0.0011251108953729274,M1_b_M2_b
+150,lunch,lunch,They liked the afternoon lunch. They liked the hot [MASK] .,0.00393734872341156,M2_a_M1_a
+151,lunch,lunch,They liked the afternoon lunch. They liked the sandwich [MASK] .,0.001035357126966119,M2_a_M1_b
+152,lunch,lunch,They liked the afternoon lunch. They liked the women's [MASK] .,0.00021414982620626672,M2_a_M2_b
+153,lunch,lunch,They liked the women's lunch. They liked the hot [MASK] .,0.0010549556463956829,M2_b_M1_a
+154,lunch,lunch,They liked the women's lunch. They liked the sandwich [MASK] .,0.00038814081926830113,M2_b_M1_b
+155,lunch,lunch,They liked the women's lunch. They liked the afternoon [MASK] .,0.07540404796600342,M2_b_M2_a
+156,magazine,magazine,She had a women's magazine. She had a sports [MASK] .,0.11002618819475177,M1_a_M1_b
+157,magazine,magazine,She had a women's magazine. She had a glossy [MASK] .,0.6040874719619751,M1_a_M2_a
+158,magazine,magazine,She had a women's magazine. She had an old [MASK] .,0.0010559529764577744,M1_a_M2_b
+159,magazine,magazine,She had a sports magazine. She had a women's [MASK] .,0.14093124866485596,M1_b_M1_a
+160,magazine,magazine,She had a sports magazine. She had a glossy [MASK] .,0.6077672839164734,M1_b_M2_a
+161,magazine,magazine,She had a sports magazine. She had an old [MASK] .,0.0005787840927951036,M1_b_M2_b
+162,magazine,magazine,She had a glossy magazine. She had a women's [MASK] .,0.7161324620246887,M2_a_M1_a
+163,magazine,magazine,She had a glossy magazine. She had a sports [MASK] .,0.0042366711422801,M2_a_M1_b
+164,magazine,magazine,She had a glossy magazine. She had an old [MASK] .,0.0005073976353742183,M2_a_M2_b
+165,magazine,magazine,She had an old magazine. She had a women's [MASK] .,0.0022949343547224994,M2_b_M1_a
+166,magazine,magazine,She had an old magazine. She had a sports [MASK] .,0.0007405518554151058,M2_b_M1_b
+167,magazine,magazine,She had an old magazine. She had a glossy [MASK] .,0.001116241561248899,M2_b_M2_a
+168,medicine,medicine,It was cough medicine. It was prescription [MASK] .,0.0001251806825166568,M1_a_M1_b
+169,medicine,medicine,It was cough medicine. It was orthopedic [MASK] .,0.000560165208298713,M1_a_M2_a
+170,medicine,medicine,It was cough medicine. It was veterinary [MASK] .,0.002335058990865946,M1_a_M2_b
+171,medicine,medicine,It was prescription medicine. It was cough [MASK] .,9.999654866987843e-05,M1_b_M1_a
+172,medicine,medicine,It was prescription medicine. It was orthopedic [MASK] .,0.0003961111360695213,M1_b_M2_a
+173,medicine,medicine,It was prescription medicine. It was veterinary [MASK] .,0.00025989147252403183,M1_b_M2_b
+174,medicine,medicine,It was orthopedic medicine. It was cough [MASK] .,8.503492426825685e-05,M2_a_M1_a
+175,medicine,medicine,It was orthopedic medicine. It was prescription [MASK] .,0.00035017076879739767,M2_a_M1_b
+176,medicine,medicine,It was orthopedic medicine. It was veterinary [MASK] .,0.002848164411261677,M2_a_M2_b
+177,medicine,medicine,It was veterinary medicine. It was cough [MASK] .,0.006406588479876517,M2_b_M1_a
+178,medicine,medicine,It was veterinary medicine. It was prescription [MASK] .,0.00017632832168601467,M2_b_M1_b
+179,medicine,medicine,It was veterinary medicine. It was orthopedic [MASK] .,0.0005276993033476172,M2_b_M2_a
+180,message,message,There was a phone message. There was a computer [MASK] .,0.0013829320669174188,M1_a_M1_b
+181,message,message,There was a phone message. There was an urgent [MASK] .,0.07543998956680299,M1_a_M2_a
+182,message,message,There was a phone message. There was a clear [MASK] .,0.0006677125347778203,M1_a_M2_b
+183,message,message,There was a computer message. There was a phone [MASK] .,0.004621227737516165,M1_b_M1_a
+184,message,message,There was a computer message. There was an urgent [MASK] .,0.002665808424353599,M1_b_M2_a
+185,message,message,There was a computer message. There was a clear [MASK] .,0.0010799089213833209,M1_b_M2_b
+186,message,message,There was an urgent message. There was a phone [MASK] .,0.0007850096444599327,M2_a_M1_a
+187,message,message,There was an urgent message. There was a computer [MASK] .,0.00015336523938458424,M2_a_M1_b
+188,message,message,There was an urgent message. There was a clear [MASK] .,0.002206264762207866,M2_a_M2_b
+189,message,message,There was a clear message. There was a phone [MASK] .,0.0023365034721791736,M2_b_M1_a
+190,message,message,There was a clear message. There was a computer [MASK] .,0.00030697786132805044,M2_b_M1_b
+191,message,message,There was a clear message. There was an urgent [MASK] .,0.014588965103030205,M2_b_M2_a
+192,newspaper,newspaper,It was a national newspaper. It was a daily [MASK] .,0.6429826021194458,M1_a_M1_b
+193,newspaper,newspaper,It was a national newspaper. It was a faded [MASK] .,0.00032951700268313294,M1_a_M2_a
+194,newspaper,newspaper,It was a national newspaper. It was a shredded [MASK] .,0.0007674102089367808,M1_a_M2_b
+195,newspaper,newspaper,It was a daily newspaper. It was a national [MASK] .,0.030223052948713303,M1_b_M1_a
+196,newspaper,newspaper,It was a daily newspaper. It was a faded [MASK] .,0.0005208002403378487,M1_b_M2_a
+197,newspaper,newspaper,It was a daily newspaper. It was a shredded [MASK] .,0.00146898755338043,M1_b_M2_b
+198,newspaper,newspaper,It was a faded newspaper. It was a national [MASK] .,0.00046314633800648153,M2_a_M1_a
+199,newspaper,newspaper,It was a faded newspaper. It was a daily [MASK] .,0.02187687717378139,M2_a_M1_b
+200,newspaper,newspaper,It was a faded newspaper. It was a shredded [MASK] .,0.008626765571534632,M2_a_M2_b
+201,newspaper,newspaper,It was a shredded newspaper. It was a national [MASK] .,0.0048395986668765545,M2_b_M1_a
+202,newspaper,newspaper,It was a shredded newspaper. It was a daily [MASK] .,0.03686288744211196,M2_b_M1_b
+203,newspaper,newspaper,It was a shredded newspaper. It was a faded [MASK] .,0.0013626638101413842,M2_b_M2_a
+204,novel,novel,It was a best-selling novel. It was a popular [MASK] .,0.027557181194424626,M1_a_M1_b
+205,novel,novel,It was a best-selling novel. It was a thick [MASK] .,0.006260655820369718,M1_a_M2_a
+206,novel,novel,It was a best-selling novel. It was a paperback [MASK] .,0.12275693565607072,M1_a_M2_b
+207,novel,novel,It was a popular novel. It was a best-selling [MASK] .,0.7923467755317688,M1_b_M1_a
+208,novel,novel,It was a popular novel. It was a thick [MASK] .,0.04044587537646293,M1_b_M2_a
+209,novel,novel,It was a popular novel. It was a paperback [MASK] .,0.04775607958436013,M1_b_M2_b
+210,novel,novel,It was a thick novel. It was a best-selling [MASK] .,0.31037509441375727,M2_a_M1_a
+211,novel,novel,It was a thick novel. It was a popular [MASK] .,0.01714789867401123,M2_a_M1_b
+212,novel,novel,It was a thick novel. It was a paperback [MASK] .,0.03538548573851585,M2_a_M2_b
+213,novel,novel,It was a paperback novel. It was a best-selling [MASK] .,0.3385311961174011,M2_b_M1_a
+214,novel,novel,It was a paperback novel. It was a popular [MASK] .,0.054232098162174225,M2_b_M1_b
+215,novel,novel,It was a paperback novel. It was a thick [MASK] .,0.018980517983436584,M2_b_M2_a
+216,oil,oil,It was canola oil. It was cooking [MASK] .,0.001708543277345598,M1_a_M1_b
+217,oil,oil,It was canola oil. It was crude [MASK] .,0.0043327263556420794,M1_a_M2_a
+218,oil,oil,It was canola oil. It was engine [MASK] .,0.002930484712123872,M1_a_M2_b
+219,oil,oil,It was cooking oil. It was canola [MASK] .,0.06673813611268997,M1_b_M1_a
+220,oil,oil,It was cooking oil. It was crude [MASK] .,0.0002634206903167071,M1_b_M2_a
+221,oil,oil,It was cooking oil. It was engine [MASK] .,0.0002288712857989594,M1_b_M2_b
+222,oil,oil,It was crude oil. It was canola [MASK] .,0.002403907245025039,M2_a_M1_a
+223,oil,oil,It was crude oil. It was cooking [MASK] .,0.00016607785073574632,M2_a_M1_b
+224,oil,oil,It was crude oil. It was engine [MASK] .,8.264606003649533e-05,M2_a_M2_b
+225,oil,oil,It was engine oil. It was canola [MASK] .,0.0034441577736288296,M2_b_M1_a
+226,oil,oil,It was engine oil. It was cooking [MASK] .,0.00026799782062880717,M2_b_M1_b
+227,oil,oil,It was engine oil. It was crude [MASK] .,0.000256591010838747,M2_b_M2_a
+228,act,act,It was a desperate act. It was a humane [MASK] .,0.00906078424304724,M1_a_M1_b
+229,act,act,It was a desperate act. It was a magic [MASK] .,0.007499650120735166,M1_a_M2_a
+230,act,act,It was a desperate act. It was a comedic [MASK] .,0.01565425656735897,M1_a_M2_b
+231,act,act,It was a humane act. It was a desperate [MASK] .,0.0068772006779909125,M1_b_M1_a
+232,act,act,It was a humane act. It was a magic [MASK] .,0.011598659679293634,M1_b_M2_a
+233,act,act,It was a humane act. It was a comedic [MASK] .,0.0986746773123741,M1_b_M2_b
+234,act,act,It was a magic act. It was a desperate [MASK] .,0.0057999161072075376,M2_a_M1_a
+235,act,act,It was a magic act. It was a humane [MASK] .,0.03538434579968453,M2_a_M1_b
+236,act,act,It was a magic act. It was a comedic [MASK] .,0.02845939993858337,M2_a_M2_b
+237,act,act,It was a comedic act. It was a desperate [MASK] .,0.005523115396499634,M2_b_M1_a
+238,act,act,It was a comedic act. It was a humane [MASK] .,0.015484232455492018,M2_b_M1_b
+239,act,act,It was a comedic act. It was a magic [MASK] .,0.022103499621152878,M2_b_M2_a
+240,atmosphere,atmosphere,It was a tense atmosphere. It was a hostile [MASK] .,0.1023431494832039,M1_a_M1_b
+241,atmosphere,atmosphere,It was a tense atmosphere. It was a gaseous [MASK] .,0.20639465749263763,M1_a_M2_a
+242,atmosphere,atmosphere,It was a tense atmosphere. It was a polluted [MASK] .,0.3667069375514984,M1_a_M2_b
+243,atmosphere,atmosphere,It was a hostile atmosphere. It was a tense [MASK] .,0.2613077759742737,M1_b_M1_a
+244,atmosphere,atmosphere,It was a hostile atmosphere. It was a gaseous [MASK] .,0.11563755571842192,M1_b_M2_a
+245,atmosphere,atmosphere,It was a hostile atmosphere. It was a polluted [MASK] .,0.5668303370475769,M1_b_M2_b
+246,atmosphere,atmosphere,It was a gaseous atmosphere. It was a tense [MASK] .,0.027593614533543583,M2_a_M1_a
+247,atmosphere,atmosphere,It was a gaseous atmosphere. It was a hostile [MASK] .,0.11607048660516739,M2_a_M1_b
+248,atmosphere,atmosphere,It was a gaseous atmosphere. It was a polluted [MASK] .,0.00972114223986864,M2_a_M2_b
+249,atmosphere,atmosphere,It was a polluted atmosphere. It was a tense [MASK] .,0.017483050003647804,M2_b_M1_a
+250,atmosphere,atmosphere,It was a polluted atmosphere. It was a hostile [MASK] .,0.0756213888525963,M2_b_M1_b
+251,atmosphere,atmosphere,It was a polluted atmosphere. It was a gaseous [MASK] .,0.023577518761157986,M2_b_M2_a
+252,barrier,barrier,There was a police barrier. There was a concrete [MASK] .,0.0019374927505850785,M1_a_M1_b
+253,barrier,barrier,There was a police barrier. There was a language [MASK] .,0.011992686428129675,M1_a_M2_a
+254,barrier,barrier,There was a police barrier. There was a religious [MASK] .,0.000639203586615622,M1_a_M2_b
+255,barrier,barrier,There was a concrete barrier. There was a police [MASK] .,0.0006072985706850886,M1_b_M1_a
+256,barrier,barrier,There was a concrete barrier. There was a language [MASK] .,0.00010771930828923358,M1_b_M2_a
+257,barrier,barrier,There was a concrete barrier. There was a religious [MASK] .,0.0004988855216652154,M1_b_M2_b
+258,barrier,barrier,There was a language barrier. There was a police [MASK] .,0.0011136848479509358,M2_a_M1_a
+259,barrier,barrier,There was a language barrier. There was a concrete [MASK] .,0.021848615258932114,M2_a_M1_b
+260,barrier,barrier,There was a language barrier. There was a religious [MASK] .,0.08267724514007568,M2_a_M2_b
+261,barrier,barrier,There was a religious barrier. There was a police [MASK] .,0.0016384131740778682,M2_b_M1_a
+262,barrier,barrier,There was a religious barrier. There was a concrete [MASK] .,0.0025932784192264076,M2_b_M1_b
+263,barrier,barrier,There was a religious barrier. There was a language [MASK] .,0.027091324329376214,M2_b_M2_a
+264,beam,beam,He saw the laser beam. He saw the bright [MASK] .,0.0004439120239112528,M1_a_M1_b
+265,beam,beam,He saw the laser beam. He saw the wood [MASK] .,0.00030702157528139624,M1_a_M2_a
+266,beam,beam,He saw the laser beam. He saw the balance [MASK] .,0.0014191303635016086,M1_a_M2_b
+267,beam,beam,He saw the bright beam. He saw the laser [MASK] .,0.003584395861253141,M1_b_M1_a
+268,beam,beam,He saw the bright beam. He saw the wood [MASK] .,3.746228321688253e-05,M1_b_M2_a
+269,beam,beam,He saw the bright beam. He saw the balance [MASK] .,0.0011270594550296664,M1_b_M2_b
+270,beam,beam,He saw the wood beam. He saw the laser [MASK] .,0.006955611053854227,M2_a_M1_a
+271,beam,beam,He saw the wood beam. He saw the bright [MASK] .,0.00026291023823432624,M2_a_M1_b
+272,beam,beam,He saw the wood beam. He saw the balance [MASK] .,0.00040200410876423104,M2_a_M2_b
+273,beam,beam,He saw the balance beam. He saw the laser [MASK] .,0.0026320042088627807,M2_b_M1_a
+274,beam,beam,He saw the balance beam. He saw the bright [MASK] .,0.00045977075933478756,M2_b_M1_b
+275,beam,beam,He saw the balance beam. He saw the wood [MASK] .,0.0012515558628365393,M2_b_M2_a
+276,blood,blood,He has coagulated blood. He has thin [MASK] .,0.0010850372491404416,M1_a_M1_b
+277,blood,blood,He has coagulated blood. He has noble [MASK] .,0.0019104536622762687,M1_a_M2_a
+278,blood,blood,He has coagulated blood. He has royal [MASK] .,0.0005760717322118578,M1_a_M2_b
+279,blood,blood,He has thin blood. He has coagulated [MASK] .,0.0035635335370898247,M1_b_M1_a
+280,blood,blood,He has thin blood. He has noble [MASK] .,0.00369681720621884,M1_b_M2_a
+281,blood,blood,He has thin blood. He has royal [MASK] .,0.012174133211374285,M1_b_M2_b
+282,blood,blood,He has noble blood. He has coagulated [MASK] .,0.0023514546919614085,M2_a_M1_a
+283,blood,blood,He has noble blood. He has thin [MASK] .,0.0005349543644115329,M2_a_M1_b
+284,blood,blood,He has noble blood. He has royal [MASK] .,0.010621161200106147,M2_a_M2_b
+285,blood,blood,He has royal blood. He has coagulated [MASK] .,0.004173626191914082,M2_b_M1_a
+286,blood,blood,He has royal blood. He has thin [MASK] .,0.0005336386384442451,M2_b_M1_b
+287,blood,blood,He has royal blood. He has noble [MASK] .,0.006807398051023483,M2_b_M2_a
+288,case,case,It was a beer case. It was a display [MASK] .,0.003330236067995429,M1_a_M1_b
+289,case,case,It was a beer case. It was a divorce [MASK] .,0.1322951316833496,M1_a_M2_a
+290,case,case,It was a beer case. It was a criminal [MASK] .,0.18826568126678467,M1_a_M2_b
+291,case,case,It was a display case. It was a beer [MASK] .,0.0043422668240964395,M1_b_M1_a
+292,case,case,It was a display case. It was a divorce [MASK] .,0.006136600859463214,M1_b_M2_a
+293,case,case,It was a display case. It was a criminal [MASK] .,0.01107192691415548,M1_b_M2_b
+294,case,case,It was a divorce case. It was a beer [MASK] .,0.014646923169493682,M2_a_M1_a
+295,case,case,It was a divorce case. It was a display [MASK] .,0.0024361303076148024,M2_a_M1_b
+296,case,case,It was a divorce case. It was a criminal [MASK] .,0.441181480884552,M2_a_M2_b
+297,case,case,It was a criminal case. It was a beer [MASK] .,0.015575837343931195,M2_b_M1_a
+298,case,case,It was a criminal case. It was a display [MASK] .,0.0013559260405600069,M2_b_M1_b
+299,case,case,It was a criminal case. It was a divorce [MASK] .,0.8553357720375061,M2_b_M2_a
+300,cause,cause,It was a worthy cause. It was a political [MASK] .,0.002429698361083866,M1_a_M1_b
+301,cause,cause,It was a worthy cause. It was a main [MASK] .,0.005021932069212197,M1_a_M2_a
+302,cause,cause,It was a worthy cause. It was a primary [MASK] .,0.01835271529853344,M1_a_M2_b
+303,cause,cause,It was a political cause. It was a worthy [MASK] .,0.002350870054215192,M1_b_M1_a
+304,cause,cause,It was a political cause. It was a main [MASK] .,0.008718660101294516,M1_b_M2_a
+305,cause,cause,It was a political cause. It was a primary [MASK] .,0.0037881117314100266,M1_b_M2_b
+306,cause,cause,It was a main cause. It was a worthy [MASK] .,0.009284965693950655,M2_a_M1_a
+307,cause,cause,It was a main cause. It was a political [MASK] .,0.012766261585056787,M2_a_M1_b
+308,cause,cause,It was a main cause. It was a primary [MASK] .,0.12771329283714292,M2_a_M2_b
+309,cause,cause,It was a primary cause. It was a worthy [MASK] .,0.00908900145441294,M2_b_M1_a
+310,cause,cause,It was a primary cause. It was a political [MASK] .,0.012166649103164671,M2_b_M1_b
+311,cause,cause,It was a primary cause. It was a main [MASK] .,0.24143266677856443,M2_b_M2_a
+312,cone,cone,It was a waffle cone. It was a sugar [MASK] .,0.030298823490738872,M1_a_M1_b
+313,cone,cone,It was a waffle cone. It was an orange [MASK] .,0.0026045702397823342,M1_a_M2_a
+314,cone,cone,It was a waffle cone. It was a traffic [MASK] .,0.013595905154943466,M1_a_M2_b
+315,cone,cone,It was a sugar cone. It was a waffle [MASK] .,0.07944933325052261,M1_b_M1_a
+316,cone,cone,It was a sugar cone. It was an orange [MASK] .,0.005626414436846973,M1_b_M2_a
+317,cone,cone,It was a sugar cone. It was a traffic [MASK] .,0.06309990584850311,M1_b_M2_b
+318,cone,cone,It was an orange cone. It was a waffle [MASK] .,0.034364871680736535,M2_a_M1_a
+319,cone,cone,It was an orange cone. It was a sugar [MASK] .,0.010067963972687721,M2_a_M1_b
+320,cone,cone,It was an orange cone. It was a traffic [MASK] .,0.013143185526132587,M2_a_M2_b
+321,cone,cone,It was a traffic cone. It was a waffle [MASK] .,0.5325741171836853,M2_b_M1_a
+322,cone,cone,It was a traffic cone. It was a sugar [MASK] .,0.07779743522405624,M2_b_M1_b
+323,cone,cone,It was a traffic cone. It was an orange [MASK] .,0.0012994813732802872,M2_b_M2_a
+324,film,film,It was an action film. It was a censored [MASK] .,0.01843851432204247,M1_a_M1_b
+325,film,film,It was an action film. It was a transparent [MASK] .,0.027008192613720894,M1_a_M2_a
+326,film,film,It was an action film. It was a plastic [MASK] .,0.07115871459245683,M1_a_M2_b
+327,film,film,It was a censored film. It was an action [MASK] .,0.045789744704961784,M1_b_M1_a
+328,film,film,It was a censored film. It was a transparent [MASK] .,0.02647915482521057,M1_b_M2_a
+329,film,film,It was a censored film. It was a plastic [MASK] .,0.01502139121294021,M1_b_M2_b
+330,film,film,It was a transparent film. It was an action [MASK] .,0.012589235790073877,M2_a_M1_a
+331,film,film,It was a transparent film. It was a censored [MASK] .,0.030043806880712506,M2_a_M1_b
+332,film,film,It was a transparent film. It was a plastic [MASK] .,0.006423269864171745,M2_a_M2_b
+333,film,film,It was a plastic film. It was an action [MASK] .,0.02272562123835087,M2_b_M1_a
+334,film,film,It was a plastic film. It was a censored [MASK] .,0.010719369165599343,M2_b_M1_b
+335,film,film,It was a plastic film. It was a transparent [MASK] .,0.005422883201390506,M2_b_M2_a
+336,ground,ground,He was on the firm ground. He was on the frozen [MASK] .,0.41626784205436707,M1_a_M1_b
+337,ground,ground,He was on the firm ground. He was on the camp [MASK] .,0.00641993433237076,M1_a_M2_a
+338,ground,ground,He was on the firm ground. He was on the parade [MASK] .,0.03396958112716675,M1_a_M2_b
+339,ground,ground,He was on the frozen ground. He was on the firm [MASK] .,0.037683155387640006,M1_b_M1_a
+340,ground,ground,He was on the frozen ground. He was on the camp [MASK] .,0.005149918142706158,M1_b_M2_a
+341,ground,ground,He was on the frozen ground. He was on the parade [MASK] .,0.039991289377212524,M1_b_M2_b
+342,ground,ground,He was on the camp ground. He was on the firm [MASK] .,0.04275453835725785,M2_a_M1_a
+343,ground,ground,He was on the camp ground. He was on the frozen [MASK] .,0.005263215396553278,M2_a_M1_b
+344,ground,ground,He was on the camp ground. He was on the parade [MASK] .,0.3216242492198944,M2_a_M2_b
+345,ground,ground,He was on the parade ground. He was on the firm [MASK] .,0.046470791101455695,M2_b_M1_a
+346,ground,ground,He was on the parade ground. He was on the frozen [MASK] .,0.011949892155826095,M2_b_M1_b
+347,ground,ground,He was on the parade ground. He was on the camp [MASK] .,0.6869894862174988,M2_b_M2_a
+348,guide,guide,He had an assembly guide. He had a TV [MASK] .,0.21200878918170926,M1_a_M1_b
+349,guide,guide,He had an assembly guide. He had a talkative [MASK] .,0.0028618052601814274,M1_a_M2_a
+350,guide,guide,He had an assembly guide. He had a friendly [MASK] .,0.0012583616189658646,M1_a_M2_b
+351,guide,guide,He had a TV guide. He had an assembly [MASK] .,0.0019920091144740586,M1_b_M1_a
+352,guide,guide,He had a TV guide. He had a talkative [MASK] .,0.00035372210550121963,M1_b_M2_a
+353,guide,guide,He had a TV guide. He had a friendly [MASK] .,0.00031816927366890024,M1_b_M2_b
+354,guide,guide,He had a talkative guide. He had an assembly [MASK] .,0.015218485146760946,M2_a_M1_a
+355,guide,guide,He had a talkative guide. He had a TV [MASK] .,0.04023951292037964,M2_a_M1_b
+356,guide,guide,He had a talkative guide. He had a friendly [MASK] .,0.1223733201622963,M2_a_M2_b
+357,guide,guide,He had a friendly guide. He had an assembly [MASK] .,0.006244944874197242,M2_b_M1_a
+358,guide,guide,He had a friendly guide. He had a TV [MASK] .,0.05942923575639725,M2_b_M1_b
+359,guide,guide,He had a friendly guide. He had a talkative [MASK] .,0.049154095351696014,M2_b_M2_a
+360,intelligence,intelligence,They had natural intelligence. They had innate [MASK] .,0.09100916981697084,M1_a_M1_b
+361,intelligence,intelligence,They had natural intelligence. They had classified [MASK] .,0.0005205358029343188,M1_a_M2_a
+362,intelligence,intelligence,They had natural intelligence. They had military [MASK] .,0.003872541943565012,M1_a_M2_b
+363,intelligence,intelligence,They had innate intelligence. They had natural [MASK] .,0.00013136603229213503,M1_b_M1_a
+364,intelligence,intelligence,They had innate intelligence. They had classified [MASK] .,0.000133181514684111,M1_b_M2_a
+365,intelligence,intelligence,They had innate intelligence. They had military [MASK] .,0.00034123798832297325,M1_b_M2_b
+366,intelligence,intelligence,They had classified intelligence. They had natural [MASK] .,0.000317488156724721,M2_a_M1_a
+367,intelligence,intelligence,They had classified intelligence. They had innate [MASK] .,0.0006524206837639213,M2_a_M1_b
+368,intelligence,intelligence,They had classified intelligence. They had military [MASK] .,0.0012652867008000617,M2_a_M2_b
+369,intelligence,intelligence,They had military intelligence. They had natural [MASK] .,0.0003142894129268824,M2_b_M1_a
+370,intelligence,intelligence,They had military intelligence. They had innate [MASK] .,0.0004863842041231693,M2_b_M1_b
+371,intelligence,intelligence,They had military intelligence. They had classified [MASK] .,0.0004086336703039705,M2_b_M2_a
+372,market,market,He liked the flea market. He liked the fish [MASK] .,0.532086193561554,M1_a_M1_b
+373,market,market,He liked the flea market. He liked the housing [MASK] .,0.006948766764253378,M1_a_M2_a
+374,market,market,He liked the flea market. He liked the stock [MASK] .,0.7604830861091614,M1_a_M2_b
+375,market,market,He liked the fish market. He liked the flea [MASK] .,0.2244192063808441,M1_b_M1_a
+376,market,market,He liked the fish market. He liked the housing [MASK] .,0.014185187406837937,M1_b_M2_a
+377,market,market,He liked the fish market. He liked the stock [MASK] .,0.07763108611106873,M1_b_M2_b
+378,market,market,He liked the housing market. He liked the flea [MASK] .,0.04489307105541229,M2_a_M1_a
+379,market,market,He liked the housing market. He liked the fish [MASK] .,0.09716328978538513,M2_a_M1_b
+380,market,market,He liked the housing market. He liked the stock [MASK] .,0.08641400933265685,M2_a_M2_b
+381,market,market,He liked the stock market. He liked the flea [MASK] .,0.005424020811915398,M2_b_M1_a
+382,market,market,He liked the stock market. He liked the fish [MASK] .,0.03105592727661133,M2_b_M1_b
+383,market,market,He liked the stock market. He liked the housing [MASK] .,0.10380858182907106,M2_b_M2_a
+384,orange,orange,It was a juicy orange. It was a ripe [MASK] .,0.013060677796602244,M1_a_M1_b
+385,orange,orange,It was a juicy orange. It was a bright [MASK] .,0.0076743667013943195,M1_a_M2_a
+386,orange,orange,It was a juicy orange. It was a reddish [MASK] .,0.01999732665717602,M1_a_M2_b
+387,orange,orange,It was a ripe orange. It was a juicy [MASK] .,0.009753528051078321,M1_b_M1_a
+388,orange,orange,It was a ripe orange. It was a bright [MASK] .,0.008296760730445385,M1_b_M2_a
+389,orange,orange,It was a ripe orange. It was a reddish [MASK] .,0.011882406659424308,M1_b_M2_b
+390,orange,orange,It was a bright orange. It was a juicy [MASK] .,0.0026417630724608894,M2_a_M1_a
+391,orange,orange,It was a bright orange. It was a ripe [MASK] .,0.014294689521193504,M2_a_M1_b
+392,orange,orange,It was a bright orange. It was a reddish [MASK] .,0.030463237315416333,M2_a_M2_b
+393,orange,orange,It was a reddish orange. It was a juicy [MASK] .,0.005323823541402816,M2_b_M1_a
+394,orange,orange,It was a reddish orange. It was a ripe [MASK] .,0.017121070995926864,M2_b_M1_b
+395,orange,orange,It was a reddish orange. It was a bright [MASK] .,0.005780923645943404,M2_b_M2_a
+396,position,position,He was in a distinguished position. He was in a prominent [MASK] .,0.06687328964471817,M1_a_M1_b
+397,position,position,He was in a distinguished position. He was in a fetal [MASK] .,0.16661353409290314,M1_a_M2_a
+398,position,position,He was in a distinguished position. He was in a yoga [MASK] .,0.004160057753324508,M1_a_M2_b
+399,position,position,He was in a prominent position. He was in a distinguished [MASK] .,0.28609564900398254,M1_b_M1_a
+400,position,position,He was in a prominent position. He was in a fetal [MASK] .,0.13736528158187866,M1_b_M2_a
+401,position,position,He was in a prominent position. He was in a yoga [MASK] .,0.013987598940730098,M1_b_M2_b
+402,position,position,He was in a fetal position. He was in a distinguished [MASK] .,0.23429881036281588,M2_a_M1_a
+403,position,position,He was in a fetal position. He was in a prominent [MASK] .,0.19960483908653257,M2_a_M1_b
+404,position,position,He was in a fetal position. He was in a yoga [MASK] .,0.014546267688274389,M2_a_M2_b
+405,position,position,He was in a yoga position. He was in a distinguished [MASK] .,0.17637519538402557,M2_b_M1_a
+406,position,position,He was in a yoga position. He was in a prominent [MASK] .,0.08938153088092805,M2_b_M1_b
+407,position,position,He was in a yoga position. He was in a fetal [MASK] .,0.03782159835100173,M2_b_M2_a
+408,scene,scene,It was a touching scene. It was a well-acted [MASK] .,0.6227498650550842,M1_a_M1_b
+409,scene,scene,It was a touching scene. It was a nature [MASK] .,0.05849628150463104,M1_a_M2_a
+410,scene,scene,It was a touching scene. It was a panoramic [MASK] .,0.0008588191703893242,M1_a_M2_b
+411,scene,scene,It was a well-acted scene. It was a touching [MASK] .,0.009011971764266491,M1_b_M1_a
+412,scene,scene,It was a well-acted scene. It was a nature [MASK] .,0.014897854067385197,M1_b_M2_a
+413,scene,scene,It was a well-acted scene. It was a panoramic [MASK] .,0.005039223935455086,M1_b_M2_b
+414,scene,scene,It was a nature scene. It was a touching [MASK] .,0.12928512692451477,M2_a_M1_a
+415,scene,scene,It was a nature scene. It was a well-acted [MASK] .,0.09810640662908553,M2_a_M1_b
+416,scene,scene,It was a nature scene. It was a panoramic [MASK] .,0.00023107331071514655,M2_a_M2_b
+417,scene,scene,It was a panoramic scene. It was a touching [MASK] .,0.006619709543883799,M2_b_M1_a
+418,scene,scene,It was a panoramic scene. It was a well-acted [MASK] .,0.30276748538017273,M2_b_M1_b
+419,scene,scene,It was a panoramic scene. It was a nature [MASK] .,0.002494677901268006,M2_b_M2_a
+420,term,term,It was a winter term. It was a fall [MASK] .,0.02524268440902233,M1_a_M1_b
+421,term,term,It was a winter term. It was a legal [MASK] .,0.08136931061744691,M1_a_M2_a
+422,term,term,It was a winter term. It was a technical [MASK] .,0.06863118708133699,M1_a_M2_b
+423,term,term,It was a fall term. It was a winter [MASK] .,0.027056500315666195,M1_b_M1_a
+424,term,term,It was a fall term. It was a legal [MASK] .,0.04979663342237473,M1_b_M2_a
+425,term,term,It was a fall term. It was a technical [MASK] .,0.02114098332822323,M1_b_M2_b
+426,term,term,It was a legal term. It was a winter [MASK] .,0.0063983779400587065,M2_a_M1_a
+427,term,term,It was a legal term. It was a fall [MASK] .,0.0015302730025723574,M2_a_M1_b
+428,term,term,It was a legal term. It was a technical [MASK] .,0.02574731037020683,M2_a_M2_b
+429,term,term,It was a technical term. It was a winter [MASK] .,0.011289619840681553,M2_b_M1_a
+430,term,term,It was a technical term. It was a fall [MASK] .,0.005261742975562811,M2_b_M1_b
+431,term,term,It was a technical term. It was a legal [MASK] .,0.027199625968933112,M2_b_M2_a
+432,title,title,She liked the essay title. She liked the poem [MASK] .,0.0029478094074875125,M1_a_M1_b
+433,title,title,She liked the essay title. She liked the academic [MASK] .,0.04450988024473191,M1_a_M2_a
+434,title,title,She liked the essay title. She liked the professional [MASK] .,0.0771309956908226,M1_a_M2_b
+435,title,title,She liked the poem title. She liked the essay [MASK] .,0.019773282110691067,M1_b_M1_a
+436,title,title,She liked the poem title. She liked the academic [MASK] .,0.009242360480129719,M1_b_M2_a
+437,title,title,She liked the poem title. She liked the professional [MASK] .,0.0027828800957649955,M1_b_M2_b
+438,title,title,She liked the academic title. She liked the essay [MASK] .,0.00859996862709522,M2_a_M1_a
+439,title,title,She liked the academic title. She liked the poem [MASK] .,0.00045376562047749774,M2_a_M1_b
+440,title,title,She liked the academic title. She liked the professional [MASK] .,0.37924814224243164,M2_a_M2_b
+441,title,title,She liked the professional title. She liked the essay [MASK] .,0.0024378164671361446,M2_b_M1_a
+442,title,title,She liked the professional title. She liked the poem [MASK] .,3.831199501291851e-05,M2_b_M1_b
+443,title,title,She liked the professional title. She liked the academic [MASK] .,0.46329164505004883,M2_b_M2_a
+444,appeal,appeal,He had a universal appeal. He had an undefinable [MASK] .,0.0009963691700249915,M1_a_M1_b
+445,appeal,appeal,He had a universal appeal. He had a legal [MASK] .,0.0014887916622683406,M1_a_M2_a
+446,appeal,appeal,He had a universal appeal. He had a pending [MASK] .,0.000700182397849858,M1_a_M2_b
+447,appeal,appeal,He had an undefinable appeal. He had a universal [MASK] .,0.022337421774864193,M1_b_M1_a
+448,appeal,appeal,He had an undefinable appeal. He had a legal [MASK] .,0.0006393195944838226,M1_b_M2_a
+449,appeal,appeal,He had an undefinable appeal. He had a pending [MASK] .,0.0009442605660296973,M1_b_M2_b
+450,appeal,appeal,He had a legal appeal. He had a universal [MASK] .,0.004290413577109577,M2_a_M1_a
+451,appeal,appeal,He had a legal appeal. He had an undefinable [MASK] .,0.00010419909813208496,M2_a_M1_b
+452,appeal,appeal,He had a legal appeal. He had a pending [MASK] .,0.0005365851102396846,M2_a_M2_b
+453,appeal,appeal,He had a pending appeal. He had a universal [MASK] .,0.0007307464256882668,M2_b_M1_a
+454,appeal,appeal,He had a pending appeal. He had an undefinable [MASK] .,4.326972702983767e-05,M2_b_M1_b
+455,appeal,appeal,He had a pending appeal. He had a legal [MASK] .,0.00012382799468468872,M2_b_M2_a
+456,block,block,She had a toy block. She had a wooden [MASK] .,0.006962553597986699,M1_a_M1_b
+457,block,block,She had a toy block. She had a mental [MASK] .,0.011509326286613936,M1_a_M2_a
+458,block,block,She had a toy block. She had a writer's [MASK] .,0.010091807693243023,M1_a_M2_b
+459,block,block,She had a wooden block. She had a toy [MASK] .,0.003880881238728763,M1_b_M1_a
+460,block,block,She had a wooden block. She had a mental [MASK] .,0.0026168827898800373,M1_b_M2_a
+461,block,block,She had a wooden block. She had a writer's [MASK] .,0.005848678294569256,M1_b_M2_b
+462,block,block,She had a mental block. She had a toy [MASK] .,0.0002980703429784624,M2_a_M1_a
+463,block,block,She had a mental block. She had a wooden [MASK] .,0.0003910032100975515,M2_a_M1_b
+464,block,block,She had a mental block. She had a writer's [MASK] .,0.003237257711589337,M2_a_M2_b
+465,block,block,She had a writer's block. She had a toy [MASK] .,0.0003406302130315452,M2_b_M1_a
+466,block,block,She had a writer's block. She had a wooden [MASK] .,0.0017709530657157306,M2_b_M1_b
+467,block,block,She had a writer's block. She had a mental [MASK] .,0.005083841271698474,M2_b_M2_a
+468,board,board,It was the ironing board. It was the wooden [MASK] .,0.011697431094944474,M1_a_M1_b
+469,board,board,It was the ironing board. It was the executive [MASK] .,0.0016990302829071873,M1_a_M2_a
+470,board,board,It was the ironing board. It was the school [MASK] .,0.0918150171637535,M1_a_M2_b
+471,board,board,It was the wooden board. It was the ironing [MASK] .,0.03155096620321274,M1_b_M1_a
+472,board,board,It was the wooden board. It was the executive [MASK] .,0.0010560913942754266,M1_b_M2_a
+473,board,board,It was the wooden board. It was the school [MASK] .,0.0001878399780252949,M1_b_M2_b
+474,board,board,It was the executive board. It was the ironing [MASK] .,0.6441354751586914,M2_a_M1_a
+475,board,board,It was the executive board. It was the wooden [MASK] .,0.07441195845603944,M2_a_M1_b
+476,board,board,It was the executive board. It was the school [MASK] .,0.019198840484023094,M2_a_M2_b
+477,board,board,It was the school board. It was the ironing [MASK] .,0.00928679946810007,M2_b_M1_a
+478,board,board,It was the school board. It was the wooden [MASK] .,0.028772337362170216,M2_b_M1_b
+479,board,board,It was the school board. It was the executive [MASK] .,0.0028973298612982026,M2_b_M2_a
+480,charm,charm,She had a devilish charm. She had a natural [MASK] .,0.002281543798744679,M1_a_M1_b
+481,charm,charm,She had a devilish charm. She had a gold [MASK] .,0.05537420511245728,M1_a_M2_a
+482,charm,charm,She had a devilish charm. She had a good-luck [MASK] .,0.9750425815582275,M1_a_M2_b
+483,charm,charm,She had a natural charm. She had a devilish [MASK] .,0.007304308470338584,M1_b_M1_a
+484,charm,charm,She had a natural charm. She had a gold [MASK] .,0.01470085140317679,M1_b_M2_a
+485,charm,charm,She had a natural charm. She had a good-luck [MASK] .,0.9875651001930237,M1_b_M2_b
+486,charm,charm,She had a gold charm. She had a devilish [MASK] .,0.031036458909511573,M2_a_M1_a
+487,charm,charm,She had a gold charm. She had a natural [MASK] .,0.002988619962707163,M2_a_M1_b
+488,charm,charm,She had a gold charm. She had a good-luck [MASK] .,0.5238732099533081,M2_a_M2_b
+489,charm,charm,She had a good-luck charm. She had a devilish [MASK] .,0.0043394295498728735,M2_b_M1_a
+490,charm,charm,She had a good-luck charm. She had a natural [MASK] .,0.0017296692822128528,M2_b_M1_b
+491,charm,charm,She had a good-luck charm. She had a gold [MASK] .,0.002591321710497141,M2_b_M2_a
+492,cold,cold,It was an icy cold. It was a freezing [MASK] .,0.27858263254165644,M1_a_M1_b
+493,cold,cold,It was an icy cold. It was a chest [MASK] .,0.06790345907211304,M1_a_M2_a
+494,cold,cold,It was an icy cold. It was a common [MASK] .,0.04597517475485801,M1_a_M2_b
+495,cold,cold,It was a freezing cold. It was an icy [MASK] .,0.7313141226768494,M1_b_M1_a
+496,cold,cold,It was a freezing cold. It was a chest [MASK] .,0.4613873064517975,M1_b_M2_a
+497,cold,cold,It was a freezing cold. It was a common [MASK] .,0.2552857995033264,M1_b_M2_b
+498,cold,cold,It was a chest cold. It was an icy [MASK] .,0.008610002696514128,M2_a_M1_a
+499,cold,cold,It was a chest cold. It was a freezing [MASK] .,0.011992129497230055,M2_a_M1_b
+500,cold,cold,It was a chest cold. It was a common [MASK] .,0.007170543540269136,M2_a_M2_b
+501,cold,cold,It was a common cold. It was an icy [MASK] .,0.039407879114151,M2_b_M1_a
+502,cold,cold,It was a common cold. It was a freezing [MASK] .,0.05253999680280685,M2_b_M1_b
+503,cold,cold,It was a common cold. It was a chest [MASK] .,0.16419777274131775,M2_b_M2_a
+504,column,column,It was a gossip column. It was a sports [MASK] .,0.38819438219070435,M1_a_M1_b
+505,column,column,It was a gossip column. It was a concrete [MASK] .,0.0006726252031512556,M1_a_M2_a
+506,column,column,It was a gossip column. It was a marble [MASK] .,0.0010413972195237873,M1_a_M2_b
+507,column,column,It was a sports column. It was a gossip [MASK] .,0.9186372756958008,M1_b_M1_a
+508,column,column,It was a sports column. It was a concrete [MASK] .,0.013116036541759966,M1_b_M2_a
+509,column,column,It was a sports column. It was a marble [MASK] .,0.0035323651973158125,M1_b_M2_b
+510,column,column,It was a concrete column. It was a gossip [MASK] .,0.0015573749551549552,M2_a_M1_a
+511,column,column,It was a concrete column. It was a sports [MASK] .,0.0007628470775671303,M2_a_M1_b
+512,column,column,It was a concrete column. It was a marble [MASK] .,0.0005843825638294218,M2_a_M2_b
+513,column,column,It was a marble column. It was a gossip [MASK] .,0.0011238382430747154,M2_b_M1_a
+514,column,column,It was a marble column. It was a sports [MASK] .,0.0014254939742386341,M2_b_M1_b
+515,column,column,It was a marble column. It was a concrete [MASK] .,0.0033592013642191874,M2_b_M2_a
+516,company,company,He liked the investment company. He liked the pharmaceutical [MASK] .,0.056599624454975114,M1_a_M1_b
+517,company,company,He liked the investment company. He liked the pleasant [MASK] .,0.0023667316418141135,M1_a_M2_a
+518,company,company,He liked the investment company. He liked the polite [MASK] .,0.001573102665133775,M1_a_M2_b
+519,company,company,He liked the pharmaceutical company. He liked the investment [MASK] .,0.012514826841652392,M1_b_M1_a
+520,company,company,He liked the pharmaceutical company. He liked the pleasant [MASK] .,0.002508803270757198,M1_b_M2_a
+521,company,company,He liked the pharmaceutical company. He liked the polite [MASK] .,0.0025137485936284065,M1_b_M2_b
+522,company,company,He liked the pleasant company. He liked the investment [MASK] .,0.054404169321060195,M2_a_M1_a
+523,company,company,He liked the pleasant company. He liked the pharmaceutical [MASK] .,0.08395661413669585,M2_a_M1_b
+524,company,company,He liked the pleasant company. He liked the polite [MASK] .,0.011773083359003065,M2_a_M2_b
+525,company,company,He liked the polite company. He liked the investment [MASK] .,0.042716935276985175,M2_b_M1_a
+526,company,company,He liked the polite company. He liked the pharmaceutical [MASK] .,0.22639887034893036,M2_b_M1_b
+527,company,company,He liked the polite company. He liked the pleasant [MASK] .,0.030811725184321404,M2_b_M2_a
+528,course,course,It was an introductory course. It was a pass-fail [MASK] .,0.010760365054011347,M1_a_M1_b
+529,course,course,It was an introductory course. It was a charted [MASK] .,0.026838282123208042,M1_a_M2_a
+530,course,course,It was an introductory course. It was a collision [MASK] .,0.7214033603668213,M1_a_M2_b
+531,course,course,It was a pass-fail course. It was an introductory [MASK] .,0.21824663877487183,M1_b_M1_a
+532,course,course,It was a pass-fail course. It was a charted [MASK] .,0.20241279900074008,M1_b_M2_a
+533,course,course,It was a pass-fail course. It was a collision [MASK] .,0.9665458798408508,M1_b_M2_b
+534,course,course,It was a charted course. It was an introductory [MASK] .,0.3395092189311981,M2_a_M1_a
+535,course,course,It was a charted course. It was a pass-fail [MASK] .,0.17336860299110413,M2_a_M1_b
+536,course,course,It was a charted course. It was a collision [MASK] .,0.9127340316772461,M2_a_M2_b
+537,course,course,It was a collision course. It was an introductory [MASK] .,0.3564876616001129,M2_b_M1_a
+538,course,course,It was a collision course. It was a pass-fail [MASK] .,0.0935467556118965,M2_b_M1_b
+539,course,course,It was a collision course. It was a charted [MASK] .,0.5185570120811462,M2_b_M2_a
+540,date,date,It was a dinner date. It was a blind [MASK] .,0.09083326905965805,M1_a_M1_b
+541,date,date,It was a dinner date. It was an expiration [MASK] .,0.03294795006513596,M1_a_M2_a
+542,date,date,It was a dinner date. It was a historical [MASK] .,0.01333745568990707,M1_a_M2_b
+543,date,date,It was a blind date. It was a dinner [MASK] .,0.39034193754196167,M1_b_M1_a
+544,date,date,It was a blind date. It was an expiration [MASK] .,0.8410895466804504,M1_b_M2_a
+545,date,date,It was a blind date. It was a historical [MASK] .,0.07169329375028612,M1_b_M2_b
+546,date,date,It was an expiration date. It was a dinner [MASK] .,0.053929951041936874,M2_a_M1_a
+547,date,date,It was an expiration date. It was a blind [MASK] .,0.0038664950989186755,M2_a_M1_b
+548,date,date,It was an expiration date. It was a historical [MASK] .,0.007022050209343437,M2_a_M2_b
+549,date,date,It was a historical date. It was a dinner [MASK] .,0.02779826149344444,M2_b_M1_a
+550,date,date,It was a historical date. It was a blind [MASK] .,0.011476397514343257,M2_b_M1_b
+551,date,date,It was a historical date. It was an expiration [MASK] .,0.7604742050170898,M2_b_M2_a
+552,degrees,degree,It was about forty degrees. It was about fifty [MASK] .,0.015215442515909668,M1_a_M1_b
+553,degrees,degree,It was about forty degrees. It was about associate [MASK] .,0.024752596393227577,M1_a_M2_a
+554,degrees,degree,It was about forty degrees. It was about college [MASK] .,0.021400779485702518,M1_a_M2_b
+555,degrees,degree,It was about fifty degrees. It was about forty [MASK] .,0.049900107085704797,M1_b_M1_a
+556,degrees,degree,It was about fifty degrees. It was about associate [MASK] .,0.026447374373674393,M1_b_M2_a
+557,degrees,degree,It was about fifty degrees. It was about college [MASK] .,0.02136280946433544,M1_b_M2_b
+558,degrees,degree,It was about associate degrees. It was about forty [MASK] .,0.006531059741973878,M2_a_M1_a
+559,degrees,degree,It was about associate degrees. It was about fifty [MASK] .,0.006978348363190892,M2_a_M1_b
+560,degrees,degree,It was about associate degrees. It was about college [MASK] .,0.02497604116797447,M2_a_M2_b
+561,degrees,degree,It was about college degrees. It was about forty [MASK] .,0.00777771137654781,M2_b_M1_a
+562,degrees,degree,It was about college degrees. It was about fifty [MASK] .,0.010545528493821624,M2_b_M1_b
+563,degrees,degree,It was about college degrees. It was about associate [MASK] .,0.11613379418849942,M2_b_M2_a
+564,foundation,foundation,It was a charitable foundation. It was an educational [MASK] .,0.05809971317648887,M1_a_M1_b
+565,foundation,foundation,It was a charitable foundation. It was a wooden [MASK] .,0.06443605571985245,M1_a_M2_a
+566,foundation,foundation,It was a charitable foundation. It was a concrete [MASK] .,0.009642782621085642,M1_a_M2_b
+567,foundation,foundation,It was an educational foundation. It was a charitable [MASK] .,0.017097283154726025,M1_b_M1_a
+568,foundation,foundation,It was an educational foundation. It was a wooden [MASK] .,0.001373638398945332,M1_b_M2_a
+569,foundation,foundation,It was an educational foundation. It was a concrete [MASK] .,0.017275623977184303,M1_b_M2_b
+570,foundation,foundation,It was a wooden foundation. It was a charitable [MASK] .,0.04942955821752549,M2_a_M1_a
+571,foundation,foundation,It was a wooden foundation. It was an educational [MASK] .,0.02178274281322956,M2_a_M1_b
+572,foundation,foundation,It was a wooden foundation. It was a concrete [MASK] .,0.0321168676018715,M2_a_M2_b
+573,foundation,foundation,It was a concrete foundation. It was a charitable [MASK] .,0.036558236926794045,M2_b_M1_a
+574,foundation,foundation,It was a concrete foundation. It was an educational [MASK] .,0.009118235670030119,M2_b_M1_b
+575,foundation,foundation,It was a concrete foundation. It was a wooden [MASK] .,0.012121856212615963,M2_b_M2_a
+576,function,function,It was a mathematical function. It was a linear [MASK] .,0.0016434696735814216,M1_a_M1_b
+577,function,function,It was a mathematical function. It was a social [MASK] .,0.034639470279216766,M1_a_M2_a
+578,function,function,It was a mathematical function. It was a business [MASK] .,0.002933278679847716,M1_a_M2_b
+579,function,function,It was a linear function. It was a mathematical [MASK] .,0.0007599028758704661,M1_b_M1_a
+580,function,function,It was a linear function. It was a social [MASK] .,0.009884129278361794,M1_b_M2_a
+581,function,function,It was a linear function. It was a business [MASK] .,0.0016242290148511525,M1_b_M2_b
+582,function,function,It was a social function. It was a mathematical [MASK] .,0.01342541165649891,M2_a_M1_a
+583,function,function,It was a social function. It was a linear [MASK] .,0.011126121506094929,M2_a_M1_b
+584,function,function,It was a social function. It was a business [MASK] .,0.010413904674351217,M2_a_M2_b
+585,function,function,It was a business function. It was a mathematical [MASK] .,0.020895646885037422,M2_b_M1_a
+586,function,function,It was a business function. It was a linear [MASK] .,0.02013080939650536,M2_b_M1_b
+587,function,function,It was a business function. It was a social [MASK] .,0.02357831411063671,M2_b_M2_a
+588,issue,issue,It was a sensitive issue. It was a political [MASK] .,0.6594858169555664,M1_a_M1_b
+589,issue,issue,It was a sensitive issue. It was a weekly [MASK] .,0.08012241870164871,M1_a_M2_a
+590,issue,issue,It was a sensitive issue. It was a special [MASK] .,0.013138685375452045,M1_a_M2_b
+591,issue,issue,It was a political issue. It was a sensitive [MASK] .,0.2889147400856018,M1_b_M1_a
+592,issue,issue,It was a political issue. It was a weekly [MASK] .,0.04860417917370797,M1_b_M2_a
+593,issue,issue,It was a political issue. It was a special [MASK] .,0.03776848316192627,M1_b_M2_b
+594,issue,issue,It was a weekly issue. It was a sensitive [MASK] .,0.05716844648122786,M2_a_M1_a
+595,issue,issue,It was a weekly issue. It was a political [MASK] .,0.3358381390571594,M2_a_M1_b
+596,issue,issue,It was a weekly issue. It was a special [MASK] .,0.5614917874336243,M2_a_M2_b
+597,issue,issue,It was a special issue. It was a sensitive [MASK] .,0.02097597904503345,M2_b_M1_a
+598,issue,issue,It was a special issue. It was a political [MASK] .,0.01385688316076994,M2_b_M1_b
+599,issue,issue,It was a special issue. It was a weekly [MASK] .,0.031996145844459534,M2_b_M2_a
+600,key,key,It was a duplicate key. It was a master [MASK] .,0.07328799366950989,M1_a_M1_b
+601,key,key,It was a duplicate key. It was a delete [MASK] .,0.2425942122936249,M1_a_M2_a
+602,key,key,It was a duplicate key. It was a backspace [MASK] .,0.19844037294387817,M1_a_M2_b
+603,key,key,It was a master key. It was a duplicate [MASK] .,0.1854322999715805,M1_b_M1_a
+604,key,key,It was a master key. It was a delete [MASK] .,0.31679424643516546,M1_b_M2_a
+605,key,key,It was a master key. It was a backspace [MASK] .,0.32429754734039307,M1_b_M2_b
+606,key,key,It was a delete key. It was a duplicate [MASK] .,0.09599298983812332,M2_a_M1_a
+607,key,key,It was a delete key. It was a master [MASK] .,0.07965424656867981,M2_a_M1_b
+608,key,key,It was a delete key. It was a backspace [MASK] .,0.1569830030202866,M2_a_M2_b
+609,key,key,It was a backspace key. It was a duplicate [MASK] .,0.12186042964458467,M2_b_M1_a
+610,key,key,It was a backspace key. It was a master [MASK] .,0.3384964764118195,M2_b_M1_b
+611,key,key,It was a backspace key. It was a delete [MASK] .,0.5666524171829224,M2_b_M2_a
+612,movement,movement,He liked the rhythmic movement. He liked the graceful [MASK] .,0.03908800333738328,M1_a_M1_b
+613,movement,movement,He liked the rhythmic movement. He liked the feminist [MASK] .,0.004983501508831977,M1_a_M2_a
+614,movement,movement,He liked the rhythmic movement. He liked the civil-rights [MASK] .,0.13858856260776517,M1_a_M2_b
+615,movement,movement,He liked the graceful movement. He liked the rhythmic [MASK] .,0.14043237268924713,M1_b_M1_a
+616,movement,movement,He liked the graceful movement. He liked the feminist [MASK] .,0.002861237386241555,M1_b_M2_a
+617,movement,movement,He liked the graceful movement. He liked the civil-rights [MASK] .,0.37832096219062805,M1_b_M2_b
+618,movement,movement,He liked the feminist movement. He liked the rhythmic [MASK] .,0.07530979812145233,M2_a_M1_a
+619,movement,movement,He liked the feminist movement. He liked the graceful [MASK] .,0.0034763477742671962,M2_a_M1_b
+620,movement,movement,He liked the feminist movement. He liked the civil-rights [MASK] .,0.756582498550415,M2_a_M2_b
+621,movement,movement,He liked the civil-rights movement. He liked the rhythmic [MASK] .,0.02355936355888844,M2_b_M1_a
+622,movement,movement,He liked the civil-rights movement. He liked the graceful [MASK] .,0.02090900205075741,M2_b_M1_b
+623,movement,movement,He liked the civil-rights movement. He liked the feminist [MASK] .,0.0022832357790321107,M2_b_M2_a
+624,panel,panel,It was a control panel. It was an instrument [MASK] .,0.052655678242445,M1_a_M1_b
+625,panel,panel,It was a control panel. It was an advisory [MASK] .,0.002964828629046678,M1_a_M2_a
+626,panel,panel,It was a control panel. It was a consumer [MASK] .,0.0035451510921120657,M1_a_M2_b
+627,panel,panel,It was an instrument panel. It was a control [MASK] .,0.043634228408336646,M1_b_M1_a
+628,panel,panel,It was an instrument panel. It was an advisory [MASK] .,0.00896155461668968,M1_b_M2_a
+629,panel,panel,It was an instrument panel. It was a consumer [MASK] .,0.0038793643470853567,M1_b_M2_b
+630,panel,panel,It was an advisory panel. It was a control [MASK] .,0.03575064614415168,M2_a_M1_a
+631,panel,panel,It was an advisory panel. It was an instrument [MASK] .,0.0245602186769247,M2_a_M1_b
+632,panel,panel,It was an advisory panel. It was a consumer [MASK] .,0.0029302802868187423,M2_a_M2_b
+633,panel,panel,It was a consumer panel. It was a control [MASK] .,0.026950363069772724,M2_b_M1_a
+634,panel,panel,It was a consumer panel. It was an instrument [MASK] .,0.12709106504917145,M2_b_M1_b
+635,panel,panel,It was a consumer panel. It was an advisory [MASK] .,0.015621944330632683,M2_b_M2_a
+636,passage,passage,It was a secret passage. It was a narrow [MASK] .,0.004445968195796012,M1_a_M1_b
+637,passage,passage,It was a secret passage. It was a literary [MASK] .,0.011812080629169944,M1_a_M2_a
+638,passage,passage,It was a secret passage. It was a biblical [MASK] .,0.004810592159628866,M1_a_M2_b
+639,passage,passage,It was a narrow passage. It was a secret [MASK] .,0.0019252365455031393,M1_b_M1_a
+640,passage,passage,It was a narrow passage. It was a literary [MASK] .,0.005300494376569988,M1_b_M2_a
+641,passage,passage,It was a narrow passage. It was a biblical [MASK] .,0.0007712629740126431,M1_b_M2_b
+642,passage,passage,It was a literary passage. It was a secret [MASK] .,0.032398264855146415,M2_a_M1_a
+643,passage,passage,It was a literary passage. It was a narrow [MASK] .,0.014332589693367476,M2_a_M1_b
+644,passage,passage,It was a literary passage. It was a biblical [MASK] .,0.2056154757738113,M2_a_M2_b
+645,passage,passage,It was a biblical passage. It was a secret [MASK] .,0.047222048044204705,M2_b_M1_a
+646,passage,passage,It was a biblical passage. It was a narrow [MASK] .,0.0008849205914884802,M2_b_M1_b
+647,passage,passage,It was a biblical passage. It was a literary [MASK] .,0.006444124970585109,M2_b_M2_a
+648,tape,tape,He used the scotch tape. He used the double-sided [MASK] .,0.0322384387254715,M1_a_M1_b
+649,tape,tape,He used the scotch tape. He used the interview [MASK] .,0.014085870236158368,M1_a_M2_a
+650,tape,tape,He used the scotch tape. He used the video [MASK] .,0.006952097639441491,M1_a_M2_b
+651,tape,tape,He used the double-sided tape. He used the scotch [MASK] .,0.015154635533690453,M1_b_M1_a
+652,tape,tape,He used the double-sided tape. He used the interview [MASK] .,0.10956434905529024,M1_b_M2_a
+653,tape,tape,He used the double-sided tape. He used the video [MASK] .,0.011130169034004215,M1_b_M2_b
+654,tape,tape,He used the interview tape. He used the scotch [MASK] .,0.4111541211605072,M2_a_M1_a
+655,tape,tape,He used the interview tape. He used the double-sided [MASK] .,0.016398321837186817,M2_a_M1_b
+656,tape,tape,He used the interview tape. He used the video [MASK] .,0.016366627067327496,M2_a_M2_b
+657,tape,tape,He used the video tape. He used the scotch [MASK] .,0.01133256778120995,M2_b_M1_a
+658,tape,tape,He used the video tape. He used the double-sided [MASK] .,0.02151370607316494,M2_b_M1_b
+659,tape,tape,He used the video tape. He used the interview [MASK] .,0.010248674079775809,M2_b_M2_a
+660,tracks,track,She saw the train tracks. She saw the trolley [MASK] .,0.0016329747159034016,M1_a_M1_b
+661,tracks,track,She saw the train tracks. She saw the moose [MASK] .,0.0010889408877119422,M1_a_M2_a
+662,tracks,track,She saw the train tracks. She saw the snowshoe [MASK] .,0.000495529966428876,M1_a_M2_b
+663,tracks,track,She saw the trolley tracks. She saw the train [MASK] .,0.004473289940506219,M1_b_M1_a
+664,tracks,track,She saw the trolley tracks. She saw the moose [MASK] .,0.004833246581256388,M1_b_M2_a
+665,tracks,track,She saw the trolley tracks. She saw the snowshoe [MASK] .,0.010697903111577037,M1_b_M2_b
+666,tracks,track,She saw the moose tracks. She saw the train [MASK] .,0.016418864950537678,M2_a_M1_a
+667,tracks,track,She saw the moose tracks. She saw the trolley [MASK] .,0.0410955622792244,M2_a_M1_b
+668,tracks,track,She saw the moose tracks. She saw the snowshoe [MASK] .,0.0008594157989136877,M2_a_M2_b
+669,tracks,track,She saw the snowshoe tracks. She saw the train [MASK] .,0.0004919429193250835,M2_b_M1_a
+670,tracks,track,She saw the snowshoe tracks. She saw the trolley [MASK] .,0.002856969367712736,M2_b_M1_b
+671,tracks,track,She saw the snowshoe tracks. She saw the moose [MASK] .,0.0017063044942915437,M2_b_M2_a
+672,bat,bat,He saw a furry bat. He saw a fruit [MASK] .,0.0068035479635000255,M1_a_M1_b
+673,bat,bat,He saw a furry bat. He saw a wooden [MASK] .,0.0014138999395072462,M1_a_M2_a
+674,bat,bat,He saw a furry bat. He saw a baseball [MASK] .,0.0003957167209591717,M1_a_M2_b
+675,bat,bat,He saw a fruit bat. He saw a furry [MASK] .,0.0015649138949811456,M1_b_M1_a
+676,bat,bat,He saw a fruit bat. He saw a wooden [MASK] .,0.0036676884628832353,M1_b_M2_a
+677,bat,bat,He saw a fruit bat. He saw a baseball [MASK] .,0.007288480177521705,M1_b_M2_b
+678,bat,bat,He saw a wooden bat. He saw a furry [MASK] .,0.001245942781679332,M2_a_M1_a
+679,bat,bat,He saw a wooden bat. He saw a fruit [MASK] .,0.025605320930480957,M2_a_M1_b
+680,bat,bat,He saw a wooden bat. He saw a baseball [MASK] .,0.0013434056891128414,M2_a_M2_b
+681,bat,bat,He saw a baseball bat. He saw a furry [MASK] .,0.0001362200418952853,M2_b_M1_a
+682,bat,bat,He saw a baseball bat. He saw a fruit [MASK] .,0.006628432311117647,M2_b_M1_b
+683,bat,bat,He saw a baseball bat. He saw a wooden [MASK] .,0.0008770783315412701,M2_b_M2_a
+684,cape,cape,It was a red cape. It was a flowing [MASK] .,0.0015409868210554119,M1_a_M1_b
+685,cape,cape,It was a red cape. It was a rocky [MASK] .,0.003266017884016037,M1_a_M2_a
+686,cape,cape,It was a red cape. It was an island [MASK] .,0.0002716698509175332,M1_a_M2_b
+687,cape,cape,It was a flowing cape. It was a red [MASK] .,0.0006756712100468577,M1_b_M1_a
+688,cape,cape,It was a flowing cape. It was a rocky [MASK] .,0.010322737507522104,M1_b_M2_a
+689,cape,cape,It was a flowing cape. It was an island [MASK] .,0.0021923873573541637,M1_b_M2_b
+690,cape,cape,It was a rocky cape. It was a red [MASK] .,0.008368708193302155,M2_a_M1_a
+691,cape,cape,It was a rocky cape. It was a flowing [MASK] .,0.40137597918510437,M2_a_M1_b
+692,cape,cape,It was a rocky cape. It was an island [MASK] .,0.00033670320408418775,M2_a_M2_b
+693,cape,cape,It was an island cape. It was a red [MASK] .,0.02310770750045776,M2_b_M1_a
+694,cape,cape,It was an island cape. It was a flowing [MASK] .,0.04636520147323608,M2_b_M1_b
+695,cape,cape,It was an island cape. It was a rocky [MASK] .,0.0018070245860144498,M2_b_M2_a
+696,cell,cell,It was a skin cell. It was a brain [MASK] .,0.11804446578025819,M1_a_M1_b
+697,cell,cell,It was a skin cell. It was a prison [MASK] .,0.8421452641487122,M1_a_M2_a
+698,cell,cell,It was a skin cell. It was a jail [MASK] .,0.7751291990280151,M1_a_M2_b
+699,cell,cell,It was a brain cell. It was a skin [MASK] .,0.03632183372974396,M1_b_M1_a
+700,cell,cell,It was a brain cell. It was a prison [MASK] .,0.04151928424835206,M1_b_M2_a
+701,cell,cell,It was a brain cell. It was a jail [MASK] .,0.018872221931815144,M1_b_M2_b
+702,cell,cell,It was a prison cell. It was a skin [MASK] .,0.0010211156914010642,M2_a_M1_a
+703,cell,cell,It was a prison cell. It was a brain [MASK] .,0.014875799417495731,M2_a_M1_b
+704,cell,cell,It was a prison cell. It was a jail [MASK] .,0.03649122267961502,M2_a_M2_b
+705,cell,cell,It was a jail cell. It was a skin [MASK] .,0.00032723264303058375,M2_b_M1_a
+706,cell,cell,It was a jail cell. It was a brain [MASK] .,0.004232439212501047,M2_b_M1_b
+707,cell,cell,It was a jail cell. It was a prison [MASK] .,0.025215577334165566,M2_b_M2_a
+708,mold,mold,It was a fungal mold. It was a harmful [MASK] .,0.0026247063651680938,M1_a_M1_b
+709,mold,mold,It was a fungal mold. It was a rubber [MASK] .,0.09106281399726866,M1_a_M2_a
+710,mold,mold,It was a fungal mold. It was a clay [MASK] .,0.010001749731600283,M1_a_M2_b
+711,mold,mold,It was a harmful mold. It was a fungal [MASK] .,0.018139360472559925,M1_b_M1_a
+712,mold,mold,It was a harmful mold. It was a rubber [MASK] .,0.06239172071218492,M1_b_M2_a
+713,mold,mold,It was a harmful mold. It was a clay [MASK] .,0.0026318433228880154,M1_b_M2_b
+714,mold,mold,It was a rubber mold. It was a fungal [MASK] .,0.013819619081914423,M2_a_M1_a
+715,mold,mold,It was a rubber mold. It was a harmful [MASK] .,0.004556176252663137,M2_a_M1_b
+716,mold,mold,It was a rubber mold. It was a clay [MASK] .,0.0018881929572671658,M2_a_M2_b
+717,mold,mold,It was a clay mold. It was a fungal [MASK] .,0.0052780965343117705,M2_b_M1_a
+718,mold,mold,It was a clay mold. It was a harmful [MASK] .,0.002396882278844714,M2_b_M1_b
+719,mold,mold,It was a clay mold. It was a rubber [MASK] .,0.021795161068439484,M2_b_M2_a
+720,match,match,It was a lit match. It was a burning [MASK] .,0.02012216672301292,M1_a_M1_b
+721,match,match,It was a lit match. It was a soccer [MASK] .,0.028602777048945423,M1_a_M2_a
+722,match,match,It was a lit match. It was a tennis [MASK] .,0.047333285212516785,M1_a_M2_b
+723,match,match,It was a burning match. It was a lit [MASK] .,0.020525597035884854,M1_b_M1_a
+724,match,match,It was a burning match. It was a soccer [MASK] .,0.09049843251705171,M1_b_M2_a
+725,match,match,It was a burning match. It was a tennis [MASK] .,0.1554148644208908,M1_b_M2_b
+726,match,match,It was a soccer match. It was a lit [MASK] .,0.0010720482096076007,M2_a_M1_a
+727,match,match,It was a soccer match. It was a burning [MASK] .,0.00701275374740362,M2_a_M1_b
+728,match,match,It was a soccer match. It was a tennis [MASK] .,0.951334536075592,M2_a_M2_b
+729,match,match,It was a tennis match. It was a lit [MASK] .,0.0013279850827530029,M2_b_M1_a
+730,match,match,It was a tennis match. It was a burning [MASK] .,0.004152335692197086,M2_b_M1_b
+731,match,match,It was a tennis match. It was a soccer [MASK] .,0.21451497077941897,M2_b_M2_a
+732,pupil,pupil,She had a brilliant pupil. She had an interested [MASK] .,0.0022809950169175868,M1_a_M1_b
+733,pupil,pupil,She had a brilliant pupil. She had a dilated [MASK] .,0.03407648205757142,M1_a_M2_a
+734,pupil,pupil,She had a brilliant pupil. She had a cloudy [MASK] .,0.11179298162460326,M1_a_M2_b
+735,pupil,pupil,She had an interested pupil. She had a brilliant [MASK] .,0.12258453667163849,M1_b_M1_a
+736,pupil,pupil,She had an interested pupil. She had a dilated [MASK] .,0.05646366998553277,M1_b_M2_a
+737,pupil,pupil,She had an interested pupil. She had a cloudy [MASK] .,0.01944020204246044,M1_b_M2_b
+738,pupil,pupil,She had a dilated pupil. She had a brilliant [MASK] .,0.004253251943737268,M2_a_M1_a
+739,pupil,pupil,She had a dilated pupil. She had an interested [MASK] .,0.0016495637828484175,M2_a_M1_b
+740,pupil,pupil,She had a dilated pupil. She had a cloudy [MASK] .,0.012509134598076338,M2_a_M2_b
+741,pupil,pupil,She had a cloudy pupil. She had a brilliant [MASK] .,0.10655656456947324,M2_b_M1_a
+742,pupil,pupil,She had a cloudy pupil. She had an interested [MASK] .,0.05845486372709275,M2_b_M1_b
+743,pupil,pupil,She had a cloudy pupil. She had a dilated [MASK] .,0.11884675174951552,M2_b_M2_a
+744,seal,seal,It was a gold seal. It was a certified [MASK] .,0.00186477426905185,M1_a_M1_b
+745,seal,seal,It was a gold seal. It was a circus [MASK] .,0.0010104216635227203,M1_a_M2_a
+746,seal,seal,It was a gold seal. It was a trained [MASK] .,0.004722126293927431,M1_a_M2_b
+747,seal,seal,It was a certified seal. It was a gold [MASK] .,0.035051297396421426,M1_b_M1_a
+748,seal,seal,It was a certified seal. It was a circus [MASK] .,0.001765135093592108,M1_b_M2_a
+749,seal,seal,It was a certified seal. It was a trained [MASK] .,0.012500628829002377,M1_b_M2_b
+750,seal,seal,It was a circus seal. It was a gold [MASK] .,0.03349050506949425,M2_a_M1_a
+751,seal,seal,It was a circus seal. It was a certified [MASK] .,0.0023316247388720512,M2_a_M1_b
+752,seal,seal,It was a circus seal. It was a trained [MASK] .,0.004846078343689443,M2_a_M2_b
+753,seal,seal,It was a trained seal. It was a gold [MASK] .,0.02570707537233829,M2_b_M1_a
+754,seal,seal,It was a trained seal. It was a certified [MASK] .,0.006403211504220965,M2_b_M1_b
+755,seal,seal,It was a trained seal. It was a circus [MASK] .,0.11600520461797713,M2_b_M2_a
+756,tick,tick,It was a clock tick. It was an audible [MASK] .,0.0008545967866666618,M1_a_M1_b
+757,tick,tick,It was a clock tick. It was a parasitic [MASK] .,0.0009785267757251863,M1_a_M2_a
+758,tick,tick,It was a clock tick. It was a diseased [MASK] .,0.0009597970638424158,M1_a_M2_b
+759,tick,tick,It was an audible tick. It was a clock [MASK] .,1.2420543498592456e-05,M1_b_M1_a
+760,tick,tick,It was an audible tick. It was a parasitic [MASK] .,0.03658872842788697,M1_b_M2_a
+761,tick,tick,It was an audible tick. It was a diseased [MASK] .,0.06399288773536681,M1_b_M2_b
+762,tick,tick,It was a parasitic tick. It was a clock [MASK] .,0.579933226108551,M2_a_M1_a
+763,tick,tick,It was a parasitic tick. It was an audible [MASK] .,0.25518548488616943,M2_a_M1_b
+764,tick,tick,It was a parasitic tick. It was a diseased [MASK] .,0.008380279876291752,M2_a_M2_b
+765,tick,tick,It was a diseased tick. It was a clock [MASK] .,0.001093131373636424,M2_b_M1_a
+766,tick,tick,It was a diseased tick. It was an audible [MASK] .,0.0045817424543201915,M2_b_M1_b
+767,tick,tick,It was a diseased tick. It was a parasitic [MASK] .,0.5105732083320618,M2_b_M2_a
+768,yards,yard,It was five yards. It was ten [MASK] .,0.0014185835607349875,M1_a_M1_b
+769,yards,yard,It was five yards. They were big [MASK] .,0.00023391534341499204,M1_a_M2_a
+770,yards,yard,It was five yards. They were cluttered [MASK] .,2.9918739528511654e-05,M1_a_M2_b
+771,yards,yard,It was ten yards. It was five [MASK] .,0.0007132699829526248,M1_b_M1_a
+772,yards,yard,It was ten yards. They were big [MASK] .,0.000342560058925301,M1_b_M2_a
+773,yards,yard,It was ten yards. They were cluttered [MASK] .,4.1023035009857294e-05,M1_b_M2_b
+774,yards,yard,They were big yards. It was five [MASK] .,0.0007200692198239268,M2_a_M1_a
+775,yards,yard,They were big yards. It was ten [MASK] .,0.00027224249788559984,M2_a_M1_b
+776,yards,yard,They were big yards. They were cluttered [MASK] .,0.31877297163009644,M2_a_M2_b
+777,yards,yard,They were cluttered yards. It was five [MASK] .,0.00022389540390577148,M2_b_M1_a
+778,yards,yard,They were cluttered yards. It was ten [MASK] .,0.013556662946939472,M2_b_M1_b
+779,yards,yard,They were cluttered yards. They were big [MASK] .,8.488426828989766e-05,M2_b_M2_a
+780,drill,drill,It was a grueling drill. It was a challenging [MASK] .,0.2067181318998337,M1_a_M1_b
+781,drill,drill,It was a grueling drill. It was an electric [MASK] .,0.3985976576805115,M1_a_M2_a
+782,drill,drill,It was a grueling drill. It was a battery-powered [MASK] .,0.683265745639801,M1_a_M2_b
+783,drill,drill,It was a challenging drill. It was a grueling [MASK] .,0.7504045963287354,M1_b_M1_a
+784,drill,drill,It was a challenging drill. It was an electric [MASK] .,0.49550679326057434,M1_b_M2_a
+785,drill,drill,It was a challenging drill. It was a battery-powered [MASK] .,0.879692792892456,M1_b_M2_b
+786,drill,drill,It was an electric drill. It was a grueling [MASK] .,0.21361978352069855,M2_a_M1_a
+787,drill,drill,It was an electric drill. It was a challenging [MASK] .,0.007392585743218657,M2_a_M1_b
+788,drill,drill,It was an electric drill. It was a battery-powered [MASK] .,0.9112446308135986,M2_a_M2_b
+789,drill,drill,It was a battery-powered drill. It was a grueling [MASK] .,0.2934535145759583,M2_b_M1_a
+790,drill,drill,It was a battery-powered drill. It was a challenging [MASK] .,0.03201332688331605,M2_b_M1_b
+791,drill,drill,It was a battery-powered drill. It was an electric [MASK] .,0.029965547844767574,M2_b_M2_a
+792,file,file,She had a text file. She had a data [MASK] .,0.03315579518675804,M1_a_M1_b
+793,file,file,She had a text file. She had a nail [MASK] .,0.04969767108559609,M1_a_M2_a
+794,file,file,She had a text file. She had a steel [MASK] .,0.0011061048135161402,M1_a_M2_b
+795,file,file,She had a data file. She had a text [MASK] .,0.41538846492767334,M1_b_M1_a
+796,file,file,She had a data file. She had a nail [MASK] .,0.016700977459549904,M1_b_M2_a
+797,file,file,She had a data file. She had a steel [MASK] .,0.0005241963081061838,M1_b_M2_b
+798,file,file,She had a nail file. She had a text [MASK] .,0.08813109993934631,M2_a_M1_a
+799,file,file,She had a nail file. She had a data [MASK] .,0.12112072110176085,M2_a_M1_b
+800,file,file,She had a nail file. She had a steel [MASK] .,0.013865396380424503,M2_a_M2_b
+801,file,file,She had a steel file. She had a text [MASK] .,0.14162589609622953,M2_b_M1_a
+802,file,file,She had a steel file. She had a data [MASK] .,0.2822895646095276,M2_b_M1_b
+803,file,file,She had a steel file. She had a nail [MASK] .,0.008199177682399748,M2_b_M2_a
+804,count,count,That was the noble count. That was the vengeful [MASK] .,0.09516539424657823,M1_a_M1_b
+805,count,count,That was the noble count. That was the final [MASK] .,0.0007156451465561984,M1_a_M2_a
+806,count,count,That was the noble count. That was the correct [MASK] .,0.0002991391520481555,M1_a_M2_b
+807,count,count,That was the vengeful count. That was the noble [MASK] .,0.004099016543477774,M1_b_M1_a
+808,count,count,That was the vengeful count. That was the final [MASK] .,0.012174801900982858,M1_b_M2_a
+809,count,count,That was the vengeful count. That was the correct [MASK] .,0.009307380765676495,M1_b_M2_b
+810,count,count,That was the final count. That was the noble [MASK] .,0.0006127569358795883,M2_a_M1_a
+811,count,count,That was the final count. That was the vengeful [MASK] .,0.002863144502043723,M2_a_M1_b
+812,count,count,That was the final count. That was the correct [MASK] .,0.023033618927001953,M2_a_M2_b
+813,count,count,That was the correct count. That was the noble [MASK] .,0.01458038855344057,M2_b_M1_a
+814,count,count,That was the correct count. That was the vengeful [MASK] .,0.025109011679887765,M2_b_M1_b
+815,count,count,That was the correct count. That was the final [MASK] .,0.021822193637490276,M2_b_M2_a
+816,port,port,It was a windy port. It was a seaside [MASK] .,0.0580914095044136,M1_a_M1_b
+817,port,port,It was a windy port. It was a delicious [MASK] .,0.03711821138858796,M1_a_M2_a
+818,port,port,It was a windy port. It was a sweet [MASK] .,0.2969045341014862,M1_a_M2_b
+819,port,port,It was a seaside port. It was a windy [MASK] .,0.009958716109395029,M1_b_M1_a
+820,port,port,It was a seaside port. It was a delicious [MASK] .,0.006560750305652617,M1_b_M2_a
+821,port,port,It was a seaside port. It was a sweet [MASK] .,0.001087274285964668,M1_b_M2_b
+822,port,port,It was a delicious port. It was a windy [MASK] .,0.27929240465164185,M2_a_M1_a
+823,port,port,It was a delicious port. It was a seaside [MASK] .,0.021041922271251675,M2_a_M1_b
+824,port,port,It was a delicious port. It was a sweet [MASK] .,0.2546784579753876,M2_a_M2_b
+825,port,port,It was a sweet port. It was a windy [MASK] .,0.13321207463741302,M2_b_M1_a
+826,port,port,It was a sweet port. It was a seaside [MASK] .,0.005677442066371439,M2_b_M1_b
+827,port,port,It was a sweet port. It was a delicious [MASK] .,0.07053920626640321,M2_b_M2_a
+828,fan,fan,They had an electric fan. They had a ceiling [MASK] .,0.0040638833306729785,M1_a_M1_b
+829,fan,fan,They had an electric fan. They had a zealous [MASK] .,0.0037743947468698038,M1_a_M2_a
+830,fan,fan,They had an electric fan. They had an enthusiastic [MASK] .,0.008818409405648712,M1_a_M2_b
+831,fan,fan,They had a ceiling fan. They had an electric [MASK] .,0.0026079961098730555,M1_b_M1_a
+832,fan,fan,They had a ceiling fan. They had a zealous [MASK] .,0.00013335756375454363,M1_b_M2_a
+833,fan,fan,They had a ceiling fan. They had an enthusiastic [MASK] .,0.015171045437455179,M1_b_M2_b
+834,fan,fan,They had a zealous fan. They had an electric [MASK] .,0.06855733692646027,M2_a_M1_a
+835,fan,fan,They had a zealous fan. They had a ceiling [MASK] .,0.02954875864088536,M2_a_M1_b
+836,fan,fan,They had a zealous fan. They had an enthusiastic [MASK] .,0.0657852366566658,M2_a_M2_b
+837,fan,fan,They had an enthusiastic fan. They had an electric [MASK] .,0.02327596396207809,M2_b_M1_a
+838,fan,fan,They had an enthusiastic fan. They had a ceiling [MASK] .,0.02633243799209595,M2_b_M1_b
+839,fan,fan,They had an enthusiastic fan. They had a zealous [MASK] .,0.008247287943959236,M2_b_M2_a
+840,sage,sage,He saw the wise sage. He saw the renowned [MASK] .,0.014789155684411527,M1_a_M1_b
+841,sage,sage,He saw the wise sage. He saw the fragrant [MASK] .,0.0022429407108575114,M1_a_M2_a
+842,sage,sage,He saw the wise sage. He saw the bushy [MASK] .,0.010475551709532738,M1_a_M2_b
+843,sage,sage,He saw the renowned sage. He saw the wise [MASK] .,0.0028631100431084637,M1_b_M1_a
+844,sage,sage,He saw the renowned sage. He saw the fragrant [MASK] .,0.01350271608680487,M1_b_M2_a
+845,sage,sage,He saw the renowned sage. He saw the bushy [MASK] .,0.0010451846756041054,M1_b_M2_b
+846,sage,sage,He saw the fragrant sage. He saw the wise [MASK] .,0.0002061491832137109,M2_a_M1_a
+847,sage,sage,He saw the fragrant sage. He saw the renowned [MASK] .,0.0015149955870583658,M2_a_M1_b
+848,sage,sage,He saw the fragrant sage. He saw the bushy [MASK] .,0.000515651481691748,M2_a_M2_b
+849,sage,sage,He saw the bushy sage. He saw the wise [MASK] .,0.00018023760640062392,M2_b_M1_a
+850,sage,sage,He saw the bushy sage. He saw the renowned [MASK] .,0.01083955820649862,M2_b_M1_b
+851,sage,sage,He saw the bushy sage. He saw the fragrant [MASK] .,0.020619148388504982,M2_b_M2_a
+852,racket,racket,That was a loud racket. That was an annoying [MASK] .,0.00017962590209208415,M1_a_M1_b
+853,racket,racket,That was a loud racket. That was a badminton [MASK] .,8.644242188893259e-05,M1_a_M2_a
+854,racket,racket,That was a loud racket. That was a tennis [MASK] .,3.753466808120718e-05,M1_a_M2_b
+855,racket,racket,That was an annoying racket. That was a loud [MASK] .,8.804032404441385e-05,M1_b_M1_a
+856,racket,racket,That was an annoying racket. That was a badminton [MASK] .,0.00013375938578974447,M1_b_M2_a
+857,racket,racket,That was an annoying racket. That was a tennis [MASK] .,0.00011752965656341978,M1_b_M2_b
+858,racket,racket,That was a badminton racket. That was a loud [MASK] .,0.00010073893645312633,M2_a_M1_a
+859,racket,racket,That was a badminton racket. That was an annoying [MASK] .,0.00021902877779211865,M2_a_M1_b
+860,racket,racket,That was a badminton racket. That was a tennis [MASK] .,4.104398976778613e-05,M2_a_M2_b
+861,racket,racket,That was a tennis racket. That was a loud [MASK] .,4.815643842448484e-05,M2_b_M1_a
+862,racket,racket,That was a tennis racket. That was an annoying [MASK] .,0.00014012590690981594,M2_b_M1_b
+863,racket,racket,That was a tennis racket. That was a badminton [MASK] .,0.00011658194853225712,M2_b_M2_a
+864,toasted,toast,They toasted the bread. They [MASK]  the strudel.,4.82545374325127e-06,M1_a_M1_b
+865,toasted,toast,They toasted the bread. They [MASK]  the host.,1.4365245078806765e-05,M1_a_M2_a
+866,toasted,toast,They toasted the bread. They [MASK]  the bride.,9.041567864187534e-06,M1_a_M2_b
+867,toasted,toast,They toasted the strudel. They [MASK]  the bread.,2.2519968752021664e-06,M1_b_M1_a
+868,toasted,toast,They toasted the strudel. They [MASK]  the host.,4.3913350964430686e-05,M1_b_M2_a
+869,toasted,toast,They toasted the strudel. They [MASK]  the bride.,3.90630775655154e-05,M1_b_M2_b
+870,toasted,toast,They toasted the host. They [MASK]  the bread.,4.230105787428329e-06,M2_a_M1_a
+871,toasted,toast,They toasted the host. They [MASK]  the strudel.,1.7883283362607465e-05,M2_a_M1_b
+872,toasted,toast,They toasted the host. They [MASK]  the bride.,3.5679087886819596e-05,M2_a_M2_b
+873,toasted,toast,They toasted the bride. They [MASK]  the bread.,4.758947397931479e-06,M2_b_M1_a
+874,toasted,toast,They toasted the bride. They [MASK]  the strudel.,1.981083187274635e-05,M2_b_M1_b
+875,toasted,toast,They toasted the bride. They [MASK]  the host.,5.903492274228487e-05,M2_b_M2_a
+876,penned,pen,She penned her animals. She [MASK]  her livestock.,0.10348622500896455,M1_a_M1_b
+877,penned,pen,She penned her animals. She [MASK]  her memoirs.,0.006610837299376726,M1_a_M2_a
+878,penned,pen,She penned her animals. She [MASK]  her thoughts.,0.0001873875153250991,M1_a_M2_b
+879,penned,pen,She penned her livestock. She [MASK]  her animals.,0.04712831601500511,M1_b_M1_a
+880,penned,pen,She penned her livestock. She [MASK]  her memoirs.,0.01092530786991119,M1_b_M2_a
+881,penned,pen,She penned her livestock. She [MASK]  her thoughts.,0.00010142798419110477,M1_b_M2_b
+882,penned,pen,She penned her memoirs. She [MASK]  her animals.,7.501239451812579e-05,M2_a_M1_a
+883,penned,pen,She penned her memoirs. She [MASK]  her livestock.,0.00011547697795322165,M2_a_M1_b
+884,penned,pen,She penned her memoirs. She [MASK]  her thoughts.,0.002704488579183817,M2_a_M2_b
+885,penned,pen,She penned her thoughts. She [MASK]  her animals.,0.00018298205395694838,M2_b_M1_a
+886,penned,pen,She penned her thoughts. She [MASK]  her livestock.,8.406137931160622e-05,M2_b_M1_b
+887,penned,pen,She penned her thoughts. She [MASK]  her memoirs.,0.016684442758560174,M2_b_M2_a
+888,banked,bank,He banked the plane. He [MASK]  the helicopter.,3.8777237932663404e-05,M1_a_M1_b
+889,banked,bank,He banked the plane. He [MASK]  the money.,4.186048317933454e-05,M1_a_M2_a
+890,banked,bank,He banked the plane. He [MASK]  the cash.,2.6013800379587354e-05,M1_a_M2_b
+891,banked,bank,He banked the helicopter. He [MASK]  the plane.,5.088983380119313e-05,M1_b_M1_a
+892,banked,bank,He banked the helicopter. He [MASK]  the money.,4.302860907046126e-05,M1_b_M2_a
+893,banked,bank,He banked the helicopter. He [MASK]  the cash.,5.7157572882715565e-05,M1_b_M2_b
+894,banked,bank,He banked the money. He [MASK]  the plane.,1.6188334484468218e-05,M2_a_M1_a
+895,banked,bank,He banked the money. He [MASK]  the helicopter.,2.370913534832653e-05,M2_a_M1_b
+896,banked,bank,He banked the money. He [MASK]  the cash.,1.8389746401226148e-05,M2_a_M2_b
+897,banked,bank,He banked the cash. He [MASK]  the plane.,1.458828137401723e-05,M2_b_M1_a
+898,banked,bank,He banked the cash. He [MASK]  the helicopter.,2.683707498363217e-05,M2_b_M1_b
+899,banked,bank,He banked the cash. He [MASK]  the money.,2.432333349133843e-05,M2_b_M2_a
+900,poached,poach,She poached the deer. She [MASK]  the bear.,2.3145812519942393e-05,M1_a_M1_b
+901,poached,poach,She poached the deer. She [MASK]  the eggs.,6.2899766817281454e-06,M1_a_M2_a
+902,poached,poach,She poached the deer. She [MASK]  the vegetables.,2.4260300506284706e-06,M1_a_M2_b
+903,poached,poach,She poached the bear. She [MASK]  the deer.,2.4757360733929107e-05,M1_b_M1_a
+904,poached,poach,She poached the bear. She [MASK]  the eggs.,8.471387445752047e-06,M1_b_M2_a
+905,poached,poach,She poached the bear. She [MASK]  the vegetables.,3.162073880957907e-06,M1_b_M2_b
+906,poached,poach,She poached the eggs. She [MASK]  the deer.,1.8269061911269084e-05,M2_a_M1_a
+907,poached,poach,She poached the eggs. She [MASK]  the bear.,3.1008235964691294e-05,M2_a_M1_b
+908,poached,poach,She poached the eggs. She [MASK]  the vegetables.,3.3239764434256375e-06,M2_a_M2_b
+909,poached,poach,She poached the vegetables. She [MASK]  the deer.,2.441665128571913e-05,M2_b_M1_a
+910,poached,poach,She poached the vegetables. She [MASK]  the bear.,4.2442930862307515e-05,M2_b_M1_b
+911,poached,poach,She poached the vegetables. She [MASK]  the eggs.,1.1980827366642182e-05,M2_b_M2_a
+912,clogged,clog,The dancer clogged. The choreographer [MASK] .,0.000185837023309432,M1_a_M1_b
+913,clogged,clog,The dancer clogged. The pipe [MASK] .,0.00026266041095368564,M1_a_M2_a
+914,clogged,clog,The dancer clogged. The sink [MASK] .,0.00012814582441933445,M1_a_M2_b
+915,clogged,clog,The choreographer clogged. The dancer [MASK] .,0.0001778730365913362,M1_b_M1_a
+916,clogged,clog,The choreographer clogged. The pipe [MASK] .,9.100433089770382e-05,M1_b_M2_a
+917,clogged,clog,The choreographer clogged. The sink [MASK] .,0.00013254769146442421,M1_b_M2_b
+918,clogged,clog,The pipe clogged. The dancer [MASK] .,0.00017495790962129837,M2_a_M1_a
+919,clogged,clog,The pipe clogged. The choreographer [MASK] .,0.00026749054086394586,M2_a_M1_b
+920,clogged,clog,The pipe clogged. The sink [MASK] .,0.00027819658862426893,M2_a_M2_b
+921,clogged,clog,The sink clogged. The dancer [MASK] .,0.0007178399246186017,M2_b_M1_a
+922,clogged,clog,The sink clogged. The choreographer [MASK] .,0.000544002919923514,M2_b_M1_b
+923,clogged,clog,The sink clogged. The pipe [MASK] .,0.0004426244995556773,M2_b_M2_a
+924,staked,stake,He staked his horse. He [MASK]  his tent.,2.2462268134404423e-06,M1_a_M1_b
+925,staked,stake,He staked his horse. He [MASK]  his name.,2.9609562261612144e-05,M1_a_M2_a
+926,staked,stake,He staked his horse. He [MASK]  his claim.,1.2140778380853585e-05,M1_a_M2_b
+927,staked,stake,He staked his tent. He [MASK]  his horse.,2.1383325474744184e-06,M1_b_M1_a
+928,staked,stake,He staked his tent. He [MASK]  his name.,4.50665538664907e-05,M1_b_M2_a
+929,staked,stake,He staked his tent. He [MASK]  his claim.,2.2638185328105478e-05,M1_b_M2_b
+930,staked,stake,He staked his name. He [MASK]  his horse.,1.2034164683427667e-05,M2_a_M1_a
+931,staked,stake,He staked his name. He [MASK]  his tent.,1.5759294910822074e-05,M2_a_M1_b
+932,staked,stake,He staked his name. He [MASK]  his claim.,4.066714245709589e-05,M2_a_M2_b
+933,staked,stake,He staked his claim. He [MASK]  his horse.,1.4849260878690976e-05,M2_b_M1_a
+934,staked,stake,He staked his claim. He [MASK]  his tent.,1.7004149412969114e-05,M2_b_M1_b
+935,staked,stake,He staked his claim. He [MASK]  his name.,9.68085660133511e-05,M2_b_M2_a
+936,picked,pick,He picked his coffee. He [MASK]  his dinner.,0.027073118835687637,M1_a_M1_b
+937,picked,pick,He picked his coffee. He [MASK]  his scab.,0.013555882498621939,M1_a_M2_a
+938,picked,pick,He picked his coffee. He [MASK]  his nose.,0.023217629641294476,M1_a_M2_b
+939,picked,pick,He picked his dinner. He [MASK]  his coffee.,0.00508757494390011,M1_b_M1_a
+940,picked,pick,He picked his dinner. He [MASK]  his scab.,0.005033037159591912,M1_b_M2_a
+941,picked,pick,He picked his dinner. He [MASK]  his nose.,0.020238192752003666,M1_b_M2_b
+942,picked,pick,He picked his scab. He [MASK]  his coffee.,0.001696249702945352,M2_a_M1_a
+943,picked,pick,He picked his scab. He [MASK]  his dinner.,0.002571564400568604,M2_a_M1_b
+944,picked,pick,He picked his scab. He [MASK]  his nose.,0.08575794100761412,M2_a_M2_b
+945,picked,pick,He picked his nose. He [MASK]  his coffee.,0.001364646945148706,M2_b_M1_a
+946,picked,pick,He picked his nose. He [MASK]  his dinner.,0.003020959673449398,M2_b_M1_b
+947,picked,pick,He picked his nose. He [MASK]  his scab.,0.0073393541388213634,M2_b_M2_a
+948,stalled,stall,They stalled the truck. They [MASK]  the bus.,0.1497173011302948,M1_a_M1_b
+949,stalled,stall,They stalled the truck. They [MASK]  the horse.,0.005460123531520369,M1_a_M2_a
+950,stalled,stall,They stalled the truck. They [MASK]  the pig.,0.01646139845252037,M1_a_M2_b
+951,stalled,stall,They stalled the bus. They [MASK]  the truck.,0.2409756779670715,M1_b_M1_a
+952,stalled,stall,They stalled the bus. They [MASK]  the horse.,0.0007131600286811592,M1_b_M2_a
+953,stalled,stall,They stalled the bus. They [MASK]  the pig.,0.020880227908492092,M1_b_M2_b
+954,stalled,stall,They stalled the horse. They [MASK]  the truck.,0.10368451476097108,M2_a_M1_a
+955,stalled,stall,They stalled the horse. They [MASK]  the bus.,0.010352713987231255,M2_a_M1_b
+956,stalled,stall,They stalled the horse. They [MASK]  the pig.,0.08637890964746474,M2_a_M2_b
+957,stalled,stall,They stalled the pig. They [MASK]  the truck.,0.15689879655838015,M2_b_M1_a
+958,stalled,stall,They stalled the pig. They [MASK]  the bus.,0.003182732732966543,M2_b_M1_b
+959,stalled,stall,They stalled the pig. They [MASK]  the horse.,0.15521667897701263,M2_b_M2_a
+960,fixed,fix,They fixed the radio. They [MASK]  the dishwasher.,0.0020826568361371756,M1_a_M1_b
+961,fixed,fix,They fixed the radio. They [MASK]  the date.,0.003618425456807017,M1_a_M2_a
+962,fixed,fix,They fixed the radio. They [MASK]  the price.,0.007922438904643062,M1_a_M2_b
+963,fixed,fix,They fixed the dishwasher. They [MASK]  the radio.,0.002929189009591936,M1_b_M1_a
+964,fixed,fix,They fixed the dishwasher. They [MASK]  the date.,0.003791950643062592,M1_b_M2_a
+965,fixed,fix,They fixed the dishwasher. They [MASK]  the price.,0.003334507578983903,M1_b_M2_b
+966,fixed,fix,They fixed the date. They [MASK]  the radio.,0.001817287527956068,M2_a_M1_a
+967,fixed,fix,They fixed the date. They [MASK]  the dishwasher.,0.0023586426395922895,M2_a_M1_b
+968,fixed,fix,They fixed the date. They [MASK]  the price.,0.14425386488437653,M2_a_M2_b
+969,fixed,fix,They fixed the price. They [MASK]  the radio.,0.0023334051948040732,M2_b_M1_a
+970,fixed,fix,They fixed the price. They [MASK]  the dishwasher.,0.0016833409899845722,M2_b_M1_b
+971,fixed,fix,They fixed the price. They [MASK]  the date.,0.021616734564304352,M2_b_M2_a
+972,stayed,stay,They stayed wet. They [MASK]  cold.,0.0011427560821175575,M1_a_M1_b
+973,stayed,stay,They stayed wet. They [MASK]  nearby.,0.008453776128590107,M1_a_M2_a
+974,stayed,stay,They stayed wet. They [MASK]  overnight.,0.004720419179648163,M1_a_M2_b
+975,stayed,stay,They stayed cold. They [MASK]  wet.,0.0004246824828442187,M1_b_M1_a
+976,stayed,stay,They stayed cold. They [MASK]  nearby.,0.003403168637305497,M1_b_M2_a
+977,stayed,stay,They stayed cold. They [MASK]  overnight.,0.0020532461348921065,M1_b_M2_b
+978,stayed,stay,They stayed nearby. They [MASK]  wet.,0.00014072383055463444,M2_a_M1_a
+979,stayed,stay,They stayed nearby. They [MASK]  cold.,0.00040033229743130505,M2_a_M1_b
+980,stayed,stay,They stayed nearby. They [MASK]  overnight.,0.0045717796310782415,M2_a_M2_b
+981,stayed,stay,They stayed overnight. They [MASK]  wet.,0.00024741175002418464,M2_b_M1_a
+982,stayed,stay,They stayed overnight. They [MASK]  cold.,0.00022746250033378593,M2_b_M1_b
+983,stayed,stay,They stayed overnight. They [MASK]  nearby.,0.003600628813728692,M2_b_M2_a
+984,crossed,cross,He crossed a road. He [MASK]  a room.,0.0004625355068128557,M1_a_M1_b
+985,crossed,cross,He crossed a road. He [MASK]  an enemy.,0.00015166684170253575,M1_a_M2_a
+986,crossed,cross,He crossed a road. He [MASK]  a friend.,2.7994517949991846e-05,M1_a_M2_b
+987,crossed,cross,He crossed a room. He [MASK]  a road.,0.07729758322238924,M1_b_M1_a
+988,crossed,cross,He crossed a room. He [MASK]  an enemy.,0.000486351316794753,M1_b_M2_a
+989,crossed,cross,He crossed a room. He [MASK]  a friend.,1.7458060028729967e-05,M1_b_M2_b
+990,crossed,cross,He crossed an enemy. He [MASK]  a road.,0.017843514680862427,M2_a_M1_a
+991,crossed,cross,He crossed an enemy. He [MASK]  a room.,0.00386040355078876,M2_a_M1_b
+992,crossed,cross,He crossed an enemy. He [MASK]  a friend.,0.2901824116706848,M2_a_M2_b
+993,crossed,cross,He crossed a friend. He [MASK]  a road.,0.045798737555742264,M2_b_M1_a
+994,crossed,cross,He crossed a friend. He [MASK]  a room.,0.0008526235469616948,M2_b_M1_b
+995,crossed,cross,He crossed a friend. He [MASK]  an enemy.,0.05447373911738395,M2_b_M2_a
+996,ran,run,She ran the marathon. She [MASK]  the race.,0.0613246075809002,M1_a_M1_b
+997,ran,run,She ran the marathon. She [MASK]  the shop.,0.07634227722883224,M1_a_M2_a
+998,ran,run,She ran the marathon. She [MASK]  the company.,0.004530551377683878,M1_a_M2_b
+999,ran,run,She ran the race. She [MASK]  the marathon.,0.3056755065917969,M1_b_M1_a
+1000,ran,run,She ran the race. She [MASK]  the shop.,0.07990527898073196,M1_b_M2_a
+1001,ran,run,She ran the race. She [MASK]  the company.,0.035827446728944785,M1_b_M2_b
+1002,ran,run,She ran the shop. She [MASK]  the marathon.,0.43950343132019043,M2_a_M1_a
+1003,ran,run,She ran the shop. She [MASK]  the race.,0.2651471197605133,M2_a_M1_b
+1004,ran,run,She ran the shop. She [MASK]  the company.,0.4470902681350708,M2_a_M2_b
+1005,ran,run,She ran the company. She [MASK]  the marathon.,0.4723360538482666,M2_b_M1_a
+1006,ran,run,She ran the company. She [MASK]  the race.,0.19658872485160828,M2_b_M1_b
+1007,ran,run,She ran the company. She [MASK]  the shop.,0.6425442695617676,M2_b_M2_a
+1008,spilled,spill,He spilled the drink. He [MASK]  the flour.,0.08894482254981995,M1_a_M1_b
+1009,spilled,spill,He spilled the drink. He [MASK]  the news.,0.00031235604546964185,M1_a_M2_a
+1010,spilled,spill,He spilled the drink. He [MASK]  the secret.,0.0024409226607531318,M1_a_M2_b
+1011,spilled,spill,He spilled the flour. He [MASK]  the drink.,0.02272793650627136,M1_b_M1_a
+1012,spilled,spill,He spilled the flour. He [MASK]  the news.,0.0022780154831707478,M1_b_M2_a
+1013,spilled,spill,He spilled the flour. He [MASK]  the secret.,0.0035970804747194047,M1_b_M2_b
+1014,spilled,spill,He spilled the news. He [MASK]  the drink.,0.0020758169703185563,M2_a_M1_a
+1015,spilled,spill,He spilled the news. He [MASK]  the flour.,0.007221030537039039,M2_a_M1_b
+1016,spilled,spill,He spilled the news. He [MASK]  the secret.,0.024603765457868573,M2_a_M2_b
+1017,spilled,spill,He spilled the secret. He [MASK]  the drink.,0.0030557536520063877,M2_b_M1_a
+1018,spilled,spill,He spilled the secret. He [MASK]  the flour.,0.0028873416595160957,M2_b_M1_b
+1019,spilled,spill,He spilled the secret. He [MASK]  the news.,0.0012947247596457605,M2_b_M2_a
+1020,cast,cast,She cast a shadow. She [MASK]  a glow.,0.004437776282429695,M1_a_M1_b
+1021,cast,cast,She cast a shadow. She [MASK]  a spear.,0.00969310011714697,M1_a_M2_a
+1022,cast,cast,She cast a shadow. She [MASK]  a stone.,0.019942175596952435,M1_a_M2_b
+1023,cast,cast,She cast a glow. She [MASK]  a shadow.,0.212068498134613,M1_b_M1_a
+1024,cast,cast,She cast a glow. She [MASK]  a spear.,0.00664017489179969,M1_b_M2_a
+1025,cast,cast,She cast a glow. She [MASK]  a stone.,0.02906095236539841,M1_b_M2_b
+1026,cast,cast,She cast a spear. She [MASK]  a shadow.,0.050999395549297326,M2_a_M1_a
+1027,cast,cast,She cast a spear. She [MASK]  a glow.,0.003012071829289198,M2_a_M1_b
+1028,cast,cast,She cast a spear. She [MASK]  a stone.,0.19307442009449005,M2_a_M2_b
+1029,cast,cast,She cast a stone. She [MASK]  a shadow.,0.16406318545341494,M2_b_M1_a
+1030,cast,cast,She cast a stone. She [MASK]  a glow.,0.003582110395655036,M2_b_M1_b
+1031,cast,cast,She cast a stone. She [MASK]  a spear.,0.13951104879379272,M2_b_M2_a
+1032,pushed,push,He pushed the cocaine. He [MASK]  the drugs.,0.14119315147399902,M1_a_M1_b
+1033,pushed,push,He pushed the cocaine. He [MASK]  the bed.,0.006843678653240202,M1_a_M2_a
+1034,pushed,push,He pushed the cocaine. He [MASK]  the desk.,0.007649764418601991,M1_a_M2_b
+1035,pushed,push,He pushed the drugs. He [MASK]  the cocaine.,0.2749457061290741,M1_b_M1_a
+1036,pushed,push,He pushed the drugs. He [MASK]  the bed.,0.011896090582013127,M1_b_M2_a
+1037,pushed,push,He pushed the drugs. He [MASK]  the desk.,0.019630268216133114,M1_b_M2_b
+1038,pushed,push,He pushed the bed. He [MASK]  the cocaine.,0.0017014623153954738,M2_a_M1_a
+1039,pushed,push,He pushed the bed. He [MASK]  the drugs.,0.0007109191501513124,M2_a_M1_b
+1040,pushed,push,He pushed the bed. He [MASK]  the desk.,0.007578196004033091,M2_a_M2_b
+1041,pushed,push,He pushed the desk. He [MASK]  the cocaine.,0.001907408703118562,M2_b_M1_a
+1042,pushed,push,He pushed the desk. He [MASK]  the drugs.,0.0018267947016283872,M2_b_M1_b
+1043,pushed,push,He pushed the desk. He [MASK]  the bed.,0.015529321506619457,M2_b_M2_a
+1044,called,call,They called the landlord. They [MASK]  the police.,0.10909719020128249,M1_a_M1_b
+1045,called,call,They called the landlord. They [MASK]  the loan.,0.014855169691145422,M1_a_M2_a
+1046,called,call,They called the landlord. They [MASK]  the debt.,0.011035404168069368,M1_a_M2_b
+1047,called,call,They called the police. They [MASK]  the landlord.,0.24387623369693753,M1_b_M1_a
+1048,called,call,They called the police. They [MASK]  the loan.,0.0352332629263401,M1_b_M2_a
+1049,called,call,They called the police. They [MASK]  the debt.,0.009850778616964819,M1_b_M2_b
+1050,called,call,They called the loan. They [MASK]  the landlord.,0.1768613755702972,M2_a_M1_a
+1051,called,call,They called the loan. They [MASK]  the police.,0.31705206632614136,M2_a_M1_b
+1052,called,call,They called the loan. They [MASK]  the debt.,0.12431153655052186,M2_a_M2_b
+1053,called,call,They called the debt. They [MASK]  the landlord.,0.1441410481929779,M2_b_M1_a
+1054,called,call,They called the debt. They [MASK]  the police.,0.2448887676000595,M2_b_M1_b
+1055,called,call,They called the debt. They [MASK]  the loan.,0.23539093136787412,M2_b_M2_a
+1056,drained,drain,They drained the account. They [MASK]  the budget.,0.013404496945440767,M1_a_M1_b
+1057,drained,drain,They drained the account. They [MASK]  the pool.,0.03751500695943832,M1_a_M2_a
+1058,drained,drain,They drained the account. They [MASK]  the pond.,0.01120726671069861,M1_a_M2_b
+1059,drained,drain,They drained the budget. They [MASK]  the account.,0.02637860178947449,M1_b_M1_a
+1060,drained,drain,They drained the budget. They [MASK]  the pool.,0.004213433712720871,M1_b_M2_a
+1061,drained,drain,They drained the budget. They [MASK]  the pond.,0.006041414104402063,M1_b_M2_b
+1062,drained,drain,They drained the pool. They [MASK]  the account.,0.011760951951146124,M2_a_M1_a
+1063,drained,drain,They drained the pool. They [MASK]  the budget.,0.0015490562655031685,M2_a_M1_b
+1064,drained,drain,They drained the pool. They [MASK]  the pond.,0.7570804357528687,M2_a_M2_b
+1065,drained,drain,They drained the pond. They [MASK]  the account.,0.006967347115278247,M2_b_M1_a
+1066,drained,drain,They drained the pond. They [MASK]  the budget.,0.0012361400295048956,M2_b_M1_b
+1067,drained,drain,They drained the pond. They [MASK]  the pool.,0.6681433320045471,M2_b_M2_a
+1068,drew,draw,He drew a gun. He [MASK]  a sword.,0.0851754918694496,M1_a_M1_b
+1069,drew,draw,He drew a gun. He [MASK]  a tree.,0.0001789299130905421,M1_a_M2_a
+1070,drew,draw,He drew a gun. They [MASK]  a picture.,0.04845815896987915,M1_a_M2_b
+1071,drew,draw,He drew a sword. He [MASK]  a gun.,0.005631393287330866,M1_b_M1_a
+1072,drew,draw,He drew a sword. He [MASK]  a tree.,0.0016450682887807482,M1_b_M2_a
+1073,drew,draw,He drew a sword. They [MASK]  a picture.,0.02347590588033199,M1_b_M2_b
+1074,drew,draw,He drew a tree. He [MASK]  a gun.,0.003425892442464829,M2_a_M1_a
+1075,drew,draw,He drew a tree. He [MASK]  a sword.,0.025506094098091122,M2_a_M1_b
+1076,drew,draw,He drew a tree. They [MASK]  a picture.,0.08002527058124544,M2_a_M2_b
+1077,drew,draw,They drew a picture. He [MASK]  a gun.,0.001449643867090344,M2_b_M1_a
+1078,drew,draw,They drew a picture. He [MASK]  a sword.,0.027409706264734268,M2_b_M1_b
+1079,drew,draw,They drew a picture. He [MASK]  a tree.,0.006060733459889888,M2_b_M2_a
+1080,hailed,hail,They hailed a cab. They [MASK]  a taxi.,0.9608381390571594,M1_a_M1_b
+1081,hailed,hail,They hailed a cab. They [MASK]  a friend.,5.316511305863972e-05,M1_a_M2_a
+1082,hailed,hail,They hailed a cab. They [MASK]  a guest.,7.80123373260722e-05,M1_a_M2_b
+1083,hailed,hail,They hailed a taxi. They [MASK]  a cab.,0.9772860407829285,M1_b_M1_a
+1084,hailed,hail,They hailed a taxi. They [MASK]  a friend.,6.217334885150194e-05,M1_b_M2_a
+1085,hailed,hail,They hailed a taxi. They [MASK]  a guest.,0.00012273006723262362,M1_b_M2_b
+1086,hailed,hail,They hailed a friend. They [MASK]  a cab.,0.018337298184633255,M2_a_M1_a
+1087,hailed,hail,They hailed a friend. They [MASK]  a taxi.,0.030606769025325775,M2_a_M1_b
+1088,hailed,hail,They hailed a friend. They [MASK]  a guest.,0.007902526296675202,M2_a_M2_b
+1089,hailed,hail,They hailed a guest. They [MASK]  a cab.,0.023466201499104496,M2_b_M1_a
+1090,hailed,hail,They hailed a guest. They [MASK]  a taxi.,0.04974804446101189,M2_b_M1_b
+1091,hailed,hail,They hailed a guest. They [MASK]  a friend.,0.00766276754438877,M2_b_M2_a
+1092,broke,break,He broke the glass. He [MASK]  the dish.,0.06959865987300871,M1_a_M1_b
+1093,broke,break,He broke the glass. He [MASK]  the law.,0.02300906367599964,M1_a_M2_a
+1094,broke,break,He broke the glass. He [MASK]  the promise.,0.0482393130660057,M1_a_M2_b
+1095,broke,break,He broke the dish. He [MASK]  the glass.,0.19976408779621124,M1_b_M1_a
+1096,broke,break,He broke the dish. He [MASK]  the law.,0.29566845297813416,M1_b_M2_a
+1097,broke,break,He broke the dish. He [MASK]  the promise.,0.10752690583467482,M1_b_M2_b
+1098,broke,break,He broke the law. He [MASK]  the glass.,0.1273332089185715,M2_a_M1_a
+1099,broke,break,He broke the law. He [MASK]  the dish.,0.027458349242806438,M2_a_M1_b
+1100,broke,break,He broke the law. He [MASK]  the promise.,0.26275399327278137,M2_a_M2_b
+1101,broke,break,He broke the promise. He [MASK]  the glass.,0.022733429446816444,M2_b_M1_a
+1102,broke,break,He broke the promise. He [MASK]  the dish.,0.006507111713290212,M2_b_M1_b
+1103,broke,break,He broke the promise. He [MASK]  the law.,0.18263237178325656,M2_b_M2_a
+1104,served,serve,She served a pie. She [MASK]  a lasagna.,0.3737485110759735,M1_a_M1_b
+1105,served,serve,She served a pie. She [MASK]  a summons.,0.010789910331368446,M1_a_M2_a
+1106,served,serve,She served a pie. She [MASK]  a warrant.,0.0035453818272799266,M1_a_M2_b
+1107,served,serve,She served a lasagna. She [MASK]  a pie.,0.17369608581066134,M1_b_M1_a
+1108,served,serve,She served a lasagna. She [MASK]  a summons.,0.026069788262248036,M1_b_M2_a
+1109,served,serve,She served a lasagna. She [MASK]  a warrant.,0.012587415054440495,M1_b_M2_b
+1110,served,serve,She served a summons. She [MASK]  a pie.,0.009083556942641735,M2_a_M1_a
+1111,served,serve,She served a summons. She [MASK]  a lasagna.,0.24028258025646212,M2_a_M1_b
+1112,served,serve,She served a summons. She [MASK]  a warrant.,0.03196070343255997,M2_a_M2_b
+1113,served,serve,She served a warrant. She [MASK]  a pie.,0.003895767731592059,M2_b_M1_a
+1114,served,serve,She served a warrant. She [MASK]  a lasagna.,0.018249148502945893,M2_b_M1_b
+1115,served,serve,She served a warrant. She [MASK]  a summons.,0.07226860523223876,M2_b_M2_a
+1116,checked,check,He checked the engine. He [MASK]  the oven.,0.02158585749566555,M1_a_M1_b
+1117,checked,check,He checked the engine. He [MASK]  the alibi.,0.1216488927602768,M1_a_M2_a
+1118,checked,check,He checked the engine. He [MASK]  the facts.,0.029402608051896095,M1_a_M2_b
+1119,checked,check,He checked the oven. He [MASK]  the engine.,0.06422651559114455,M1_b_M1_a
+1120,checked,check,He checked the oven. He [MASK]  the alibi.,0.04510603845119477,M1_b_M2_a
+1121,checked,check,He checked the oven. He [MASK]  the facts.,0.018397338688373566,M1_b_M2_b
+1122,checked,check,He checked the alibi. He [MASK]  the engine.,0.08212562650442125,M2_a_M1_a
+1123,checked,check,He checked the alibi. He [MASK]  the oven.,0.1812455803155899,M2_a_M1_b
+1124,checked,check,He checked the alibi. He [MASK]  the facts.,0.3341287076473236,M2_a_M2_b
+1125,checked,check,He checked the facts. He [MASK]  the engine.,0.023087093606591225,M2_b_M1_a
+1126,checked,check,He checked the facts. He [MASK]  the oven.,0.04613070935010909,M2_b_M1_b
+1127,checked,check,He checked the facts. He [MASK]  the alibi.,0.5194306969642639,M2_b_M2_a
+1128,sang,sing,The girl sang. The choir [MASK] .,0.01597020030021667,M1_a_M1_b
+1129,sang,sing,The girl sang. The bird [MASK] .,0.024685306474566456,M1_a_M2_a
+1130,sang,sing,The girl sang. The cricket [MASK] .,0.0014960258267819886,M1_a_M2_b
+1131,sang,sing,The choir sang. The girl [MASK] .,0.011088036932051187,M1_b_M1_a
+1132,sang,sing,The choir sang. The bird [MASK] .,0.16763094067573547,M1_b_M2_a
+1133,sang,sing,The choir sang. The cricket [MASK] .,0.04423560202121734,M1_b_M2_b
+1134,sang,sing,The bird sang. The girl [MASK] .,0.004800404887646436,M2_a_M1_a
+1135,sang,sing,The bird sang. The choir [MASK] .,0.011063500307500368,M2_a_M1_b
+1136,sang,sing,The bird sang. The cricket [MASK] .,0.002195092849433422,M2_a_M2_b
+1137,sang,sing,The cricket sang. The girl [MASK] .,0.009212821722030636,M2_b_M1_a
+1138,sang,sing,The cricket sang. The choir [MASK] .,0.39592573046684265,M2_b_M1_b
+1139,sang,sing,The cricket sang. The bird [MASK] .,0.00570842530578375,M2_b_M2_a
+1140,cleared,clear,He cleared the desk. He [MASK]  the shelf.,0.002248204546049238,M1_a_M1_b
+1141,cleared,clear,He cleared the desk. He [MASK]  the path.,0.005914450623095036,M1_a_M2_a
+1142,cleared,clear,He cleared the desk. He [MASK]  the road.,0.0016336829867213964,M1_a_M2_b
+1143,cleared,clear,He cleared the shelf. He [MASK]  the desk.,0.016902595758438114,M1_b_M1_a
+1144,cleared,clear,He cleared the shelf. He [MASK]  the path.,0.033341202884912484,M1_b_M2_a
+1145,cleared,clear,He cleared the shelf. He [MASK]  the road.,0.012760709971189502,M1_b_M2_b
+1146,cleared,clear,He cleared the path. He [MASK]  the desk.,0.004044926725327969,M2_a_M1_a
+1147,cleared,clear,He cleared the path. He [MASK]  the shelf.,0.006150187458842992,M2_a_M1_b
+1148,cleared,clear,He cleared the path. He [MASK]  the road.,0.14678503572940826,M2_a_M2_b
+1149,cleared,clear,He cleared the road. He [MASK]  the desk.,0.0065498990006744836,M2_b_M1_a
+1150,cleared,clear,He cleared the road. He [MASK]  the shelf.,0.0015138260787352922,M2_b_M1_b
+1151,cleared,clear,He cleared the road. He [MASK]  the path.,0.16719137132167816,M2_b_M2_a
+1152,loaded,load,She loaded the gun. She [MASK]  the rifle.,0.005090244580060245,M1_a_M1_b
+1153,loaded,load,She loaded the gun. She [MASK]  the truck.,0.000397819996578619,M1_a_M2_a
+1154,loaded,load,She loaded the gun. She [MASK]  the van.,0.000276439735898748,M1_a_M2_b
+1155,loaded,load,She loaded the rifle. She [MASK]  the gun.,0.007785708643496036,M1_b_M1_a
+1156,loaded,load,She loaded the rifle. She [MASK]  the truck.,0.0002908063470385967,M1_b_M2_a
+1157,loaded,load,She loaded the rifle. She [MASK]  the van.,0.00024553702678531425,M1_b_M2_b
+1158,loaded,load,She loaded the truck. She [MASK]  the gun.,0.0011079050600528721,M2_a_M1_a
+1159,loaded,load,She loaded the truck. She [MASK]  the rifle.,0.000578845210839063,M2_a_M1_b
+1160,loaded,load,She loaded the truck. She [MASK]  the van.,0.004413718357682228,M2_a_M2_b
+1161,loaded,load,She loaded the van. She [MASK]  the gun.,0.002195002743974327,M2_b_M1_a
+1162,loaded,load,She loaded the van. She [MASK]  the rifle.,0.0006238273344933988,M2_b_M1_b
+1163,loaded,load,She loaded the van. She [MASK]  the truck.,0.007881361059844496,M2_b_M2_a
+1164,band,band,It was a gold band. It was a rubber [MASK] .,0.03948335722088814,M1_a_M1_b
+1165,band,band,It was a gold band. It was a jazz [MASK] .,0.04155202955007553,M1_a_M2_a
+1166,band,band,It was a gold band. It was a country [MASK] .,0.05176158621907234,M1_a_M2_b
+1167,band,band,It was a rubber band. It was a gold [MASK] .,0.012980762869119644,M1_b_M1_a
+1168,band,band,It was a rubber band. It was a jazz [MASK] .,0.026135856285691258,M1_b_M2_a
+1169,band,band,It was a rubber band. It was a country [MASK] .,0.07860165089368822,M1_b_M2_b
+1170,band,band,It was a jazz band. It was a gold [MASK] .,0.09617089480161668,M2_a_M1_a
+1171,band,band,It was a jazz band. It was a rubber [MASK] .,0.0770299807190895,M2_a_M1_b
+1172,band,band,It was a jazz band. It was a country [MASK] .,0.20819687843322754,M2_a_M2_b
+1173,band,band,It was a country band. It was a gold [MASK] .,0.2750667631626129,M2_b_M1_a
+1174,band,band,It was a country band. It was a rubber [MASK] .,0.22509388625621796,M2_b_M1_b
+1175,band,band,It was a country band. It was a jazz [MASK] .,0.47127047181129456,M2_b_M2_a
+1176,clip,clip,It was a film clip. It was a video [MASK] .,0.09062422811985017,M1_a_M1_b
+1177,clip,clip,It was a film clip. It was a hair [MASK] .,0.06908008456230162,M1_a_M2_a
+1178,clip,clip,It was a film clip. It was a metal [MASK] .,0.0005253657582215963,M1_a_M2_b
+1179,clip,clip,It was a video clip. It was a film [MASK] .,0.7049720883369446,M1_b_M1_a
+1180,clip,clip,It was a video clip. It was a hair [MASK] .,0.02681433036923408,M1_b_M2_a
+1181,clip,clip,It was a video clip. It was a metal [MASK] .,3.112553167738953e-05,M1_b_M2_b
+1182,clip,clip,It was a hair clip. It was a film [MASK] .,0.00423502502962947,M2_a_M1_a
+1183,clip,clip,It was a hair clip. It was a video [MASK] .,0.004290285985916851,M2_a_M1_b
+1184,clip,clip,It was a hair clip. It was a metal [MASK] .,0.00025784148601815104,M2_a_M2_b
+1185,clip,clip,It was a metal clip. It was a film [MASK] .,0.012934628874063495,M2_b_M1_a
+1186,clip,clip,It was a metal clip. It was a video [MASK] .,0.017862025648355484,M2_b_M1_b
+1187,clip,clip,It was a metal clip. It was a hair [MASK] .,0.0032666549086570735,M2_b_M2_a
+1188,jam,jam,It was a blackberry jam. It was a peach [MASK] .,0.010594857856631282,M1_a_M1_b
+1189,jam,jam,It was a blackberry jam. It was a traffic [MASK] .,0.6990912556648254,M1_a_M2_a
+1190,jam,jam,It was a blackberry jam. It was a paper [MASK] .,0.04330405592918396,M1_a_M2_b
+1191,jam,jam,It was a peach jam. It was a blackberry [MASK] .,0.002651240443810821,M1_b_M1_a
+1192,jam,jam,It was a peach jam. It was a traffic [MASK] .,0.20921373367309573,M1_b_M2_a
+1193,jam,jam,It was a peach jam. It was a paper [MASK] .,0.003267970168963074,M1_b_M2_b
+1194,jam,jam,It was a traffic jam. It was a blackberry [MASK] .,0.003202622290700675,M2_a_M1_a
+1195,jam,jam,It was a traffic jam. It was a peach [MASK] .,0.0003680958761833609,M2_a_M1_b
+1196,jam,jam,It was a traffic jam. It was a paper [MASK] .,0.011436351574957367,M2_a_M2_b
+1197,jam,jam,It was a paper jam. It was a blackberry [MASK] .,0.009269816800951958,M2_b_M1_a
+1198,jam,jam,It was a paper jam. It was a peach [MASK] .,0.002142332959920169,M2_b_M1_b
+1199,jam,jam,It was a paper jam. It was a traffic [MASK] .,0.1899790018796921,M2_b_M2_a
+1200,scale,scale,It was a fish scale. It was a lizard [MASK] .,0.10447527468204497,M1_a_M1_b
+1201,scale,scale,It was a fish scale. It was a music [MASK] .,0.02806714549660683,M1_a_M2_a
+1202,scale,scale,It was a fish scale. It was a major [MASK] .,0.01950783655047417,M1_a_M2_b
+1203,scale,scale,It was a lizard scale. It was a fish [MASK] .,0.07309561222791672,M1_b_M1_a
+1204,scale,scale,It was a lizard scale. It was a music [MASK] .,0.004971076734364031,M1_b_M2_a
+1205,scale,scale,It was a lizard scale. It was a major [MASK] .,0.004478827584534884,M1_b_M2_b
+1206,scale,scale,It was a music scale. It was a fish [MASK] .,0.010964156128466124,M2_a_M1_a
+1207,scale,scale,It was a music scale. It was a lizard [MASK] .,0.0022106848191469916,M2_a_M1_b
+1208,scale,scale,It was a music scale. It was a major [MASK] .,0.0039374311454594135,M2_a_M2_b
+1209,scale,scale,It was a major scale. It was a fish [MASK] .,0.07739133387804031,M2_b_M1_a
+1210,scale,scale,It was a major scale. It was a lizard [MASK] .,0.01864737458527088,M2_b_M1_b
+1211,scale,scale,It was a major scale. It was a music [MASK] .,0.0005065804580226543,M2_b_M2_a
+1212,palm,palm,It was a calloused palm. It was a wrinkled [MASK] .,0.010359538719058033,M1_a_M1_b
+1213,palm,palm,It was a calloused palm. It was a tropical [MASK] .,0.007993453182280064,M1_a_M2_a
+1214,palm,palm,It was a calloused palm. It was a tree [MASK] .,0.00021602326887659745,M1_a_M2_b
+1215,palm,palm,It was a wrinkled palm. It was a calloused [MASK] .,0.028098437935113907,M1_b_M1_a
+1216,palm,palm,It was a wrinkled palm. It was a tropical [MASK] .,0.002860724925994874,M1_b_M2_a
+1217,palm,palm,It was a wrinkled palm. It was a tree [MASK] .,0.0003281025274191049,M1_b_M2_b
+1218,palm,palm,It was a tropical palm. It was a calloused [MASK] .,0.0007455972372554245,M2_a_M1_a
+1219,palm,palm,It was a tropical palm. It was a wrinkled [MASK] .,0.003457600018009544,M2_a_M1_b
+1220,palm,palm,It was a tropical palm. It was a tree [MASK] .,5.68516516068485e-05,M2_a_M2_b
+1221,palm,palm,It was a tree palm. It was a calloused [MASK] .,0.0011476298095658422,M2_b_M1_a
+1222,palm,palm,It was a tree palm. It was a wrinkled [MASK] .,0.0009011127986013888,M2_b_M1_b
+1223,palm,palm,It was a tree palm. It was a tropical [MASK] .,0.0038379437755793337,M2_b_M2_a
+1224,pitcher,pitcher,He saw the fast pitcher. He saw the right-handed [MASK] .,0.7189165949821472,M1_a_M1_b
+1225,pitcher,pitcher,He saw the fast pitcher. He saw the glass [MASK] .,0.04786309227347374,M1_a_M2_a
+1226,pitcher,pitcher,He saw the fast pitcher. He saw the plastic [MASK] .,0.019830264151096344,M1_a_M2_b
+1227,pitcher,pitcher,He saw the right-handed pitcher. He saw the fast [MASK] .,0.11080711334943771,M1_b_M1_a
+1228,pitcher,pitcher,He saw the right-handed pitcher. He saw the glass [MASK] .,0.05420128628611564,M1_b_M2_a
+1229,pitcher,pitcher,He saw the right-handed pitcher. He saw the plastic [MASK] .,0.0005241973558440803,M1_b_M2_b
+1230,pitcher,pitcher,He saw the glass pitcher. He saw the fast [MASK] .,0.0021495085675269357,M2_a_M1_a
+1231,pitcher,pitcher,He saw the glass pitcher. He saw the right-handed [MASK] .,0.20933990180492398,M2_a_M1_b
+1232,pitcher,pitcher,He saw the glass pitcher. He saw the plastic [MASK] .,0.04905607551336288,M2_a_M2_b
+1233,pitcher,pitcher,He saw the plastic pitcher. He saw the fast [MASK] .,0.004716729279607536,M2_b_M1_a
+1234,pitcher,pitcher,He saw the plastic pitcher. He saw the right-handed [MASK] .,0.22813560068607328,M2_b_M1_b
+1235,pitcher,pitcher,He saw the plastic pitcher. He saw the glass [MASK] .,0.06661288440227507,M2_b_M2_a
+1236,toll,toll,It was a costly toll. It was a road [MASK] .,0.7037796974182129,M1_a_M1_b
+1237,toll,toll,It was a costly toll. It was a loud [MASK] .,0.008034901693463324,M1_a_M2_a
+1238,toll,toll,It was a costly toll. It was a bell [MASK] .,0.0004436977615114302,M1_a_M2_b
+1239,toll,toll,It was a road toll. It was a costly [MASK] .,0.00036423155688680703,M1_b_M1_a
+1240,toll,toll,It was a road toll. It was a loud [MASK] .,0.00018506287597119795,M1_b_M2_a
+1241,toll,toll,It was a road toll. It was a bell [MASK] .,0.002212278544902802,M1_b_M2_b
+1242,toll,toll,It was a loud toll. It was a costly [MASK] .,0.01577150635421276,M2_a_M1_a
+1243,toll,toll,It was a loud toll. It was a road [MASK] .,0.0015547045040875671,M2_a_M1_b
+1244,toll,toll,It was a loud toll. It was a bell [MASK] .,9.227960981661451e-05,M2_a_M2_b
+1245,toll,toll,It was a bell toll. It was a costly [MASK] .,0.0014373617013916375,M2_b_M1_a
+1246,toll,toll,It was a bell toll. It was a road [MASK] .,0.012950974516570563,M2_b_M1_b
+1247,toll,toll,It was a bell toll. It was a loud [MASK] .,0.0004536153574008495,M2_b_M2_a
+1248,mole,mole,She saw the cancerous mole. She saw the raised [MASK] .,3.340989860589617e-05,M1_a_M1_b
+1249,mole,mole,She saw the cancerous mole. She saw the cute [MASK] .,0.006501734256744384,M1_a_M2_a
+1250,mole,mole,She saw the cancerous mole. She saw the fast [MASK] .,3.069206286454571e-05,M1_a_M2_b
+1251,mole,mole,She saw the raised mole. She saw the cancerous [MASK] .,0.002061086473986506,M1_b_M1_a
+1252,mole,mole,She saw the raised mole. She saw the cute [MASK] .,0.006914285942912102,M1_b_M2_a
+1253,mole,mole,She saw the raised mole. She saw the fast [MASK] .,0.0001547407155157998,M1_b_M2_b
+1254,mole,mole,She saw the cute mole. She saw the cancerous [MASK] .,0.015185796655714508,M2_a_M1_a
+1255,mole,mole,She saw the cute mole. She saw the raised [MASK] .,0.0023071991745382543,M2_a_M1_b
+1256,mole,mole,She saw the cute mole. She saw the fast [MASK] .,0.0008142720907926562,M2_a_M2_b
+1257,mole,mole,She saw the fast mole. She saw the cancerous [MASK] .,0.002107591601088643,M2_b_M1_a
+1258,mole,mole,She saw the fast mole. She saw the raised [MASK] .,0.00013141910312697294,M2_b_M1_b
+1259,mole,mole,She saw the fast mole. She saw the cute [MASK] .,0.01488263811916113,M2_b_M2_a
+1260,perch,perch,It was a tasty perch. It was a freshwater [MASK] .,0.013449973426759241,M1_a_M1_b
+1261,perch,perch,It was a tasty perch. It was a lofty [MASK] .,0.042675681412219994,M1_a_M2_a
+1262,perch,perch,It was a tasty perch. It was a secure [MASK] .,0.0036736039910465466,M1_a_M2_b
+1263,perch,perch,It was a freshwater perch. It was a tasty [MASK] .,0.00016504395171068611,M1_b_M1_a
+1264,perch,perch,It was a freshwater perch. It was a lofty [MASK] .,0.000992806861177087,M1_b_M2_a
+1265,perch,perch,It was a freshwater perch. It was a secure [MASK] .,0.0006920353043824432,M1_b_M2_b
+1266,perch,perch,It was a lofty perch. It was a tasty [MASK] .,0.0010465780505910514,M2_a_M1_a
+1267,perch,perch,It was a lofty perch. It was a freshwater [MASK] .,0.00986744370311499,M2_a_M1_b
+1268,perch,perch,It was a lofty perch. It was a secure [MASK] .,0.0014358665794134142,M2_a_M2_b
+1269,perch,perch,It was a secure perch. It was a tasty [MASK] .,0.00048294456792064,M2_b_M1_a
+1270,perch,perch,It was a secure perch. It was a freshwater [MASK] .,0.005514124408364295,M2_b_M1_b
+1271,perch,perch,It was a secure perch. It was a lofty [MASK] .,0.00119125796481967,M2_b_M2_a
+1272,punch,punch,He had the alcoholic punch. He had the fruit [MASK] .,0.7853717803955078,M1_a_M1_b
+1273,punch,punch,He had the alcoholic punch. He had the strongest [MASK] .,0.03665852546691894,M1_a_M2_a
+1274,punch,punch,He had the alcoholic punch. He had the quickest [MASK] .,0.018911058083176613,M1_a_M2_b
+1275,punch,punch,He had the fruit punch. He had the alcoholic [MASK] .,0.0324902981519699,M1_b_M1_a
+1276,punch,punch,He had the fruit punch. He had the strongest [MASK] .,0.0011966819874942303,M1_b_M2_a
+1277,punch,punch,He had the fruit punch. He had the quickest [MASK] .,0.010873313061892981,M1_b_M2_b
+1278,punch,punch,He had the strongest punch. He had the alcoholic [MASK] .,0.0004559966037049888,M2_a_M1_a
+1279,punch,punch,He had the strongest punch. He had the fruit [MASK] .,0.0013039154000580313,M2_a_M1_b
+1280,punch,punch,He had the strongest punch. He had the quickest [MASK] .,0.06426847726106642,M2_a_M2_b
+1281,punch,punch,He had the quickest punch. He had the alcoholic [MASK] .,0.03689144179224967,M2_b_M1_a
+1282,punch,punch,He had the quickest punch. He had the fruit [MASK] .,0.1644056886434555,M2_b_M1_b
+1283,punch,punch,He had the quickest punch. He had the strongest [MASK] .,0.043602172285318375,M2_b_M2_a
+1284,tapped,tap,He tapped the keg. He [MASK]  the beer.,0.02038346230983734,M1_a_M1_b
+1285,tapped,tap,He tapped the keg. He [MASK]  the stick.,0.028106644749641425,M1_a_M2_a
+1286,tapped,tap,He tapped the keg. He [MASK]  the drums.,0.034931670874357224,M1_a_M2_b
+1287,tapped,tap,He tapped the beer. He [MASK]  the keg.,0.007175475824624298,M1_b_M1_a
+1288,tapped,tap,He tapped the beer. He [MASK]  the stick.,0.014233223162591454,M1_b_M2_a
+1289,tapped,tap,He tapped the beer. He [MASK]  the drums.,0.027456499636173255,M1_b_M2_b
+1290,tapped,tap,He tapped the stick. He [MASK]  the keg.,0.013180484995245932,M2_a_M1_a
+1291,tapped,tap,He tapped the stick. He [MASK]  the beer.,0.01231404952704907,M2_a_M1_b
+1292,tapped,tap,He tapped the stick. He [MASK]  the drums.,0.10999779403209688,M2_a_M2_b
+1293,tapped,tap,He tapped the drums. He [MASK]  the keg.,0.011746993288397786,M2_b_M1_a
+1294,tapped,tap,He tapped the drums. He [MASK]  the beer.,0.01350043527781963,M2_b_M1_b
+1295,tapped,tap,He tapped the drums. He [MASK]  the stick.,0.04495453462004661,M2_b_M2_a
+1296,locks,lock,She had curly locks. She had brown [MASK] .,0.0006126195657998325,M1_a_M1_b
+1297,locks,lock,She had curly locks. She had window [MASK] .,0.00013780601148027924,M1_a_M2_a
+1298,locks,lock,She had curly locks. She had door [MASK] .,0.0005453520570881663,M1_a_M2_b
+1299,locks,lock,She had brown locks. She had curly [MASK] .,0.0018151088152080774,M1_b_M1_a
+1300,locks,lock,She had brown locks. She had window [MASK] .,0.0005544282612390816,M1_b_M2_a
+1301,locks,lock,She had brown locks. She had door [MASK] .,0.004086198750883341,M1_b_M2_b
+1302,locks,lock,She had window locks. She had curly [MASK] .,0.0029932428151369104,M2_a_M1_a
+1303,locks,lock,She had window locks. She had brown [MASK] .,0.0007737628766335548,M2_a_M1_b
+1304,locks,lock,She had window locks. She had door [MASK] .,0.000793343235272914,M2_a_M2_b
+1305,locks,lock,She had door locks. She had curly [MASK] .,0.001288719126023352,M2_b_M1_a
+1306,locks,lock,She had door locks. She had brown [MASK] .,0.00039455681690014915,M2_b_M1_b
+1307,locks,lock,She had door locks. She had window [MASK] .,0.0014102807035669678,M2_b_M2_a
+1308,lapped,lap,She lapped the milk. She [MASK]  the water.,2.274396501888985e-05,M1_a_M1_b
+1309,lapped,lap,She lapped the milk. She [MASK]  the runners.,5.670997779816393e-06,M1_a_M2_a
+1310,lapped,lap,She lapped the milk. She [MASK]  the competitors.,2.6876701667788462e-05,M1_a_M2_b
+1311,lapped,lap,She lapped the water. She [MASK]  the milk.,9.370414773002262e-06,M1_b_M1_a
+1312,lapped,lap,She lapped the water. She [MASK]  the runners.,3.0737406632397304e-05,M1_b_M2_a
+1313,lapped,lap,She lapped the water. She [MASK]  the competitors.,3.936705252272079e-05,M1_b_M2_b
+1314,lapped,lap,She lapped the runners. She [MASK]  the milk.,8.728643479116733e-06,M2_a_M1_a
+1315,lapped,lap,She lapped the runners. She [MASK]  the water.,3.1260035029845326e-05,M2_a_M1_b
+1316,lapped,lap,She lapped the runners. She [MASK]  the competitors.,6.184969970490783e-05,M2_a_M2_b
+1317,lapped,lap,She lapped the competitors. She [MASK]  the milk.,7.4996301009377905e-06,M2_b_M1_a
+1318,lapped,lap,She lapped the competitors. She [MASK]  the water.,4.39507202827372e-05,M2_b_M1_b
+1319,lapped,lap,She lapped the competitors. She [MASK]  the runners.,5.757244798587634e-05,M2_b_M2_a
+1320,page,page,He saw the young page. He saw the loyal [MASK] .,0.0002511655620764942,M1_a_M1_b
+1321,page,page,He saw the young page. He saw the blank [MASK] .,0.004665384069085121,M1_a_M2_a
+1322,page,page,He saw the young page. He saw the ripped [MASK] .,0.020778289064764977,M1_a_M2_b
+1323,page,page,He saw the loyal page. He saw the young [MASK] .,0.032007854431867606,M1_b_M1_a
+1324,page,page,He saw the loyal page. He saw the blank [MASK] .,0.13120052218437198,M1_b_M2_a
+1325,page,page,He saw the loyal page. He saw the ripped [MASK] .,0.33080640435218817,M1_b_M2_b
+1326,page,page,He saw the blank page. He saw the young [MASK] .,0.0015186293749138715,M2_a_M1_a
+1327,page,page,He saw the blank page. He saw the loyal [MASK] .,7.858394383220003e-05,M2_a_M1_b
+1328,page,page,He saw the blank page. He saw the ripped [MASK] .,0.018722133710980415,M2_a_M2_b
+1329,page,page,He saw the ripped page. He saw the young [MASK] .,0.0011029699817299845,M2_b_M1_a
+1330,page,page,He saw the ripped page. He saw the loyal [MASK] .,5.1722359785344425e-05,M2_b_M1_b
+1331,page,page,He saw the ripped page. He saw the blank [MASK] .,0.03625360876321793,M2_b_M2_a
+1332,tip,tip,It was a generous tip. It was a stingy [MASK] .,0.0013366577913984654,M1_a_M1_b
+1333,tip,tip,It was a generous tip. It was a pencil [MASK] .,0.009866709820926193,M1_a_M2_a
+1334,tip,tip,It was a generous tip. It was a finger [MASK] .,0.001887128804810345,M1_a_M2_b
+1335,tip,tip,It was a stingy tip. It was a generous [MASK] .,0.01042273081839085,M1_b_M1_a
+1336,tip,tip,It was a stingy tip. It was a pencil [MASK] .,0.024904634803533558,M1_b_M2_a
+1337,tip,tip,It was a stingy tip. It was a finger [MASK] .,0.013570711947977546,M1_b_M2_b
+1338,tip,tip,It was a pencil tip. It was a generous [MASK] .,0.0005163885070942344,M2_a_M1_a
+1339,tip,tip,It was a pencil tip. It was a stingy [MASK] .,0.00044272211380302895,M2_a_M1_b
+1340,tip,tip,It was a pencil tip. It was a finger [MASK] .,0.00595253240317106,M2_a_M2_b
+1341,tip,tip,It was a finger tip. It was a generous [MASK] .,0.0016332542290911078,M2_b_M1_a
+1342,tip,tip,It was a finger tip. It was a stingy [MASK] .,0.001715044723823666,M2_b_M1_b
+1343,tip,tip,It was a finger tip. It was a pencil [MASK] .,0.1345057785511017,M2_b_M2_a
+1344,bailed,bail,He bailed out the prisoner. He [MASK]  out the defendant.,1.422235641257429e-06,M1_a_M1_b
+1345,bailed,bail,He bailed out the prisoner. He [MASK]  out the water.,2.656127435329836e-06,M1_a_M2_a
+1346,bailed,bail,He bailed out the prisoner. He [MASK]  out the liquid.,4.175474259682233e-06,M1_a_M2_b
+1347,bailed,bail,He bailed out the defendant. He [MASK]  out the prisoner.,1.4781135178054674e-06,M1_b_M1_a
+1348,bailed,bail,He bailed out the defendant. He [MASK]  out the water.,2.0334371129138154e-06,M1_b_M2_a
+1349,bailed,bail,He bailed out the defendant. He [MASK]  out the liquid.,1.425090772499972e-06,M1_b_M2_b
+1350,bailed,bail,He bailed out the water. He [MASK]  out the prisoner.,1.2857296951551682e-06,M2_a_M1_a
+1351,bailed,bail,He bailed out the water. He [MASK]  out the defendant.,1.7895470136863886e-06,M2_a_M1_b
+1352,bailed,bail,He bailed out the water. He [MASK]  out the liquid.,4.38891811427311e-06,M2_a_M2_b
+1353,bailed,bail,He bailed out the liquid. He [MASK]  out the prisoner.,2.9434820589813192e-06,M2_b_M1_a
+1354,bailed,bail,He bailed out the liquid. He [MASK]  out the defendant.,2.007340299314819e-06,M2_b_M1_b
+1355,bailed,bail,He bailed out the liquid. He [MASK]  out the water.,4.396964868647046e-06,M2_b_M2_a
+1356,rock,rock,He liked electronic rock. He liked alternative [MASK] .,0.005712698679417372,M1_a_M1_b
+1357,rock,rock,He liked electronic rock. He liked limestone [MASK] .,0.008098547346889973,M1_a_M2_a
+1358,rock,rock,He liked electronic rock. He liked granite [MASK] .,0.02439471520483494,M1_a_M2_b
+1359,rock,rock,He liked alternative rock. He liked electronic [MASK] .,0.0015180913032963868,M1_b_M1_a
+1360,rock,rock,He liked alternative rock. He liked limestone [MASK] .,0.01240990217775106,M1_b_M2_a
+1361,rock,rock,He liked alternative rock. He liked granite [MASK] .,0.008755476213991639,M1_b_M2_b
+1362,rock,rock,He liked limestone rock. He liked electronic [MASK] .,0.012266317382454874,M2_a_M1_a
+1363,rock,rock,He liked limestone rock. He liked alternative [MASK] .,0.007311029359698294,M2_a_M1_b
+1364,rock,rock,He liked limestone rock. He liked granite [MASK] .,0.00856108032166958,M2_a_M2_b
+1365,rock,rock,He liked granite rock. He liked electronic [MASK] .,0.007049980573356151,M2_b_M1_a
+1366,rock,rock,He liked granite rock. He liked alternative [MASK] .,0.015957532450556748,M2_b_M1_b
+1367,rock,rock,He liked granite rock. He liked limestone [MASK] .,0.0028403128962963824,M2_b_M2_a
+1368,post,post,It was a wooden post. It was a fence [MASK] .,0.0004569783341139553,M1_a_M1_b
+1369,post,post,It was a wooden post. It was a teaching [MASK] .,0.06833222508430482,M1_a_M2_a
+1370,post,post,It was a wooden post. It was a challenging [MASK] .,0.002188606420531869,M1_a_M2_b
+1371,post,post,It was a fence post. It was a wooden [MASK] .,0.0009049405925907198,M1_b_M1_a
+1372,post,post,It was a fence post. It was a teaching [MASK] .,0.0030209564138203872,M1_b_M2_a
+1373,post,post,It was a fence post. It was a challenging [MASK] .,0.0010441103950142863,M1_b_M2_b
+1374,post,post,It was a teaching post. It was a wooden [MASK] .,0.017422862350940708,M2_a_M1_a
+1375,post,post,It was a teaching post. It was a fence [MASK] .,0.011592507362365724,M2_a_M1_b
+1376,post,post,It was a teaching post. It was a challenging [MASK] .,0.013011194765567774,M2_a_M2_b
+1377,post,post,It was a challenging post. It was a wooden [MASK] .,0.03600990027189254,M2_b_M1_a
+1378,post,post,It was a challenging post. It was a fence [MASK] .,0.014691452495753763,M2_b_M1_b
+1379,post,post,It was a challenging post. It was a teaching [MASK] .,0.5463579893112183,M2_b_M2_a
