@@ -43,17 +43,11 @@ These 115 words (corresponding to 460 sentences, 690 sentence pairs, and 1380 un
 
 > Trott, S., & Bergen, B. (2021). RAW-C: Relatedness of Ambiguous Words--in Context (A New Lexical Resource for English). Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th Joint International Conference on Natural Language Processing.
 
-The code to generate the items for the norming study automatically (using `data/stims/stimuli.csv`) can be found in `src/experiment/construct_norming_study.py`). This compiles a set of JsPsych trials (De Leeuw, 2015) that can in turn be copy/pasted into the appropriate .html file (in this case: `experiment/np_sona.html`).
-
-81 participants were recruited via the UCSD SONA participant pool. They were asked to indicate how related two usages of a word were, from 0 ("not at all related") to 4 ("same meaning"). Their raw data files were compiled (see `data/processed/polysemy_norming.csv`) using `src/preprocessing/concat_norming.py`. The analysis script (`src/analysis/norming_analysis.Rmd`) includes several exclusion criteria (including bot checks and catch trials), resulting in a total of 77 participants.
+The analysis script ([`src/analysis/norming_analysis.Rmd`](https://github.com/seantrott/trott_ph_amb/blob/master/src/analysis/norming_analysis.Rmd)) includes several exclusion criteria (including bot checks and catch trials), resulting in a total of 77 participants.
 
 ## Results of norming study
 
-The results of the norming analysis can be found in `src/analysis/norming_analysis.html`. We validated both manipulations: `Same Sense` pairs were judged to be much more related than `Different Sense` pairs; further, for `Different Sense` pairs, `Homonyms` were typically judged to be entirely unrelated, while words annotated as `Polysemous` spanned a more uniform distribution, i.e., some were very related and some were very unrelated. 
-
-Additionally, `cosine distance` (from both ELMo and BERT) was negatively associated with `relatedness` for a given pair of sentences, as expected. Notably, it also appears that `cosine distance` (a measure of **contextual distance**), while itself correlated with `Same/Different Sense`, does not perfectly capture the variance in `Relatedness` explained by `Same/Different Sense`. That is, `cosine distance` *underestimates* how related participants judge `Same Sense` pairs to be; further, for `Homonyms`, `cosine distance` *underestimates* how *dissimilar* participants judge `Different Sense` pairs to be.
-
-We ultimately excluded the three `Unsure` items from the final set of critical stimuli, given that participants usually judged the `Different Sense` usages to be the same meaning (e.g., "paperback novel" vs. "best-selling novel"). This, along with the fact that neither MW nor OED listed the meanings under separate senses or entries, made us too uncertain about the ability of these items to elicit `Different Sense` judgments.
+The results of the norming analysis can be found in [`src/analysis/norming_analysis.html`](https://github.com/seantrott/trott_ph_amb/blob/master/src/analysis/norming_analysis.html). They are described in considerably more detail in [Trott & Bergen (2021)](https://arxiv.org/abs/2105.13266).
 
 # Fillers 
 
