@@ -102,6 +102,12 @@ The supplementary analysis with **dominance** can be found at: [`src/analysis/do
 
 The norms themselves can be found [here](https://github.com/seantrott/trott_ph_amb/blob/master/data/processed/dominance_norms_with_order.csv).
 
+###3 Supplementary Analysis with Surprisal
+
+The supplementary analysis with **surprisal** can be found at: [`src/analysis/surprisal_exploratory.Rmd`](https://github.com/seantrott/trott_ph_amb/blob/master/src/analysis/surprisal_exploratory.Rmd).
+
+The surprisal estimates can be found [here](https://github.com/seantrott/trott_ph_amb/blob/master/data/processed/bert-large_surprisals.csv).
+
 
 
 
