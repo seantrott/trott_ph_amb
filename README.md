@@ -94,7 +94,7 @@ There are also *knit* `.html` files from both of these `.Rmd` files with the sam
 
 ### Analyses with transformed distance
 
-The analyses involving **transformations** to `cosine distance` can be found at `src/analysis/transformations.Rmd` (along with a knit `.html` file).
+The analyses involving **transformations** to `cosine distance` can be found at [`src/analysis/transformations.Rmd`](https://github.com/seantrott/trott_ph_amb/blob/master/src/analysis/transformations.Rmd) (along with a knit `.html` file [here](https://github.com/seantrott/trott_ph_amb/blob/master/src/analysis/transformations.html)).
 
 
 
