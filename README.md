@@ -87,8 +87,8 @@ Additionally, we have saved another version of the data files, *after removing o
 
 The pre-registered analyses can be found here:
 
-- Experiment 1: `src/analysis/exp1_prereg.Rmd`  
-- Experiment 2: `data/processed/exp2_prereg.Rmd`
+- Experiment 1: [`src/analysis/exp1_prereg.Rmd`](https://github.com/seantrott/trott_ph_amb/blob/master/src/analysis/exp1_prereg.Rmd)
+- Experiment 2: [`data/processed/exp2_prereg.Rmd`](https://github.com/seantrott/trott_ph_amb/blob/master/src/analysis/exp2_prereg.Rmd)
 
 There are also *knit* `.html` files from both of these `.Rmd` files with the same filepath.
 
