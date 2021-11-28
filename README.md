@@ -71,8 +71,8 @@ Participants performed a **primed sensibility judgment** task. The dependent var
 
 The processed data for the primary experiments, *before removing outliers*, can be found here:
 
-- Experiment 1: `data/processed/polysemy_s1_main.csv`  
-- Experiment 2: `data/processed/polysemyu_s2_main.csv`
+- Experiment 1: [`data/processed/polysemy_s1_main.csv`](https://github.com/seantrott/trott_ph_amb/blob/master/data/processed/polysemy_s1_main.csv)  
+- Experiment 2: [`data/processed/polysemyu_s2_main.csv`](https://github.com/seantrott/trott_ph_amb/blob/master/data/processed/polysemy_s2_main.csv)
 
 These files are necessary for running the pre-registered analysis scripts (see below).
 

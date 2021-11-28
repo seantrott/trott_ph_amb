@@ -1,0 +1,212 @@
+---
+title: "Dominance analyses"
+author: "Sean Trott"
+date: "June 3, 2021"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    # code_folding: hide
+  pdf_document: default
+  word_document:
+    toc: yes
+---
+
+```{r include=FALSE}
+library(tidyverse)
+library(lme4)
+library(ggridges)
+library(broom.mixed)
+library(lmerTest)
+```
+
+# Load data
+
+
+```{r}
+### Set working directory (comment this out to run)
+# setwd("/Users/seantrott/Dropbox/UCSD/Research/Ambiguity/SSD/trott_polysemy_experiment/src/analysis")
+
+### Load preprocessed data
+df_exp1 = read_csv("../../data/processed/polysemy_s1_final.csv")
+df_exp2 = read_csv("../../data/processed/polysemy_s2_final.csv")
+
+length(unique(df_exp1$subject))
+nrow(df_exp1)
+length(unique(df_exp2$subject))
+nrow(df_exp2)
+
+### Merge experimental data
+df_exp1 = df_exp1 %>%
+  select(word, ambiguity_type, same, distance_bert, subject, 
+         correct_response, log_rt,
+         version_with_order, prior_accuracy, prior_rt) %>%
+  mutate(experiment = "exp1")
+
+df_exp2 = df_exp2 %>%
+  select(word, ambiguity_type, same, distance_bert, subject, 
+         correct_response, log_rt,
+         version_with_order, prior_accuracy, prior_rt) %>%
+  mutate(experiment = "exp2")
+
+df_merged = df_exp1 %>%
+  rbind(df_exp2)
+nrow(df_merged)
+
+nrow(df_exp1) + nrow(df_exp2)
+
+### Load dominance norms
+df_dominance = read_csv("../../data/processed/dominance_norms_with_order.csv")
+df_dominance = df_dominance %>%
+  dplyr::select(-X1)
+nrow(df_dominance)
+
+
+```
+
+
+# Analyzing data from experiments (pooled)
+
+Now, for different-sense pairs only, we run a power analysis to ask about the effect of dominance.
+
+**TODO**: Power analysis.
+
+```{r}
+df_merged_with_dominance = df_merged %>%
+  inner_join(df_dominance, on = c("word", "version_with_order", "ambiguity_type"))
+nrow(df_merged_with_dominance)
+
+df_merged_with_dominance = df_merged_with_dominance %>%
+  mutate(bias = case_when(
+    dominance_right > .5 ~ "Subordinate-Dominant",
+    dominance_right < -.5 ~ "Dominant-Subordinate",
+    dominance_right >= -.5 & dominance_right <= .5 ~ "Neutral"
+  ))
+
+df_merged_correct_with_dominance = df_merged_with_dominance %>%
+  filter(correct_response == TRUE)
+
+
+df_merged_with_dominance %>%
+  mutate(correct_numeric = as.numeric(correct_response)) %>%
+  ggplot(aes(x = bias,
+             y = correct_numeric,
+             color = ambiguity_type,
+             shape = experiment)) +
+  stat_summary (fun = function(x){mean(x)},
+                fun.min = function(x){mean(x) - 2*sd(x)/sqrt(length(x))},
+                fun.max = function(x){mean(x) + 2*sd(x)/sqrt(length(x))},
+                geom= 'pointrange', 
+                position=position_dodge(width=0.95)) +
+  labs(x = "Bias (Prime-Target)",
+       y = "Accuracy",
+       color = "Ambiguity Type") +
+  theme_minimal()
+
+
+## Accuracy
+model_full_acc = glmer(data = df_merged_with_dominance,
+                  correct_response ~ distance_bert + ambiguity_type + 
+                    dominance_right +
+                    prior_accuracy + 
+                    (1 + distance_bert + ambiguity_type | subject) +
+                    (1 | experiment) +
+                    (1 | word),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_no_dominance = glmer(data = df_merged_with_dominance,
+                  correct_response ~ distance_bert + ambiguity_type + 
+                    # dominance_right +
+                    prior_accuracy + 
+                    (1 + distance_bert + ambiguity_type | subject) +
+                    (1 | experiment) +
+                    (1 | word),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_no_cd = glmer(data = df_merged_with_dominance,
+                  correct_response ~ dominance_right + ambiguity_type + 
+                    prior_accuracy + 
+                    (1 + distance_bert + ambiguity_type | subject) +
+                     (1 | experiment) +
+                    (1 | word),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_no_at = glmer(data = df_merged_with_dominance,
+                  correct_response ~ dominance_right + distance_bert + 
+                    prior_accuracy + 
+                    (1 + distance_bert + ambiguity_type | subject) +
+                     (1 | experiment) +
+                    (1 | word),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+summary(model_full_acc)
+anova(model_full_acc, model_no_dominance)
+anova(model_full_acc, model_no_at)
+anova(model_full_acc, model_no_cd)
+
+## RT
+model_full_rt = lmer(data = df_merged_correct_with_dominance,
+                  log_rt ~ distance_bert + ambiguity_type + dominance_right +
+                    prior_rt + 
+                    (1 + distance_bert + ambiguity_type | subject) +
+                     (1 + dominance_right + ambiguity_type | experiment) +
+                    (1 | word),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+model_no_cd = lmer(data = df_merged_correct_with_dominance,
+                  log_rt ~ ambiguity_type + dominance_right +
+                    prior_rt + 
+                    (1 + distance_bert + ambiguity_type | subject) +
+                     (1 + dominance_right + ambiguity_type | experiment) +
+                    (1 | word),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+model_no_at = lmer(data = df_merged_correct_with_dominance,
+                  log_rt ~ distance_bert + dominance_right +
+                    prior_rt + 
+                    (1 + distance_bert + ambiguity_type | subject) +
+                     (1 + dominance_right + ambiguity_type | experiment) +
+                    (1 | word),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+model_no_dominance = lmer(data = df_merged_correct_with_dominance,
+                  log_rt ~ distance_bert + ambiguity_type + # dominance_right +
+                    prior_rt + 
+                    (1 + distance_bert + ambiguity_type | subject) +
+                     (1 + dominance_right + ambiguity_type | experiment) +
+                    (1 | word),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+summary(model_full_rt)
+anova(model_full_rt, model_no_dominance)
+anova(model_full_rt, model_no_at)
+anova(model_full_rt, model_no_cd)
+
+
+df_merged_correct_with_dominance %>%
+  ggplot(aes(x = bias,
+             y = log_rt,
+             color = ambiguity_type,
+             shape = experiment)) +
+  stat_summary (fun = function(x){mean(x)},
+                fun.min = function(x){mean(x) - 2*sd(x)/sqrt(length(x))},
+                fun.max = function(x){mean(x) + 2*sd(x)/sqrt(length(x))},
+                geom= 'pointrange', 
+                position=position_dodge(width=0.95)) +
+  labs(x = "Bias (Prime-Target)",
+       y = "Log(RT)",
+       color = "Ambiguity Type") +
+  theme_minimal()
+
+
+```
+
+
