@@ -4,6 +4,8 @@ Code for modeling and comparing contextualized word embeddings, generating jsPsy
 
 The documentation below describes the various data files and processing steps involved.
 
+If you're looking for the RAW-C dataset, more information can be found on the corresponding repository [here](https://github.com/seantrott/raw-c).
+
 # Citing 
 
 If you'd like to use the stimuli or relatedness norms, please cite [Trott & Bergen (2021)](https://arxiv.org/abs/2105.13266):
@@ -24,10 +26,6 @@ Crucially, there are two manipulations within and across items:
 
 - Within items, we manipulate whether any given pair of sentences involves crossing a **Sense Boundary** (there are two `Same Sense` combinations, and four `Different Sense` combinations, for each word).  
 - Across items, we manipulate the **Ambiguity Type** present (`Homonymy` vs. `Polysemy`). This was identified by consulting both the Merriam-Webster Dictionary and the Oxford English Dictionary, and determining whether the different meanings were represented as different *entries* (Homonymy) or as different *senses* under the same entry (Polysemy). 
-
-**Note 1**: The question of whether to label two distinct *usages* of a word as Homonymy vs. Polysemy is by no means theoretically settled, and has been discussed extensively in the literature (see Valera (2020) for a recent review); it is usually based on "relatedness", either historical (e.g., shared etymology), psychological (e.g., degree of association), or both. We used a lexicographically derived annotation scheme to maximally align our labels with the methodology (and results) of lexicographers; these labels were further validated in the Norming Study (see below). Notably, investigating this posited theoretical distinction (along with the distinction between `Same` vs. `Different` senses) is at root the motivation for the current set of studies.
-
-**Note 2**: There were three items for which we could not identify whether the `Different Sense` usage was truly a different sense, according to either MW or the OED, and each seemed to involve some form of **metonymy**: *novel* (e.g., "paperback" vs. "best-selling"), *magazine* (e.g., "weekly" vs. "glossy"), and *oil* (e.g., "crude" vs. "canola"). These were included in the norming study (see below) but ultimately excluded from the final experiment.
 
 # Language model pipeline
 
