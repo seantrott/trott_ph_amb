@@ -98,7 +98,9 @@ The analyses involving **transformations** to `cosine distance` can be found at 
 
 ### Supplementary Analysis with Dominance
 
-The supplementary analysis with **dominance** can be found at: 
+The supplementary analysis with **dominance** can be found at: [`src/analysis/dominance.Rmd`](https://github.com/seantrott/trott_ph_amb/blob/master/src/analysis/dominance.Rmd).
+
+The norms themselves can be found [here](https://github.com/seantrott/trott_ph_amb/blob/master/data/processed/dominance_norms_with_order.csv).
 
 
 

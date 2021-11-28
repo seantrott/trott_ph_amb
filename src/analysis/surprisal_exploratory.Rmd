@@ -1,0 +1,201 @@
+---
+title: "Exploratory analysis of experimental data using surprisal"
+author: "Sean Trott"
+date: "February 16, 2021"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    # code_folding: hide
+  pdf_document: default
+  word_document:
+    toc: yes
+---
+
+```{r include=FALSE}
+library(tidyverse)
+library(lme4)
+library(ggridges)
+library(broom.mixed)
+library(lmerTest)
+```
+
+
+# Load data
+
+Here, we load the processed data from the pre-registered analyses to perform further exploratory analyses.
+
+## Load experimental data
+
+```{r}
+### Set working directory (comment this out to run)
+# setwd("/Users/seantrott/Dropbox/UCSD/Research/Ambiguity/SSD/trott_polysemy_experiment/src/analysis")
+
+### Load preprocessed data
+df_exp1 = read_csv("../../data/processed/polysemy_s1_final.csv")
+df_exp2 = read_csv("../../data/processed/polysemy_s2_final.csv")
+
+length(unique(df_exp1$subject))
+nrow(df_exp1)
+length(unique(df_exp2$subject))
+nrow(df_exp2)
+
+### Merge experimental data
+df_exp1 = df_exp1 %>%
+  select(word, ambiguity_type, same, distance_bert, subject, 
+         correct_response, log_rt,
+         version_with_order, prior_accuracy, prior_rt) %>%
+  mutate(experiment = "exp1")
+
+df_exp2 = df_exp2 %>%
+  select(word, ambiguity_type, same, distance_bert, subject, 
+         correct_response, log_rt,
+         version_with_order, prior_accuracy, prior_rt) %>%
+  mutate(experiment = "exp2")
+
+df_merged = df_exp1 %>%
+  rbind(df_exp2)
+nrow(df_merged)
+
+nrow(df_exp1) + nrow(df_exp2)
+
+```
+
+
+## Load surprisals
+
+First, we load surprisal data from BERT-large.
+
+```{r}
+df_bl = read_csv("../../data/processed/bert-large_surprisals.csv") %>%
+  select(-X1) %>%
+  mutate(version_with_order = version) %>%
+  mutate(surprisal_bl = -log(p)) %>%
+  select(surprisal_bl, word, version_with_order)
+  
+nrow(df_bl)
+
+
+```
+
+
+## Merge data
+
+```{r}
+df_merged_surprisals = df_merged %>%
+  inner_join(df_bl)
+
+nrow(df_merged_surprisals)
+```
+
+
+# Analysis: BERT Surprisal
+
+First, we run an analysis asking whether surprisal from BERT (large) improves model fit, above and beyond:
+
+- `Sense Boundary`
+- `Ambiguity Type` (and its interaction with `Sense Boundary`)
+- `Cosine Distance` 
+
+Additionally, we ask whether other variables previously found to improve model fit, such as `Sense Boundary`, continue to do so, once `surprisal` is accounted for.
+
+
+## Accuracy
+
+```{r}
+
+model_just_fe = glmer(data = df_merged_surprisals,
+                  correct_response ~ 
+                    surprisal_bl +
+                    distance_bert + ambiguity_type + same + 
+                    prior_accuracy + 
+                    (1 | subject) +
+                    (1 | word),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_no_surprisal = glmer(data = df_merged_surprisals,
+                  correct_response ~ 
+                    distance_bert + same + 
+                    prior_accuracy + 
+                    (1 | subject) +
+                    (1 | word),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_no_sense = glmer(data = df_merged_surprisals,
+                  correct_response ~ surprisal_bl +
+                    distance_bert + # same + 
+                    prior_accuracy + 
+                    (1 | subject) +
+                    (1 | word),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+summary(model_just_fe)
+anova(model_just_fe, model_no_surprisal)
+anova(model_just_fe, model_no_sense)
+
+
+df_merged_surprisals %>%
+  ggplot(aes(x = surprisal_bl,
+             y = same,
+             fill = correct_response)) +
+  geom_density_ridges2(aes(height = ..density..), 
+                       color=gray(0.25), 
+                       alpha = 0.5, 
+                       scale=0.85, 
+                       size=.9, 
+                       stat="density") +
+  labs(x = "Surprisal (BERT-large)",
+       y = "Same Sense") +
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  scale_fill_viridis_d()
+
+ggsave("../../Figures/supplementary/s3_accuracy.pdf")
+```
+
+
+## RT
+
+```{r}
+
+df_merged_correct = df_merged_surprisals %>%
+  filter(correct_response == TRUE)
+
+model_just_fe = lmer(data = df_merged_correct,
+                  log_rt ~ distance_bert + 
+                    surprisal_bl +
+                    same + 
+                    prior_rt + 
+                    (1 + ambiguity_type + same | subject) +
+                    (1 | word),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+model_no_surprisal = lmer(data = df_merged_correct,
+                  log_rt ~ distance_bert + 
+                    # surprisal_bl +
+                    same + 
+                    prior_rt + 
+                    (1 + ambiguity_type + same | subject) +
+                    (1 | word),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+model_no_same = lmer(data = df_merged_correct,
+                  log_rt ~ distance_bert + 
+                    surprisal_bl +
+                    # same + 
+                    prior_rt + 
+                    (1 + ambiguity_type + same | subject) +
+                    (1 | word),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+
+summary(model_just_fe)
+anova(model_just_fe, model_no_surprisal)
+anova(model_just_fe, model_no_same)
+```
+
