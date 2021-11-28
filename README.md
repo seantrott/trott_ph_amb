@@ -83,12 +83,20 @@ Additionally, we have saved another version of the data files, *after removing o
 
 ## Analysis scripts
 
+### Primary (pre-registered) analyses
+
 The pre-registered analyses can be found here:
 
 - Experiment 1: `src/analysis/exp1_prereg.Rmd`  
 - Experiment 2: `data/processed/exp2_prereg.Rmd`
 
 There are also *knit* `.html` files from both of these `.Rmd` files with the same filepath.
+
+### Analyses with transformed distance
+
+The analyses involving **transformations** to `cosine distance` can be found at `src/analysis/transformations.Rmd` (along with a knit `.html` file).
+
+
 
 
 # References

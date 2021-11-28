@@ -1,0 +1,823 @@
+---
+title: "Experiment 2: Pre-registration code"
+author: "Sean Trott"
+date: "February 16, 2021"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    # code_folding: hide
+  pdf_document: default
+  word_document:
+    toc: yes
+---
+
+```{r include=FALSE}
+library(tidyverse)
+library(lme4)
+library(ggridges)
+library(broom.mixed)
+```
+
+
+# Load data
+
+```{r}
+### Set working directory (comment this out to run)
+# setwd("/Users/seantrott/Dropbox/UCSD/Research/Ambiguity/SSD/trott_polysemy_experiment/src/analysis")
+
+### Load preprocessed data
+df_e2 = read_csv("../../data/processed/polysemy_s2_main.csv")
+
+
+### Filter to trials from main study (including fillers)
+df_e2_main = df_e2 %>%
+  filter(practice == "main")
+nrow(df_e2_main)
+
+### critical trials
+df_e2_critical = df_e2 %>%
+  filter(critical == "yes") %>%
+  filter(order == "second") ## Get only "second" trials (should be 56 per ppt)
+nrow(df_e2_critical)
+
+### first trials (for critical sentences)
+df_e2_first = df_e2 %>%
+  filter(critical == "yes") %>%
+  filter(order == "first") ## Get only "second" trials (should be 56 per ppt)
+nrow(df_e2_first)
+
+
+### Info about study
+length(unique(df_e2_critical$subject))
+table(df_e2_critical$same, df_e2_critical$ambiguity_type)
+
+
+### Recode version information to omit order, so it can be merged with distance information
+df_e2_critical$version = fct_recode(
+  df_e2_critical$version_with_order,
+  M1_a_M1_b = "M1_b_M1_a",
+  M1_b_M2_a = "M2_a_M1_b",
+  M1_a_M2_a = "M2_a_M1_a",
+  M1_a_M2_b = "M2_b_M1_a",
+  M1_b_M2_b = "M2_b_M1_b",
+  M2_a_M2_b = "M2_b_M2_a"
+)
+```
+
+
+# Preprocessing: Exclusion criteria
+
+## Bot checks
+
+```{r}
+df_ppt_bots = df_e2 %>%
+  filter(type == "bot_check") %>%
+  mutate(b1_correct = B1 == 2,
+         b2_correct = B2 == "Chair")
+
+df_bot_summ = df_ppt_bots %>%
+  group_by(subject) %>%
+  summarise(bot_avg = (b1_correct + b2_correct) / 2)
+df_bot_summ
+
+## Now remove ppts from critical stims that have < 100% avearge
+df_e2_critical = df_e2_critical %>%
+  left_join(df_bot_summ, by = "subject") %>%
+  filter(bot_avg == 1)
+length(unique(df_e2_critical$subject))
+```
+
+## Demographic data
+
+After preprocessing:
+
+```{r}
+df_demo = df_e2_critical %>%
+  group_by(subject, Gender, Native_Speaker, Mobile_Device, Age) %>%
+  summarise(mean_rt = mean(rt))
+
+table(df_demo$Gender)
+table(df_demo$Native_Speaker)
+table(df_demo$Mobile_Device)
+
+# For Age calculations only, ignore subject who responded with string
+df_demo = df_demo %>%
+  filter(Age != "n/a")
+df_demo$age = as.numeric(df_demo$Age)
+  
+mean(df_demo$age, na.rm = TRUE)
+sd(df_demo$age, na.rm = TRUE)
+range(df_demo$age, na.rm = TRUE)
+
+```
+
+
+Exclude non-native speakers:
+
+```{r}
+df_e2_critical = df_e2_critical %>%
+  filter(Native_Speaker == "Yes") 
+length(unique(df_e2_critical$subject))
+```
+
+
+Exclude people who performed experiment on mobile device:
+
+```{r}
+df_e2_critical = df_e2_critical %>%
+  filter(Mobile_Device == "No") 
+length(unique(df_e2_critical$subject))
+```
+
+## Remove RTs
+
+First, we remove trials with an RT < 500ms. For convenience, we also log RT here.
+
+```{r}
+df_e2_critical = df_e2_critical %>%
+  filter(rt > 500) %>% ## Remove <= 500 ms
+  mutate(log_rt = log(rt)) ## Log RT
+
+nrow(df_e2_critical)
+```
+
+Second, we remove trials with an RT > 3 SDs above a subject's mean.
+
+```{r}
+df_e2_critical = df_e2_critical %>%
+  group_by(subject) %>%
+  mutate(rt_z = scale(rt))
+
+df_e2_critical = df_e2_critical %>%
+  filter(rt_z < 3)
+nrow(df_e2_critical)
+
+```
+
+
+## Remove subjects with too few observations
+
+Finally, we remove subjects for whom more than half the observations have been removed (for slow or very fast RTs).
+
+```{r}
+HALF = 28 
+
+df_e2_critical = df_e2_critical %>%
+  group_by(subject) %>%
+  mutate(count = n())
+
+df_e2_critical = df_e2_critical %>%
+  filter(count > HALF)
+nrow(df_e2_critical)
+length(unique(df_e2_critical$subject))
+
+```
+
+
+# Exclusion criteria to first-trial data
+
+
+## Bot checks
+
+```{r}
+df_ppt_bots = df_e2 %>%
+  filter(type == "bot_check") %>%
+  mutate(b1_correct = B1 == 2,
+         b2_correct = B2 == "Chair")
+
+df_bot_summ = df_ppt_bots %>%
+  group_by(subject) %>%
+  summarise(bot_avg = (b1_correct + b2_correct) / 2)
+df_bot_summ
+
+## Now remove ppts from critical stims that have < 100% avearge
+df_e2_first = df_e2_first %>%
+  left_join(df_bot_summ, by = "subject") %>%
+  filter(bot_avg == 1)
+length(unique(df_e2_first$subject))
+```
+
+## Exclude non-native speakers and mobile devices
+
+Exclude non-native speakers:
+
+```{r}
+df_e2_first = df_e2_first %>%
+  filter(Native_Speaker == "Yes") 
+length(unique(df_e2_first$subject))
+```
+
+
+Exclude people who performed experiment on mobile device:
+
+```{r}
+df_e2_first = df_e2_first %>%
+  filter(Mobile_Device == "No") 
+length(unique(df_e2_first$subject))
+```
+
+## Remove RTs
+
+First, we remove trials with an RT < 500ms. For convenience, we also log RT here.
+
+```{r}
+df_e2_first = df_e2_first %>%
+  filter(rt > 500) %>% ## Remove <= 500 ms
+  mutate(log_rt = log(rt)) ## Log RT
+
+nrow(df_e2_first)
+```
+
+Second, we remove trials with an RT > 3 SDs above a subject's mean.
+
+```{r}
+df_e2_first = df_e2_first %>%
+  group_by(subject) %>%
+  mutate(rt_z = scale(rt))
+
+df_e2_first = df_e2_first %>%
+  filter(rt_z < 3)
+nrow(df_e2_first)
+
+```
+
+
+## Remove subjects with too few observations
+
+Finally, we remove subjects for whom more than half the observations have been removed (for slow or very fast RTs).
+
+```{r}
+HALF = 28 
+
+df_e2_first = df_e2_first %>%
+  group_by(subject) %>%
+  mutate(count = n())
+
+df_e2_first = df_e2_first %>%
+  filter(count > HALF)
+nrow(df_e2_first)
+length(unique(df_e2_first$subject))
+
+```
+
+
+# Calculate and merge with first-trial estimates
+
+First, we calculate first-trial estimates for accuracy and RT:
+
+```{r}
+df_by_item_first = df_e2_first %>%
+  group_by(word, item_version) %>%
+  summarise(prior_accuracy = mean(correct_response),
+            prior_rt = mean(log_rt))
+nrow(df_by_item_first)
+
+df_by_item_first %>%
+  ggplot(aes(x = prior_accuracy)) +
+  geom_histogram() +
+  labs(x = "First-trial accuracy across sentences") +
+  theme_minimal()
+
+df_by_item_first %>%
+  ggplot(aes(x = prior_rt)) +
+  geom_histogram() +
+  labs(x = "First-trial RT across sentences") +
+  theme_minimal()
+```
+
+Then, we merge with the critical data:
+
+```{r}
+df_e2_critical_with_priors = df_e2_critical %>%
+  left_join(df_by_item_first, on = c("word", "item_version"))
+nrow(df_e2_critical)
+nrow(df_e2_critical_with_priors)
+```
+
+
+
+# Merge with NLM distances and norming data
+
+Here, we merge the results from the neural language model (NLM) analyses, as well as our norming data.
+
+## Load NLM and norming data
+
+```{r}
+df_distances = read_csv("../../data/processed/stims_processed.csv")
+nrow(df_distances)
+
+df_distances = df_distances %>%
+  select(word, version, same, ambiguity_type,
+         distance_bert, distance_elmo)
+
+df_normed = read_csv("../../data/stims/item_means.csv")
+nrow(df_normed)
+
+df_normed = df_normed %>%
+  select(word, version, same, ambiguity_type, distance_bert, distance_elmo,
+         mean_relatedness, median_relatedness, sd_relatedness, se_relatedness, count)
+
+
+df_item_data = df_normed %>%
+  left_join(df_distances, by = c("word", "version",
+                                 "same", "ambiguity_type",
+                                 "distance_bert", "distance_elmo")) %>%
+  mutate(same = factor(same))
+nrow(df_item_data)
+table(df_item_data$ambiguity_type, df_item_data$same)
+
+```
+
+
+## Merge with experimental data
+
+```{r}
+
+df_merged = df_e2_critical_with_priors %>%
+  mutate(same = factor(same)) %>%
+  left_join(df_item_data, by = c("word", "version",  "same", "ambiguity_type")) %>%
+  mutate(length = nchar(word))
+
+nrow(df_e2_critical_with_priors)
+nrow(df_merged)
+length(unique(df_merged$subject))
+
+summary(df_merged$mean_relatedness)
+summary(df_merged$distance_bert)
+
+# Reorder factor levels 
+df_merged$ambiguity_type = factor(df_merged$ambiguity_type, levels = c('Polysemy', 'Homonymy'))
+df_merged$same = factor(df_merged$same, levels = c(TRUE, FALSE))
+
+write.csv(df_merged, "../../data/processed/polysemy_s2_final.csv")
+
+
+```
+
+
+# Descriptive results
+
+## Accuracy
+Let's look at accuracy on the critical trials, broken up by condition. Interestingly, we see that the distribution of accuracy scores on **critical trials** (by participant) is different for `same` vs. `different` sense usages, and lowest still for `different sense` `homonymy`.
+
+```{r}
+df_merged %>%
+  group_by(same, ambiguity_type) %>%
+  summarise(accuracy = mean(correct_response))
+
+df_merged %>%
+  group_by(subject, same, ambiguity_type) %>%
+  summarise(accuracy = mean(correct_response)) %>%
+  ggplot(aes(x = accuracy,
+             y = ambiguity_type,
+             fill = same)) +
+  geom_density_ridges2(aes(height = ..density..), 
+                       color=gray(0.25), alpha = 0.5, 
+                       scale=0.85, size=0.75, stat="density") +
+  geom_vline(xintercept = .5, linetype = "dotted") +
+  scale_x_continuous(limits = c(0, 1)) +
+  labs(x = "Accuracy (by participant)",
+       y = "Ambiguity Type",
+       color = "Same Sense") +
+  theme_minimal()
+```
+
+
+## RT
+
+Now let's look at the `RT` distribution. As expected, RT is right-skewed:
+
+```{r}
+df_merged %>%
+  ggplot(aes(x = rt)) +
+  geom_histogram() +
+  theme_minimal()
+
+df_merged %>%
+  ggplot(aes(x = log_rt)) +
+  geom_histogram() +
+  theme_minimal()
+
+df_merged %>%
+  group_by(same) %>%
+  summarise(mean_rt = mean(rt),
+            mean_log_rt = mean(log_rt))
+
+```
+
+
+# Analyses
+
+## Build all models
+
+### Accuracy
+
+
+```{r accuracy-models}
+
+model_full_acc = glmer(data = df_merged,
+                  correct_response ~ distance_bert + ambiguity_type * same + 
+                    prior_accuracy + 
+                    (1 + distance_bert + ambiguity_type + same | subject) +
+                    (1 | word),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_interaction_no_distance_acc = glmer(data = df_merged,
+                  correct_response ~ ambiguity_type * same + 
+                    prior_accuracy + 
+                    (1 + distance_bert + ambiguity_type + same | subject) +
+                    (1 | word),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_all_main_effects_acc = glmer(data = df_merged,
+                  correct_response ~ distance_bert + ambiguity_type + same + 
+                    prior_accuracy + 
+                    (1 + distance_bert + ambiguity_type + same | subject) +
+                    (1 | word),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_distance_same_acc = glmer(data = df_merged,
+                  correct_response ~ distance_bert + same + 
+                    prior_accuracy + 
+                    (1 + distance_bert + same + ambiguity_type | subject) +
+                    (1 | word),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_distance_acc = glmer(data = df_merged,
+                  correct_response ~ distance_bert + 
+                    prior_accuracy + 
+                    (1 + distance_bert + same + ambiguity_type | subject) +
+                    (1 | word),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+```
+
+
+### RT
+
+
+```{r rt-models}
+
+df_merged_correct = df_merged %>%
+  filter(correct_response == TRUE)
+
+model_full_rt = lmer(data = df_merged_correct,
+                  log_rt ~ distance_bert + ambiguity_type * same + 
+                    prior_rt + 
+                    (1 + distance_bert + ambiguity_type + same | subject) +
+                    (1 | word),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+
+model_interaction_no_distance_rt = lmer(data = df_merged_correct,
+                  log_rt ~ ambiguity_type * same + 
+                    prior_rt + 
+                    (1 + distance_bert + ambiguity_type + same | subject) +
+                    (1 | word),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+model_all_main_effects_rt = lmer(data = df_merged_correct,
+                  log_rt ~ distance_bert + ambiguity_type + same + 
+                    prior_rt + 
+                    (1 + distance_bert + ambiguity_type + same | subject) +
+                    (1 | word),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+
+model_distance_same_rt = lmer(data = df_merged_correct,
+                  log_rt ~ distance_bert + same + 
+                    prior_rt + 
+                    (1 + distance_bert + same + ambiguity_type | subject) +
+                    (1 | word),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+model_distance_rt = lmer(data = df_merged_correct,
+                  log_rt ~ distance_bert + 
+                    prior_rt + 
+                    (1 + distance_bert + same + ambiguity_type | subject) +
+                    (1 | word),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+
+```
+
+
+
+## Visualizations
+
+### Accuracy
+
+```{r}
+
+### To visualize, first get residuals from first-trial Accuracy
+model_acc_base = glmer(data = df_merged,
+                  correct_response ~ 
+                    prior_accuracy + 
+                    (1 + distance_bert + same + ambiguity_type | subject) +
+                    (1 | word),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+df_merged$residuals = residuals(model_acc_base)
+
+## Residuals ~ Same / Ambiguity Type
+df_merged %>%
+  ggplot(aes(x = same,
+             y = residuals,
+             color = ambiguity_type)) +
+  stat_summary (fun = function(x){mean(x)},
+                fun.min = function(x){mean(x) - 2*sd(x)/sqrt(length(x))},
+                fun.max = function(x){mean(x) + 2*sd(x)/sqrt(length(x))},
+                geom= 'pointrange', 
+                position=position_dodge(width=0.95)) +
+  labs(x = "Same Sense",
+       y = "Residuals (~First-trial accuracy)",
+       color = "Ambiguity Type") +
+  theme_minimal()
+
+### Also visualize residuals from model with *both* first-trial Accuracy and Cosine Distance
+df_merged$residuals2 = residuals(model_distance_acc)
+
+## Residuals ~ Same / Ambiguity Type
+df_merged %>%
+  ggplot(aes(x = same,
+             y = residuals2,
+             color = ambiguity_type)) +
+  stat_summary (fun = function(x){mean(x)},
+                fun.min = function(x){mean(x) - 2*sd(x)/sqrt(length(x))},
+                fun.max = function(x){mean(x) + 2*sd(x)/sqrt(length(x))},
+                geom= 'pointrange', 
+                position=position_dodge(width=0.95)) +
+  labs(x = "Same Sense",
+       y = "Residuals (~First-trial accuracy + Cosine Distance)",
+       color = "Ambiguity Type") +
+  theme_minimal()
+```
+
+
+### RT
+
+```{r}
+
+### To visualize, first get residuals from first-trial RT
+model_rt_base = lmer(data = df_merged_correct,
+                  log_rt ~ 
+                    # prior_rt + 
+                    (1 + distance_bert + same + ambiguity_type | subject) +
+                    (1 | word),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+df_merged_correct$residuals = residuals(model_rt_base)
+
+## Residuals ~ Distance
+df_merged_correct %>%
+  ggplot(aes(x = distance_bert,
+             y = residuals,
+             color = same)) +
+  geom_point(alpha = .2) +
+  geom_smooth(method = "lm") +
+  theme_minimal() +
+  labs(x = "Cosine distance",
+       y = "Residuals (RT ~ First-trial RT)") +
+  facet_grid(~ambiguity_type)
+
+## Residuals ~ Same / Ambiguity Type
+df_merged_correct %>%
+  ggplot(aes(x = residuals,
+             y = ambiguity_type,
+             fill = same)) +
+  geom_density_ridges2(aes(height = ..density..), 
+                       color=gray(0.25), alpha = 0.5, 
+                       scale=0.85, size=0.75, stat="density") +
+  labs(x = "Residuals (~First-trial RT",
+       y = "Ambiguity Type",
+       color = "Same Sense") +
+  theme_minimal()
+
+## Residuals ~ Same / Ambiguity Type
+df_merged_correct %>%
+  ggplot(aes(x = same,
+             y = residuals,
+             color = ambiguity_type)) +
+  stat_summary (fun = function(x){mean(x)},
+                fun.min = function(x){mean(x) - 2*sd(x)/sqrt(length(x))},
+                fun.max = function(x){mean(x) + 2*sd(x)/sqrt(length(x))},
+                geom= 'pointrange', 
+                position=position_dodge(width=0.95)) +
+  labs(x = "Same Sense",
+       y = "Residuals (~First-trial RT)",
+       color = "Ambiguity Type") +
+  theme_minimal()
+
+
+### Also visualize residuals from model with *both* first-trial RT and Cosine Distance
+df_merged_correct$residuals2 = residuals(model_distance_rt)
+
+## Residuals ~ Same / Ambiguity Type
+df_merged_correct %>%
+  ggplot(aes(x = residuals2,
+             y = ambiguity_type,
+             fill = same)) +
+  geom_density_ridges2(aes(height = ..density..), 
+                       color=gray(0.25), alpha = 0.5, 
+                       scale=0.85, size=0.75, stat="density") +
+  labs(x = "Residuals (~First-trial RT + Cosine Distance)",
+       y = "Ambiguity Type",
+       color = "Same Sense") +
+  theme_minimal()
+
+
+## Residuals ~ Same / Ambiguity Type
+df_merged_correct %>%
+  ggplot(aes(x = same,
+             y = residuals2,
+             color = ambiguity_type)) +
+  stat_summary (fun = function(x){mean(x)},
+                fun.min = function(x){mean(x) - 2*sd(x)/sqrt(length(x))},
+                fun.max = function(x){mean(x) + 2*sd(x)/sqrt(length(x))},
+                geom= 'pointrange', 
+                position=position_dodge(width=0.95)) +
+  labs(x = "Same Sense",
+       y = "Residuals (~First-trial RT + Cosine Distance)",
+       color = "Ambiguity Type") +
+  theme_minimal()
+
+```
+
+
+## Disconfirmatory analyses: Accuracy
+
+### Model summaries
+
+```{r}
+summary(model_full_acc)
+
+df_tidy_acc = broom.mixed::tidy(model_full_acc)
+
+df_tidy_acc %>%
+  filter(effect == "fixed") %>%
+  ggplot(aes(x = term,
+             y = estimate)) +
+  geom_point() +
+  coord_flip() +
+  geom_hline(yintercept = 0, linetype = "dotted") +
+  geom_errorbar(aes(ymin = estimate - 2*std.error, 
+                    ymax = estimate + 2*std.error), 
+                width=.2,
+                position=position_dodge(.9)) +
+  theme_minimal()
+```
+
+
+
+### Disconfirm Account 1
+
+```{r}
+dis1_acc = anova(model_distance_same_acc, model_distance_acc)
+dis1_acc
+```
+
+
+### Disconfirm Account 2 (and 4)
+
+```{r}
+dis24_acc = anova(model_full_acc, model_interaction_no_distance_acc)
+dis24_acc
+```
+
+
+### Disconfirm Account 1-3
+
+```{r}
+dis13_acc = anova(model_full_acc, model_all_main_effects_acc)
+dis13_acc
+```
+
+
+
+## Disconfirmatory analyses: RT
+
+**TODO**: More text here
+
+### Model summaries
+
+```{r}
+summary(model_full_rt)
+
+df_tidy_rt = broom.mixed::tidy(model_full_rt)
+
+df_tidy_rt %>%
+  filter(effect == "fixed") %>%
+  filter(term != "(Intercept)") %>%
+  ggplot(aes(x = term,
+             y = estimate)) +
+  geom_point() +
+  coord_flip() +
+  geom_hline(yintercept = 0, linetype = "dotted") +
+  geom_errorbar(aes(ymin = estimate - 2*std.error, 
+                    ymax = estimate + 2*std.error), 
+                width=.2,
+                position=position_dodge(.9)) +
+  theme_minimal()
+
+```
+
+
+### Disconfirm Account 1
+
+```{r}
+dis1_rt = anova(model_distance_same_rt, model_distance_rt)
+dis1_rt
+```
+
+
+### Disconfirm Account 2 (and 4)
+
+```{r}
+dis24_rt = anova(model_full_rt, model_interaction_no_distance_rt)
+dis24_rt
+```
+
+
+### Disconfirm Account 1-3
+
+```{r}
+dis13_rt = anova(model_full_rt, model_all_main_effects_rt)
+dis13_rt
+```
+
+
+## Correct for multiple comparisons
+
+Finally, for each pair of tests (e.g., disconfirming account 1) across the two dependent measures, we adjust for multiple comparisons (as two DVs were considered).
+
+Account 1:
+
+```{r}
+p.adjust(c(dis1_acc$`Pr(>Chisq)`[2], dis1_rt$`Pr(>Chisq)`[2]), method = "holm")
+```
+
+Accounts 2 and 4:
+
+```{r}
+p.adjust(c(dis24_acc$`Pr(>Chisq)`[2], dis24_rt$`Pr(>Chisq)`[2]), method = "holm")
+```
+
+Accounts 1-3:
+
+```{r}
+p.adjust(c(dis13_acc$`Pr(>Chisq)`[2], dis13_rt$`Pr(>Chisq)`[2]), method = "holm")
+```
+
+
+
+# Descriptive results (added to pre-reg)
+
+```{r}
+df_merged %>%
+  group_by(same) %>%
+  summarise(accuracy = mean(correct_response))
+
+df_merged_correct %>%
+  group_by(same) %>%
+  summarise(mean_rt = mean(rt),
+            sd_rt = sd (rt),
+            mean_log_rt = mean(log_rt))
+```
+
+# Demographic data (pt. 2)
+
+After all exclusions (added this *post* pre-registration, for numbers in mansucript; doesn't change anything about the data, just reports on after excluding):
+
+```{r}
+df_demo = df_merged %>%
+  group_by(subject, Gender, Native_Speaker, Mobile_Device, Age) %>%
+  summarise(mean_rt = mean(rt))
+
+nrow(df_demo)
+
+table(df_demo$Gender)
+table(df_demo$Native_Speaker)
+table(df_demo$Mobile_Device)
+
+# For Age calculations only, ignore subject who responded with string
+df_demo = df_demo %>%
+  filter(Age != "n/a")
+df_demo$age = as.numeric(df_demo$Age)
+  
+mean(df_demo$age, na.rm = TRUE)
+sd(df_demo$age, na.rm = TRUE)
+range(df_demo$age, na.rm = TRUE)
+
+```
+
