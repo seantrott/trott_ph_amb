@@ -1,0 +1,808 @@
+---
+title: "Transformations"
+author: "Sean Trott"
+date: "May 17, 2021"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    # code_folding: hide
+  pdf_document: default
+  word_document:
+    toc: yes
+---
+
+```{r include=FALSE}
+library(tidyverse)
+library(lme4)
+library(ggridges)
+library(broom.mixed)
+library(lmerTest)
+```
+
+# Introduction
+
+The goal of these analyses is to identify a **functional transformation** that can be applied to `cosine distance`, so as to improve the fit of a model predicting either `RT` or `Accuracy`. 
+
+We will first identify a set of candidate transformations, selecting parameters optimized to *maximize* the correlation between `cosine distance` and `relatedness`. We will then use the optimized `transformed distance` to predict the experimental data.
+
+Note that each transformation (additive, multiplicative, etc.) will be identified in both a *bottom-up* and *top-down* manner.
+
+# Load data
+
+
+```{r}
+### Set working directory (comment this out to run)
+# setwd("/Users/seantrott/Dropbox/UCSD/Research/Ambiguity/SSD/trott_polysemy_experiment/src/analysis")
+
+### Load preprocessed data
+df_exp1 = read_csv("../../data/processed/polysemy_s1_final.csv")
+df_exp2 = read_csv("../../data/processed/polysemy_s2_final.csv")
+
+length(unique(df_exp1$subject))
+nrow(df_exp1)
+length(unique(df_exp2$subject))
+nrow(df_exp2)
+
+```
+
+
+# Bottom-up transformations
+
+To start, we ask whether `cosine distance` can be transformed in particular ways to better approximate `relatedness`, without explicitly adjusting the values according to `same sense`.
+
+## Approach 1: Linear transformation
+
+First, we attempt a **linear transformation**.
+
+```{r}
+### Get NLM distances
+df_distances = df_exp1 %>%
+  group_by(word, version, same, ambiguity_type) %>%
+  summarise(distance_bert = mean(distance_bert),
+            relatedness = mean(mean_relatedness))
+
+df_distances %>%
+  group_by(same, ambiguity_type) %>%
+  summarise(mean_relatedness = mean(relatedness),
+            sd_relatedness = sd(relatedness))
+  
+df_distances %>%
+  group_by(same) %>%
+  summarise(mean_relatedness = mean(relatedness),
+            sd_relatedness = sd(relatedness))
+
+### Actual correlation
+CUTOFF = seq(0, 1, by = .1)
+B1 = seq(0, 1, by = .1)
+
+df_r = data.frame()
+
+for (c in CUTOFF) {
+  for (b1 in B1){
+    
+    df_distances = df_distances %>%
+      mutate(same_c = distance_bert <= c) %>%
+      mutate(distance_transformed = case_when(
+        same_c == TRUE ~ distance_bert - b1,
+        same_c == FALSE ~ distance_bert + b1
+      ))
+    
+    m = lm(data = df_distances,
+           relatedness ~ distance_transformed)
+    rss = sum(resid(m)^2)
+    
+    test = cor.test(df_distances$relatedness,
+                    df_distances$distance_transformed)
+    df_test = broom::tidy(test)
+    df_test$b1 = b1
+    df_test$cutoff = c
+    df_test$rss = rss
+    df_r = rbind(df_r, df_test)
+  }
+}
+
+df_r %>%
+  ggplot(aes(x = cutoff,
+             y = b1,
+             size = estimate)) +
+  geom_point(alpha = .6) +
+  theme_minimal()
+
+df_best = df_r %>%
+  filter(estimate == min(df_r$estimate))
+df_best
+
+c1 = df_best$cutoff[1]
+c1
+b1_bu_l = df_best$b1[1]
+b1_bu_l
+
+```
+
+
+## Approach 2: Multiplicative transformation
+
+```{r}
+### Get NLM distances
+df_distances = df_exp1 %>%
+  group_by(word, version, same) %>%
+  summarise(distance_bert = mean(distance_bert),
+            relatedness = mean(mean_relatedness))
+
+### Actual correlation
+CUTOFF = seq(0, 1, by = .1)
+B1 = seq(.1, 15, by = .5)
+B2 = seq(1.1, 15, by = .5)
+df_r = data.frame()
+
+for (c in CUTOFF) {
+  for (b1 in B1){
+    for (b2 in B2) {
+      df_distances = df_distances %>%
+        mutate(same_c = distance_bert <= c) %>%
+        mutate(distance_multiplicative = case_when(
+          same_c == TRUE ~ distance_bert / b1,
+          same_c == FALSE ~ distance_bert + (1 - distance_bert)/b2
+        ))
+      
+      m = lm(data = df_distances,
+             relatedness ~ distance_multiplicative)
+      rss = sum(resid(m)^2)
+      
+      test = cor.test(df_distances$relatedness,
+                      df_distances$distance_multiplicative)
+      df_test = broom::tidy(test)
+      df_test$cutoff = c
+      df_test$b1 = b1
+      df_test$b2 = b2
+      df_test$rss = rss
+      df_r = rbind(df_r, df_test)
+    }
+  }
+}
+
+df_r %>%
+  ggplot(aes(x = b1,
+             y = b2,
+             size = estimate)) +
+  geom_point(alpha = .6) +
+  theme_minimal()
+
+df_best = df_r %>%
+  filter(estimate == min(df_r$estimate))
+df_best
+
+c2 = df_best$cutoff[1]
+c2
+b1_bu_m = df_best$b1[1]
+b1_bu_m
+b2_bu_m = df_best$b2[1]
+b2_bu_m
+```
+
+
+
+
+## Inspect
+
+
+**TODO**: Label as below/above threshold?
+
+```{r}
+
+df_distances = df_exp1 %>%
+  group_by(word, version, same) %>%
+  summarise(distance_bert = mean(distance_bert),
+            relatedness = mean(mean_relatedness))
+
+
+df_distances = df_distances %>%
+  mutate(
+    same_c1 = distance_bert <= c1,
+    same_c2 = distance_bert <= c2
+  ) %>%
+  mutate(distance_linear_transformation = case_when(
+      same_c1 == TRUE ~ distance_bert - b1_bu_l,
+      same_c1 == FALSE ~ distance_bert + b1_bu_l
+    )) %>%
+  mutate(distance_multiplicative_transformation = case_when(
+      same_c2 == TRUE ~ distance_bert / b1_bu_m,
+      same_c2 == FALSE ~ distance_bert + (1 - distance_bert)/b2_bu_m
+    ))
+
+df_long = df_distances %>%
+  mutate(
+    multiplicative = distance_multiplicative_transformation,
+    additive = distance_linear_transformation
+  ) %>%
+  select(multiplicative, additive, same, distance_bert) %>%
+  pivot_longer(cols = c(multiplicative, additive), names_to = "transformation",
+               values_to = "distance")
+
+df_long %>%
+  ggplot(aes(x = distance_bert,
+             y = distance,
+             color = same)) +
+  geom_point(alpha = .5) +
+  geom_line(aes(x = distance_bert,
+                y = distance_bert),
+            linetype = "dotted") +
+  theme_bw() +
+  facet_grid(~transformation) +
+  labs(x = "Cosine Distance",
+       y = "Transformed Distance",
+       title = "Bottom-up Transformations") +
+  theme(axis.title = element_text(size=rel(2)),
+        axis.text = element_text(size = rel(2)),
+        legend.text = element_text(size = rel(2)),
+        strip.text.x = element_text(size = rel(2)),
+        plot.title = element_text(size = rel(2)),
+        legend.title = element_text(size = rel(2)))
+
+ggsave("../../Figures/transform/bottom_up_transformations.png", dpi = 200)
+
+```
+
+
+
+# Top-down transformations
+
+## Approach 1: Linear transformation
+
+First, we attempt a **linear transformation**.
+
+```{r}
+### Get NLM distances
+df_distances = df_exp1 %>%
+  group_by(word, version, same) %>%
+  summarise(distance_bert = mean(distance_bert),
+            relatedness = mean(mean_relatedness))
+
+# Mean difference across same/diff
+df_distances %>%
+  group_by(same) %>%
+  summarise(mean_distance = mean(distance_bert))
+
+
+### Formula: 
+### if same == true, decrease distance by b
+### if same == false, increase distance by b
+
+### Actual correlation
+BASELINE = cor(df_distances$relatedness,
+                  df_distances$distance_bert)
+B1 = seq(0, 1, by = .1)
+
+df_r = data.frame()
+for (b1 in B1){
+  
+  df_distances = df_distances %>%
+    mutate(distance_transformed = case_when(
+      same == TRUE ~ distance_bert - b1,
+      same == FALSE ~ distance_bert + b1
+    ))
+  
+  m = lm(data = df_distances,
+         relatedness ~ distance_transformed)
+  rss = sum(resid(m)^2)
+  
+  test = cor.test(df_distances$relatedness,
+                  df_distances$distance_transformed)
+  df_test = broom::tidy(test)
+  df_test$b1 = b1
+  # df_test$b2 = b1
+  df_test$rss = rss
+  df_r = rbind(df_r, df_test)
+}
+
+df_r %>%
+  ggplot(aes(x = b1,
+             y = estimate)) +
+  geom_point(alpha = .6) +
+  # scale_y_continuous(limits = c(-.8, -.5))+
+  # geom_hline(yintercept = BASELINE, linetype = "dotted") +
+  theme_minimal()
+
+df_best = df_r %>%
+  filter(estimate == min(df_r$estimate))
+  # filter(rss == min(df_r$rss))
+df_best
+b1_td_l = df_best$b1[1]
+b1_td_l
+```
+
+
+## Approach 2: Multiplicative transformation
+
+
+```{r}
+### Get NLM distances
+df_distances = df_exp1 %>%
+  group_by(word, version, same) %>%
+  summarise(distance_bert = mean(distance_bert),
+            relatedness = mean(mean_relatedness))
+
+### Formula: 
+### if same == true, log(d + 1, base = b1)
+### if same == false, b2 ** d + 1
+
+### Actual correlation
+BASELINE = cor(df_distances$relatedness,
+                  df_distances$distance_bert)
+B1 = seq(.1, 15, by = .5)
+B2 = seq(1.1, 15, by = .5)
+
+df_r = data.frame()
+for (b1 in B1){
+  
+  for (b2 in B2) {
+    df_distances = df_distances %>%
+      mutate(distance_multiplicative = case_when(
+        same == TRUE ~ distance_bert / b1,
+        same == FALSE ~ distance_bert + (1 - distance_bert)/b2
+      ))
+    
+    m = lm(data = df_distances,
+           relatedness ~ distance_multiplicative)
+    rss = sum(resid(m)^2)
+    
+    test = cor.test(df_distances$relatedness,
+                    df_distances$distance_multiplicative)
+    df_test = broom::tidy(test)
+    df_test$b1 = b1
+    df_test$b2 = b2
+    df_test$rss = rss
+    df_r = rbind(df_r, df_test)
+  }
+}
+
+df_r %>%
+  ggplot(aes(x = b1,
+             y = b2,
+             size = estimate)) +
+  geom_point(alpha = .6) +
+  theme_minimal()
+
+df_best = df_r %>%
+  # filter(estimate == min(df_r$estimate))
+  filter(estimate == min(df_r$estimate))
+df_best
+min(df_r$estimate)
+
+b1_td_m = df_best$b1[1]
+b1_td_m
+b2_td_m = df_best$b2[1]
+b2_td_m
+
+```
+
+
+
+## Inspect
+
+
+```{r}
+
+df_distances = df_exp1 %>%
+  group_by(word, version, same) %>%
+  summarise(distance_bert = mean(distance_bert),
+            relatedness = mean(mean_relatedness))
+
+df_distances = df_distances %>%
+  mutate(distance_linear_transformation = case_when(
+      same == TRUE ~ distance_bert - b1_td_l,
+      same == FALSE ~ distance_bert + b1_td_l
+    )) %>%
+  mutate(distance_multiplicative_transformation = case_when(
+      same == TRUE ~ distance_bert / b1_td_m,
+      same == FALSE ~ distance_bert + (1 - distance_bert)/b2_td_m
+    ))
+
+df_long = df_distances %>%
+  mutate(
+    multiplicative = distance_multiplicative_transformation,
+    additive = distance_linear_transformation
+  ) %>%
+  select(multiplicative, additive, same, distance_bert) %>%
+  pivot_longer(cols = c(multiplicative, additive), names_to = "transformation",
+               values_to = "distance")
+
+df_long %>%
+  ggplot(aes(x = distance_bert,
+             y = distance,
+             color = same)) +
+  geom_point(alpha = .5) +
+  geom_line(aes(x = distance_bert,
+                y = distance_bert),
+            linetype = "dotted") +
+  theme_bw() +
+  facet_grid(~transformation) +
+  labs(x = "Cosine Distance",
+       y = "Transformed Distance",
+       title = "Top-down Transformations") +
+  theme(axis.title = element_text(size=rel(2)),
+        axis.text = element_text(size = rel(2)),
+        legend.text = element_text(size = rel(2)),
+        strip.text.x = element_text(size = rel(2)),
+         plot.title = element_text(size = rel(2)),
+        legend.title = element_text(size = rel(2)))
+
+ggsave("../../Figures/transform/top_down_transformations.png", dpi = 200)
+
+```
+
+
+
+# Evaluation
+
+Now we ask how those learned parameters affect the ability to predict RT and accuracy. We merge data across experiments.
+
+
+```{r}
+
+
+df_exp1_r = df_exp1 %>%
+  select(word, ambiguity_type, same, distance_bert, subject, 
+         correct_response, log_rt,
+         version_with_order, prior_accuracy, prior_rt) %>%
+  mutate(experiment = "exp1")
+
+df_exp2_r = df_exp2 %>%
+  select(word, ambiguity_type, same, distance_bert, subject, 
+         correct_response, log_rt,
+         version_with_order, prior_accuracy, prior_rt) %>%
+  mutate(experiment = "exp2")
+
+df_merged = df_exp1_r %>%
+  rbind(df_exp2_r)
+nrow(df_merged)
+
+c1 = 0.2
+c2 = 0.5
+b1_bu_l = 0.2
+b1_bu_m = 0.6
+b2_bu_m = 14.6
+b1_td_l = 0.4
+b1_td_m = 10.6
+b2_td_m = 3.6
+
+df_merged = df_merged %>%
+  mutate(
+    same_c1 = distance_bert <= c1,
+    same_c2 = distance_bert <= c2
+  ) %>%
+  mutate(distance_linear_transformation_bu = case_when(
+      same_c1 == TRUE ~ distance_bert - b1_bu_l,
+      same_c1 == FALSE ~ distance_bert + b1_bu_l
+    )) %>%
+  mutate(distance_multiplicative_transformation_bu = case_when(
+      same_c2 == TRUE ~ distance_bert / b1_bu_m,
+      same_c2 == FALSE ~ distance_bert + (1 - distance_bert)/b2_bu_m
+    )) %>%
+  mutate(distance_linear_transformation_td = case_when(
+      same == TRUE ~ distance_bert - b1_td_l,
+      same == FALSE ~ distance_bert + b1_td_l
+    )) %>%
+  mutate(distance_multiplicative_transformation_td = case_when(
+      same == TRUE ~ distance_bert / b1_td_m,
+      same == FALSE ~ distance_bert + (1 - distance_bert)/b2_td_m
+    )) 
+
+  
+### Correct response
+model_just_ld = glmer(data = df_merged,
+                  correct_response ~ distance_linear_transformation_td  +
+                    prior_accuracy + 
+                    (1 | subject) +
+                    (1 | word) +
+                    (1 | experiment),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_just_md = glmer(data = df_merged,
+                  correct_response ~ distance_multiplicative_transformation_td  +
+                    prior_accuracy + 
+                    (1 | subject) +
+                    (1 | word)  +
+                    (1 | experiment),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_just_ld_bu = glmer(data = df_merged,
+                  correct_response ~ distance_linear_transformation_bu  +
+                    prior_accuracy + 
+                    (1 | subject) +
+                    (1 | word)  +
+                    (1 | experiment),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_just_md_bu = glmer(data = df_merged,
+                  correct_response ~ distance_multiplicative_transformation_bu  +
+                    prior_accuracy + 
+                    (1 | subject) +
+                    (1 | word)  +
+                    (1 | experiment),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_just_same = glmer(data = df_merged,
+                  correct_response ~ same +
+                    prior_accuracy + 
+                    (1 | subject) +
+                    (1 | word)  +
+                    (1 | experiment),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_just_ogd = glmer(data = df_merged,
+                  correct_response ~ distance_bert +
+                    prior_accuracy + 
+                    (1 | subject) +
+                    (1 | word)  +
+                    (1 | experiment),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_both = glmer(data = df_merged,
+                  correct_response ~ distance_bert + same + 
+                    prior_accuracy + 
+                    (1 | subject) +
+                    (1 | word)  +
+                    (1 | experiment),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+model_interaction = glmer(data = df_merged,
+                  correct_response ~ distance_bert * same + 
+                    prior_accuracy + 
+                    (1 | subject) +
+                    (1 | word)  +
+                    (1 | experiment),
+                  control=glmerControl(optimizer="bobyqa"),
+                  family = binomial())
+
+
+aic = c(AIC(model_just_ld),
+        AIC(model_just_md),
+        AIC(model_just_ld_bu),
+        AIC(model_just_md_bu),
+        AIC(model_just_same),
+        AIC(model_just_ogd),
+        AIC(model_both),
+        AIC(model_interaction))
+aic_rescaled = aic - min(aic)
+
+L = exp(-(1/2) * aic_rescaled)
+p = L / sum(L)
+p
+
+df_aic = data.frame(
+  model = c('D-Add-TD', 'D-Mul-TD', 
+            'D-Add-BU', 'D-Mul-BU',
+            'SB', 'D', 'D + SB', 'D * SB' ),
+  aic = aic,
+  aic_rescaled = aic_rescaled,
+  L = L,
+  p = p
+)
+
+df_aic %>%
+  ggplot(aes(x = reorder(model, p),
+             y = p,
+             fill = model)) +
+  geom_bar(stat = "identity") +
+  scale_y_continuous(limits = c(0, 1)) +
+  coord_flip() +
+  geom_text(aes(label = round(p, 2)), 
+            hjust = -1, 
+            colour = "black") +
+  labs(y = "Parameters",
+       x = "P(model)") +
+  theme_minimal() +
+theme(
+  axis.title.x = element_text(size = 16),
+  axis.text.x = element_text(size = 14),
+  axis.text.y = element_text(size = 10),
+  axis.title.y = element_text(size = 16),
+  strip.text.x = element_text(size = 16),
+  title = element_text(size = 16),
+  legend.text = element_text(size = 16),
+  legend.title = element_text(size = 16))
+
+
+ggsave("../../Figures/transform/final/accuracy_akaike_weights.png", dpi = 300)
+
+
+df_aic %>%
+  ggplot(aes(x = reorder(model, aic_rescaled),
+             y = aic_rescaled,
+             fill = model)) +
+  geom_bar(stat = "identity") +
+  scale_y_continuous(limits = c(0, max(df_aic$aic_rescaled + 2))) +
+  coord_flip() +
+  geom_text(aes(label = round(aic_rescaled, 2)), 
+            # hjust = -1, 
+            colour = "black") +
+  labs(y = "Parameters",
+       x = "AIC (Rescaled)",
+       title = "Correct Response ~ ...") +
+  theme_minimal() +
+theme(
+  axis.title.x = element_text(size = 16),
+  axis.text.x = element_text(size = 14),
+  axis.text.y = element_text(size = 10),
+  axis.title.y = element_text(size = 16),
+  strip.text.x = element_text(size = 16),
+  title = element_text(size = 16),
+  legend.text = element_text(size = 16),
+  legend.title = element_text(size = 16)) +
+  guides(fill = FALSE)
+
+
+ggsave("../../Figures/transform/final/accuracy_aic.png", dpi = 300)
+
+
+
+### RT
+df_merged_correct = df_merged %>%
+  filter(correct_response == TRUE)
+
+
+model_just_ld = lmer(data = df_merged_correct,
+                  log_rt ~ distance_linear_transformation_td + 
+                    prior_rt + 
+                    (1 | subject) +
+                    (1 | word)   +
+                    (1 | experiment),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+model_just_md = lmer(data = df_merged_correct,
+                  log_rt ~ distance_multiplicative_transformation_td + 
+                    prior_rt + 
+                    (1 | subject) +
+                    (1 | word)   +
+                    (1 | experiment),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+
+model_just_ld_bu = lmer(data = df_merged_correct,
+                  log_rt ~ distance_linear_transformation_bu + 
+                    prior_rt + 
+                    (1 | subject) +
+                    (1 | word)   +
+                    (1 | experiment),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+model_just_md_bu = lmer(data = df_merged_correct,
+                  log_rt ~ distance_multiplicative_transformation_bu + 
+                    prior_rt + 
+                    (1 | subject) +
+                    (1 | word)   +
+                    (1 | experiment),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+model_just_same = lmer(data = df_merged_correct,
+                  log_rt ~ same + 
+                    prior_rt + 
+                    (1 | subject) +
+                    (1 | word)   +
+                    (1 | experiment),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+
+model_just_ogd = lmer(data = df_merged_correct,
+                  log_rt ~ distance_bert + 
+                    prior_rt + 
+                    (1 | subject) +
+                    (1 | word)   +
+                    (1 | experiment),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+
+model_both = lmer(data = df_merged_correct,
+                  log_rt ~ distance_bert +  same +
+                    prior_rt + 
+                    (1 | subject) +
+                    (1 | word)   +
+                    (1 | experiment),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+model_interaction = lmer(data = df_merged_correct,
+                  log_rt ~ distance_bert * same +
+                    prior_rt + 
+                    (1 | subject) +
+                    (1 | word)   +
+                    (1 | experiment),
+                  control=lmerControl(optimizer="bobyqa"),
+                  REML = FALSE)
+
+aic = c(AIC(model_just_ld),
+        AIC(model_just_md),
+        AIC(model_just_ld_bu),
+        AIC(model_just_md_bu),
+        AIC(model_just_same),
+        AIC(model_just_ogd),
+        AIC(model_both),
+        AIC(model_interaction))
+aic_rescaled = aic - min(aic)
+
+L = exp(-(1/2) * aic_rescaled)
+p = L / sum(L)
+p
+
+df_aic = data.frame(
+  model = c('D-Add--TD', 'D-Mul-TD', 
+            'D-Add-BU', 'D-Mul-BU',
+            'SB', 'D', 'D + SB', 'D * SB' ),
+  aic = aic,
+  aic_rescaled = aic_rescaled,
+  L = L,
+  p = p
+)
+
+df_aic %>%
+  ggplot(aes(x = reorder(model, p),
+             y = p,
+             fill = model)) +
+  geom_bar(stat = "identity") +
+  scale_y_continuous(limits = c(0, 1)) +
+  coord_flip() +
+  geom_text(aes(label = round(p, 2)), 
+            hjust = -1, 
+            colour = "black") +
+  labs(y = "Parameters",
+       x = "P(model)") +
+  theme_minimal() +
+theme(
+  axis.title.x = element_text(size = 16),
+  axis.text.x = element_text(size = 14),
+  axis.text.y = element_text(size = 10),
+  axis.title.y = element_text(size = 16),
+  strip.text.x = element_text(size = 16),
+  title = element_text(size = 16),
+  legend.text = element_text(size = 16),
+  legend.title = element_text(size = 16))
+
+ggsave("../../Figures/transform/final/rt_akaike_weights.png", dpi = 300)
+
+
+df_aic %>%
+  ggplot(aes(x = reorder(model, aic_rescaled),
+             y = aic_rescaled,
+             fill = model)) +
+  geom_bar(stat = "identity") +
+  scale_y_continuous(limits = c(0, max(df_aic$aic_rescaled + 2))) +
+  coord_flip() +
+  geom_text(aes(label = round(aic_rescaled, 2)), 
+            # hjust = -1, 
+            colour = "black") +
+  labs(y = "Parameters",
+       x = "AIC (Rescaled)",
+       title = "RT ~ ...") +
+  theme_minimal() +
+theme(
+  axis.title.x = element_text(size = 16),
+  axis.text.x = element_text(size = 14),
+  axis.text.y = element_text(size = 10),
+  axis.title.y = element_text(size = 16),
+  strip.text.x = element_text(size = 16),
+  title = element_text(size = 16),
+  legend.text = element_text(size = 16),
+  legend.title = element_text(size = 16)) +
+  guides(fill = FALSE)
+
+
+ggsave("../../Figures/transform/final/rt_aic.png", dpi = 300)
+
+
+
+```
