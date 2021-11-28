@@ -96,6 +96,10 @@ There are also *knit* `.html` files from both of these `.Rmd` files with the sam
 
 The analyses involving **transformations** to `cosine distance` can be found at [`src/analysis/transformations.Rmd`](https://github.com/seantrott/trott_ph_amb/blob/master/src/analysis/transformations.Rmd) (along with a knit `.html` file [here](https://github.com/seantrott/trott_ph_amb/blob/master/src/analysis/transformations.html)).
 
+### Supplementary Analysis with Dominance
+
+The supplementary analysis with **dominance** can be found at: 
+
 
 
 
