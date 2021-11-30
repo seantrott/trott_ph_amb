@@ -102,7 +102,6 @@ The surprisal estimates can be found [here](https://github.com/seantrott/trott_p
 
 
 
-
 # References
 
 Brown, S. W. (2008). Polysemy in the mental lexicon. Colorado Research in Linguistics, 21.
