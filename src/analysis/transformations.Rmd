@@ -187,9 +187,13 @@ b2_bu_m
 ## Inspect
 
 
-**TODO**: Label as below/above threshold?
-
 ```{r}
+### Final parameters reported in paper
+c2 = 0.5
+b1_bu_m = 0.6
+b2_bu_m = 14.6
+b1_bu_l = 0.2
+c1 = 0.2
 
 df_distances = df_exp1 %>%
   group_by(word, version, same) %>%
@@ -221,9 +225,13 @@ df_long = df_distances %>%
                values_to = "distance")
 
 df_long %>%
+  mutate(sense_boundary = case_when(
+    same == TRUE ~ "Same Sense",
+    same == FALSE ~ "Different Sense"
+  )) %>%
   ggplot(aes(x = distance_bert,
              y = distance,
-             color = same)) +
+             color = sense_boundary)) +
   geom_point(alpha = .5) +
   geom_line(aes(x = distance_bert,
                 y = distance_bert),
@@ -232,7 +240,8 @@ df_long %>%
   facet_grid(~transformation) +
   labs(x = "Cosine Distance",
        y = "Transformed Distance",
-       title = "Bottom-up Transformations") +
+       title = "Bottom-up Transformations",
+       color = "Sense Boundary") +
   theme(axis.title = element_text(size=rel(2)),
         axis.text = element_text(size = rel(2)),
         legend.text = element_text(size = rel(2)),
@@ -384,6 +393,13 @@ b2_td_m
 
 ```{r}
 
+### Final parameters reported in paper
+b1_bu_m = 10.6
+b2_bu_m = 3.6
+b1_bu_l = 0.4
+
+
+
 df_distances = df_exp1 %>%
   group_by(word, version, same) %>%
   summarise(distance_bert = mean(distance_bert),
@@ -409,9 +425,13 @@ df_long = df_distances %>%
                values_to = "distance")
 
 df_long %>%
+  mutate(sense_boundary = case_when(
+    same == TRUE ~ "Same Sense",
+    same == FALSE ~ "Different Sense"
+  )) %>%
   ggplot(aes(x = distance_bert,
              y = distance,
-             color = same)) +
+             color = sense_boundary)) +
   geom_point(alpha = .5) +
   geom_line(aes(x = distance_bert,
                 y = distance_bert),
@@ -420,7 +440,8 @@ df_long %>%
   facet_grid(~transformation) +
   labs(x = "Cosine Distance",
        y = "Transformed Distance",
-       title = "Top-down Transformations") +
+       title = "Top-down Transformations",
+       color = "Sense Boundary") +
   theme(axis.title = element_text(size=rel(2)),
         axis.text = element_text(size = rel(2)),
         legend.text = element_text(size = rel(2)),
@@ -588,32 +609,6 @@ df_aic = data.frame(
   p = p
 )
 
-df_aic %>%
-  ggplot(aes(x = reorder(model, p),
-             y = p,
-             fill = model)) +
-  geom_bar(stat = "identity") +
-  scale_y_continuous(limits = c(0, 1)) +
-  coord_flip() +
-  geom_text(aes(label = round(p, 2)), 
-            hjust = -1, 
-            colour = "black") +
-  labs(y = "Parameters",
-       x = "P(model)") +
-  theme_minimal() +
-theme(
-  axis.title.x = element_text(size = 16),
-  axis.text.x = element_text(size = 14),
-  axis.text.y = element_text(size = 10),
-  axis.title.y = element_text(size = 16),
-  strip.text.x = element_text(size = 16),
-  title = element_text(size = 16),
-  legend.text = element_text(size = 16),
-  legend.title = element_text(size = 16))
-
-
-ggsave("../../Figures/transform/final/accuracy_akaike_weights.png", dpi = 300)
-
 
 df_aic %>%
   ggplot(aes(x = reorder(model, aic_rescaled),
@@ -625,8 +620,8 @@ df_aic %>%
   geom_text(aes(label = round(aic_rescaled, 2)), 
             # hjust = -1, 
             colour = "black") +
-  labs(y = "Parameters",
-       x = "AIC (Rescaled)",
+  labs(x = "Parameters",
+       y = "AIC (Rescaled)",
        title = "Correct Response ~ ...") +
   theme_minimal() +
 theme(
@@ -749,31 +744,6 @@ df_aic = data.frame(
   p = p
 )
 
-df_aic %>%
-  ggplot(aes(x = reorder(model, p),
-             y = p,
-             fill = model)) +
-  geom_bar(stat = "identity") +
-  scale_y_continuous(limits = c(0, 1)) +
-  coord_flip() +
-  geom_text(aes(label = round(p, 2)), 
-            hjust = -1, 
-            colour = "black") +
-  labs(y = "Parameters",
-       x = "P(model)") +
-  theme_minimal() +
-theme(
-  axis.title.x = element_text(size = 16),
-  axis.text.x = element_text(size = 14),
-  axis.text.y = element_text(size = 10),
-  axis.title.y = element_text(size = 16),
-  strip.text.x = element_text(size = 16),
-  title = element_text(size = 16),
-  legend.text = element_text(size = 16),
-  legend.title = element_text(size = 16))
-
-ggsave("../../Figures/transform/final/rt_akaike_weights.png", dpi = 300)
-
 
 df_aic %>%
   ggplot(aes(x = reorder(model, aic_rescaled),
@@ -785,8 +755,8 @@ df_aic %>%
   geom_text(aes(label = round(aic_rescaled, 2)), 
             # hjust = -1, 
             colour = "black") +
-  labs(y = "Parameters",
-       x = "AIC (Rescaled)",
+  labs(x = "Parameters",
+       y = "AIC (Rescaled)",
        title = "RT ~ ...") +
   theme_minimal() +
 theme(

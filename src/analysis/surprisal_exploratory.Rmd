@@ -62,7 +62,7 @@ nrow(df_exp1) + nrow(df_exp2)
 ```
 
 
-## Load surprisals
+## Load surprisals (BERT large)
 
 First, we load surprisal data from BERT-large.
 
@@ -86,6 +86,7 @@ df_merged_surprisals = df_merged %>%
   inner_join(df_bl)
 
 nrow(df_merged_surprisals)
+
 ```
 
 
@@ -198,4 +199,3 @@ summary(model_just_fe)
 anova(model_just_fe, model_no_surprisal)
 anova(model_just_fe, model_no_same)
 ```
-
